@@ -1,0 +1,255 @@
+package rs.ac.bg.etf.pp1;
+
+import java_cup.runtime.*;
+import org.apache.log4j.*;
+
+// import java.io.*;
+import rs.ac.bg.etf.pp1.ast.*;
+
+
+
+parser code {:
+	
+	boolean errorDetected = false;
+	
+	Logger log = Logger.getLogger(getClass());
+   
+   
+    // slede redefinisani metodi za prijavu gresaka radi izmene teksta poruke
+     
+    public void report_fatal_error(String message, Object info) throws java.lang.Exception {
+      done_parsing();
+      report_error(message, info);
+    }
+  
+    public void syntax_error(Symbol cur_token) {
+        report_error("\nSintaksna greska", cur_token);
+    }
+  
+    public void unrecovered_syntax_error(Symbol cur_token) throws java.lang.Exception {
+        report_fatal_error("Fatalna greska, parsiranje se ne moze nastaviti", cur_token);
+    }
+
+    public void report_error(String message, Object info) {
+    	errorDetected = true;
+    	StringBuilder msg = new StringBuilder(message); 
+    	if (info instanceof Symbol)
+            msg.append (" na liniji ").append(((Symbol)info).left);
+        log.error(msg.toString());
+    }
+    
+    public void report_info(String message, Object info) {
+    	StringBuilder msg = new StringBuilder(message); 
+    	if (info instanceof Symbol)
+            msg.append (" na liniji ").append(((Symbol)info).left);
+        log.info(msg.toString());
+    }
+    
+:}
+
+scan with {:
+	Symbol s = this.getScanner().next_token();
+	if (s != null && s.value != null) 
+		log.info(s.toString() + " " + s.value.toString());
+	return s;
+:}
+
+
+
+terminal PROG, BREAK, CLASS, ELSE, CONST, IF, NEW, PRINT, READ, RETURN, VOID, EXTENDS, CONTINUE;
+terminal FOR, STATIC, NAMESPACE;
+terminal PLUS, MINUS, DIV, MOD, MUL, EQUAL, DBLDOT, SEMI, COMMA, DOT, LPAREN, RPAREN, LBRACE, RBRACE;
+terminal LBRACKET, RBRACKET, LARROW, RARROW, EXCL, AMPER, LINE;
+
+terminal Integer NUMBER ;
+terminal Character CHAR_CONST;
+terminal BOOL_CONST;
+terminal String IDENT ;
+
+
+nonterminal Program, ProgName, NamespaceList, Namespace, DeclarationList, ConstDeclList, ConstantList, Constants;
+nonterminal VarDeclList, VarDecl, VarDeclarationList, VarDeclaration, MethodDeclList, MethodDecl, MethodTypeName, Type;
+nonterminal Brackets, FormPars, FormalParamList, FormalParamDecl, StatementList, Statement, Expr;
+nonterminal Term, Factor, DesignatorStatement, ActPars, ActParamList, Designator, DesignatorElem, Label, Assignop, Relop, Addop, Mulop;
+
+
+Program ::= PROG ProgName:p NamespaceList DeclarationList LBRACE MethodDeclList RBRACE ;
+
+
+ProgName ::=  IDENT:pName ;
+
+NamespaceList ::=  NamespaceList Namespace
+					|
+					/* epsilon */
+					;
+
+Namespace ::=  NAMESPACE IDENT:nName LBRACE DeclarationList LBRACE MethodDeclList RBRACE RBRACE;
+
+DeclarationList ::=  ConstDeclList DeclarationList
+				    |
+					 VarDecl DeclarationList
+				    |
+				     /* epsilon */
+				    ;
+
+ConstDeclList ::=  CONST Type IDENT EQUAL Constants ConstantList SEMI;
+
+ConstantList ::= ConstantList COMMA IDENT EQUAL Constants
+				|
+				 /* epsilon */
+				;
+
+Constants ::= NUMBER | CHAR_CONST ;
+
+
+VarDeclList ::=  VarDeclList VarDecl  
+				|
+				/* epsilon */ 
+				;
+				
+VarDecl ::=  Type:varType VarDeclarationList SEMI ;
+
+VarDeclarationList ::=  VarDeclarationList  COMMA VarDeclaration
+					|
+					 VarDeclaration
+					;
+					
+VarDeclaration ::=  IDENT Brackets ;
+
+MethodDeclList ::=  MethodDeclList MethodDecl
+					|
+					/* epsilon */
+					;
+
+MethodDecl ::=  MethodTypeName LPAREN FormPars RPAREN VarDeclList LBRACE StatementList RBRACE 
+			   ;
+
+MethodTypeName ::= Type:retType IDENT:methName
+				|
+				VOID IDENT:methName
+				;
+
+FormPars ::=  FormalParamList |  /* epsilon */ ;
+
+
+
+FormalParamList ::= FormalParamList  COMMA FormalParamDecl
+					|
+					 FormalParamDecl
+					;
+					
+FormalParamDecl ::= Type IDENT Brackets ;
+
+
+Brackets ::= LBRACKET RBRACKET
+			 |
+			  /* epsilon */
+			 ;
+
+Type ::=  IDENT:typeName 
+		 |
+		  IDENT DBLDOT DBLDOT IDENT:typeName
+		 ;
+		 
+StatementList ::=  StatementList Statement 
+					|
+				   /* epsilon */
+				  ;
+				  
+Statement ::= PRINT LPAREN Expr RPAREN SEMI
+  			  |
+			  PRINT LPAREN Expr COMMA NUMBER RPAREN SEMI	 
+			  |
+			  READ LPAREN Designator RPAREN SEMI
+			  |
+			  DesignatorStatement SEMI
+			  ;
+
+DesignatorStatement ::= Designator Assignop Expr
+					|
+					Designator PLUS PLUS
+					|
+					Designator MINUS MINUS
+					;
+
+ActPars ::=  ActParamList 
+			| 
+		     /* epsilon */ 
+		    ;
+			   
+ActParamList ::=  ActParamList COMMA Expr
+				|
+				 Expr
+				;
+		
+Expr ::=  Expr:te Addop Term:t
+		 |
+		  Term:t
+		 |
+		  MINUS Term:t
+		 ;
+
+Term ::= Term:te Mulop Factor:f
+		|
+		Factor:f
+		;
+
+
+Factor ::= NUMBER
+			|
+			CHAR_CONST
+			|
+			 NEW Type LBRACKET Expr RBRACKET
+			|
+			LPAREN Expr RPAREN
+			|
+		     Designator:d
+		    ;
+
+
+Designator ::= IDENT:desName DesignatorElem
+			|
+			 IDENT DBLDOT DBLDOT IDENT:desName DesignatorElem
+			;
+
+DesignatorElem ::= LBRACKET Expr RBRACKET 
+				|
+				/* epsilon */
+				;
+					
+
+Label ::=  IDENT;
+
+
+Assignop ::=  EQUAL;
+
+
+Relop ::=EQUAL EQUAL
+		|
+		 EXCL EQUAL
+		|
+		RARROW
+		|
+		LARROW
+		|
+		 LARROW EQUAL
+		|
+		 RARROW EQUAL
+		;
+
+Addop ::=  PLUS 
+		|
+		MINUS
+		;
+		
+		
+Mulop ::= MUL
+		|
+		DIV
+		|
+		MOD
+		;		
+		
+		
+
+		 
