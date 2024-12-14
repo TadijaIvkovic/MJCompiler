@@ -1,15 +1,27 @@
 // generated with ast extension for cup
 // version 0.8
-// 13/11/2024 16:10:20
+// 14/11/2024 11:22:34
 
 
 package rs.ac.bg.etf.pp1.ast;
 
-public abstract class Label implements SyntaxNode {
+public class Label implements SyntaxNode {
 
     private SyntaxNode parent;
-
     private int line;
+    private String I1;
+
+    public Label (String I1) {
+        this.I1=I1;
+    }
+
+    public String getI1() {
+        return I1;
+    }
+
+    public void setI1(String I1) {
+        this.I1=I1;
+    }
 
     public SyntaxNode getParent() {
         return parent;
@@ -27,11 +39,31 @@ public abstract class Label implements SyntaxNode {
         this.line=line;
     }
 
-    public abstract void accept(Visitor visitor);
-    public abstract void childrenAccept(Visitor visitor);
-    public abstract void traverseTopDown(Visitor visitor);
-    public abstract void traverseBottomUp(Visitor visitor);
+    public void accept(Visitor visitor) {
+        visitor.visit(this);
+    }
 
-    public String toString() { return toString(""); }
-    public abstract String toString(String tab);
+    public void childrenAccept(Visitor visitor) {
+    }
+
+    public void traverseTopDown(Visitor visitor) {
+        accept(visitor);
+    }
+
+    public void traverseBottomUp(Visitor visitor) {
+        accept(visitor);
+    }
+
+    public String toString(String tab) {
+        StringBuffer buffer=new StringBuffer();
+        buffer.append(tab);
+        buffer.append("Label(\n");
+
+        buffer.append(" "+tab+I1);
+        buffer.append("\n");
+
+        buffer.append(tab);
+        buffer.append(") [Label]");
+        return buffer.toString();
+    }
 }

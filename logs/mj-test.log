@@ -1,1124 +1,1122 @@
-INFO  17:20:54,023 - Compiling source file: C:\Users\The Workstation\eclipse-workspace\MJCompiler\test\program.mj
-INFO  17:20:54,054 - #2 program
-INFO  17:20:54,055 - #42 test301
-INFO  17:20:54,055 - #6 const
-INFO  17:20:54,055 - #42 int
-INFO  17:20:54,056 - #42 nula
-INFO  17:20:54,056 - #23 =
-INFO  17:20:54,056 - #39 0
-INFO  17:20:54,056 - #25 ;
-INFO  17:20:54,057 - #6 const
-INFO  17:20:54,057 - #42 int
-INFO  17:20:54,057 - #42 jedan
-INFO  17:20:54,057 - #23 =
-INFO  17:20:54,057 - #39 1
-INFO  17:20:54,057 - #25 ;
-INFO  17:20:54,057 - #6 const
-INFO  17:20:54,057 - #42 int
-INFO  17:20:54,057 - #42 pet
-INFO  17:20:54,057 - #23 =
-INFO  17:20:54,057 - #39 5
-INFO  17:20:54,057 - #25 ;
-INFO  17:20:54,057 - #42 int
-INFO  17:20:54,058 - #42 niz
-INFO  17:20:54,058 - #32 [
-INFO  17:20:54,058 - #33 ]
-INFO  17:20:54,058 - #25 ;
-INFO  17:20:54,059 - #42 char
-INFO  17:20:54,059 - #42 nizch
-INFO  17:20:54,059 - #32 [
-INFO  17:20:54,059 - #33 ]
-INFO  17:20:54,059 - #25 ;
-INFO  17:20:54,059 - #42 int
-INFO  17:20:54,059 - #42 mat
-INFO  17:20:54,059 - #32 [
-INFO  17:20:54,059 - #33 ]
-INFO  17:20:54,059 - #25 ;
-INFO  17:20:54,059 - #42 int
-INFO  17:20:54,059 - #42 a
-INFO  17:20:54,059 - #25 ;
-INFO  17:20:54,061 - #30 {
-INFO  17:20:54,061 - #12 void
-INFO  17:20:54,062 - #42 main
-INFO  17:20:54,062 - #28 (
-INFO  17:20:54,062 - #29 )
-INFO  17:20:54,063 - #42 int
-INFO  17:20:54,064 - #42 bodovi
-INFO  17:20:54,064 - #25 ;
-INFO  17:20:54,064 - #42 bool
-INFO  17:20:54,064 - #42 bt
-INFO  17:20:54,064 - #25 ;
-INFO  17:20:54,064 - #30 {
-INFO  17:20:54,064 - #42 bodovi
-INFO  17:20:54,065 - #23 =
-INFO  17:20:54,066 - #39 0
-INFO  17:20:54,066 - #25 ;
-INFO  17:20:54,067 - #42 bodovi
-INFO  17:20:54,067 - #18 +
-INFO  17:20:54,067 - #18 +
-INFO  17:20:54,067 - #25 ;
-INFO  17:20:54,067 - #42 bodovi
-INFO  17:20:54,067 - #23 =
-INFO  17:20:54,067 - #42 bodovi
-INFO  17:20:54,067 - #18 +
-INFO  17:20:54,067 - #42 jedan
-INFO  17:20:54,068 - #25 ;
-INFO  17:20:54,068 - #42 bodovi
-INFO  17:20:54,068 - #23 =
-INFO  17:20:54,068 - #42 bodovi
-INFO  17:20:54,068 - #22 *
-INFO  17:20:54,068 - #42 pet
-INFO  17:20:54,069 - #25 ;
-INFO  17:20:54,069 - #42 bodovi
-INFO  17:20:54,069 - #19 -
-INFO  17:20:54,069 - #19 -
-INFO  17:20:54,069 - #25 ;
-INFO  17:20:54,070 - #9 print
-INFO  17:20:54,070 - #28 (
-INFO  17:20:54,070 - #42 bodovi
-INFO  17:20:54,070 - #29 )
-INFO  17:20:54,070 - #25 ;
-INFO  17:20:54,070 - #42 niz
-INFO  17:20:54,070 - #23 =
-INFO  17:20:54,070 - #8 new
-INFO  17:20:54,070 - #42 int
-INFO  17:20:54,070 - #32 [
-INFO  17:20:54,070 - #39 3
-INFO  17:20:54,070 - #33 ]
-INFO  17:20:54,070 - #25 ;
-INFO  17:20:54,070 - #42 niz
-INFO  17:20:54,070 - #32 [
-INFO  17:20:54,070 - #42 nula
-INFO  17:20:54,070 - #33 ]
-INFO  17:20:54,070 - #23 =
-INFO  17:20:54,070 - #42 jedan
-INFO  17:20:54,070 - #25 ;
-INFO  17:20:54,070 - #42 niz
-INFO  17:20:54,071 - #32 [
-INFO  17:20:54,071 - #39 1
-INFO  17:20:54,071 - #33 ]
-INFO  17:20:54,071 - #23 =
-INFO  17:20:54,071 - #39 2
-INFO  17:20:54,071 - #25 ;
-INFO  17:20:54,071 - #42 niz
-INFO  17:20:54,071 - #32 [
-INFO  17:20:54,071 - #42 niz
-INFO  17:20:54,071 - #32 [
-INFO  17:20:54,071 - #42 jedan
-INFO  17:20:54,071 - #33 ]
-INFO  17:20:54,071 - #33 ]
-INFO  17:20:54,072 - #23 =
-INFO  17:20:54,072 - #42 niz
-INFO  17:20:54,072 - #32 [
-INFO  17:20:54,072 - #42 niz
-INFO  17:20:54,072 - #32 [
-INFO  17:20:54,072 - #39 0
-INFO  17:20:54,072 - #33 ]
-INFO  17:20:54,072 - #33 ]
-INFO  17:20:54,072 - #22 *
-INFO  17:20:54,072 - #39 3
-INFO  17:20:54,072 - #25 ;
-INFO  17:20:54,072 - #42 bodovi
-INFO  17:20:54,073 - #23 =
-INFO  17:20:54,073 - #42 niz
-INFO  17:20:54,073 - #32 [
-INFO  17:20:54,073 - #39 2
-INFO  17:20:54,073 - #33 ]
-INFO  17:20:54,073 - #20 /
-INFO  17:20:54,073 - #42 niz
-INFO  17:20:54,074 - #32 [
-INFO  17:20:54,074 - #39 0
-INFO  17:20:54,074 - #33 ]
-INFO  17:20:54,074 - #25 ;
-INFO  17:20:54,074 - #9 print
-INFO  17:20:54,074 - #28 (
-INFO  17:20:54,074 - #42 bodovi
-INFO  17:20:54,074 - #29 )
-INFO  17:20:54,074 - #25 ;
-INFO  17:20:54,074 - #9 print
-INFO  17:20:54,074 - #28 (
-INFO  17:20:54,074 - #42 niz
-INFO  17:20:54,074 - #32 [
-INFO  17:20:54,074 - #39 2
-INFO  17:20:54,074 - #33 ]
-INFO  17:20:54,075 - #29 )
-INFO  17:20:54,075 - #25 ;
-INFO  17:20:54,075 - #42 nizch
-INFO  17:20:54,075 - #23 =
-INFO  17:20:54,075 - #8 new
-INFO  17:20:54,075 - #42 char
-INFO  17:20:54,075 - #32 [
-INFO  17:20:54,076 - #39 3
-INFO  17:20:54,076 - #33 ]
-INFO  17:20:54,076 - #25 ;
-INFO  17:20:54,076 - #42 nizch
-INFO  17:20:54,076 - #32 [
-INFO  17:20:54,076 - #39 0
-INFO  17:20:54,076 - #33 ]
-INFO  17:20:54,076 - #23 =
-INFO  17:20:54,076 - #40 a
-INFO  17:20:54,076 - #25 ;
-INFO  17:20:54,076 - #42 nizch
-INFO  17:20:54,076 - #32 [
-INFO  17:20:54,076 - #42 jedan
-INFO  17:20:54,076 - #33 ]
-INFO  17:20:54,077 - #23 =
-INFO  17:20:54,077 - #40 b
-INFO  17:20:54,077 - #25 ;
-INFO  17:20:54,077 - #42 nizch
-INFO  17:20:54,077 - #32 [
-INFO  17:20:54,077 - #42 pet
-INFO  17:20:54,077 - #19 -
-INFO  17:20:54,077 - #39 3
-INFO  17:20:54,078 - #33 ]
-INFO  17:20:54,078 - #23 =
-INFO  17:20:54,078 - #40 c
-INFO  17:20:54,078 - #25 ;
-INFO  17:20:54,078 - #9 print
-INFO  17:20:54,078 - #28 (
-INFO  17:20:54,078 - #42 nizch
-INFO  17:20:54,078 - #32 [
-INFO  17:20:54,078 - #39 1
-INFO  17:20:54,078 - #33 ]
-INFO  17:20:54,078 - #29 )
-INFO  17:20:54,078 - #25 ;
-INFO  17:20:54,079 - #9 print
-INFO  17:20:54,079 - #28 (
-INFO  17:20:54,079 - #42 nizch
-INFO  17:20:54,079 - #32 [
-INFO  17:20:54,079 - #42 jedan
-INFO  17:20:54,079 - #22 *
-INFO  17:20:54,079 - #39 2
-INFO  17:20:54,079 - #33 ]
-INFO  17:20:54,079 - #29 )
-INFO  17:20:54,079 - #25 ;
-INFO  17:20:54,079 - #42 a
-INFO  17:20:54,079 - #23 =
-INFO  17:20:54,079 - #39 1
-INFO  17:20:54,079 - #25 ;
-INFO  17:20:54,079 - #10 read
-INFO  17:20:54,079 - #28 (
-INFO  17:20:54,079 - #42 bodovi
-INFO  17:20:54,079 - #29 )
-INFO  17:20:54,079 - #25 ;
-INFO  17:20:54,079 - #42 bodovi
-INFO  17:20:54,079 - #23 =
-INFO  17:20:54,079 - #19 -
-INFO  17:20:54,079 - #42 bodovi
-INFO  17:20:54,079 - #18 +
-INFO  17:20:54,079 - #28 (
-INFO  17:20:54,079 - #42 pet
-INFO  17:20:54,079 - #22 *
-INFO  17:20:54,079 - #42 a
-INFO  17:20:54,079 - #20 /
-INFO  17:20:54,079 - #39 2
-INFO  17:20:54,079 - #19 -
-INFO  17:20:54,079 - #42 jedan
-INFO  17:20:54,079 - #29 )
-INFO  17:20:54,079 - #22 *
-INFO  17:20:54,079 - #42 bodovi
-INFO  17:20:54,079 - #19 -
-INFO  17:20:54,079 - #28 (
-INFO  17:20:54,079 - #39 3
-INFO  17:20:54,080 - #21 %
-INFO  17:20:54,080 - #39 2
-INFO  17:20:54,080 - #18 +
-INFO  17:20:54,080 - #39 3
-INFO  17:20:54,080 - #22 *
-INFO  17:20:54,081 - #39 2
-INFO  17:20:54,081 - #19 -
-INFO  17:20:54,081 - #39 3
-INFO  17:20:54,081 - #29 )
-INFO  17:20:54,081 - #25 ;
-INFO  17:20:54,081 - #9 print
-INFO  17:20:54,081 - #28 (
-INFO  17:20:54,081 - #42 bodovi
-INFO  17:20:54,081 - #29 )
-INFO  17:20:54,081 - #25 ;
-INFO  17:20:54,081 - #31 }
-INFO  17:20:54,081 - #31 }
-INFO  17:20:54,086 - ProgramDerived1(
-  ProgNameDerived1(
+INFO  19:30:32,747 - Compiling source file: C:\Users\The Workstation\eclipse-workspace\MJCompiler\test\program.mj
+INFO  19:30:32,769 - #2 program
+INFO  19:30:32,770 - #42 test301
+INFO  19:30:32,770 - #6 const
+INFO  19:30:32,771 - #42 int
+INFO  19:30:32,771 - #42 nula
+INFO  19:30:32,772 - #23 =
+INFO  19:30:32,772 - #39 0
+INFO  19:30:32,772 - #25 ;
+INFO  19:30:32,772 - #6 const
+INFO  19:30:32,773 - #42 int
+INFO  19:30:32,773 - #42 jedan
+INFO  19:30:32,773 - #23 =
+INFO  19:30:32,773 - #39 1
+INFO  19:30:32,773 - #25 ;
+INFO  19:30:32,773 - #6 const
+INFO  19:30:32,773 - #42 int
+INFO  19:30:32,773 - #42 pet
+INFO  19:30:32,773 - #23 =
+INFO  19:30:32,773 - #39 5
+INFO  19:30:32,773 - #25 ;
+INFO  19:30:32,773 - #42 int
+INFO  19:30:32,774 - #42 niz
+INFO  19:30:32,774 - #32 [
+INFO  19:30:32,774 - #33 ]
+INFO  19:30:32,774 - #25 ;
+INFO  19:30:32,775 - #42 char
+INFO  19:30:32,776 - #42 nizch
+INFO  19:30:32,776 - #32 [
+INFO  19:30:32,776 - #33 ]
+INFO  19:30:32,776 - #25 ;
+INFO  19:30:32,776 - #42 int
+INFO  19:30:32,776 - #42 mat
+INFO  19:30:32,776 - #32 [
+INFO  19:30:32,776 - #33 ]
+INFO  19:30:32,776 - #25 ;
+INFO  19:30:32,776 - #42 int
+INFO  19:30:32,776 - #42 a
+INFO  19:30:32,776 - #25 ;
+INFO  19:30:32,777 - #30 {
+INFO  19:30:32,778 - #12 void
+INFO  19:30:32,778 - #42 main
+INFO  19:30:32,779 - #28 (
+INFO  19:30:32,779 - #29 )
+INFO  19:30:32,779 - #42 int
+INFO  19:30:32,780 - #42 bodovi
+INFO  19:30:32,780 - #25 ;
+INFO  19:30:32,780 - #42 bool
+INFO  19:30:32,780 - #42 bt
+INFO  19:30:32,780 - #25 ;
+INFO  19:30:32,780 - #30 {
+INFO  19:30:32,780 - #42 bodovi
+INFO  19:30:32,781 - #23 =
+INFO  19:30:32,781 - #39 0
+INFO  19:30:32,782 - #25 ;
+INFO  19:30:32,782 - #42 bodovi
+INFO  19:30:32,782 - #18 +
+INFO  19:30:32,782 - #18 +
+INFO  19:30:32,783 - #25 ;
+INFO  19:30:32,783 - #42 bodovi
+INFO  19:30:32,783 - #23 =
+INFO  19:30:32,783 - #42 bodovi
+INFO  19:30:32,783 - #18 +
+INFO  19:30:32,783 - #42 jedan
+INFO  19:30:32,784 - #25 ;
+INFO  19:30:32,784 - #42 bodovi
+INFO  19:30:32,784 - #23 =
+INFO  19:30:32,784 - #42 bodovi
+INFO  19:30:32,784 - #22 *
+INFO  19:30:32,784 - #42 pet
+INFO  19:30:32,786 - #25 ;
+INFO  19:30:32,786 - #42 bodovi
+INFO  19:30:32,786 - #19 -
+INFO  19:30:32,786 - #19 -
+INFO  19:30:32,786 - #25 ;
+INFO  19:30:32,786 - #9 print
+INFO  19:30:32,786 - #28 (
+INFO  19:30:32,786 - #42 bodovi
+INFO  19:30:32,786 - #29 )
+INFO  19:30:32,786 - #25 ;
+INFO  19:30:32,786 - #42 niz
+INFO  19:30:32,786 - #23 =
+INFO  19:30:32,786 - #8 new
+INFO  19:30:32,786 - #42 int
+INFO  19:30:32,786 - #32 [
+INFO  19:30:32,786 - #39 3
+INFO  19:30:32,786 - #33 ]
+INFO  19:30:32,786 - #25 ;
+INFO  19:30:32,786 - #42 niz
+INFO  19:30:32,786 - #32 [
+INFO  19:30:32,786 - #42 nula
+INFO  19:30:32,786 - #33 ]
+INFO  19:30:32,786 - #23 =
+INFO  19:30:32,787 - #42 jedan
+INFO  19:30:32,787 - #25 ;
+INFO  19:30:32,787 - #42 niz
+INFO  19:30:32,787 - #32 [
+INFO  19:30:32,787 - #39 1
+INFO  19:30:32,787 - #33 ]
+INFO  19:30:32,787 - #23 =
+INFO  19:30:32,787 - #39 2
+INFO  19:30:32,787 - #25 ;
+INFO  19:30:32,787 - #42 niz
+INFO  19:30:32,787 - #32 [
+INFO  19:30:32,787 - #42 niz
+INFO  19:30:32,787 - #32 [
+INFO  19:30:32,787 - #42 jedan
+INFO  19:30:32,787 - #33 ]
+INFO  19:30:32,787 - #33 ]
+INFO  19:30:32,787 - #23 =
+INFO  19:30:32,787 - #42 niz
+INFO  19:30:32,787 - #32 [
+INFO  19:30:32,787 - #42 niz
+INFO  19:30:32,787 - #32 [
+INFO  19:30:32,787 - #39 0
+INFO  19:30:32,787 - #33 ]
+INFO  19:30:32,787 - #33 ]
+INFO  19:30:32,787 - #22 *
+INFO  19:30:32,787 - #39 3
+INFO  19:30:32,787 - #25 ;
+INFO  19:30:32,787 - #42 bodovi
+INFO  19:30:32,788 - #23 =
+INFO  19:30:32,788 - #42 niz
+INFO  19:30:32,788 - #32 [
+INFO  19:30:32,788 - #39 2
+INFO  19:30:32,788 - #33 ]
+INFO  19:30:32,788 - #20 /
+INFO  19:30:32,788 - #42 niz
+INFO  19:30:32,789 - #32 [
+INFO  19:30:32,789 - #39 0
+INFO  19:30:32,789 - #33 ]
+INFO  19:30:32,789 - #25 ;
+INFO  19:30:32,789 - #9 print
+INFO  19:30:32,789 - #28 (
+INFO  19:30:32,789 - #42 bodovi
+INFO  19:30:32,789 - #29 )
+INFO  19:30:32,789 - #25 ;
+INFO  19:30:32,789 - #9 print
+INFO  19:30:32,789 - #28 (
+INFO  19:30:32,789 - #42 niz
+INFO  19:30:32,789 - #32 [
+INFO  19:30:32,789 - #39 2
+INFO  19:30:32,789 - #33 ]
+INFO  19:30:32,789 - #29 )
+INFO  19:30:32,789 - #25 ;
+INFO  19:30:32,789 - #42 nizch
+INFO  19:30:32,789 - #23 =
+INFO  19:30:32,789 - #8 new
+INFO  19:30:32,789 - #42 char
+INFO  19:30:32,789 - #32 [
+INFO  19:30:32,789 - #39 3
+INFO  19:30:32,789 - #33 ]
+INFO  19:30:32,789 - #25 ;
+INFO  19:30:32,789 - #42 nizch
+INFO  19:30:32,789 - #32 [
+INFO  19:30:32,789 - #39 0
+INFO  19:30:32,789 - #33 ]
+INFO  19:30:32,789 - #23 =
+INFO  19:30:32,790 - #40 a
+INFO  19:30:32,790 - #25 ;
+INFO  19:30:32,790 - #42 nizch
+INFO  19:30:32,790 - #32 [
+INFO  19:30:32,790 - #42 jedan
+INFO  19:30:32,790 - #33 ]
+INFO  19:30:32,790 - #23 =
+INFO  19:30:32,790 - #40 b
+INFO  19:30:32,790 - #25 ;
+INFO  19:30:32,790 - #42 nizch
+INFO  19:30:32,790 - #32 [
+INFO  19:30:32,790 - #42 pet
+INFO  19:30:32,790 - #19 -
+INFO  19:30:32,790 - #39 3
+INFO  19:30:32,791 - #33 ]
+INFO  19:30:32,791 - #23 =
+INFO  19:30:32,791 - #40 c
+INFO  19:30:32,791 - #25 ;
+INFO  19:30:32,791 - #9 print
+INFO  19:30:32,791 - #28 (
+INFO  19:30:32,791 - #42 nizch
+INFO  19:30:32,791 - #32 [
+INFO  19:30:32,791 - #39 1
+INFO  19:30:32,791 - #33 ]
+INFO  19:30:32,791 - #29 )
+INFO  19:30:32,791 - #25 ;
+INFO  19:30:32,791 - #9 print
+INFO  19:30:32,791 - #28 (
+INFO  19:30:32,791 - #42 nizch
+INFO  19:30:32,791 - #32 [
+INFO  19:30:32,791 - #42 jedan
+INFO  19:30:32,791 - #22 *
+INFO  19:30:32,791 - #39 2
+INFO  19:30:32,791 - #33 ]
+INFO  19:30:32,792 - #29 )
+INFO  19:30:32,792 - #25 ;
+INFO  19:30:32,792 - #42 a
+INFO  19:30:32,792 - #23 =
+INFO  19:30:32,792 - #39 1
+INFO  19:30:32,792 - #25 ;
+INFO  19:30:32,792 - #10 read
+INFO  19:30:32,792 - #28 (
+INFO  19:30:32,792 - #42 bodovi
+INFO  19:30:32,792 - #29 )
+INFO  19:30:32,792 - #25 ;
+INFO  19:30:32,792 - #42 bodovi
+INFO  19:30:32,792 - #23 =
+INFO  19:30:32,792 - #19 -
+INFO  19:30:32,792 - #42 bodovi
+INFO  19:30:32,792 - #18 +
+INFO  19:30:32,792 - #28 (
+INFO  19:30:32,792 - #42 pet
+INFO  19:30:32,792 - #22 *
+INFO  19:30:32,792 - #42 a
+INFO  19:30:32,792 - #20 /
+INFO  19:30:32,792 - #39 2
+INFO  19:30:32,792 - #19 -
+INFO  19:30:32,792 - #42 jedan
+INFO  19:30:32,792 - #29 )
+INFO  19:30:32,792 - #22 *
+INFO  19:30:32,792 - #42 bodovi
+INFO  19:30:32,792 - #19 -
+INFO  19:30:32,792 - #28 (
+INFO  19:30:32,792 - #39 3
+INFO  19:30:32,792 - #21 %
+INFO  19:30:32,792 - #39 2
+INFO  19:30:32,793 - #18 +
+INFO  19:30:32,793 - #39 3
+INFO  19:30:32,793 - #22 *
+INFO  19:30:32,793 - #39 2
+INFO  19:30:32,793 - #19 -
+INFO  19:30:32,793 - #39 3
+INFO  19:30:32,793 - #29 )
+INFO  19:30:32,793 - #25 ;
+INFO  19:30:32,793 - #9 print
+INFO  19:30:32,793 - #28 (
+INFO  19:30:32,793 - #42 bodovi
+INFO  19:30:32,793 - #29 )
+INFO  19:30:32,793 - #25 ;
+INFO  19:30:32,793 - #31 }
+INFO  19:30:32,793 - #31 }
+INFO  19:30:32,799 - Program(
+  ProgName(
    test301
-  ) [ProgNameDerived1]
-  NamespaceListDerived2(
-  ) [NamespaceListDerived2]
-  DeclarationListDerived1(
-    ConstDeclListDerived1(
-      TypeDerived1(
+  ) [ProgName]
+  NoNameList(
+  ) [NoNameList]
+  ConstDecLists(
+    ConstDeclList(
+      Types(
        int
-      ) [TypeDerived1]
+      ) [Types]
      nula
-      ConstantsDerived1(
+      NumConstant(
        0
-      ) [ConstantsDerived1]
-      ConstantListDerived2(
-      ) [ConstantListDerived2]
-    ) [ConstDeclListDerived1]
-    DeclarationListDerived1(
-      ConstDeclListDerived1(
-        TypeDerived1(
+      ) [NumConstant]
+      NoConstList(
+      ) [NoConstList]
+    ) [ConstDeclList]
+    ConstDecLists(
+      ConstDeclList(
+        Types(
          int
-        ) [TypeDerived1]
+        ) [Types]
        jedan
-        ConstantsDerived1(
+        NumConstant(
          1
-        ) [ConstantsDerived1]
-        ConstantListDerived2(
-        ) [ConstantListDerived2]
-      ) [ConstDeclListDerived1]
-      DeclarationListDerived1(
-        ConstDeclListDerived1(
-          TypeDerived1(
+        ) [NumConstant]
+        NoConstList(
+        ) [NoConstList]
+      ) [ConstDeclList]
+      ConstDecLists(
+        ConstDeclList(
+          Types(
            int
-          ) [TypeDerived1]
+          ) [Types]
          pet
-          ConstantsDerived1(
+          NumConstant(
            5
-          ) [ConstantsDerived1]
-          ConstantListDerived2(
-          ) [ConstantListDerived2]
-        ) [ConstDeclListDerived1]
-        DeclarationListDerived2(
-          VarDeclDerived1(
-            TypeDerived1(
+          ) [NumConstant]
+          NoConstList(
+          ) [NoConstList]
+        ) [ConstDeclList]
+        VarDecLists(
+          VarDecl(
+            Types(
              int
-            ) [TypeDerived1]
-            VarDeclarationListDerived2(
-              VarDeclarationDerived1(
+            ) [Types]
+            VarDeclarat(
+              VarDeclaration(
                niz
-                BracketsDerived1(
-                ) [BracketsDerived1]
-              ) [VarDeclarationDerived1]
-            ) [VarDeclarationListDerived2]
-          ) [VarDeclDerived1]
-          DeclarationListDerived2(
-            VarDeclDerived1(
-              TypeDerived1(
+                Bracket(
+                ) [Bracket]
+              ) [VarDeclaration]
+            ) [VarDeclarat]
+          ) [VarDecl]
+          VarDecLists(
+            VarDecl(
+              Types(
                char
-              ) [TypeDerived1]
-              VarDeclarationListDerived2(
-                VarDeclarationDerived1(
+              ) [Types]
+              VarDeclarat(
+                VarDeclaration(
                  nizch
-                  BracketsDerived1(
-                  ) [BracketsDerived1]
-                ) [VarDeclarationDerived1]
-              ) [VarDeclarationListDerived2]
-            ) [VarDeclDerived1]
-            DeclarationListDerived2(
-              VarDeclDerived1(
-                TypeDerived1(
+                  Bracket(
+                  ) [Bracket]
+                ) [VarDeclaration]
+              ) [VarDeclarat]
+            ) [VarDecl]
+            VarDecLists(
+              VarDecl(
+                Types(
                  int
-                ) [TypeDerived1]
-                VarDeclarationListDerived2(
-                  VarDeclarationDerived1(
+                ) [Types]
+                VarDeclarat(
+                  VarDeclaration(
                    mat
-                    BracketsDerived1(
-                    ) [BracketsDerived1]
-                  ) [VarDeclarationDerived1]
-                ) [VarDeclarationListDerived2]
-              ) [VarDeclDerived1]
-              DeclarationListDerived2(
-                VarDeclDerived1(
-                  TypeDerived1(
+                    Bracket(
+                    ) [Bracket]
+                  ) [VarDeclaration]
+                ) [VarDeclarat]
+              ) [VarDecl]
+              VarDecLists(
+                VarDecl(
+                  Types(
                    int
-                  ) [TypeDerived1]
-                  VarDeclarationListDerived2(
-                    VarDeclarationDerived1(
+                  ) [Types]
+                  VarDeclarat(
+                    VarDeclaration(
                      a
-                      BracketsDerived2(
-                      ) [BracketsDerived2]
-                    ) [VarDeclarationDerived1]
-                  ) [VarDeclarationListDerived2]
-                ) [VarDeclDerived1]
-                DeclarationListDerived3(
-                ) [DeclarationListDerived3]
-              ) [DeclarationListDerived2]
-            ) [DeclarationListDerived2]
-          ) [DeclarationListDerived2]
-        ) [DeclarationListDerived2]
-      ) [DeclarationListDerived1]
-    ) [DeclarationListDerived1]
-  ) [DeclarationListDerived1]
-  MethodDeclListDerived1(
-    MethodDeclListDerived2(
-    ) [MethodDeclListDerived2]
-    MethodDeclDerived1(
-      MethodTypeNameDerived2(
+                      NoBracket(
+                      ) [NoBracket]
+                    ) [VarDeclaration]
+                  ) [VarDeclarat]
+                ) [VarDecl]
+                NoDecLists(
+                ) [NoDecLists]
+              ) [VarDecLists]
+            ) [VarDecLists]
+          ) [VarDecLists]
+        ) [VarDecLists]
+      ) [ConstDecLists]
+    ) [ConstDecLists]
+  ) [ConstDecLists]
+  MethDeclList(
+    NoMethDeclList(
+    ) [NoMethDeclList]
+    MethodDecl(
+      NoMethTypeName(
        main
-      ) [MethodTypeNameDerived2]
-      FormParsDerived2(
-      ) [FormParsDerived2]
-      VarDeclListDerived1(
-        VarDeclListDerived1(
-          VarDeclListDerived2(
-          ) [VarDeclListDerived2]
-          VarDeclDerived1(
-            TypeDerived1(
+      ) [NoMethTypeName]
+      NoFormalPars(
+      ) [NoFormalPars]
+      VarDeclarList(
+        VarDeclarList(
+          NoVarDeclarList(
+          ) [NoVarDeclarList]
+          VarDecl(
+            Types(
              int
-            ) [TypeDerived1]
-            VarDeclarationListDerived2(
-              VarDeclarationDerived1(
+            ) [Types]
+            VarDeclarat(
+              VarDeclaration(
                bodovi
-                BracketsDerived2(
-                ) [BracketsDerived2]
-              ) [VarDeclarationDerived1]
-            ) [VarDeclarationListDerived2]
-          ) [VarDeclDerived1]
-        ) [VarDeclListDerived1]
-        VarDeclDerived1(
-          TypeDerived1(
+                NoBracket(
+                ) [NoBracket]
+              ) [VarDeclaration]
+            ) [VarDeclarat]
+          ) [VarDecl]
+        ) [VarDeclarList]
+        VarDecl(
+          Types(
            bool
-          ) [TypeDerived1]
-          VarDeclarationListDerived2(
-            VarDeclarationDerived1(
+          ) [Types]
+          VarDeclarat(
+            VarDeclaration(
              bt
-              BracketsDerived2(
-              ) [BracketsDerived2]
-            ) [VarDeclarationDerived1]
-          ) [VarDeclarationListDerived2]
-        ) [VarDeclDerived1]
-      ) [VarDeclListDerived1]
-      StatementListDerived1(
-        StatementListDerived1(
-          StatementListDerived1(
-            StatementListDerived1(
-              StatementListDerived1(
-                StatementListDerived1(
-                  StatementListDerived1(
-                    StatementListDerived1(
-                      StatementListDerived1(
-                        StatementListDerived1(
-                          StatementListDerived1(
-                            StatementListDerived1(
-                              StatementListDerived1(
-                                StatementListDerived1(
-                                  StatementListDerived1(
-                                    StatementListDerived1(
-                                      StatementListDerived1(
-                                        StatementListDerived1(
-                                          StatementListDerived1(
-                                            StatementListDerived1(
-                                              StatementListDerived1(
-                                                StatementListDerived1(
-                                                  StatementListDerived1(
-                                                    StatementListDerived2(
-                                                    ) [StatementListDerived2]
-                                                    StatementDerived4(
-                                                      DesignatorStatementDerived1(
-                                                        DesignatorDerived1(
+              NoBracket(
+              ) [NoBracket]
+            ) [VarDeclaration]
+          ) [VarDeclarat]
+        ) [VarDecl]
+      ) [VarDeclarList]
+      StmtList(
+        StmtList(
+          StmtList(
+            StmtList(
+              StmtList(
+                StmtList(
+                  StmtList(
+                    StmtList(
+                      StmtList(
+                        StmtList(
+                          StmtList(
+                            StmtList(
+                              StmtList(
+                                StmtList(
+                                  StmtList(
+                                    StmtList(
+                                      StmtList(
+                                        StmtList(
+                                          StmtList(
+                                            StmtList(
+                                              StmtList(
+                                                StmtList(
+                                                  StmtList(
+                                                    NoStmtList(
+                                                    ) [NoStmtList]
+                                                    DesStmt(
+                                                      DesginatorAssignop(
+                                                        Des(
                                                          bodovi
-                                                          DesignatorElemDerived2(
-                                                          ) [DesignatorElemDerived2]
-                                                        ) [DesignatorDerived1]
-                                                        AssignopDerived1(
-                                                        ) [AssignopDerived1]
-                                                        ExprDerived2(
-                                                          TermDerived2(
-                                                            FactorDerived1(
+                                                          NoDesElem(
+                                                          ) [NoDesElem]
+                                                        ) [Des]
+                                                        Assignop(
+                                                        ) [Assignop]
+                                                        ExprTerm(
+                                                          TermFactor(
+                                                            FactorNum(
                                                              0
-                                                            ) [FactorDerived1]
-                                                          ) [TermDerived2]
-                                                        ) [ExprDerived2]
-                                                      ) [DesignatorStatementDerived1]
-                                                    ) [StatementDerived4]
-                                                  ) [StatementListDerived1]
-                                                  StatementDerived4(
-                                                    DesignatorStatementDerived2(
-                                                      DesignatorDerived1(
+                                                            ) [FactorNum]
+                                                          ) [TermFactor]
+                                                        ) [ExprTerm]
+                                                      ) [DesginatorAssignop]
+                                                    ) [DesStmt]
+                                                  ) [StmtList]
+                                                  DesStmt(
+                                                    DesignatorInc(
+                                                      Des(
                                                        bodovi
-                                                        DesignatorElemDerived2(
-                                                        ) [DesignatorElemDerived2]
-                                                      ) [DesignatorDerived1]
-                                                    ) [DesignatorStatementDerived2]
-                                                  ) [StatementDerived4]
-                                                ) [StatementListDerived1]
-                                                StatementDerived4(
-                                                  DesignatorStatementDerived1(
-                                                    DesignatorDerived1(
+                                                        NoDesElem(
+                                                        ) [NoDesElem]
+                                                      ) [Des]
+                                                    ) [DesignatorInc]
+                                                  ) [DesStmt]
+                                                ) [StmtList]
+                                                DesStmt(
+                                                  DesginatorAssignop(
+                                                    Des(
                                                      bodovi
-                                                      DesignatorElemDerived2(
-                                                      ) [DesignatorElemDerived2]
-                                                    ) [DesignatorDerived1]
-                                                    AssignopDerived1(
-                                                    ) [AssignopDerived1]
-                                                    ExprDerived1(
-                                                      ExprDerived2(
-                                                        TermDerived2(
-                                                          FactorDerived5(
-                                                            DesignatorDerived1(
+                                                      NoDesElem(
+                                                      ) [NoDesElem]
+                                                    ) [Des]
+                                                    Assignop(
+                                                    ) [Assignop]
+                                                    ExprAddop(
+                                                      ExprTerm(
+                                                        TermFactor(
+                                                          FactorDes(
+                                                            Des(
                                                              bodovi
-                                                              DesignatorElemDerived2(
-                                                              ) [DesignatorElemDerived2]
-                                                            ) [DesignatorDerived1]
-                                                          ) [FactorDerived5]
-                                                        ) [TermDerived2]
-                                                      ) [ExprDerived2]
-                                                      AddopDerived1(
-                                                      ) [AddopDerived1]
-                                                      TermDerived2(
-                                                        FactorDerived5(
-                                                          DesignatorDerived1(
+                                                              NoDesElem(
+                                                              ) [NoDesElem]
+                                                            ) [Des]
+                                                          ) [FactorDes]
+                                                        ) [TermFactor]
+                                                      ) [ExprTerm]
+                                                      AddopPlus(
+                                                      ) [AddopPlus]
+                                                      TermFactor(
+                                                        FactorDes(
+                                                          Des(
                                                            jedan
-                                                            DesignatorElemDerived2(
-                                                            ) [DesignatorElemDerived2]
-                                                          ) [DesignatorDerived1]
-                                                        ) [FactorDerived5]
-                                                      ) [TermDerived2]
-                                                    ) [ExprDerived1]
-                                                  ) [DesignatorStatementDerived1]
-                                                ) [StatementDerived4]
-                                              ) [StatementListDerived1]
-                                              StatementDerived4(
-                                                DesignatorStatementDerived1(
-                                                  DesignatorDerived1(
+                                                            NoDesElem(
+                                                            ) [NoDesElem]
+                                                          ) [Des]
+                                                        ) [FactorDes]
+                                                      ) [TermFactor]
+                                                    ) [ExprAddop]
+                                                  ) [DesginatorAssignop]
+                                                ) [DesStmt]
+                                              ) [StmtList]
+                                              DesStmt(
+                                                DesginatorAssignop(
+                                                  Des(
                                                    bodovi
-                                                    DesignatorElemDerived2(
-                                                    ) [DesignatorElemDerived2]
-                                                  ) [DesignatorDerived1]
-                                                  AssignopDerived1(
-                                                  ) [AssignopDerived1]
-                                                  ExprDerived2(
-                                                    TermDerived1(
-                                                      TermDerived2(
-                                                        FactorDerived5(
-                                                          DesignatorDerived1(
+                                                    NoDesElem(
+                                                    ) [NoDesElem]
+                                                  ) [Des]
+                                                  Assignop(
+                                                  ) [Assignop]
+                                                  ExprTerm(
+                                                    TermMulop(
+                                                      TermFactor(
+                                                        FactorDes(
+                                                          Des(
                                                            bodovi
-                                                            DesignatorElemDerived2(
-                                                            ) [DesignatorElemDerived2]
-                                                          ) [DesignatorDerived1]
-                                                        ) [FactorDerived5]
-                                                      ) [TermDerived2]
-                                                      MulopDerived1(
-                                                      ) [MulopDerived1]
-                                                      FactorDerived5(
-                                                        DesignatorDerived1(
+                                                            NoDesElem(
+                                                            ) [NoDesElem]
+                                                          ) [Des]
+                                                        ) [FactorDes]
+                                                      ) [TermFactor]
+                                                      MulopMul(
+                                                      ) [MulopMul]
+                                                      FactorDes(
+                                                        Des(
                                                          pet
-                                                          DesignatorElemDerived2(
-                                                          ) [DesignatorElemDerived2]
-                                                        ) [DesignatorDerived1]
-                                                      ) [FactorDerived5]
-                                                    ) [TermDerived1]
-                                                  ) [ExprDerived2]
-                                                ) [DesignatorStatementDerived1]
-                                              ) [StatementDerived4]
-                                            ) [StatementListDerived1]
-                                            StatementDerived4(
-                                              DesignatorStatementDerived3(
-                                                DesignatorDerived1(
+                                                          NoDesElem(
+                                                          ) [NoDesElem]
+                                                        ) [Des]
+                                                      ) [FactorDes]
+                                                    ) [TermMulop]
+                                                  ) [ExprTerm]
+                                                ) [DesginatorAssignop]
+                                              ) [DesStmt]
+                                            ) [StmtList]
+                                            DesStmt(
+                                              DesignatorDecr(
+                                                Des(
                                                  bodovi
-                                                  DesignatorElemDerived2(
-                                                  ) [DesignatorElemDerived2]
-                                                ) [DesignatorDerived1]
-                                              ) [DesignatorStatementDerived3]
-                                            ) [StatementDerived4]
-                                          ) [StatementListDerived1]
-                                          StatementDerived1(
-                                            ExprDerived2(
-                                              TermDerived2(
-                                                FactorDerived5(
-                                                  DesignatorDerived1(
+                                                  NoDesElem(
+                                                  ) [NoDesElem]
+                                                ) [Des]
+                                              ) [DesignatorDecr]
+                                            ) [DesStmt]
+                                          ) [StmtList]
+                                          PrintStmt(
+                                            ExprTerm(
+                                              TermFactor(
+                                                FactorDes(
+                                                  Des(
                                                    bodovi
-                                                    DesignatorElemDerived2(
-                                                    ) [DesignatorElemDerived2]
-                                                  ) [DesignatorDerived1]
-                                                ) [FactorDerived5]
-                                              ) [TermDerived2]
-                                            ) [ExprDerived2]
-                                          ) [StatementDerived1]
-                                        ) [StatementListDerived1]
-                                        StatementDerived4(
-                                          DesignatorStatementDerived1(
-                                            DesignatorDerived1(
+                                                    NoDesElem(
+                                                    ) [NoDesElem]
+                                                  ) [Des]
+                                                ) [FactorDes]
+                                              ) [TermFactor]
+                                            ) [ExprTerm]
+                                          ) [PrintStmt]
+                                        ) [StmtList]
+                                        DesStmt(
+                                          DesginatorAssignop(
+                                            Des(
                                              niz
-                                              DesignatorElemDerived2(
-                                              ) [DesignatorElemDerived2]
-                                            ) [DesignatorDerived1]
-                                            AssignopDerived1(
-                                            ) [AssignopDerived1]
-                                            ExprDerived2(
-                                              TermDerived2(
-                                                FactorDerived3(
-                                                  TypeDerived1(
+                                              NoDesElem(
+                                              ) [NoDesElem]
+                                            ) [Des]
+                                            Assignop(
+                                            ) [Assignop]
+                                            ExprTerm(
+                                              TermFactor(
+                                                FactorNew(
+                                                  Types(
                                                    int
-                                                  ) [TypeDerived1]
-                                                  ExprDerived2(
-                                                    TermDerived2(
-                                                      FactorDerived1(
+                                                  ) [Types]
+                                                  ExprTerm(
+                                                    TermFactor(
+                                                      FactorNum(
                                                        3
-                                                      ) [FactorDerived1]
-                                                    ) [TermDerived2]
-                                                  ) [ExprDerived2]
-                                                ) [FactorDerived3]
-                                              ) [TermDerived2]
-                                            ) [ExprDerived2]
-                                          ) [DesignatorStatementDerived1]
-                                        ) [StatementDerived4]
-                                      ) [StatementListDerived1]
-                                      StatementDerived4(
-                                        DesignatorStatementDerived1(
-                                          DesignatorDerived1(
+                                                      ) [FactorNum]
+                                                    ) [TermFactor]
+                                                  ) [ExprTerm]
+                                                ) [FactorNew]
+                                              ) [TermFactor]
+                                            ) [ExprTerm]
+                                          ) [DesginatorAssignop]
+                                        ) [DesStmt]
+                                      ) [StmtList]
+                                      DesStmt(
+                                        DesginatorAssignop(
+                                          Des(
                                            niz
-                                            DesignatorElemDerived1(
-                                              ExprDerived2(
-                                                TermDerived2(
-                                                  FactorDerived5(
-                                                    DesignatorDerived1(
+                                            DesElem(
+                                              ExprTerm(
+                                                TermFactor(
+                                                  FactorDes(
+                                                    Des(
                                                      nula
-                                                      DesignatorElemDerived2(
-                                                      ) [DesignatorElemDerived2]
-                                                    ) [DesignatorDerived1]
-                                                  ) [FactorDerived5]
-                                                ) [TermDerived2]
-                                              ) [ExprDerived2]
-                                            ) [DesignatorElemDerived1]
-                                          ) [DesignatorDerived1]
-                                          AssignopDerived1(
-                                          ) [AssignopDerived1]
-                                          ExprDerived2(
-                                            TermDerived2(
-                                              FactorDerived5(
-                                                DesignatorDerived1(
+                                                      NoDesElem(
+                                                      ) [NoDesElem]
+                                                    ) [Des]
+                                                  ) [FactorDes]
+                                                ) [TermFactor]
+                                              ) [ExprTerm]
+                                            ) [DesElem]
+                                          ) [Des]
+                                          Assignop(
+                                          ) [Assignop]
+                                          ExprTerm(
+                                            TermFactor(
+                                              FactorDes(
+                                                Des(
                                                  jedan
-                                                  DesignatorElemDerived2(
-                                                  ) [DesignatorElemDerived2]
-                                                ) [DesignatorDerived1]
-                                              ) [FactorDerived5]
-                                            ) [TermDerived2]
-                                          ) [ExprDerived2]
-                                        ) [DesignatorStatementDerived1]
-                                      ) [StatementDerived4]
-                                    ) [StatementListDerived1]
-                                    StatementDerived4(
-                                      DesignatorStatementDerived1(
-                                        DesignatorDerived1(
+                                                  NoDesElem(
+                                                  ) [NoDesElem]
+                                                ) [Des]
+                                              ) [FactorDes]
+                                            ) [TermFactor]
+                                          ) [ExprTerm]
+                                        ) [DesginatorAssignop]
+                                      ) [DesStmt]
+                                    ) [StmtList]
+                                    DesStmt(
+                                      DesginatorAssignop(
+                                        Des(
                                          niz
-                                          DesignatorElemDerived1(
-                                            ExprDerived2(
-                                              TermDerived2(
-                                                FactorDerived1(
+                                          DesElem(
+                                            ExprTerm(
+                                              TermFactor(
+                                                FactorNum(
                                                  1
-                                                ) [FactorDerived1]
-                                              ) [TermDerived2]
-                                            ) [ExprDerived2]
-                                          ) [DesignatorElemDerived1]
-                                        ) [DesignatorDerived1]
-                                        AssignopDerived1(
-                                        ) [AssignopDerived1]
-                                        ExprDerived2(
-                                          TermDerived2(
-                                            FactorDerived1(
+                                                ) [FactorNum]
+                                              ) [TermFactor]
+                                            ) [ExprTerm]
+                                          ) [DesElem]
+                                        ) [Des]
+                                        Assignop(
+                                        ) [Assignop]
+                                        ExprTerm(
+                                          TermFactor(
+                                            FactorNum(
                                              2
-                                            ) [FactorDerived1]
-                                          ) [TermDerived2]
-                                        ) [ExprDerived2]
-                                      ) [DesignatorStatementDerived1]
-                                    ) [StatementDerived4]
-                                  ) [StatementListDerived1]
-                                  StatementDerived4(
-                                    DesignatorStatementDerived1(
-                                      DesignatorDerived1(
+                                            ) [FactorNum]
+                                          ) [TermFactor]
+                                        ) [ExprTerm]
+                                      ) [DesginatorAssignop]
+                                    ) [DesStmt]
+                                  ) [StmtList]
+                                  DesStmt(
+                                    DesginatorAssignop(
+                                      Des(
                                        niz
-                                        DesignatorElemDerived1(
-                                          ExprDerived2(
-                                            TermDerived2(
-                                              FactorDerived5(
-                                                DesignatorDerived1(
+                                        DesElem(
+                                          ExprTerm(
+                                            TermFactor(
+                                              FactorDes(
+                                                Des(
                                                  niz
-                                                  DesignatorElemDerived1(
-                                                    ExprDerived2(
-                                                      TermDerived2(
-                                                        FactorDerived5(
-                                                          DesignatorDerived1(
+                                                  DesElem(
+                                                    ExprTerm(
+                                                      TermFactor(
+                                                        FactorDes(
+                                                          Des(
                                                            jedan
-                                                            DesignatorElemDerived2(
-                                                            ) [DesignatorElemDerived2]
-                                                          ) [DesignatorDerived1]
-                                                        ) [FactorDerived5]
-                                                      ) [TermDerived2]
-                                                    ) [ExprDerived2]
-                                                  ) [DesignatorElemDerived1]
-                                                ) [DesignatorDerived1]
-                                              ) [FactorDerived5]
-                                            ) [TermDerived2]
-                                          ) [ExprDerived2]
-                                        ) [DesignatorElemDerived1]
-                                      ) [DesignatorDerived1]
-                                      AssignopDerived1(
-                                      ) [AssignopDerived1]
-                                      ExprDerived2(
-                                        TermDerived1(
-                                          TermDerived2(
-                                            FactorDerived5(
-                                              DesignatorDerived1(
+                                                            NoDesElem(
+                                                            ) [NoDesElem]
+                                                          ) [Des]
+                                                        ) [FactorDes]
+                                                      ) [TermFactor]
+                                                    ) [ExprTerm]
+                                                  ) [DesElem]
+                                                ) [Des]
+                                              ) [FactorDes]
+                                            ) [TermFactor]
+                                          ) [ExprTerm]
+                                        ) [DesElem]
+                                      ) [Des]
+                                      Assignop(
+                                      ) [Assignop]
+                                      ExprTerm(
+                                        TermMulop(
+                                          TermFactor(
+                                            FactorDes(
+                                              Des(
                                                niz
-                                                DesignatorElemDerived1(
-                                                  ExprDerived2(
-                                                    TermDerived2(
-                                                      FactorDerived5(
-                                                        DesignatorDerived1(
+                                                DesElem(
+                                                  ExprTerm(
+                                                    TermFactor(
+                                                      FactorDes(
+                                                        Des(
                                                          niz
-                                                          DesignatorElemDerived1(
-                                                            ExprDerived2(
-                                                              TermDerived2(
-                                                                FactorDerived1(
+                                                          DesElem(
+                                                            ExprTerm(
+                                                              TermFactor(
+                                                                FactorNum(
                                                                  0
-                                                                ) [FactorDerived1]
-                                                              ) [TermDerived2]
-                                                            ) [ExprDerived2]
-                                                          ) [DesignatorElemDerived1]
-                                                        ) [DesignatorDerived1]
-                                                      ) [FactorDerived5]
-                                                    ) [TermDerived2]
-                                                  ) [ExprDerived2]
-                                                ) [DesignatorElemDerived1]
-                                              ) [DesignatorDerived1]
-                                            ) [FactorDerived5]
-                                          ) [TermDerived2]
-                                          MulopDerived1(
-                                          ) [MulopDerived1]
-                                          FactorDerived1(
+                                                                ) [FactorNum]
+                                                              ) [TermFactor]
+                                                            ) [ExprTerm]
+                                                          ) [DesElem]
+                                                        ) [Des]
+                                                      ) [FactorDes]
+                                                    ) [TermFactor]
+                                                  ) [ExprTerm]
+                                                ) [DesElem]
+                                              ) [Des]
+                                            ) [FactorDes]
+                                          ) [TermFactor]
+                                          MulopMul(
+                                          ) [MulopMul]
+                                          FactorNum(
                                            3
-                                          ) [FactorDerived1]
-                                        ) [TermDerived1]
-                                      ) [ExprDerived2]
-                                    ) [DesignatorStatementDerived1]
-                                  ) [StatementDerived4]
-                                ) [StatementListDerived1]
-                                StatementDerived4(
-                                  DesignatorStatementDerived1(
-                                    DesignatorDerived1(
+                                          ) [FactorNum]
+                                        ) [TermMulop]
+                                      ) [ExprTerm]
+                                    ) [DesginatorAssignop]
+                                  ) [DesStmt]
+                                ) [StmtList]
+                                DesStmt(
+                                  DesginatorAssignop(
+                                    Des(
                                      bodovi
-                                      DesignatorElemDerived2(
-                                      ) [DesignatorElemDerived2]
-                                    ) [DesignatorDerived1]
-                                    AssignopDerived1(
-                                    ) [AssignopDerived1]
-                                    ExprDerived2(
-                                      TermDerived1(
-                                        TermDerived2(
-                                          FactorDerived5(
-                                            DesignatorDerived1(
+                                      NoDesElem(
+                                      ) [NoDesElem]
+                                    ) [Des]
+                                    Assignop(
+                                    ) [Assignop]
+                                    ExprTerm(
+                                      TermMulop(
+                                        TermFactor(
+                                          FactorDes(
+                                            Des(
                                              niz
-                                              DesignatorElemDerived1(
-                                                ExprDerived2(
-                                                  TermDerived2(
-                                                    FactorDerived1(
+                                              DesElem(
+                                                ExprTerm(
+                                                  TermFactor(
+                                                    FactorNum(
                                                      2
-                                                    ) [FactorDerived1]
-                                                  ) [TermDerived2]
-                                                ) [ExprDerived2]
-                                              ) [DesignatorElemDerived1]
-                                            ) [DesignatorDerived1]
-                                          ) [FactorDerived5]
-                                        ) [TermDerived2]
-                                        MulopDerived2(
-                                        ) [MulopDerived2]
-                                        FactorDerived5(
-                                          DesignatorDerived1(
+                                                    ) [FactorNum]
+                                                  ) [TermFactor]
+                                                ) [ExprTerm]
+                                              ) [DesElem]
+                                            ) [Des]
+                                          ) [FactorDes]
+                                        ) [TermFactor]
+                                        MulopDiv(
+                                        ) [MulopDiv]
+                                        FactorDes(
+                                          Des(
                                            niz
-                                            DesignatorElemDerived1(
-                                              ExprDerived2(
-                                                TermDerived2(
-                                                  FactorDerived1(
+                                            DesElem(
+                                              ExprTerm(
+                                                TermFactor(
+                                                  FactorNum(
                                                    0
-                                                  ) [FactorDerived1]
-                                                ) [TermDerived2]
-                                              ) [ExprDerived2]
-                                            ) [DesignatorElemDerived1]
-                                          ) [DesignatorDerived1]
-                                        ) [FactorDerived5]
-                                      ) [TermDerived1]
-                                    ) [ExprDerived2]
-                                  ) [DesignatorStatementDerived1]
-                                ) [StatementDerived4]
-                              ) [StatementListDerived1]
-                              StatementDerived1(
-                                ExprDerived2(
-                                  TermDerived2(
-                                    FactorDerived5(
-                                      DesignatorDerived1(
+                                                  ) [FactorNum]
+                                                ) [TermFactor]
+                                              ) [ExprTerm]
+                                            ) [DesElem]
+                                          ) [Des]
+                                        ) [FactorDes]
+                                      ) [TermMulop]
+                                    ) [ExprTerm]
+                                  ) [DesginatorAssignop]
+                                ) [DesStmt]
+                              ) [StmtList]
+                              PrintStmt(
+                                ExprTerm(
+                                  TermFactor(
+                                    FactorDes(
+                                      Des(
                                        bodovi
-                                        DesignatorElemDerived2(
-                                        ) [DesignatorElemDerived2]
-                                      ) [DesignatorDerived1]
-                                    ) [FactorDerived5]
-                                  ) [TermDerived2]
-                                ) [ExprDerived2]
-                              ) [StatementDerived1]
-                            ) [StatementListDerived1]
-                            StatementDerived1(
-                              ExprDerived2(
-                                TermDerived2(
-                                  FactorDerived5(
-                                    DesignatorDerived1(
+                                        NoDesElem(
+                                        ) [NoDesElem]
+                                      ) [Des]
+                                    ) [FactorDes]
+                                  ) [TermFactor]
+                                ) [ExprTerm]
+                              ) [PrintStmt]
+                            ) [StmtList]
+                            PrintStmt(
+                              ExprTerm(
+                                TermFactor(
+                                  FactorDes(
+                                    Des(
                                      niz
-                                      DesignatorElemDerived1(
-                                        ExprDerived2(
-                                          TermDerived2(
-                                            FactorDerived1(
+                                      DesElem(
+                                        ExprTerm(
+                                          TermFactor(
+                                            FactorNum(
                                              2
-                                            ) [FactorDerived1]
-                                          ) [TermDerived2]
-                                        ) [ExprDerived2]
-                                      ) [DesignatorElemDerived1]
-                                    ) [DesignatorDerived1]
-                                  ) [FactorDerived5]
-                                ) [TermDerived2]
-                              ) [ExprDerived2]
-                            ) [StatementDerived1]
-                          ) [StatementListDerived1]
-                          StatementDerived4(
-                            DesignatorStatementDerived1(
-                              DesignatorDerived1(
+                                            ) [FactorNum]
+                                          ) [TermFactor]
+                                        ) [ExprTerm]
+                                      ) [DesElem]
+                                    ) [Des]
+                                  ) [FactorDes]
+                                ) [TermFactor]
+                              ) [ExprTerm]
+                            ) [PrintStmt]
+                          ) [StmtList]
+                          DesStmt(
+                            DesginatorAssignop(
+                              Des(
                                nizch
-                                DesignatorElemDerived2(
-                                ) [DesignatorElemDerived2]
-                              ) [DesignatorDerived1]
-                              AssignopDerived1(
-                              ) [AssignopDerived1]
-                              ExprDerived2(
-                                TermDerived2(
-                                  FactorDerived3(
-                                    TypeDerived1(
+                                NoDesElem(
+                                ) [NoDesElem]
+                              ) [Des]
+                              Assignop(
+                              ) [Assignop]
+                              ExprTerm(
+                                TermFactor(
+                                  FactorNew(
+                                    Types(
                                      char
-                                    ) [TypeDerived1]
-                                    ExprDerived2(
-                                      TermDerived2(
-                                        FactorDerived1(
+                                    ) [Types]
+                                    ExprTerm(
+                                      TermFactor(
+                                        FactorNum(
                                          3
-                                        ) [FactorDerived1]
-                                      ) [TermDerived2]
-                                    ) [ExprDerived2]
-                                  ) [FactorDerived3]
-                                ) [TermDerived2]
-                              ) [ExprDerived2]
-                            ) [DesignatorStatementDerived1]
-                          ) [StatementDerived4]
-                        ) [StatementListDerived1]
-                        StatementDerived4(
-                          DesignatorStatementDerived1(
-                            DesignatorDerived1(
+                                        ) [FactorNum]
+                                      ) [TermFactor]
+                                    ) [ExprTerm]
+                                  ) [FactorNew]
+                                ) [TermFactor]
+                              ) [ExprTerm]
+                            ) [DesginatorAssignop]
+                          ) [DesStmt]
+                        ) [StmtList]
+                        DesStmt(
+                          DesginatorAssignop(
+                            Des(
                              nizch
-                              DesignatorElemDerived1(
-                                ExprDerived2(
-                                  TermDerived2(
-                                    FactorDerived1(
+                              DesElem(
+                                ExprTerm(
+                                  TermFactor(
+                                    FactorNum(
                                      0
-                                    ) [FactorDerived1]
-                                  ) [TermDerived2]
-                                ) [ExprDerived2]
-                              ) [DesignatorElemDerived1]
-                            ) [DesignatorDerived1]
-                            AssignopDerived1(
-                            ) [AssignopDerived1]
-                            ExprDerived2(
-                              TermDerived2(
-                                FactorDerived2(
+                                    ) [FactorNum]
+                                  ) [TermFactor]
+                                ) [ExprTerm]
+                              ) [DesElem]
+                            ) [Des]
+                            Assignop(
+                            ) [Assignop]
+                            ExprTerm(
+                              TermFactor(
+                                FactorChar(
                                  a
-                                ) [FactorDerived2]
-                              ) [TermDerived2]
-                            ) [ExprDerived2]
-                          ) [DesignatorStatementDerived1]
-                        ) [StatementDerived4]
-                      ) [StatementListDerived1]
-                      StatementDerived4(
-                        DesignatorStatementDerived1(
-                          DesignatorDerived1(
+                                ) [FactorChar]
+                              ) [TermFactor]
+                            ) [ExprTerm]
+                          ) [DesginatorAssignop]
+                        ) [DesStmt]
+                      ) [StmtList]
+                      DesStmt(
+                        DesginatorAssignop(
+                          Des(
                            nizch
-                            DesignatorElemDerived1(
-                              ExprDerived2(
-                                TermDerived2(
-                                  FactorDerived5(
-                                    DesignatorDerived1(
+                            DesElem(
+                              ExprTerm(
+                                TermFactor(
+                                  FactorDes(
+                                    Des(
                                      jedan
-                                      DesignatorElemDerived2(
-                                      ) [DesignatorElemDerived2]
-                                    ) [DesignatorDerived1]
-                                  ) [FactorDerived5]
-                                ) [TermDerived2]
-                              ) [ExprDerived2]
-                            ) [DesignatorElemDerived1]
-                          ) [DesignatorDerived1]
-                          AssignopDerived1(
-                          ) [AssignopDerived1]
-                          ExprDerived2(
-                            TermDerived2(
-                              FactorDerived2(
+                                      NoDesElem(
+                                      ) [NoDesElem]
+                                    ) [Des]
+                                  ) [FactorDes]
+                                ) [TermFactor]
+                              ) [ExprTerm]
+                            ) [DesElem]
+                          ) [Des]
+                          Assignop(
+                          ) [Assignop]
+                          ExprTerm(
+                            TermFactor(
+                              FactorChar(
                                b
-                              ) [FactorDerived2]
-                            ) [TermDerived2]
-                          ) [ExprDerived2]
-                        ) [DesignatorStatementDerived1]
-                      ) [StatementDerived4]
-                    ) [StatementListDerived1]
-                    StatementDerived4(
-                      DesignatorStatementDerived1(
-                        DesignatorDerived1(
+                              ) [FactorChar]
+                            ) [TermFactor]
+                          ) [ExprTerm]
+                        ) [DesginatorAssignop]
+                      ) [DesStmt]
+                    ) [StmtList]
+                    DesStmt(
+                      DesginatorAssignop(
+                        Des(
                          nizch
-                          DesignatorElemDerived1(
-                            ExprDerived1(
-                              ExprDerived2(
-                                TermDerived2(
-                                  FactorDerived5(
-                                    DesignatorDerived1(
+                          DesElem(
+                            ExprAddop(
+                              ExprTerm(
+                                TermFactor(
+                                  FactorDes(
+                                    Des(
                                      pet
-                                      DesignatorElemDerived2(
-                                      ) [DesignatorElemDerived2]
-                                    ) [DesignatorDerived1]
-                                  ) [FactorDerived5]
-                                ) [TermDerived2]
-                              ) [ExprDerived2]
-                              AddopDerived2(
-                              ) [AddopDerived2]
-                              TermDerived2(
-                                FactorDerived1(
+                                      NoDesElem(
+                                      ) [NoDesElem]
+                                    ) [Des]
+                                  ) [FactorDes]
+                                ) [TermFactor]
+                              ) [ExprTerm]
+                              AddopMinus(
+                              ) [AddopMinus]
+                              TermFactor(
+                                FactorNum(
                                  3
-                                ) [FactorDerived1]
-                              ) [TermDerived2]
-                            ) [ExprDerived1]
-                          ) [DesignatorElemDerived1]
-                        ) [DesignatorDerived1]
-                        AssignopDerived1(
-                        ) [AssignopDerived1]
-                        ExprDerived2(
-                          TermDerived2(
-                            FactorDerived2(
+                                ) [FactorNum]
+                              ) [TermFactor]
+                            ) [ExprAddop]
+                          ) [DesElem]
+                        ) [Des]
+                        Assignop(
+                        ) [Assignop]
+                        ExprTerm(
+                          TermFactor(
+                            FactorChar(
                              c
-                            ) [FactorDerived2]
-                          ) [TermDerived2]
-                        ) [ExprDerived2]
-                      ) [DesignatorStatementDerived1]
-                    ) [StatementDerived4]
-                  ) [StatementListDerived1]
-                  StatementDerived1(
-                    ExprDerived2(
-                      TermDerived2(
-                        FactorDerived5(
-                          DesignatorDerived1(
+                            ) [FactorChar]
+                          ) [TermFactor]
+                        ) [ExprTerm]
+                      ) [DesginatorAssignop]
+                    ) [DesStmt]
+                  ) [StmtList]
+                  PrintStmt(
+                    ExprTerm(
+                      TermFactor(
+                        FactorDes(
+                          Des(
                            nizch
-                            DesignatorElemDerived1(
-                              ExprDerived2(
-                                TermDerived2(
-                                  FactorDerived1(
+                            DesElem(
+                              ExprTerm(
+                                TermFactor(
+                                  FactorNum(
                                    1
-                                  ) [FactorDerived1]
-                                ) [TermDerived2]
-                              ) [ExprDerived2]
-                            ) [DesignatorElemDerived1]
-                          ) [DesignatorDerived1]
-                        ) [FactorDerived5]
-                      ) [TermDerived2]
-                    ) [ExprDerived2]
-                  ) [StatementDerived1]
-                ) [StatementListDerived1]
-                StatementDerived1(
-                  ExprDerived2(
-                    TermDerived2(
-                      FactorDerived5(
-                        DesignatorDerived1(
+                                  ) [FactorNum]
+                                ) [TermFactor]
+                              ) [ExprTerm]
+                            ) [DesElem]
+                          ) [Des]
+                        ) [FactorDes]
+                      ) [TermFactor]
+                    ) [ExprTerm]
+                  ) [PrintStmt]
+                ) [StmtList]
+                PrintStmt(
+                  ExprTerm(
+                    TermFactor(
+                      FactorDes(
+                        Des(
                          nizch
-                          DesignatorElemDerived1(
-                            ExprDerived2(
-                              TermDerived1(
-                                TermDerived2(
-                                  FactorDerived5(
-                                    DesignatorDerived1(
+                          DesElem(
+                            ExprTerm(
+                              TermMulop(
+                                TermFactor(
+                                  FactorDes(
+                                    Des(
                                      jedan
-                                      DesignatorElemDerived2(
-                                      ) [DesignatorElemDerived2]
-                                    ) [DesignatorDerived1]
-                                  ) [FactorDerived5]
-                                ) [TermDerived2]
-                                MulopDerived1(
-                                ) [MulopDerived1]
-                                FactorDerived1(
+                                      NoDesElem(
+                                      ) [NoDesElem]
+                                    ) [Des]
+                                  ) [FactorDes]
+                                ) [TermFactor]
+                                MulopMul(
+                                ) [MulopMul]
+                                FactorNum(
                                  2
-                                ) [FactorDerived1]
-                              ) [TermDerived1]
-                            ) [ExprDerived2]
-                          ) [DesignatorElemDerived1]
-                        ) [DesignatorDerived1]
-                      ) [FactorDerived5]
-                    ) [TermDerived2]
-                  ) [ExprDerived2]
-                ) [StatementDerived1]
-              ) [StatementListDerived1]
-              StatementDerived4(
-                DesignatorStatementDerived1(
-                  DesignatorDerived1(
+                                ) [FactorNum]
+                              ) [TermMulop]
+                            ) [ExprTerm]
+                          ) [DesElem]
+                        ) [Des]
+                      ) [FactorDes]
+                    ) [TermFactor]
+                  ) [ExprTerm]
+                ) [PrintStmt]
+              ) [StmtList]
+              DesStmt(
+                DesginatorAssignop(
+                  Des(
                    a
-                    DesignatorElemDerived2(
-                    ) [DesignatorElemDerived2]
-                  ) [DesignatorDerived1]
-                  AssignopDerived1(
-                  ) [AssignopDerived1]
-                  ExprDerived2(
-                    TermDerived2(
-                      FactorDerived1(
+                    NoDesElem(
+                    ) [NoDesElem]
+                  ) [Des]
+                  Assignop(
+                  ) [Assignop]
+                  ExprTerm(
+                    TermFactor(
+                      FactorNum(
                        1
-                      ) [FactorDerived1]
-                    ) [TermDerived2]
-                  ) [ExprDerived2]
-                ) [DesignatorStatementDerived1]
-              ) [StatementDerived4]
-            ) [StatementListDerived1]
-            StatementDerived3(
-              DesignatorDerived1(
+                      ) [FactorNum]
+                    ) [TermFactor]
+                  ) [ExprTerm]
+                ) [DesginatorAssignop]
+              ) [DesStmt]
+            ) [StmtList]
+            ReadStmt(
+              Des(
                bodovi
-                DesignatorElemDerived2(
-                ) [DesignatorElemDerived2]
-              ) [DesignatorDerived1]
-            ) [StatementDerived3]
-          ) [StatementListDerived1]
-          StatementDerived4(
-            DesignatorStatementDerived1(
-              DesignatorDerived1(
+                NoDesElem(
+                ) [NoDesElem]
+              ) [Des]
+            ) [ReadStmt]
+          ) [StmtList]
+          DesStmt(
+            DesginatorAssignop(
+              Des(
                bodovi
-                DesignatorElemDerived2(
-                ) [DesignatorElemDerived2]
-              ) [DesignatorDerived1]
-              AssignopDerived1(
-              ) [AssignopDerived1]
-              ExprDerived1(
-                ExprDerived1(
-                  ExprDerived3(
-                    TermDerived2(
-                      FactorDerived5(
-                        DesignatorDerived1(
+                NoDesElem(
+                ) [NoDesElem]
+              ) [Des]
+              Assignop(
+              ) [Assignop]
+              ExprAddop(
+                ExprAddop(
+                  ExprMinusTerm(
+                    TermFactor(
+                      FactorDes(
+                        Des(
                          bodovi
-                          DesignatorElemDerived2(
-                          ) [DesignatorElemDerived2]
-                        ) [DesignatorDerived1]
-                      ) [FactorDerived5]
-                    ) [TermDerived2]
-                  ) [ExprDerived3]
-                  AddopDerived1(
-                  ) [AddopDerived1]
-                  TermDerived1(
-                    TermDerived2(
-                      FactorDerived4(
-                        ExprDerived1(
-                          ExprDerived2(
-                            TermDerived1(
-                              TermDerived1(
-                                TermDerived2(
-                                  FactorDerived5(
-                                    DesignatorDerived1(
+                          NoDesElem(
+                          ) [NoDesElem]
+                        ) [Des]
+                      ) [FactorDes]
+                    ) [TermFactor]
+                  ) [ExprMinusTerm]
+                  AddopPlus(
+                  ) [AddopPlus]
+                  TermMulop(
+                    TermFactor(
+                      FactorExpr(
+                        ExprAddop(
+                          ExprTerm(
+                            TermMulop(
+                              TermMulop(
+                                TermFactor(
+                                  FactorDes(
+                                    Des(
                                      pet
-                                      DesignatorElemDerived2(
-                                      ) [DesignatorElemDerived2]
-                                    ) [DesignatorDerived1]
-                                  ) [FactorDerived5]
-                                ) [TermDerived2]
-                                MulopDerived1(
-                                ) [MulopDerived1]
-                                FactorDerived5(
-                                  DesignatorDerived1(
+                                      NoDesElem(
+                                      ) [NoDesElem]
+                                    ) [Des]
+                                  ) [FactorDes]
+                                ) [TermFactor]
+                                MulopMul(
+                                ) [MulopMul]
+                                FactorDes(
+                                  Des(
                                    a
-                                    DesignatorElemDerived2(
-                                    ) [DesignatorElemDerived2]
-                                  ) [DesignatorDerived1]
-                                ) [FactorDerived5]
-                              ) [TermDerived1]
-                              MulopDerived2(
-                              ) [MulopDerived2]
-                              FactorDerived1(
+                                    NoDesElem(
+                                    ) [NoDesElem]
+                                  ) [Des]
+                                ) [FactorDes]
+                              ) [TermMulop]
+                              MulopDiv(
+                              ) [MulopDiv]
+                              FactorNum(
                                2
-                              ) [FactorDerived1]
-                            ) [TermDerived1]
-                          ) [ExprDerived2]
-                          AddopDerived2(
-                          ) [AddopDerived2]
-                          TermDerived2(
-                            FactorDerived5(
-                              DesignatorDerived1(
+                              ) [FactorNum]
+                            ) [TermMulop]
+                          ) [ExprTerm]
+                          AddopMinus(
+                          ) [AddopMinus]
+                          TermFactor(
+                            FactorDes(
+                              Des(
                                jedan
-                                DesignatorElemDerived2(
-                                ) [DesignatorElemDerived2]
-                              ) [DesignatorDerived1]
-                            ) [FactorDerived5]
-                          ) [TermDerived2]
-                        ) [ExprDerived1]
-                      ) [FactorDerived4]
-                    ) [TermDerived2]
-                    MulopDerived1(
-                    ) [MulopDerived1]
-                    FactorDerived5(
-                      DesignatorDerived1(
+                                NoDesElem(
+                                ) [NoDesElem]
+                              ) [Des]
+                            ) [FactorDes]
+                          ) [TermFactor]
+                        ) [ExprAddop]
+                      ) [FactorExpr]
+                    ) [TermFactor]
+                    MulopMul(
+                    ) [MulopMul]
+                    FactorDes(
+                      Des(
                        bodovi
-                        DesignatorElemDerived2(
-                        ) [DesignatorElemDerived2]
-                      ) [DesignatorDerived1]
-                    ) [FactorDerived5]
-                  ) [TermDerived1]
-                ) [ExprDerived1]
-                AddopDerived2(
-                ) [AddopDerived2]
-                TermDerived2(
-                  FactorDerived4(
-                    ExprDerived1(
-                      ExprDerived1(
-                        ExprDerived2(
-                          TermDerived1(
-                            TermDerived2(
-                              FactorDerived1(
+                        NoDesElem(
+                        ) [NoDesElem]
+                      ) [Des]
+                    ) [FactorDes]
+                  ) [TermMulop]
+                ) [ExprAddop]
+                AddopMinus(
+                ) [AddopMinus]
+                TermFactor(
+                  FactorExpr(
+                    ExprAddop(
+                      ExprAddop(
+                        ExprTerm(
+                          TermMulop(
+                            TermFactor(
+                              FactorNum(
                                3
-                              ) [FactorDerived1]
-                            ) [TermDerived2]
-                            MulopDerived3(
-                            ) [MulopDerived3]
-                            FactorDerived1(
+                              ) [FactorNum]
+                            ) [TermFactor]
+                            MulopMod(
+                            ) [MulopMod]
+                            FactorNum(
                              2
-                            ) [FactorDerived1]
-                          ) [TermDerived1]
-                        ) [ExprDerived2]
-                        AddopDerived1(
-                        ) [AddopDerived1]
-                        TermDerived1(
-                          TermDerived2(
-                            FactorDerived1(
+                            ) [FactorNum]
+                          ) [TermMulop]
+                        ) [ExprTerm]
+                        AddopPlus(
+                        ) [AddopPlus]
+                        TermMulop(
+                          TermFactor(
+                            FactorNum(
                              3
-                            ) [FactorDerived1]
-                          ) [TermDerived2]
-                          MulopDerived1(
-                          ) [MulopDerived1]
-                          FactorDerived1(
+                            ) [FactorNum]
+                          ) [TermFactor]
+                          MulopMul(
+                          ) [MulopMul]
+                          FactorNum(
                            2
-                          ) [FactorDerived1]
-                        ) [TermDerived1]
-                      ) [ExprDerived1]
-                      AddopDerived2(
-                      ) [AddopDerived2]
-                      TermDerived2(
-                        FactorDerived1(
+                          ) [FactorNum]
+                        ) [TermMulop]
+                      ) [ExprAddop]
+                      AddopMinus(
+                      ) [AddopMinus]
+                      TermFactor(
+                        FactorNum(
                          3
-                        ) [FactorDerived1]
-                      ) [TermDerived2]
-                    ) [ExprDerived1]
-                  ) [FactorDerived4]
-                ) [TermDerived2]
-              ) [ExprDerived1]
-            ) [DesignatorStatementDerived1]
-          ) [StatementDerived4]
-        ) [StatementListDerived1]
-        StatementDerived1(
-          ExprDerived2(
-            TermDerived2(
-              FactorDerived5(
-                DesignatorDerived1(
+                        ) [FactorNum]
+                      ) [TermFactor]
+                    ) [ExprAddop]
+                  ) [FactorExpr]
+                ) [TermFactor]
+              ) [ExprAddop]
+            ) [DesginatorAssignop]
+          ) [DesStmt]
+        ) [StmtList]
+        PrintStmt(
+          ExprTerm(
+            TermFactor(
+              FactorDes(
+                Des(
                  bodovi
-                  DesignatorElemDerived2(
-                  ) [DesignatorElemDerived2]
-                ) [DesignatorDerived1]
-              ) [FactorDerived5]
-            ) [TermDerived2]
-          ) [ExprDerived2]
-        ) [StatementDerived1]
-      ) [StatementListDerived1]
-    ) [MethodDeclDerived1]
-  ) [MethodDeclListDerived1]
-) [ProgramDerived1]
-INFO  17:20:54,087 - ===================================
-INFO  17:20:54,093 - Designator calls = 0
-INFO  17:20:54,093 - Print varDecl calls = 0
+                  NoDesElem(
+                  ) [NoDesElem]
+                ) [Des]
+              ) [FactorDes]
+            ) [TermFactor]
+          ) [ExprTerm]
+        ) [PrintStmt]
+      ) [StmtList]
+    ) [MethodDecl]
+  ) [MethDeclList]
+) [Program]
+INFO  19:30:32,800 - ===================================
