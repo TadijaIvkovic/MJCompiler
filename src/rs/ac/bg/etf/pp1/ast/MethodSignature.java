@@ -1,11 +1,11 @@
 // generated with ast extension for cup
 // version 0.8
-// 15/11/2024 15:35:26
+// 15/11/2024 17:37:2
 
 
 package rs.ac.bg.etf.pp1.ast;
 
-public abstract class MethodTypeName implements SyntaxNode {
+public abstract class MethodSignature implements SyntaxNode {
 
     private SyntaxNode parent;
 

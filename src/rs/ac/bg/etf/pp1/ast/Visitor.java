@@ -1,6 +1,6 @@
 // generated with ast extension for cup
 // version 0.8
-// 15/11/2024 15:35:26
+// 15/11/2024 17:37:2
 
 
 package rs.ac.bg.etf.pp1.ast;
@@ -15,10 +15,12 @@ public interface Visitor {
     public void visit(Relop Relop);
     public void visit(Constants Constants);
     public void visit(DesignatorElem DesignatorElem);
+    public void visit(MethodSignature MethodSignature);
     public void visit(StatementList StatementList);
     public void visit(Addop Addop);
     public void visit(Factor Factor);
     public void visit(CondTerm CondTerm);
+    public void visit(Designator Designator);
     public void visit(Term Term);
     public void visit(Condition Condition);
     public void visit(Brackets Brackets);
@@ -27,7 +29,6 @@ public interface Visitor {
     public void visit(VarDeclarationList VarDeclarationList);
     public void visit(Expr Expr);
     public void visit(ActPars ActPars);
-    public void visit(MethodTypeName MethodTypeName);
     public void visit(DesignatorStatement DesignatorStatement);
     public void visit(Statement Statement);
     public void visit(ActParamList ActParamList);
@@ -50,10 +51,13 @@ public interface Visitor {
     public void visit(Label Label);
     public void visit(NoDesElem NoDesElem);
     public void visit(DesElem DesElem);
-    public void visit(Designator Designator);
+    public void visit(DesignatorIdent DesignatorIdent);
+    public void visit(DesignatorEl DesignatorEl);
+    public void visit(FactorDesActPars FactorDesActPars);
     public void visit(FactorDes FactorDes);
     public void visit(FactorExpr FactorExpr);
-    public void visit(FactorNew FactorNew);
+    public void visit(FactorNewActPars FactorNewActPars);
+    public void visit(FactorNewExpr FactorNewExpr);
     public void visit(FactorChar FactorChar);
     public void visit(FactorNum FactorNum);
     public void visit(TermFactor TermFactor);
@@ -77,7 +81,15 @@ public interface Visitor {
     public void visit(DesignatorDec DesignatorDec);
     public void visit(DesignatorInc DesignatorInc);
     public void visit(DesginatorAssignop DesginatorAssignop);
+    public void visit(WhileStart WhileStart);
+    public void visit(DoWhileEnd DoWhileEnd);
+    public void visit(DoWhileStart DoWhileStart);
     public void visit(IfElseStmt IfElseStmt);
+    public void visit(DoWhileStatement DoWhileStatement);
+    public void visit(ReturnEmptyStmt ReturnEmptyStmt);
+    public void visit(ReturnStmt ReturnStmt);
+    public void visit(ContinueStmt ContinueStmt);
+    public void visit(BreakStmt BreakStmt);
     public void visit(DesStmt DesStmt);
     public void visit(ReadStmt ReadStmt);
     public void visit(PrintStmtTwo PrintStmtTwo);

@@ -59,7 +59,7 @@ scan with {:
 terminal PROG, BREAK, CLASS, ELSE, CONST, IF, NEW, PRINT, READ, RETURN, VOID, EXTENDS, CONTINUE;
 terminal FOR, STATIC, NAMESPACE;
 terminal PLUS, MINUS, DIV, MOD, MUL, EQUAL, DBLDOT, SEMI, COMMA, DOT, LPAREN, RPAREN, LBRACE, RBRACE;
-terminal LBRACKET, RBRACKET, LARROW, RARROW, EXCL, AMPER, LINE, UNION, MAP;
+terminal LBRACKET, RBRACKET, LARROW, RARROW, EXCL, AMPER, LINE, UNION, MAP, DO, WHILE, SET;
 
 terminal Integer NUMBER ;
 terminal Character CHAR_CONST;
@@ -68,10 +68,10 @@ terminal String IDENT ;
 
 
 nonterminal Program, ProgName, DeclarationList, ConstDeclList, ConstantList, Constants;
-nonterminal VarDeclList, VarDecl, VarDeclarationList, VarDeclaration, MethodDeclList, MethodDecl, MethodTypeName, Type;
+nonterminal VarDeclList, VarDecl, VarDeclarationList, VarDeclaration, MethodDeclList, MethodDecl, MethodSignature, Type;
 nonterminal Brackets, FormPars, FormalParamList, FormalParamDecl, StatementList, Statement, Expr;
 nonterminal Term, Factor, DesignatorStatement, ActPars, ActParamList, Designator, DesignatorElem, Label, Assignop, Relop, Addop, Mulop;
-nonterminal Condition, CondTerm, CondFact, Setop, Matched, Unmatched;
+nonterminal Condition, CondTerm, CondFact, Setop, Matched, Unmatched, WhileStart, DoWhileEnd, DoWhileStart;
 
 
 Program ::= (Program) PROG ProgName:p DeclarationList LBRACE MethodDeclList RBRACE ;
@@ -117,12 +117,12 @@ MethodDeclList ::= (MethDeclList) MethodDeclList MethodDecl
 					(NoMethDeclList) /* epsilon */
 					;
 
-MethodDecl ::= (MethodDecl)  MethodTypeName LPAREN FormPars RPAREN VarDeclList LBRACE StatementList RBRACE 
+MethodDecl ::= (MethodDecl)  MethodSignature VarDeclList LBRACE StatementList RBRACE 
 			   ;
 
-MethodTypeName ::= (MethTypeName) Type:retType IDENT:methName
+MethodSignature ::= (MethTypeName) Type:retType IDENT:methName LPAREN FormPars RPAREN
 				|
-				(NoMethTypeName) VOID IDENT:methName
+				(NoMethTypeName) VOID IDENT:methName LPAREN FormPars RPAREN
 				;
 
 FormPars ::= (FormalPars) FormalParamList 
@@ -169,8 +169,25 @@ Matched ::= (PrintStmt) PRINT LPAREN Expr RPAREN SEMI
 			  |
 			  (DesStmt) DesignatorStatement SEMI
 			  |
+			  (BreakStmt) BREAK SEMI
+			  |
+			  (ContinueStmt) CONTINUE SEMI
+			  |
+			  (ReturnStmt) RETURN Expr SEMI
+			  |
+			  (ReturnEmptyStmt) RETURN SEMI
+			  |
+			  (DoWhileStatement) DO DoWhileStart Statement WHILE WhileStart LPAREN Condition RPAREN DoWhileEnd SEMI
+			  |
 			  (IfElseStmt) IF LPAREN Condition RPAREN Matched ELSE Matched
 			  ;
+			  
+DoWhileStart ::= (DoWhileStart) /* epsilon */;
+
+DoWhileEnd ::= (DoWhileEnd) /* epsilon */;
+
+WhileStart ::= (WhileStart) /* epsilon */;
+
 
 DesignatorStatement ::= (DesginatorAssignop) Designator Assignop Expr
 					|
@@ -227,15 +244,22 @@ Factor ::= (FactorNum) NUMBER
 			|
 			(FactorChar) CHAR_CONST
 			|
-			(FactorNew) NEW Type LBRACKET Expr RBRACKET
+			(FactorNewExpr) NEW Type LBRACKET Expr RBRACKET
+			|
+			(FactorNewActPars) NEW Type LPAREN ActPars RPAREN
 			|
 			(FactorExpr) LPAREN Expr RPAREN
 			|
 		    (FactorDes) Designator:d
+		    |
+		    (FactorDesActPars) Designator LPAREN ActPars RPAREN
 		    ;
 
 
-Designator ::= (Designator) IDENT:desName DesignatorElem;
+Designator ::= (DesignatorEl) IDENT:desName DesignatorElem
+			|
+			(DesignatorIdent) IDENT DOT IDENT
+			;
 
 DesignatorElem ::= (DesElem) LBRACKET Expr RBRACKET 
 				|
