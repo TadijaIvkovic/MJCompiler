@@ -1,15 +1,38 @@
 // generated with ast extension for cup
 // version 0.8
-// 14/11/2024 11:22:34
+// 15/11/2024 15:35:26
 
 
 package rs.ac.bg.etf.pp1.ast;
 
-public abstract class Designator implements SyntaxNode {
+public class Designator implements SyntaxNode {
 
     private SyntaxNode parent;
-
     private int line;
+    private String desName;
+    private DesignatorElem DesignatorElem;
+
+    public Designator (String desName, DesignatorElem DesignatorElem) {
+        this.desName=desName;
+        this.DesignatorElem=DesignatorElem;
+        if(DesignatorElem!=null) DesignatorElem.setParent(this);
+    }
+
+    public String getDesName() {
+        return desName;
+    }
+
+    public void setDesName(String desName) {
+        this.desName=desName;
+    }
+
+    public DesignatorElem getDesignatorElem() {
+        return DesignatorElem;
+    }
+
+    public void setDesignatorElem(DesignatorElem DesignatorElem) {
+        this.DesignatorElem=DesignatorElem;
+    }
 
     public SyntaxNode getParent() {
         return parent;
@@ -27,11 +50,40 @@ public abstract class Designator implements SyntaxNode {
         this.line=line;
     }
 
-    public abstract void accept(Visitor visitor);
-    public abstract void childrenAccept(Visitor visitor);
-    public abstract void traverseTopDown(Visitor visitor);
-    public abstract void traverseBottomUp(Visitor visitor);
+    public void accept(Visitor visitor) {
+        visitor.visit(this);
+    }
 
-    public String toString() { return toString(""); }
-    public abstract String toString(String tab);
+    public void childrenAccept(Visitor visitor) {
+        if(DesignatorElem!=null) DesignatorElem.accept(visitor);
+    }
+
+    public void traverseTopDown(Visitor visitor) {
+        accept(visitor);
+        if(DesignatorElem!=null) DesignatorElem.traverseTopDown(visitor);
+    }
+
+    public void traverseBottomUp(Visitor visitor) {
+        if(DesignatorElem!=null) DesignatorElem.traverseBottomUp(visitor);
+        accept(visitor);
+    }
+
+    public String toString(String tab) {
+        StringBuffer buffer=new StringBuffer();
+        buffer.append(tab);
+        buffer.append("Designator(\n");
+
+        buffer.append(" "+tab+desName);
+        buffer.append("\n");
+
+        if(DesignatorElem!=null)
+            buffer.append(DesignatorElem.toString("  "+tab));
+        else
+            buffer.append(tab+"  null");
+        buffer.append("\n");
+
+        buffer.append(tab);
+        buffer.append(") [Designator]");
+        return buffer.toString();
+    }
 }

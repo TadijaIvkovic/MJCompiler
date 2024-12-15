@@ -1,11 +1,11 @@
 // generated with ast extension for cup
 // version 0.8
-// 14/11/2024 11:22:33
+// 15/11/2024 15:35:26
 
 
 package rs.ac.bg.etf.pp1.ast;
 
-public class ReadStmt extends Statement {
+public class ReadStmt extends Matched {
 
     private Designator Designator;
 

@@ -59,7 +59,7 @@ scan with {:
 terminal PROG, BREAK, CLASS, ELSE, CONST, IF, NEW, PRINT, READ, RETURN, VOID, EXTENDS, CONTINUE;
 terminal FOR, STATIC, NAMESPACE;
 terminal PLUS, MINUS, DIV, MOD, MUL, EQUAL, DBLDOT, SEMI, COMMA, DOT, LPAREN, RPAREN, LBRACE, RBRACE;
-terminal LBRACKET, RBRACKET, LARROW, RARROW, EXCL, AMPER, LINE;
+terminal LBRACKET, RBRACKET, LARROW, RARROW, EXCL, AMPER, LINE, UNION, MAP;
 
 terminal Integer NUMBER ;
 terminal Character CHAR_CONST;
@@ -69,8 +69,6 @@ terminal String IDENT ;
 
 nonterminal Program Program;
 nonterminal ProgName ProgName;
-nonterminal NamespaceList NamespaceList;
-nonterminal Namespace Namespace;
 nonterminal DeclarationList DeclarationList;
 nonterminal ConstDeclList ConstDeclList;
 nonterminal ConstantList ConstantList;
@@ -102,19 +100,18 @@ nonterminal Assignop Assignop;
 nonterminal Relop Relop;
 nonterminal Addop Addop;
 nonterminal Mulop Mulop;
+nonterminal Condition Condition;
+nonterminal CondTerm CondTerm;
+nonterminal CondFact CondFact;
+nonterminal Setop Setop;
+nonterminal Matched Matched;
+nonterminal Unmatched Unmatched;
 
 
-Program ::= (Program) PROG ProgName:p NamespaceList:N1 DeclarationList:D2 LBRACE MethodDeclList:M3 RBRACE {: RESULT=new Program(p, N1, D2, M3); RESULT.setLine(pleft); :} ;
+Program ::= (Program) PROG ProgName:p DeclarationList:D1 LBRACE MethodDeclList:M2 RBRACE {: RESULT=new Program(p, D1, M2); RESULT.setLine(pleft); :} ;
 
 
 ProgName ::= (ProgName) IDENT:pName {: RESULT=new ProgName(pName); RESULT.setLine(pNameleft); :} ;
-
-NamespaceList ::= (NameList)  NamespaceList:N1 Namespace:N2 {: RESULT=new NameList(N1, N2); RESULT.setLine(N1left); :}
-					|
-					(NoNameList) {: RESULT=new NoNameList(); :} /* epsilon */
-					;
-
-Namespace ::= (Namespace)  NAMESPACE IDENT:nName LBRACE DeclarationList:D1 LBRACE MethodDeclList:M2 RBRACE RBRACE {: RESULT=new Namespace(nName, D1, M2); RESULT.setLine(nNameleft); :};
 
 DeclarationList ::= (ConstDecLists) ConstDeclList:C1 DeclarationList:D2 {: RESULT=new ConstDecLists(C1, D2); RESULT.setLine(C1left); :}
 				    |
@@ -181,30 +178,43 @@ Brackets ::= (Bracket) LBRACKET RBRACKET {: RESULT=new Bracket(); :}
 			 (NoBracket) {: RESULT=new NoBracket(); :} /* epsilon */
 			 ;
 
-Type ::= (Types) IDENT:typeName {: RESULT=new Types(typeName); RESULT.setLine(typeNameleft); :} 
-		 |
-		 (NoTypes) IDENT:I1 DBLDOT DBLDOT IDENT:typeName {: RESULT=new NoTypes(I1, typeName); RESULT.setLine(I1left); :}
-		 ;
+Type ::= (Type) IDENT:typeName {: RESULT=new Type(typeName); RESULT.setLine(typeNameleft); :} ;
 		 
 StatementList ::= (StmtList)  StatementList:S1 Statement:S2 {: RESULT=new StmtList(S1, S2); RESULT.setLine(S1left); :} 
 					|
 				   (NoStmtList) {: RESULT=new NoStmtList(); :} /* epsilon */
 				  ;
+
+Statement ::= (MatchedStmt) Matched:M1 {: RESULT=new MatchedStmt(M1); RESULT.setLine(M1left); :}
+		   |
+		   (UnmatchedStmt) Unmatched:U1 {: RESULT=new UnmatchedStmt(U1); RESULT.setLine(U1left); :}
+		   ; 
+
+Unmatched ::= (UnmatchedIf) IF LPAREN Condition:C1 RPAREN Statement:S2 {: RESULT=new UnmatchedIf(C1, S2); RESULT.setLine(C1left); :}
+		 	|
+		 	(UnmatchedIfElse) IF LPAREN Condition:C1 RPAREN Matched:M2 ELSE Unmatched:U3 {: RESULT=new UnmatchedIfElse(C1, M2, U3); RESULT.setLine(C1left); :}
+		 	;
 				  
-Statement ::= (PrintStmt) PRINT LPAREN Expr:E1 RPAREN SEMI {: RESULT=new PrintStmt(E1); RESULT.setLine(E1left); :}
+Matched ::= (PrintStmt) PRINT LPAREN Expr:E1 RPAREN SEMI {: RESULT=new PrintStmt(E1); RESULT.setLine(E1left); :}
   			  |
 			  (PrintStmtTwo) PRINT LPAREN Expr:E1 COMMA NUMBER:N2 RPAREN SEMI {: RESULT=new PrintStmtTwo(E1, N2); RESULT.setLine(E1left); :}	 
 			  |
 			  (ReadStmt) READ LPAREN Designator:D1 RPAREN SEMI {: RESULT=new ReadStmt(D1); RESULT.setLine(D1left); :}
 			  |
 			  (DesStmt) DesignatorStatement:D1 SEMI {: RESULT=new DesStmt(D1); RESULT.setLine(D1left); :}
+			  |
+			  (IfElseStmt) IF LPAREN Condition:C1 RPAREN Matched:M2 ELSE Matched:M3 {: RESULT=new IfElseStmt(C1, M2, M3); RESULT.setLine(C1left); :}
 			  ;
 
 DesignatorStatement ::= (DesginatorAssignop) Designator:D1 Assignop:A2 Expr:E3 {: RESULT=new DesginatorAssignop(D1, A2, E3); RESULT.setLine(D1left); :}
 					|
-					(DesignatorInc)Designator:D1 PLUS PLUS {: RESULT=new DesignatorInc(D1); RESULT.setLine(D1left); :}
+					(DesignatorInc) Designator:D1 PLUS PLUS {: RESULT=new DesignatorInc(D1); RESULT.setLine(D1left); :}
 					|
-					(DesignatorDecr) Designator:D1 MINUS MINUS {: RESULT=new DesignatorDecr(D1); RESULT.setLine(D1left); :}
+					(DesignatorDec) Designator:D1 MINUS MINUS {: RESULT=new DesignatorDec(D1); RESULT.setLine(D1left); :}
+					| 
+					(DesignatorActPars) Designator:D1 LPAREN ActPars:A2 RPAREN {: RESULT=new DesignatorActPars(D1, A2); RESULT.setLine(D1left); :}
+					|
+					(DesignatorSetop) Designator:D1 Assignop:A2 Designator:D3 Setop:S4 Designator:D5 {: RESULT=new DesignatorSetop(D1, A2, D3, S4, D5); RESULT.setLine(D1left); :}
 					;
 
 ActPars ::=  (ActParams) ActParamList:A1 {: RESULT=new ActParams(A1); RESULT.setLine(A1left); :} 
@@ -214,14 +224,31 @@ ActPars ::=  (ActParams) ActParamList:A1 {: RESULT=new ActParams(A1); RESULT.set
 			   
 ActParamList ::= (ActParamsList) ActParamList:A1 COMMA Expr:E2 {: RESULT=new ActParamsList(A1, E2); RESULT.setLine(A1left); :}
 				|
-				 (ActParamExpr) Expr:E1 {: RESULT=new ActParamExpr(E1); RESULT.setLine(E1left); :}
+				 (ActParamsExpr) Expr:E1 {: RESULT=new ActParamsExpr(E1); RESULT.setLine(E1left); :}
 				;
+		
+Condition ::= Condition:C1 LINE LINE CondTerm:C2 {: RESULT=new ConditionDerived1(C1, C2); RESULT.setLine(C1left); :}
+				|
+				CondTerm:C1 {: RESULT=new ConditionDerived2(C1); RESULT.setLine(C1left); :}
+				;
+
+CondTerm ::= CondTerm:C1 AMPER AMPER CondFact:C2 {: RESULT=new CondTermDerived1(C1, C2); RESULT.setLine(C1left); :}
+			|
+			CondFact:C1 {: RESULT=new CondTermDerived2(C1); RESULT.setLine(C1left); :}
+			;
+			
+CondFact ::= Expr:E1 {: RESULT=new CondFactDerived1(E1); RESULT.setLine(E1left); :}
+			|
+			Expr:E1 Relop:R2 Expr:E3 {: RESULT=new CondFactDerived2(E1, R2, E3); RESULT.setLine(E1left); :}
+			;
 		
 Expr ::= (ExprAddop) Expr:te Addop:A1 Term:t {: RESULT=new ExprAddop(te, A1, t); RESULT.setLine(teleft); :}
 		 |
 		 (ExprTerm) Term:t {: RESULT=new ExprTerm(t); RESULT.setLine(tleft); :}
 		 |
 		 (ExprMinusTerm) MINUS Term:t {: RESULT=new ExprMinusTerm(t); RESULT.setLine(tleft); :}
+		 |
+		 (ExprMap) Designator:D1 MAP Designator:D2 {: RESULT=new ExprMap(D1, D2); RESULT.setLine(D1left); :}
 		 ;
 
 Term ::= (TermMulop) Term:te Mulop:M1 Factor:f {: RESULT=new TermMulop(te, M1, f); RESULT.setLine(teleft); :}
@@ -242,10 +269,7 @@ Factor ::= (FactorNum) NUMBER:N1 {: RESULT=new FactorNum(N1); RESULT.setLine(N1l
 		    ;
 
 
-Designator ::= (Des) IDENT:desName DesignatorElem:D1 {: RESULT=new Des(desName, D1); RESULT.setLine(desNameleft); :}
-			|
-			 (DesWithIdent) IDENT:I1 DBLDOT DBLDOT IDENT:desName DesignatorElem:D2 {: RESULT=new DesWithIdent(I1, desName, D2); RESULT.setLine(I1left); :}
-			;
+Designator ::= (Designator) IDENT:desName DesignatorElem:D1 {: RESULT=new Designator(desName, D1); RESULT.setLine(desNameleft); :};
 
 DesignatorElem ::= (DesElem) LBRACKET Expr:E1 RBRACKET {: RESULT=new DesElem(E1); RESULT.setLine(E1left); :} 
 				|
@@ -283,7 +307,9 @@ Mulop ::= (MulopMul) MUL {: RESULT=new MulopMul(); :}
 		(MulopDiv) DIV {: RESULT=new MulopDiv(); :}
 		|
 		(MulopMod) MOD {: RESULT=new MulopMod(); :}
-		;		
+		;
+		
+Setop ::= (Setop) UNION {: RESULT=new Setop(); :} ;		
 		
 		
 

@@ -1,0 +1,1122 @@
+INFO  11:26:58,600 - Compiling source file: C:\Users\The Workstation\eclipse-workspace\MJCompiler\test\program.mj
+INFO  11:26:58,625 - #2 program
+INFO  11:26:58,625 - #42 test301
+INFO  11:26:58,625 - #6 const
+INFO  11:26:58,627 - #42 int
+INFO  11:26:58,627 - #42 nula
+INFO  11:26:58,627 - #23 =
+INFO  11:26:58,627 - #39 0
+INFO  11:26:58,627 - #25 ;
+INFO  11:26:58,628 - #6 const
+INFO  11:26:58,628 - #42 int
+INFO  11:26:58,629 - #42 jedan
+INFO  11:26:58,629 - #23 =
+INFO  11:26:58,629 - #39 1
+INFO  11:26:58,629 - #25 ;
+INFO  11:26:58,629 - #6 const
+INFO  11:26:58,629 - #42 int
+INFO  11:26:58,629 - #42 pet
+INFO  11:26:58,629 - #23 =
+INFO  11:26:58,629 - #39 5
+INFO  11:26:58,629 - #25 ;
+INFO  11:26:58,629 - #42 int
+INFO  11:26:58,639 - #42 niz
+INFO  11:26:58,639 - #32 [
+INFO  11:26:58,639 - #33 ]
+INFO  11:26:58,639 - #25 ;
+INFO  11:26:58,641 - #42 char
+INFO  11:26:58,642 - #42 nizch
+INFO  11:26:58,642 - #32 [
+INFO  11:26:58,642 - #33 ]
+INFO  11:26:58,643 - #25 ;
+INFO  11:26:58,643 - #42 int
+INFO  11:26:58,643 - #42 mat
+INFO  11:26:58,643 - #32 [
+INFO  11:26:58,643 - #33 ]
+INFO  11:26:58,643 - #25 ;
+INFO  11:26:58,643 - #42 int
+INFO  11:26:58,643 - #42 a
+INFO  11:26:58,643 - #25 ;
+INFO  11:26:58,644 - #30 {
+INFO  11:26:58,645 - #12 void
+INFO  11:26:58,646 - #42 main
+INFO  11:26:58,646 - #28 (
+INFO  11:26:58,646 - #29 )
+INFO  11:26:58,647 - #42 int
+INFO  11:26:58,648 - #42 bodovi
+INFO  11:26:58,648 - #25 ;
+INFO  11:26:58,648 - #42 bool
+INFO  11:26:58,648 - #42 bt
+INFO  11:26:58,648 - #25 ;
+INFO  11:26:58,648 - #30 {
+INFO  11:26:58,648 - #42 bodovi
+INFO  11:26:58,649 - #23 =
+INFO  11:26:58,650 - #39 0
+INFO  11:26:58,651 - #25 ;
+INFO  11:26:58,651 - #42 bodovi
+INFO  11:26:58,651 - #18 +
+INFO  11:26:58,651 - #18 +
+INFO  11:26:58,651 - #25 ;
+INFO  11:26:58,652 - #42 bodovi
+INFO  11:26:58,652 - #23 =
+INFO  11:26:58,652 - #42 bodovi
+INFO  11:26:58,652 - #18 +
+INFO  11:26:58,652 - #42 jedan
+INFO  11:26:58,653 - #25 ;
+INFO  11:26:58,653 - #42 bodovi
+INFO  11:26:58,653 - #23 =
+INFO  11:26:58,654 - #42 bodovi
+INFO  11:26:58,654 - #22 *
+INFO  11:26:58,654 - #42 pet
+INFO  11:26:58,654 - #25 ;
+INFO  11:26:58,655 - #42 bodovi
+INFO  11:26:58,655 - #19 -
+INFO  11:26:58,655 - #19 -
+INFO  11:26:58,655 - #25 ;
+INFO  11:26:58,655 - #9 print
+INFO  11:26:58,655 - #28 (
+INFO  11:26:58,655 - #42 bodovi
+INFO  11:26:58,655 - #29 )
+INFO  11:26:58,655 - #25 ;
+INFO  11:26:58,655 - #42 niz
+INFO  11:26:58,655 - #23 =
+INFO  11:26:58,655 - #8 new
+INFO  11:26:58,655 - #42 int
+INFO  11:26:58,655 - #32 [
+INFO  11:26:58,655 - #39 3
+INFO  11:26:58,655 - #33 ]
+INFO  11:26:58,655 - #25 ;
+INFO  11:26:58,655 - #42 niz
+INFO  11:26:58,655 - #32 [
+INFO  11:26:58,655 - #42 nula
+INFO  11:26:58,655 - #33 ]
+INFO  11:26:58,655 - #23 =
+INFO  11:26:58,655 - #42 jedan
+INFO  11:26:58,656 - #25 ;
+INFO  11:26:58,656 - #42 niz
+INFO  11:26:58,656 - #32 [
+INFO  11:26:58,656 - #39 1
+INFO  11:26:58,656 - #33 ]
+INFO  11:26:58,656 - #23 =
+INFO  11:26:58,656 - #39 2
+INFO  11:26:58,656 - #25 ;
+INFO  11:26:58,656 - #42 niz
+INFO  11:26:58,656 - #32 [
+INFO  11:26:58,656 - #42 niz
+INFO  11:26:58,656 - #32 [
+INFO  11:26:58,656 - #42 jedan
+INFO  11:26:58,656 - #33 ]
+INFO  11:26:58,656 - #33 ]
+INFO  11:26:58,656 - #23 =
+INFO  11:26:58,656 - #42 niz
+INFO  11:26:58,656 - #32 [
+INFO  11:26:58,656 - #42 niz
+INFO  11:26:58,656 - #32 [
+INFO  11:26:58,656 - #39 0
+INFO  11:26:58,656 - #33 ]
+INFO  11:26:58,656 - #33 ]
+INFO  11:26:58,656 - #22 *
+INFO  11:26:58,656 - #39 3
+INFO  11:26:58,656 - #25 ;
+INFO  11:26:58,656 - #42 bodovi
+INFO  11:26:58,656 - #23 =
+INFO  11:26:58,656 - #42 niz
+INFO  11:26:58,657 - #32 [
+INFO  11:26:58,657 - #39 2
+INFO  11:26:58,657 - #33 ]
+INFO  11:26:58,657 - #20 /
+INFO  11:26:58,657 - #42 niz
+INFO  11:26:58,658 - #32 [
+INFO  11:26:58,658 - #39 0
+INFO  11:26:58,658 - #33 ]
+INFO  11:26:58,658 - #25 ;
+INFO  11:26:58,658 - #9 print
+INFO  11:26:58,658 - #28 (
+INFO  11:26:58,659 - #42 bodovi
+INFO  11:26:58,659 - #29 )
+INFO  11:26:58,659 - #25 ;
+INFO  11:26:58,659 - #9 print
+INFO  11:26:58,659 - #28 (
+INFO  11:26:58,659 - #42 niz
+INFO  11:26:58,659 - #32 [
+INFO  11:26:58,659 - #39 2
+INFO  11:26:58,659 - #33 ]
+INFO  11:26:58,659 - #29 )
+INFO  11:26:58,659 - #25 ;
+INFO  11:26:58,659 - #42 nizch
+INFO  11:26:58,659 - #23 =
+INFO  11:26:58,660 - #8 new
+INFO  11:26:58,660 - #42 char
+INFO  11:26:58,660 - #32 [
+INFO  11:26:58,660 - #39 3
+INFO  11:26:58,660 - #33 ]
+INFO  11:26:58,660 - #25 ;
+INFO  11:26:58,660 - #42 nizch
+INFO  11:26:58,660 - #32 [
+INFO  11:26:58,660 - #39 0
+INFO  11:26:58,660 - #33 ]
+INFO  11:26:58,660 - #23 =
+INFO  11:26:58,660 - #40 a
+INFO  11:26:58,660 - #25 ;
+INFO  11:26:58,661 - #42 nizch
+INFO  11:26:58,661 - #32 [
+INFO  11:26:58,661 - #42 jedan
+INFO  11:26:58,661 - #33 ]
+INFO  11:26:58,661 - #23 =
+INFO  11:26:58,661 - #40 b
+INFO  11:26:58,661 - #25 ;
+INFO  11:26:58,661 - #42 nizch
+INFO  11:26:58,661 - #32 [
+INFO  11:26:58,661 - #42 pet
+INFO  11:26:58,661 - #19 -
+INFO  11:26:58,661 - #39 3
+INFO  11:26:58,662 - #33 ]
+INFO  11:26:58,662 - #23 =
+INFO  11:26:58,662 - #40 c
+INFO  11:26:58,662 - #25 ;
+INFO  11:26:58,662 - #9 print
+INFO  11:26:58,662 - #28 (
+INFO  11:26:58,662 - #42 nizch
+INFO  11:26:58,662 - #32 [
+INFO  11:26:58,662 - #39 1
+INFO  11:26:58,662 - #33 ]
+INFO  11:26:58,662 - #29 )
+INFO  11:26:58,662 - #25 ;
+INFO  11:26:58,663 - #9 print
+INFO  11:26:58,663 - #28 (
+INFO  11:26:58,663 - #42 nizch
+INFO  11:26:58,663 - #32 [
+INFO  11:26:58,663 - #42 jedan
+INFO  11:26:58,663 - #22 *
+INFO  11:26:58,663 - #39 2
+INFO  11:26:58,663 - #33 ]
+INFO  11:26:58,663 - #29 )
+INFO  11:26:58,663 - #25 ;
+INFO  11:26:58,663 - #42 a
+INFO  11:26:58,663 - #23 =
+INFO  11:26:58,663 - #39 1
+INFO  11:26:58,663 - #25 ;
+INFO  11:26:58,663 - #10 read
+INFO  11:26:58,663 - #28 (
+INFO  11:26:58,663 - #42 bodovi
+INFO  11:26:58,663 - #29 )
+INFO  11:26:58,663 - #25 ;
+INFO  11:26:58,663 - #42 bodovi
+INFO  11:26:58,663 - #23 =
+INFO  11:26:58,663 - #19 -
+INFO  11:26:58,663 - #42 bodovi
+INFO  11:26:58,663 - #18 +
+INFO  11:26:58,663 - #28 (
+INFO  11:26:58,663 - #42 pet
+INFO  11:26:58,663 - #22 *
+INFO  11:26:58,663 - #42 a
+INFO  11:26:58,663 - #20 /
+INFO  11:26:58,663 - #39 2
+INFO  11:26:58,663 - #19 -
+INFO  11:26:58,663 - #42 jedan
+INFO  11:26:58,663 - #29 )
+INFO  11:26:58,663 - #22 *
+INFO  11:26:58,663 - #42 bodovi
+INFO  11:26:58,663 - #19 -
+INFO  11:26:58,663 - #28 (
+INFO  11:26:58,663 - #39 3
+INFO  11:26:58,663 - #21 %
+INFO  11:26:58,663 - #39 2
+INFO  11:26:58,664 - #18 +
+INFO  11:26:58,664 - #39 3
+INFO  11:26:58,664 - #22 *
+INFO  11:26:58,664 - #39 2
+INFO  11:26:58,664 - #19 -
+INFO  11:26:58,664 - #39 3
+INFO  11:26:58,664 - #29 )
+INFO  11:26:58,664 - #25 ;
+INFO  11:26:58,664 - #9 print
+INFO  11:26:58,665 - #28 (
+INFO  11:26:58,665 - #42 bodovi
+INFO  11:26:58,665 - #29 )
+INFO  11:26:58,665 - #25 ;
+INFO  11:26:58,665 - #31 }
+INFO  11:26:58,665 - #31 }
+INFO  11:26:58,671 - Program(
+  ProgName(
+   test301
+  ) [ProgName]
+  NoNameList(
+  ) [NoNameList]
+  ConstDecLists(
+    ConstDeclList(
+      Types(
+       int
+      ) [Types]
+     nula
+      NumConstant(
+       0
+      ) [NumConstant]
+      NoConstList(
+      ) [NoConstList]
+    ) [ConstDeclList]
+    ConstDecLists(
+      ConstDeclList(
+        Types(
+         int
+        ) [Types]
+       jedan
+        NumConstant(
+         1
+        ) [NumConstant]
+        NoConstList(
+        ) [NoConstList]
+      ) [ConstDeclList]
+      ConstDecLists(
+        ConstDeclList(
+          Types(
+           int
+          ) [Types]
+         pet
+          NumConstant(
+           5
+          ) [NumConstant]
+          NoConstList(
+          ) [NoConstList]
+        ) [ConstDeclList]
+        VarDecLists(
+          VarDecl(
+            Types(
+             int
+            ) [Types]
+            VarDeclarat(
+              VarDeclaration(
+               niz
+                Bracket(
+                ) [Bracket]
+              ) [VarDeclaration]
+            ) [VarDeclarat]
+          ) [VarDecl]
+          VarDecLists(
+            VarDecl(
+              Types(
+               char
+              ) [Types]
+              VarDeclarat(
+                VarDeclaration(
+                 nizch
+                  Bracket(
+                  ) [Bracket]
+                ) [VarDeclaration]
+              ) [VarDeclarat]
+            ) [VarDecl]
+            VarDecLists(
+              VarDecl(
+                Types(
+                 int
+                ) [Types]
+                VarDeclarat(
+                  VarDeclaration(
+                   mat
+                    Bracket(
+                    ) [Bracket]
+                  ) [VarDeclaration]
+                ) [VarDeclarat]
+              ) [VarDecl]
+              VarDecLists(
+                VarDecl(
+                  Types(
+                   int
+                  ) [Types]
+                  VarDeclarat(
+                    VarDeclaration(
+                     a
+                      NoBracket(
+                      ) [NoBracket]
+                    ) [VarDeclaration]
+                  ) [VarDeclarat]
+                ) [VarDecl]
+                NoDecLists(
+                ) [NoDecLists]
+              ) [VarDecLists]
+            ) [VarDecLists]
+          ) [VarDecLists]
+        ) [VarDecLists]
+      ) [ConstDecLists]
+    ) [ConstDecLists]
+  ) [ConstDecLists]
+  MethDeclList(
+    NoMethDeclList(
+    ) [NoMethDeclList]
+    MethodDecl(
+      NoMethTypeName(
+       main
+      ) [NoMethTypeName]
+      NoFormalPars(
+      ) [NoFormalPars]
+      VarDeclarList(
+        VarDeclarList(
+          NoVarDeclarList(
+          ) [NoVarDeclarList]
+          VarDecl(
+            Types(
+             int
+            ) [Types]
+            VarDeclarat(
+              VarDeclaration(
+               bodovi
+                NoBracket(
+                ) [NoBracket]
+              ) [VarDeclaration]
+            ) [VarDeclarat]
+          ) [VarDecl]
+        ) [VarDeclarList]
+        VarDecl(
+          Types(
+           bool
+          ) [Types]
+          VarDeclarat(
+            VarDeclaration(
+             bt
+              NoBracket(
+              ) [NoBracket]
+            ) [VarDeclaration]
+          ) [VarDeclarat]
+        ) [VarDecl]
+      ) [VarDeclarList]
+      StmtList(
+        StmtList(
+          StmtList(
+            StmtList(
+              StmtList(
+                StmtList(
+                  StmtList(
+                    StmtList(
+                      StmtList(
+                        StmtList(
+                          StmtList(
+                            StmtList(
+                              StmtList(
+                                StmtList(
+                                  StmtList(
+                                    StmtList(
+                                      StmtList(
+                                        StmtList(
+                                          StmtList(
+                                            StmtList(
+                                              StmtList(
+                                                StmtList(
+                                                  StmtList(
+                                                    NoStmtList(
+                                                    ) [NoStmtList]
+                                                    DesStmt(
+                                                      DesginatorAssignop(
+                                                        Des(
+                                                         bodovi
+                                                          NoDesElem(
+                                                          ) [NoDesElem]
+                                                        ) [Des]
+                                                        Assignop(
+                                                        ) [Assignop]
+                                                        ExprTerm(
+                                                          TermFactor(
+                                                            FactorNum(
+                                                             0
+                                                            ) [FactorNum]
+                                                          ) [TermFactor]
+                                                        ) [ExprTerm]
+                                                      ) [DesginatorAssignop]
+                                                    ) [DesStmt]
+                                                  ) [StmtList]
+                                                  DesStmt(
+                                                    DesignatorInc(
+                                                      Des(
+                                                       bodovi
+                                                        NoDesElem(
+                                                        ) [NoDesElem]
+                                                      ) [Des]
+                                                    ) [DesignatorInc]
+                                                  ) [DesStmt]
+                                                ) [StmtList]
+                                                DesStmt(
+                                                  DesginatorAssignop(
+                                                    Des(
+                                                     bodovi
+                                                      NoDesElem(
+                                                      ) [NoDesElem]
+                                                    ) [Des]
+                                                    Assignop(
+                                                    ) [Assignop]
+                                                    ExprAddop(
+                                                      ExprTerm(
+                                                        TermFactor(
+                                                          FactorDes(
+                                                            Des(
+                                                             bodovi
+                                                              NoDesElem(
+                                                              ) [NoDesElem]
+                                                            ) [Des]
+                                                          ) [FactorDes]
+                                                        ) [TermFactor]
+                                                      ) [ExprTerm]
+                                                      AddopPlus(
+                                                      ) [AddopPlus]
+                                                      TermFactor(
+                                                        FactorDes(
+                                                          Des(
+                                                           jedan
+                                                            NoDesElem(
+                                                            ) [NoDesElem]
+                                                          ) [Des]
+                                                        ) [FactorDes]
+                                                      ) [TermFactor]
+                                                    ) [ExprAddop]
+                                                  ) [DesginatorAssignop]
+                                                ) [DesStmt]
+                                              ) [StmtList]
+                                              DesStmt(
+                                                DesginatorAssignop(
+                                                  Des(
+                                                   bodovi
+                                                    NoDesElem(
+                                                    ) [NoDesElem]
+                                                  ) [Des]
+                                                  Assignop(
+                                                  ) [Assignop]
+                                                  ExprTerm(
+                                                    TermMulop(
+                                                      TermFactor(
+                                                        FactorDes(
+                                                          Des(
+                                                           bodovi
+                                                            NoDesElem(
+                                                            ) [NoDesElem]
+                                                          ) [Des]
+                                                        ) [FactorDes]
+                                                      ) [TermFactor]
+                                                      MulopMul(
+                                                      ) [MulopMul]
+                                                      FactorDes(
+                                                        Des(
+                                                         pet
+                                                          NoDesElem(
+                                                          ) [NoDesElem]
+                                                        ) [Des]
+                                                      ) [FactorDes]
+                                                    ) [TermMulop]
+                                                  ) [ExprTerm]
+                                                ) [DesginatorAssignop]
+                                              ) [DesStmt]
+                                            ) [StmtList]
+                                            DesStmt(
+                                              DesignatorDecr(
+                                                Des(
+                                                 bodovi
+                                                  NoDesElem(
+                                                  ) [NoDesElem]
+                                                ) [Des]
+                                              ) [DesignatorDecr]
+                                            ) [DesStmt]
+                                          ) [StmtList]
+                                          PrintStmt(
+                                            ExprTerm(
+                                              TermFactor(
+                                                FactorDes(
+                                                  Des(
+                                                   bodovi
+                                                    NoDesElem(
+                                                    ) [NoDesElem]
+                                                  ) [Des]
+                                                ) [FactorDes]
+                                              ) [TermFactor]
+                                            ) [ExprTerm]
+                                          ) [PrintStmt]
+                                        ) [StmtList]
+                                        DesStmt(
+                                          DesginatorAssignop(
+                                            Des(
+                                             niz
+                                              NoDesElem(
+                                              ) [NoDesElem]
+                                            ) [Des]
+                                            Assignop(
+                                            ) [Assignop]
+                                            ExprTerm(
+                                              TermFactor(
+                                                FactorNew(
+                                                  Types(
+                                                   int
+                                                  ) [Types]
+                                                  ExprTerm(
+                                                    TermFactor(
+                                                      FactorNum(
+                                                       3
+                                                      ) [FactorNum]
+                                                    ) [TermFactor]
+                                                  ) [ExprTerm]
+                                                ) [FactorNew]
+                                              ) [TermFactor]
+                                            ) [ExprTerm]
+                                          ) [DesginatorAssignop]
+                                        ) [DesStmt]
+                                      ) [StmtList]
+                                      DesStmt(
+                                        DesginatorAssignop(
+                                          Des(
+                                           niz
+                                            DesElem(
+                                              ExprTerm(
+                                                TermFactor(
+                                                  FactorDes(
+                                                    Des(
+                                                     nula
+                                                      NoDesElem(
+                                                      ) [NoDesElem]
+                                                    ) [Des]
+                                                  ) [FactorDes]
+                                                ) [TermFactor]
+                                              ) [ExprTerm]
+                                            ) [DesElem]
+                                          ) [Des]
+                                          Assignop(
+                                          ) [Assignop]
+                                          ExprTerm(
+                                            TermFactor(
+                                              FactorDes(
+                                                Des(
+                                                 jedan
+                                                  NoDesElem(
+                                                  ) [NoDesElem]
+                                                ) [Des]
+                                              ) [FactorDes]
+                                            ) [TermFactor]
+                                          ) [ExprTerm]
+                                        ) [DesginatorAssignop]
+                                      ) [DesStmt]
+                                    ) [StmtList]
+                                    DesStmt(
+                                      DesginatorAssignop(
+                                        Des(
+                                         niz
+                                          DesElem(
+                                            ExprTerm(
+                                              TermFactor(
+                                                FactorNum(
+                                                 1
+                                                ) [FactorNum]
+                                              ) [TermFactor]
+                                            ) [ExprTerm]
+                                          ) [DesElem]
+                                        ) [Des]
+                                        Assignop(
+                                        ) [Assignop]
+                                        ExprTerm(
+                                          TermFactor(
+                                            FactorNum(
+                                             2
+                                            ) [FactorNum]
+                                          ) [TermFactor]
+                                        ) [ExprTerm]
+                                      ) [DesginatorAssignop]
+                                    ) [DesStmt]
+                                  ) [StmtList]
+                                  DesStmt(
+                                    DesginatorAssignop(
+                                      Des(
+                                       niz
+                                        DesElem(
+                                          ExprTerm(
+                                            TermFactor(
+                                              FactorDes(
+                                                Des(
+                                                 niz
+                                                  DesElem(
+                                                    ExprTerm(
+                                                      TermFactor(
+                                                        FactorDes(
+                                                          Des(
+                                                           jedan
+                                                            NoDesElem(
+                                                            ) [NoDesElem]
+                                                          ) [Des]
+                                                        ) [FactorDes]
+                                                      ) [TermFactor]
+                                                    ) [ExprTerm]
+                                                  ) [DesElem]
+                                                ) [Des]
+                                              ) [FactorDes]
+                                            ) [TermFactor]
+                                          ) [ExprTerm]
+                                        ) [DesElem]
+                                      ) [Des]
+                                      Assignop(
+                                      ) [Assignop]
+                                      ExprTerm(
+                                        TermMulop(
+                                          TermFactor(
+                                            FactorDes(
+                                              Des(
+                                               niz
+                                                DesElem(
+                                                  ExprTerm(
+                                                    TermFactor(
+                                                      FactorDes(
+                                                        Des(
+                                                         niz
+                                                          DesElem(
+                                                            ExprTerm(
+                                                              TermFactor(
+                                                                FactorNum(
+                                                                 0
+                                                                ) [FactorNum]
+                                                              ) [TermFactor]
+                                                            ) [ExprTerm]
+                                                          ) [DesElem]
+                                                        ) [Des]
+                                                      ) [FactorDes]
+                                                    ) [TermFactor]
+                                                  ) [ExprTerm]
+                                                ) [DesElem]
+                                              ) [Des]
+                                            ) [FactorDes]
+                                          ) [TermFactor]
+                                          MulopMul(
+                                          ) [MulopMul]
+                                          FactorNum(
+                                           3
+                                          ) [FactorNum]
+                                        ) [TermMulop]
+                                      ) [ExprTerm]
+                                    ) [DesginatorAssignop]
+                                  ) [DesStmt]
+                                ) [StmtList]
+                                DesStmt(
+                                  DesginatorAssignop(
+                                    Des(
+                                     bodovi
+                                      NoDesElem(
+                                      ) [NoDesElem]
+                                    ) [Des]
+                                    Assignop(
+                                    ) [Assignop]
+                                    ExprTerm(
+                                      TermMulop(
+                                        TermFactor(
+                                          FactorDes(
+                                            Des(
+                                             niz
+                                              DesElem(
+                                                ExprTerm(
+                                                  TermFactor(
+                                                    FactorNum(
+                                                     2
+                                                    ) [FactorNum]
+                                                  ) [TermFactor]
+                                                ) [ExprTerm]
+                                              ) [DesElem]
+                                            ) [Des]
+                                          ) [FactorDes]
+                                        ) [TermFactor]
+                                        MulopDiv(
+                                        ) [MulopDiv]
+                                        FactorDes(
+                                          Des(
+                                           niz
+                                            DesElem(
+                                              ExprTerm(
+                                                TermFactor(
+                                                  FactorNum(
+                                                   0
+                                                  ) [FactorNum]
+                                                ) [TermFactor]
+                                              ) [ExprTerm]
+                                            ) [DesElem]
+                                          ) [Des]
+                                        ) [FactorDes]
+                                      ) [TermMulop]
+                                    ) [ExprTerm]
+                                  ) [DesginatorAssignop]
+                                ) [DesStmt]
+                              ) [StmtList]
+                              PrintStmt(
+                                ExprTerm(
+                                  TermFactor(
+                                    FactorDes(
+                                      Des(
+                                       bodovi
+                                        NoDesElem(
+                                        ) [NoDesElem]
+                                      ) [Des]
+                                    ) [FactorDes]
+                                  ) [TermFactor]
+                                ) [ExprTerm]
+                              ) [PrintStmt]
+                            ) [StmtList]
+                            PrintStmt(
+                              ExprTerm(
+                                TermFactor(
+                                  FactorDes(
+                                    Des(
+                                     niz
+                                      DesElem(
+                                        ExprTerm(
+                                          TermFactor(
+                                            FactorNum(
+                                             2
+                                            ) [FactorNum]
+                                          ) [TermFactor]
+                                        ) [ExprTerm]
+                                      ) [DesElem]
+                                    ) [Des]
+                                  ) [FactorDes]
+                                ) [TermFactor]
+                              ) [ExprTerm]
+                            ) [PrintStmt]
+                          ) [StmtList]
+                          DesStmt(
+                            DesginatorAssignop(
+                              Des(
+                               nizch
+                                NoDesElem(
+                                ) [NoDesElem]
+                              ) [Des]
+                              Assignop(
+                              ) [Assignop]
+                              ExprTerm(
+                                TermFactor(
+                                  FactorNew(
+                                    Types(
+                                     char
+                                    ) [Types]
+                                    ExprTerm(
+                                      TermFactor(
+                                        FactorNum(
+                                         3
+                                        ) [FactorNum]
+                                      ) [TermFactor]
+                                    ) [ExprTerm]
+                                  ) [FactorNew]
+                                ) [TermFactor]
+                              ) [ExprTerm]
+                            ) [DesginatorAssignop]
+                          ) [DesStmt]
+                        ) [StmtList]
+                        DesStmt(
+                          DesginatorAssignop(
+                            Des(
+                             nizch
+                              DesElem(
+                                ExprTerm(
+                                  TermFactor(
+                                    FactorNum(
+                                     0
+                                    ) [FactorNum]
+                                  ) [TermFactor]
+                                ) [ExprTerm]
+                              ) [DesElem]
+                            ) [Des]
+                            Assignop(
+                            ) [Assignop]
+                            ExprTerm(
+                              TermFactor(
+                                FactorChar(
+                                 a
+                                ) [FactorChar]
+                              ) [TermFactor]
+                            ) [ExprTerm]
+                          ) [DesginatorAssignop]
+                        ) [DesStmt]
+                      ) [StmtList]
+                      DesStmt(
+                        DesginatorAssignop(
+                          Des(
+                           nizch
+                            DesElem(
+                              ExprTerm(
+                                TermFactor(
+                                  FactorDes(
+                                    Des(
+                                     jedan
+                                      NoDesElem(
+                                      ) [NoDesElem]
+                                    ) [Des]
+                                  ) [FactorDes]
+                                ) [TermFactor]
+                              ) [ExprTerm]
+                            ) [DesElem]
+                          ) [Des]
+                          Assignop(
+                          ) [Assignop]
+                          ExprTerm(
+                            TermFactor(
+                              FactorChar(
+                               b
+                              ) [FactorChar]
+                            ) [TermFactor]
+                          ) [ExprTerm]
+                        ) [DesginatorAssignop]
+                      ) [DesStmt]
+                    ) [StmtList]
+                    DesStmt(
+                      DesginatorAssignop(
+                        Des(
+                         nizch
+                          DesElem(
+                            ExprAddop(
+                              ExprTerm(
+                                TermFactor(
+                                  FactorDes(
+                                    Des(
+                                     pet
+                                      NoDesElem(
+                                      ) [NoDesElem]
+                                    ) [Des]
+                                  ) [FactorDes]
+                                ) [TermFactor]
+                              ) [ExprTerm]
+                              AddopMinus(
+                              ) [AddopMinus]
+                              TermFactor(
+                                FactorNum(
+                                 3
+                                ) [FactorNum]
+                              ) [TermFactor]
+                            ) [ExprAddop]
+                          ) [DesElem]
+                        ) [Des]
+                        Assignop(
+                        ) [Assignop]
+                        ExprTerm(
+                          TermFactor(
+                            FactorChar(
+                             c
+                            ) [FactorChar]
+                          ) [TermFactor]
+                        ) [ExprTerm]
+                      ) [DesginatorAssignop]
+                    ) [DesStmt]
+                  ) [StmtList]
+                  PrintStmt(
+                    ExprTerm(
+                      TermFactor(
+                        FactorDes(
+                          Des(
+                           nizch
+                            DesElem(
+                              ExprTerm(
+                                TermFactor(
+                                  FactorNum(
+                                   1
+                                  ) [FactorNum]
+                                ) [TermFactor]
+                              ) [ExprTerm]
+                            ) [DesElem]
+                          ) [Des]
+                        ) [FactorDes]
+                      ) [TermFactor]
+                    ) [ExprTerm]
+                  ) [PrintStmt]
+                ) [StmtList]
+                PrintStmt(
+                  ExprTerm(
+                    TermFactor(
+                      FactorDes(
+                        Des(
+                         nizch
+                          DesElem(
+                            ExprTerm(
+                              TermMulop(
+                                TermFactor(
+                                  FactorDes(
+                                    Des(
+                                     jedan
+                                      NoDesElem(
+                                      ) [NoDesElem]
+                                    ) [Des]
+                                  ) [FactorDes]
+                                ) [TermFactor]
+                                MulopMul(
+                                ) [MulopMul]
+                                FactorNum(
+                                 2
+                                ) [FactorNum]
+                              ) [TermMulop]
+                            ) [ExprTerm]
+                          ) [DesElem]
+                        ) [Des]
+                      ) [FactorDes]
+                    ) [TermFactor]
+                  ) [ExprTerm]
+                ) [PrintStmt]
+              ) [StmtList]
+              DesStmt(
+                DesginatorAssignop(
+                  Des(
+                   a
+                    NoDesElem(
+                    ) [NoDesElem]
+                  ) [Des]
+                  Assignop(
+                  ) [Assignop]
+                  ExprTerm(
+                    TermFactor(
+                      FactorNum(
+                       1
+                      ) [FactorNum]
+                    ) [TermFactor]
+                  ) [ExprTerm]
+                ) [DesginatorAssignop]
+              ) [DesStmt]
+            ) [StmtList]
+            ReadStmt(
+              Des(
+               bodovi
+                NoDesElem(
+                ) [NoDesElem]
+              ) [Des]
+            ) [ReadStmt]
+          ) [StmtList]
+          DesStmt(
+            DesginatorAssignop(
+              Des(
+               bodovi
+                NoDesElem(
+                ) [NoDesElem]
+              ) [Des]
+              Assignop(
+              ) [Assignop]
+              ExprAddop(
+                ExprAddop(
+                  ExprMinusTerm(
+                    TermFactor(
+                      FactorDes(
+                        Des(
+                         bodovi
+                          NoDesElem(
+                          ) [NoDesElem]
+                        ) [Des]
+                      ) [FactorDes]
+                    ) [TermFactor]
+                  ) [ExprMinusTerm]
+                  AddopPlus(
+                  ) [AddopPlus]
+                  TermMulop(
+                    TermFactor(
+                      FactorExpr(
+                        ExprAddop(
+                          ExprTerm(
+                            TermMulop(
+                              TermMulop(
+                                TermFactor(
+                                  FactorDes(
+                                    Des(
+                                     pet
+                                      NoDesElem(
+                                      ) [NoDesElem]
+                                    ) [Des]
+                                  ) [FactorDes]
+                                ) [TermFactor]
+                                MulopMul(
+                                ) [MulopMul]
+                                FactorDes(
+                                  Des(
+                                   a
+                                    NoDesElem(
+                                    ) [NoDesElem]
+                                  ) [Des]
+                                ) [FactorDes]
+                              ) [TermMulop]
+                              MulopDiv(
+                              ) [MulopDiv]
+                              FactorNum(
+                               2
+                              ) [FactorNum]
+                            ) [TermMulop]
+                          ) [ExprTerm]
+                          AddopMinus(
+                          ) [AddopMinus]
+                          TermFactor(
+                            FactorDes(
+                              Des(
+                               jedan
+                                NoDesElem(
+                                ) [NoDesElem]
+                              ) [Des]
+                            ) [FactorDes]
+                          ) [TermFactor]
+                        ) [ExprAddop]
+                      ) [FactorExpr]
+                    ) [TermFactor]
+                    MulopMul(
+                    ) [MulopMul]
+                    FactorDes(
+                      Des(
+                       bodovi
+                        NoDesElem(
+                        ) [NoDesElem]
+                      ) [Des]
+                    ) [FactorDes]
+                  ) [TermMulop]
+                ) [ExprAddop]
+                AddopMinus(
+                ) [AddopMinus]
+                TermFactor(
+                  FactorExpr(
+                    ExprAddop(
+                      ExprAddop(
+                        ExprTerm(
+                          TermMulop(
+                            TermFactor(
+                              FactorNum(
+                               3
+                              ) [FactorNum]
+                            ) [TermFactor]
+                            MulopMod(
+                            ) [MulopMod]
+                            FactorNum(
+                             2
+                            ) [FactorNum]
+                          ) [TermMulop]
+                        ) [ExprTerm]
+                        AddopPlus(
+                        ) [AddopPlus]
+                        TermMulop(
+                          TermFactor(
+                            FactorNum(
+                             3
+                            ) [FactorNum]
+                          ) [TermFactor]
+                          MulopMul(
+                          ) [MulopMul]
+                          FactorNum(
+                           2
+                          ) [FactorNum]
+                        ) [TermMulop]
+                      ) [ExprAddop]
+                      AddopMinus(
+                      ) [AddopMinus]
+                      TermFactor(
+                        FactorNum(
+                         3
+                        ) [FactorNum]
+                      ) [TermFactor]
+                    ) [ExprAddop]
+                  ) [FactorExpr]
+                ) [TermFactor]
+              ) [ExprAddop]
+            ) [DesginatorAssignop]
+          ) [DesStmt]
+        ) [StmtList]
+        PrintStmt(
+          ExprTerm(
+            TermFactor(
+              FactorDes(
+                Des(
+                 bodovi
+                  NoDesElem(
+                  ) [NoDesElem]
+                ) [Des]
+              ) [FactorDes]
+            ) [TermFactor]
+          ) [ExprTerm]
+        ) [PrintStmt]
+      ) [StmtList]
+    ) [MethodDecl]
+  ) [MethDeclList]
+) [Program]
+INFO  11:26:58,672 - ===================================

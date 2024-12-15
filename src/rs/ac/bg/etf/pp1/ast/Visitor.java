@@ -1,24 +1,26 @@
 // generated with ast extension for cup
 // version 0.8
-// 14/11/2024 11:22:34
+// 15/11/2024 15:35:26
 
 
 package rs.ac.bg.etf.pp1.ast;
 
 public interface Visitor { 
 
+    public void visit(Unmatched Unmatched);
     public void visit(DeclarationList DeclarationList);
     public void visit(Mulop Mulop);
     public void visit(ConstantList ConstantList);
+    public void visit(Matched Matched);
     public void visit(Relop Relop);
     public void visit(Constants Constants);
     public void visit(DesignatorElem DesignatorElem);
     public void visit(StatementList StatementList);
-    public void visit(NamespaceList NamespaceList);
     public void visit(Addop Addop);
     public void visit(Factor Factor);
-    public void visit(Designator Designator);
+    public void visit(CondTerm CondTerm);
     public void visit(Term Term);
+    public void visit(Condition Condition);
     public void visit(Brackets Brackets);
     public void visit(VarDeclList VarDeclList);
     public void visit(FormalParamList FormalParamList);
@@ -29,9 +31,10 @@ public interface Visitor {
     public void visit(DesignatorStatement DesignatorStatement);
     public void visit(Statement Statement);
     public void visit(ActParamList ActParamList);
-    public void visit(Type Type);
+    public void visit(CondFact CondFact);
     public void visit(MethodDeclList MethodDeclList);
     public void visit(FormPars FormPars);
+    public void visit(Setop Setop);
     public void visit(MulopMod MulopMod);
     public void visit(MulopDiv MulopDiv);
     public void visit(MulopMul MulopMul);
@@ -47,8 +50,7 @@ public interface Visitor {
     public void visit(Label Label);
     public void visit(NoDesElem NoDesElem);
     public void visit(DesElem DesElem);
-    public void visit(DesWithIdent DesWithIdent);
-    public void visit(Des Des);
+    public void visit(Designator Designator);
     public void visit(FactorDes FactorDes);
     public void visit(FactorExpr FactorExpr);
     public void visit(FactorNew FactorNew);
@@ -56,24 +58,37 @@ public interface Visitor {
     public void visit(FactorNum FactorNum);
     public void visit(TermFactor TermFactor);
     public void visit(TermMulop TermMulop);
+    public void visit(ExprMap ExprMap);
     public void visit(ExprMinusTerm ExprMinusTerm);
     public void visit(ExprTerm ExprTerm);
     public void visit(ExprAddop ExprAddop);
-    public void visit(ActParamExpr ActParamExpr);
+    public void visit(CondFactDerived2 CondFactDerived2);
+    public void visit(CondFactDerived1 CondFactDerived1);
+    public void visit(CondTermDerived2 CondTermDerived2);
+    public void visit(CondTermDerived1 CondTermDerived1);
+    public void visit(ConditionDerived2 ConditionDerived2);
+    public void visit(ConditionDerived1 ConditionDerived1);
+    public void visit(ActParamsExpr ActParamsExpr);
     public void visit(ActParamsList ActParamsList);
     public void visit(NoActParams NoActParams);
     public void visit(ActParams ActParams);
-    public void visit(DesignatorDecr DesignatorDecr);
+    public void visit(DesignatorSetop DesignatorSetop);
+    public void visit(DesignatorActPars DesignatorActPars);
+    public void visit(DesignatorDec DesignatorDec);
     public void visit(DesignatorInc DesignatorInc);
     public void visit(DesginatorAssignop DesginatorAssignop);
+    public void visit(IfElseStmt IfElseStmt);
     public void visit(DesStmt DesStmt);
     public void visit(ReadStmt ReadStmt);
     public void visit(PrintStmtTwo PrintStmtTwo);
     public void visit(PrintStmt PrintStmt);
+    public void visit(UnmatchedIfElse UnmatchedIfElse);
+    public void visit(UnmatchedIf UnmatchedIf);
+    public void visit(UnmatchedStmt UnmatchedStmt);
+    public void visit(MatchedStmt MatchedStmt);
     public void visit(NoStmtList NoStmtList);
     public void visit(StmtList StmtList);
-    public void visit(NoTypes NoTypes);
-    public void visit(Types Types);
+    public void visit(Type Type);
     public void visit(NoBracket NoBracket);
     public void visit(Bracket Bracket);
     public void visit(FormalParamDecl FormalParamDecl);
@@ -100,9 +115,6 @@ public interface Visitor {
     public void visit(NoDecLists NoDecLists);
     public void visit(VarDecLists VarDecLists);
     public void visit(ConstDecLists ConstDecLists);
-    public void visit(Namespace Namespace);
-    public void visit(NoNameList NoNameList);
-    public void visit(NameList NameList);
     public void visit(ProgName ProgName);
     public void visit(Program Program);
 

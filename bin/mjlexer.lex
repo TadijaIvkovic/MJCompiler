@@ -40,6 +40,7 @@ import java_cup.runtime.Symbol;
 "program"   { return new_symbol(sym.PROG, yytext());}
 "break"  	{ return new_symbol(sym.BREAK, yytext()); }
 "class" 	{ return new_symbol(sym.CLASS, yytext()); }
+"interface" { return new_symbol(sym.INTERFACE, yytext()); }
 "else"  	{ return new_symbol(sym.ELSE, yytext()); }
 "const" 	{ return new_symbol(sym.CONST, yytext()); }
 "if" 		{ return new_symbol(sym.IF, yytext()); }
@@ -53,8 +54,11 @@ import java_cup.runtime.Symbol;
 "for" 	    { return new_symbol(sym.FOR, yytext()); }
 "static" 	{ return new_symbol(sym.STATIC, yytext()); }
 "namespace" { return new_symbol(sym.NAMESPACE, yytext()); }
-
-
+"union" { return new_symbol(sym.UNION, yytext()); }
+"map" { return new_symbol(sym.MAP, yytext()); }
+"set" { return new_symbol(sym.SET, yytext()); }
+"do" { return new_symbol(sym.DO, yytext()); }
+"while" { return new_symbol(sym.WHILE, yytext()); }
 
 
 
