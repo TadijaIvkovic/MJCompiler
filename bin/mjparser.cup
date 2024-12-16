@@ -58,8 +58,8 @@ scan with {:
 
 terminal PROG, BREAK, CLASS, ELSE, CONST, IF, NEW, PRINT, READ, RETURN, VOID, EXTENDS, CONTINUE;
 terminal FOR, STATIC, NAMESPACE;
-terminal PLUS, MINUS, DIV, MOD, MUL, EQUAL, DBLDOT, SEMI, COMMA, DOT, LPAREN, RPAREN, LBRACE, RBRACE;
-terminal LBRACKET, RBRACKET, LARROW, RARROW, EXCL, AMPER, LINE, UNION, MAP, DO, WHILE, SET;
+terminal PLUS, MINUS, DIV, MOD, MUL, EQUAL, UNION, DBLDOT, SEMI, COMMA, DOT, LPAREN, RPAREN, LBRACE, RBRACE;
+terminal LBRACKET, RBRACKET, LARROW, RARROW, EXCL, AMPER, LINE, MAP, DO, WHILE, SET;
 
 terminal Integer NUMBER ;
 terminal Character CHAR_CONST;
@@ -70,8 +70,8 @@ terminal String IDENT ;
 nonterminal Program, ProgName, DeclarationList, ConstDeclList, ConstantList, Constants;
 nonterminal VarDeclList, VarDecl, VarDeclarationList, VarDeclaration, MethodDeclList, MethodDecl, MethodSignature, Type;
 nonterminal Brackets, FormPars, FormalParamList, FormalParamDecl, StatementList, Statement, Expr;
-nonterminal Term, Factor, DesignatorStatement, ActPars, ActParamList, Designator, DesignatorElem, Label, Assignop, Relop, Addop, Mulop;
-nonterminal Condition, CondTerm, CondFact, Setop, Matched, Unmatched, WhileStart, DoWhileEnd, DoWhileStart;
+nonterminal Term, Factor, DesignatorStatement, ActPars, ActParamList, Designator, DesignatorElem, Label, Assignop, Relop, Addop, Mulop, Setop;
+nonterminal Condition, CondTerm, CondFact, Matched, Unmatched, WhileStart, DoWhileEnd, DoWhileStart;
 
 
 Program ::= (Program) PROG ProgName:p DeclarationList LBRACE MethodDeclList RBRACE ;
@@ -95,7 +95,10 @@ ConstantList ::= (ConstList) ConstantList COMMA IDENT EQUAL Constants
 
 Constants ::=(NumConstant) NUMBER 
 			| 
-			(CharConstant) CHAR_CONST ;
+			(CharConstant) CHAR_CONST 
+			|
+			(BoolConstant) BOOL_CONST
+			;
 
 
 VarDeclList ::= (VarDeclarList) VarDeclList VarDecl  
@@ -147,8 +150,8 @@ Brackets ::= (Bracket) LBRACKET RBRACKET
 Type ::= (Type) IDENT:typeName ;
 		 
 StatementList ::= (StmtList)  StatementList Statement 
-					|
-				   (NoStmtList) /* epsilon */
+				  |
+				  (NoStmtList) /* epsilon */
 				  ;
 
 Statement ::= (MatchedStmt) Matched
@@ -157,11 +160,11 @@ Statement ::= (MatchedStmt) Matched
 		   ; 
 
 Unmatched ::= (UnmatchedIf) IF LPAREN Condition RPAREN Statement
-		 	|
-		 	(UnmatchedIfElse) IF LPAREN Condition RPAREN Matched ELSE Unmatched
-		 	;
+		 	  |
+		 	  (UnmatchedIfElse) IF LPAREN Condition RPAREN Matched ELSE Unmatched
+		 	  ;
 				  
-Matched ::= (PrintStmt) PRINT LPAREN Expr RPAREN SEMI
+Matched ::=   (PrintStmt) PRINT LPAREN Expr RPAREN SEMI
   			  |
 			  (PrintStmtTwo) PRINT LPAREN Expr COMMA NUMBER RPAREN SEMI	 
 			  |
@@ -179,6 +182,10 @@ Matched ::= (PrintStmt) PRINT LPAREN Expr RPAREN SEMI
 			  |
 			  (DoWhileStatement) DO DoWhileStart Statement WHILE WhileStart LPAREN Condition RPAREN DoWhileEnd SEMI
 			  |
+			  (DoWhileStatementWithoutCond) DO DoWhileStart Statement WHILE WhileStart LPAREN RPAREN DoWhileEnd SEMI
+			  |
+			  (DoWhileStatementWithStmt) DO DoWhileStart Statement WHILE WhileStart LPAREN Condition COMMA Statement RPAREN DoWhileEnd SEMI
+			  |
 			  (IfElseStmt) IF LPAREN Condition RPAREN Matched ELSE Matched
 			  ;
 			  
@@ -195,9 +202,9 @@ DesignatorStatement ::= (DesginatorAssignop) Designator Assignop Expr
 					|
 					(DesignatorDec) Designator MINUS MINUS
 					| 
-					(DesignatorActPars) Designator LPAREN ActPars RPAREN
-					|
 					(DesignatorSetop) Designator Assignop Designator Setop Designator
+					|
+					(DesignatorActPars) Designator LPAREN ActPars RPAREN
 					;
 
 ActPars ::=  (ActParams) ActParamList 
@@ -210,19 +217,19 @@ ActParamList ::= (ActParamsList) ActParamList COMMA Expr
 				 (ActParamsExpr) Expr
 				;
 		
-Condition ::= Condition LINE LINE CondTerm
+Condition ::= (ConditionList)Condition LINE LINE CondTerm
 				|
-				CondTerm
+				(ConditionTerm) CondTerm
 				;
 
-CondTerm ::= CondTerm AMPER AMPER CondFact
+CondTerm ::= (CondTermList) CondTerm AMPER AMPER CondFact
 			|
-			CondFact
+			(ConditionFact) CondFact
 			;
 			
-CondFact ::= Expr
+CondFact ::= (Cond) Expr
 			|
-			Expr Relop Expr
+			(CondExpr) Expr Relop Expr
 			;
 		
 Expr ::= (ExprAddop) Expr:te Addop Term:t
@@ -243,6 +250,8 @@ Term ::= (TermMulop) Term:te Mulop Factor:f
 Factor ::= (FactorNum) NUMBER
 			|
 			(FactorChar) CHAR_CONST
+			|
+			(FactorBool) BOOL_CONST
 			|
 			(FactorNewExpr) NEW Type LBRACKET Expr RBRACKET
 			|
@@ -268,7 +277,6 @@ DesignatorElem ::= (DesElem) LBRACKET Expr RBRACKET
 					
 
 Label ::= (Label) IDENT;
-
 
 Assignop ::= (Assignop) EQUAL;
 
@@ -299,7 +307,7 @@ Mulop ::= (MulopMul) MUL
 		(MulopMod) MOD
 		;
 		
-Setop ::= (Setop) UNION ;		
+Setop ::= (Setop) UNION ;
 		
 		
 

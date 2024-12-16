@@ -1,0 +1,424 @@
+INFO  12:54:33,574 - Compiling source file: C:\Users\The Workstation\eclipse-workspace\MJCompiler\test\program.mj
+INFO  12:54:33,603 - #2 program
+INFO  12:54:33,603 - #47 test301
+INFO  12:54:33,603 - #47 union
+INFO  12:54:33,604 - #47 s1
+INFO  12:54:33,604 - #26 ;
+INFO  12:54:33,605 - #6 const
+INFO  12:54:33,606 - #47 int
+INFO  12:54:33,606 - #47 nula
+INFO  12:54:33,606 - #23 =
+INFO  12:54:33,606 - #44 0
+INFO  12:54:33,607 - #26 ;
+INFO  12:54:33,607 - #6 const
+INFO  12:54:33,608 - #47 int
+INFO  12:54:33,608 - #47 jedan
+INFO  12:54:33,608 - #23 =
+INFO  12:54:33,608 - #44 1
+INFO  12:54:33,608 - #26 ;
+INFO  12:54:33,608 - #6 const
+INFO  12:54:33,608 - #47 int
+INFO  12:54:33,608 - #47 pet
+INFO  12:54:33,608 - #23 =
+INFO  12:54:33,618 - #44 5
+INFO  12:54:33,618 - #26 ;
+INFO  12:54:33,618 - #47 int
+INFO  12:54:33,618 - #47 niz
+INFO  12:54:33,618 - #33 [
+INFO  12:54:33,618 - #34 ]
+INFO  12:54:33,618 - #26 ;
+INFO  12:54:33,619 - #47 char
+INFO  12:54:33,619 - #47 nizch
+INFO  12:54:33,619 - #33 [
+INFO  12:54:33,619 - #34 ]
+INFO  12:54:33,619 - #26 ;
+INFO  12:54:33,619 - #47 int
+INFO  12:54:33,619 - #47 a
+INFO  12:54:33,619 - #26 ;
+INFO  12:54:33,619 - #47 set
+INFO  12:54:33,619 - #47 s1
+INFO  12:54:33,619 - #27 ,
+INFO  12:54:33,619 - #47 s2
+INFO  12:54:33,619 - #27 ,
+INFO  12:54:33,620 - #47 s3
+INFO  12:54:33,620 - #26 ;
+INFO  12:54:33,620 - #31 {
+INFO  12:54:33,621 - #12 void
+INFO  12:54:33,622 - #47 main
+INFO  12:54:33,622 - #29 (
+INFO  12:54:33,622 - #30 )
+INFO  12:54:33,623 - #47 int
+INFO  12:54:33,624 - #47 bodovi
+INFO  12:54:33,624 - #26 ;
+INFO  12:54:33,624 - #47 int
+INFO  12:54:33,624 - #47 temp
+INFO  12:54:33,624 - #26 ;
+INFO  12:54:33,624 - #31 {
+INFO  12:54:33,624 - #47 bodovi
+INFO  12:54:33,625 - #23 =
+INFO  12:54:33,625 - #44 0
+INFO  12:54:33,626 - #26 ;
+INFO  12:54:33,626 - #47 bodovi
+INFO  12:54:33,626 - #18 +
+INFO  12:54:33,626 - #18 +
+INFO  12:54:33,626 - #26 ;
+INFO  12:54:33,626 - #47 bodovi
+INFO  12:54:33,626 - #23 =
+INFO  12:54:33,626 - #47 bodovi
+INFO  12:54:33,626 - #18 +
+INFO  12:54:33,627 - #47 jedan
+INFO  12:54:33,627 - #26 ;
+INFO  12:54:33,628 - #47 bodovi
+INFO  12:54:33,628 - #23 =
+INFO  12:54:33,628 - #47 bodovi
+INFO  12:54:33,628 - #22 *
+INFO  12:54:33,628 - #47 pet
+INFO  12:54:33,628 - #26 ;
+INFO  12:54:33,629 - #47 bodovi
+INFO  12:54:33,629 - #19 -
+INFO  12:54:33,629 - #19 -
+INFO  12:54:33,629 - #26 ;
+INFO  12:54:33,629 - #9 print
+INFO  12:54:33,629 - #29 (
+INFO  12:54:33,629 - #47 bodovi
+INFO  12:54:33,629 - #30 )
+INFO  12:54:33,629 - #26 ;
+INFO  12:54:33,629 - #9 print
+INFO  12:54:33,629 - #29 (
+INFO  12:54:33,629 - #47 eol
+INFO  12:54:33,629 - #30 )
+INFO  12:54:33,629 - #26 ;
+INFO  12:54:33,629 - #32 }
+INFO  12:54:33,629 - #32 }
+INFO  12:54:33,634 - Program(
+  ProgName(
+   test301
+  ) [ProgName]
+  VarDecLists(
+    VarDecl(
+      Type(
+       union
+      ) [Type]
+      VarDeclarat(
+        VarDeclaration(
+         s1
+          NoBracket(
+          ) [NoBracket]
+        ) [VarDeclaration]
+      ) [VarDeclarat]
+    ) [VarDecl]
+    ConstDecLists(
+      ConstDeclList(
+        Type(
+         int
+        ) [Type]
+       nula
+        NumConstant(
+         0
+        ) [NumConstant]
+        NoConstList(
+        ) [NoConstList]
+      ) [ConstDeclList]
+      ConstDecLists(
+        ConstDeclList(
+          Type(
+           int
+          ) [Type]
+         jedan
+          NumConstant(
+           1
+          ) [NumConstant]
+          NoConstList(
+          ) [NoConstList]
+        ) [ConstDeclList]
+        ConstDecLists(
+          ConstDeclList(
+            Type(
+             int
+            ) [Type]
+           pet
+            NumConstant(
+             5
+            ) [NumConstant]
+            NoConstList(
+            ) [NoConstList]
+          ) [ConstDeclList]
+          VarDecLists(
+            VarDecl(
+              Type(
+               int
+              ) [Type]
+              VarDeclarat(
+                VarDeclaration(
+                 niz
+                  Bracket(
+                  ) [Bracket]
+                ) [VarDeclaration]
+              ) [VarDeclarat]
+            ) [VarDecl]
+            VarDecLists(
+              VarDecl(
+                Type(
+                 char
+                ) [Type]
+                VarDeclarat(
+                  VarDeclaration(
+                   nizch
+                    Bracket(
+                    ) [Bracket]
+                  ) [VarDeclaration]
+                ) [VarDeclarat]
+              ) [VarDecl]
+              VarDecLists(
+                VarDecl(
+                  Type(
+                   int
+                  ) [Type]
+                  VarDeclarat(
+                    VarDeclaration(
+                     a
+                      NoBracket(
+                      ) [NoBracket]
+                    ) [VarDeclaration]
+                  ) [VarDeclarat]
+                ) [VarDecl]
+                VarDecLists(
+                  VarDecl(
+                    Type(
+                     set
+                    ) [Type]
+                    VarDeclaratList(
+                      VarDeclaratList(
+                        VarDeclarat(
+                          VarDeclaration(
+                           s1
+                            NoBracket(
+                            ) [NoBracket]
+                          ) [VarDeclaration]
+                        ) [VarDeclarat]
+                        VarDeclaration(
+                         s2
+                          NoBracket(
+                          ) [NoBracket]
+                        ) [VarDeclaration]
+                      ) [VarDeclaratList]
+                      VarDeclaration(
+                       s3
+                        NoBracket(
+                        ) [NoBracket]
+                      ) [VarDeclaration]
+                    ) [VarDeclaratList]
+                  ) [VarDecl]
+                  NoDecLists(
+                  ) [NoDecLists]
+                ) [VarDecLists]
+              ) [VarDecLists]
+            ) [VarDecLists]
+          ) [VarDecLists]
+        ) [ConstDecLists]
+      ) [ConstDecLists]
+    ) [ConstDecLists]
+  ) [VarDecLists]
+  MethDeclList(
+    NoMethDeclList(
+    ) [NoMethDeclList]
+    MethodDecl(
+      NoMethTypeName(
+       main
+        NoFormalPars(
+        ) [NoFormalPars]
+      ) [NoMethTypeName]
+      VarDeclarList(
+        VarDeclarList(
+          NoVarDeclarList(
+          ) [NoVarDeclarList]
+          VarDecl(
+            Type(
+             int
+            ) [Type]
+            VarDeclarat(
+              VarDeclaration(
+               bodovi
+                NoBracket(
+                ) [NoBracket]
+              ) [VarDeclaration]
+            ) [VarDeclarat]
+          ) [VarDecl]
+        ) [VarDeclarList]
+        VarDecl(
+          Type(
+           int
+          ) [Type]
+          VarDeclarat(
+            VarDeclaration(
+             temp
+              NoBracket(
+              ) [NoBracket]
+            ) [VarDeclaration]
+          ) [VarDeclarat]
+        ) [VarDecl]
+      ) [VarDeclarList]
+      StmtList(
+        StmtList(
+          StmtList(
+            StmtList(
+              StmtList(
+                StmtList(
+                  StmtList(
+                    NoStmtList(
+                    ) [NoStmtList]
+                    MatchedStmt(
+                      DesStmt(
+                        DesginatorAssignop(
+                          DesignatorEl(
+                           bodovi
+                            NoDesElem(
+                            ) [NoDesElem]
+                          ) [DesignatorEl]
+                          Assignop(
+                          ) [Assignop]
+                          ExprTerm(
+                            TermFactor(
+                              FactorNum(
+                               0
+                              ) [FactorNum]
+                            ) [TermFactor]
+                          ) [ExprTerm]
+                        ) [DesginatorAssignop]
+                      ) [DesStmt]
+                    ) [MatchedStmt]
+                  ) [StmtList]
+                  MatchedStmt(
+                    DesStmt(
+                      DesignatorInc(
+                        DesignatorEl(
+                         bodovi
+                          NoDesElem(
+                          ) [NoDesElem]
+                        ) [DesignatorEl]
+                      ) [DesignatorInc]
+                    ) [DesStmt]
+                  ) [MatchedStmt]
+                ) [StmtList]
+                MatchedStmt(
+                  DesStmt(
+                    DesginatorAssignop(
+                      DesignatorEl(
+                       bodovi
+                        NoDesElem(
+                        ) [NoDesElem]
+                      ) [DesignatorEl]
+                      Assignop(
+                      ) [Assignop]
+                      ExprAddop(
+                        ExprTerm(
+                          TermFactor(
+                            FactorDes(
+                              DesignatorEl(
+                               bodovi
+                                NoDesElem(
+                                ) [NoDesElem]
+                              ) [DesignatorEl]
+                            ) [FactorDes]
+                          ) [TermFactor]
+                        ) [ExprTerm]
+                        AddopPlus(
+                        ) [AddopPlus]
+                        TermFactor(
+                          FactorDes(
+                            DesignatorEl(
+                             jedan
+                              NoDesElem(
+                              ) [NoDesElem]
+                            ) [DesignatorEl]
+                          ) [FactorDes]
+                        ) [TermFactor]
+                      ) [ExprAddop]
+                    ) [DesginatorAssignop]
+                  ) [DesStmt]
+                ) [MatchedStmt]
+              ) [StmtList]
+              MatchedStmt(
+                DesStmt(
+                  DesginatorAssignop(
+                    DesignatorEl(
+                     bodovi
+                      NoDesElem(
+                      ) [NoDesElem]
+                    ) [DesignatorEl]
+                    Assignop(
+                    ) [Assignop]
+                    ExprTerm(
+                      TermMulop(
+                        TermFactor(
+                          FactorDes(
+                            DesignatorEl(
+                             bodovi
+                              NoDesElem(
+                              ) [NoDesElem]
+                            ) [DesignatorEl]
+                          ) [FactorDes]
+                        ) [TermFactor]
+                        MulopMul(
+                        ) [MulopMul]
+                        FactorDes(
+                          DesignatorEl(
+                           pet
+                            NoDesElem(
+                            ) [NoDesElem]
+                          ) [DesignatorEl]
+                        ) [FactorDes]
+                      ) [TermMulop]
+                    ) [ExprTerm]
+                  ) [DesginatorAssignop]
+                ) [DesStmt]
+              ) [MatchedStmt]
+            ) [StmtList]
+            MatchedStmt(
+              DesStmt(
+                DesignatorDec(
+                  DesignatorEl(
+                   bodovi
+                    NoDesElem(
+                    ) [NoDesElem]
+                  ) [DesignatorEl]
+                ) [DesignatorDec]
+              ) [DesStmt]
+            ) [MatchedStmt]
+          ) [StmtList]
+          MatchedStmt(
+            PrintStmt(
+              ExprTerm(
+                TermFactor(
+                  FactorDes(
+                    DesignatorEl(
+                     bodovi
+                      NoDesElem(
+                      ) [NoDesElem]
+                    ) [DesignatorEl]
+                  ) [FactorDes]
+                ) [TermFactor]
+              ) [ExprTerm]
+            ) [PrintStmt]
+          ) [MatchedStmt]
+        ) [StmtList]
+        MatchedStmt(
+          PrintStmt(
+            ExprTerm(
+              TermFactor(
+                FactorDes(
+                  DesignatorEl(
+                   eol
+                    NoDesElem(
+                    ) [NoDesElem]
+                  ) [DesignatorEl]
+                ) [FactorDes]
+              ) [TermFactor]
+            ) [ExprTerm]
+          ) [PrintStmt]
+        ) [MatchedStmt]
+      ) [StmtList]
+    ) [MethodDecl]
+  ) [MethDeclList]
+) [Program]
+INFO  12:54:33,635 - ===================================

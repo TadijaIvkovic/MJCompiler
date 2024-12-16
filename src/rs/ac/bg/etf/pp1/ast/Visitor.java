@@ -1,6 +1,6 @@
 // generated with ast extension for cup
 // version 0.8
-// 15/11/2024 17:37:2
+// 16/11/2024 13:50:13
 
 
 package rs.ac.bg.etf.pp1.ast;
@@ -58,6 +58,7 @@ public interface Visitor {
     public void visit(FactorExpr FactorExpr);
     public void visit(FactorNewActPars FactorNewActPars);
     public void visit(FactorNewExpr FactorNewExpr);
+    public void visit(FactorBool FactorBool);
     public void visit(FactorChar FactorChar);
     public void visit(FactorNum FactorNum);
     public void visit(TermFactor TermFactor);
@@ -66,18 +67,18 @@ public interface Visitor {
     public void visit(ExprMinusTerm ExprMinusTerm);
     public void visit(ExprTerm ExprTerm);
     public void visit(ExprAddop ExprAddop);
-    public void visit(CondFactDerived2 CondFactDerived2);
-    public void visit(CondFactDerived1 CondFactDerived1);
-    public void visit(CondTermDerived2 CondTermDerived2);
-    public void visit(CondTermDerived1 CondTermDerived1);
-    public void visit(ConditionDerived2 ConditionDerived2);
-    public void visit(ConditionDerived1 ConditionDerived1);
+    public void visit(CondExpr CondExpr);
+    public void visit(Cond Cond);
+    public void visit(ConditionFact ConditionFact);
+    public void visit(CondTermList CondTermList);
+    public void visit(ConditionTerm ConditionTerm);
+    public void visit(ConditionList ConditionList);
     public void visit(ActParamsExpr ActParamsExpr);
     public void visit(ActParamsList ActParamsList);
     public void visit(NoActParams NoActParams);
     public void visit(ActParams ActParams);
-    public void visit(DesignatorSetop DesignatorSetop);
     public void visit(DesignatorActPars DesignatorActPars);
+    public void visit(DesignatorSetop DesignatorSetop);
     public void visit(DesignatorDec DesignatorDec);
     public void visit(DesignatorInc DesignatorInc);
     public void visit(DesginatorAssignop DesginatorAssignop);
@@ -85,6 +86,8 @@ public interface Visitor {
     public void visit(DoWhileEnd DoWhileEnd);
     public void visit(DoWhileStart DoWhileStart);
     public void visit(IfElseStmt IfElseStmt);
+    public void visit(DoWhileStatementWithStmt DoWhileStatementWithStmt);
+    public void visit(DoWhileStatementWithoutCond DoWhileStatementWithoutCond);
     public void visit(DoWhileStatement DoWhileStatement);
     public void visit(ReturnEmptyStmt ReturnEmptyStmt);
     public void visit(ReturnStmt ReturnStmt);
@@ -119,6 +122,7 @@ public interface Visitor {
     public void visit(VarDecl VarDecl);
     public void visit(NoVarDeclarList NoVarDeclarList);
     public void visit(VarDeclarList VarDeclarList);
+    public void visit(BoolConstant BoolConstant);
     public void visit(CharConstant CharConstant);
     public void visit(NumConstant NumConstant);
     public void visit(NoConstList NoConstList);

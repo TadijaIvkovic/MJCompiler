@@ -1,0 +1,2372 @@
+INFO  12:46:22,921 - Compiling source file: C:\Users\The Workstation\eclipse-workspace\MJCompiler\test\program.mj
+INFO  12:46:22,951 - #2 program
+INFO  12:46:22,952 - #47 test301
+INFO  12:46:22,952 - #6 const
+INFO  12:46:22,953 - #47 int
+INFO  12:46:22,953 - #47 nula
+INFO  12:46:22,953 - #23 =
+INFO  12:46:22,953 - #44 0
+INFO  12:46:22,953 - #26 ;
+INFO  12:46:22,954 - #6 const
+INFO  12:46:22,955 - #47 int
+INFO  12:46:22,955 - #47 jedan
+INFO  12:46:22,955 - #23 =
+INFO  12:46:22,955 - #44 1
+INFO  12:46:22,955 - #26 ;
+INFO  12:46:22,955 - #6 const
+INFO  12:46:22,955 - #47 int
+INFO  12:46:22,955 - #47 pet
+INFO  12:46:22,955 - #23 =
+INFO  12:46:22,955 - #44 5
+INFO  12:46:22,955 - #26 ;
+INFO  12:46:22,955 - #47 int
+INFO  12:46:22,956 - #47 niz
+INFO  12:46:22,956 - #33 [
+INFO  12:46:22,956 - #34 ]
+INFO  12:46:22,956 - #26 ;
+INFO  12:46:22,957 - #47 char
+INFO  12:46:22,958 - #47 nizch
+INFO  12:46:22,958 - #33 [
+INFO  12:46:22,958 - #34 ]
+INFO  12:46:22,958 - #26 ;
+INFO  12:46:22,958 - #47 int
+INFO  12:46:22,958 - #47 a
+INFO  12:46:22,958 - #26 ;
+INFO  12:46:22,959 - #47 set
+INFO  12:46:22,959 - #47 s1
+INFO  12:46:22,959 - #27 ,
+INFO  12:46:22,959 - #47 s2
+INFO  12:46:22,959 - #27 ,
+INFO  12:46:22,959 - #47 s3
+INFO  12:46:22,959 - #26 ;
+INFO  12:46:22,959 - #31 {
+INFO  12:46:22,960 - #12 void
+INFO  12:46:22,960 - #47 main
+INFO  12:46:22,960 - #29 (
+INFO  12:46:22,960 - #30 )
+INFO  12:46:22,961 - #47 int
+INFO  12:46:22,961 - #47 bodovi
+INFO  12:46:22,962 - #26 ;
+INFO  12:46:22,962 - #47 int
+INFO  12:46:22,962 - #47 temp
+INFO  12:46:22,962 - #26 ;
+INFO  12:46:22,962 - #31 {
+INFO  12:46:22,962 - #47 bodovi
+INFO  12:46:22,962 - #23 =
+INFO  12:46:22,963 - #44 0
+INFO  12:46:22,963 - #26 ;
+INFO  12:46:22,963 - #47 bodovi
+INFO  12:46:22,963 - #18 +
+INFO  12:46:22,963 - #18 +
+INFO  12:46:22,964 - #26 ;
+INFO  12:46:22,964 - #47 bodovi
+INFO  12:46:22,964 - #23 =
+INFO  12:46:22,964 - #47 bodovi
+INFO  12:46:22,964 - #18 +
+INFO  12:46:22,964 - #47 jedan
+INFO  12:46:22,965 - #26 ;
+INFO  12:46:22,965 - #47 bodovi
+INFO  12:46:22,965 - #23 =
+INFO  12:46:22,965 - #47 bodovi
+INFO  12:46:22,965 - #22 *
+INFO  12:46:22,965 - #47 pet
+INFO  12:46:22,966 - #26 ;
+INFO  12:46:22,966 - #47 bodovi
+INFO  12:46:22,966 - #19 -
+INFO  12:46:22,966 - #19 -
+INFO  12:46:22,966 - #26 ;
+INFO  12:46:22,966 - #9 print
+INFO  12:46:22,966 - #29 (
+INFO  12:46:22,966 - #47 bodovi
+INFO  12:46:22,966 - #30 )
+INFO  12:46:22,966 - #26 ;
+INFO  12:46:22,966 - #9 print
+INFO  12:46:22,966 - #29 (
+INFO  12:46:22,966 - #47 eol
+INFO  12:46:22,966 - #30 )
+INFO  12:46:22,966 - #26 ;
+INFO  12:46:22,966 - #47 niz
+INFO  12:46:22,966 - #23 =
+INFO  12:46:22,966 - #8 new
+INFO  12:46:22,966 - #47 int
+INFO  12:46:22,967 - #33 [
+INFO  12:46:22,967 - #44 3
+INFO  12:46:22,967 - #34 ]
+INFO  12:46:22,967 - #26 ;
+INFO  12:46:22,967 - #47 niz
+INFO  12:46:22,967 - #33 [
+INFO  12:46:22,967 - #47 nula
+INFO  12:46:22,967 - #34 ]
+INFO  12:46:22,967 - #23 =
+INFO  12:46:22,967 - #47 dva
+INFO  12:46:22,967 - #26 ;
+INFO  12:46:22,967 - #47 niz
+INFO  12:46:22,967 - #33 [
+INFO  12:46:22,967 - #47 jedan
+INFO  12:46:22,967 - #34 ]
+INFO  12:46:22,967 - #23 =
+INFO  12:46:22,967 - #44 3
+INFO  12:46:22,967 - #26 ;
+INFO  12:46:22,967 - #47 niz
+INFO  12:46:22,967 - #33 [
+INFO  12:46:22,967 - #47 niz
+INFO  12:46:22,967 - #33 [
+INFO  12:46:22,967 - #47 nula
+INFO  12:46:22,967 - #34 ]
+INFO  12:46:22,967 - #34 ]
+INFO  12:46:22,967 - #23 =
+INFO  12:46:22,967 - #47 niz
+INFO  12:46:22,967 - #33 [
+INFO  12:46:22,967 - #47 niz
+INFO  12:46:22,967 - #33 [
+INFO  12:46:22,967 - #44 1
+INFO  12:46:22,967 - #34 ]
+INFO  12:46:22,968 - #34 ]
+INFO  12:46:22,968 - #22 *
+INFO  12:46:22,968 - #44 4
+INFO  12:46:22,968 - #26 ;
+INFO  12:46:22,968 - #47 bodovi
+INFO  12:46:22,968 - #23 =
+INFO  12:46:22,968 - #47 niz
+INFO  12:46:22,968 - #33 [
+INFO  12:46:22,968 - #44 2
+INFO  12:46:22,968 - #34 ]
+INFO  12:46:22,968 - #20 /
+INFO  12:46:22,968 - #47 niz
+INFO  12:46:22,969 - #33 [
+INFO  12:46:22,969 - #44 0
+INFO  12:46:22,969 - #34 ]
+INFO  12:46:22,969 - #26 ;
+INFO  12:46:22,969 - #9 print
+INFO  12:46:22,969 - #29 (
+INFO  12:46:22,969 - #47 bodovi
+INFO  12:46:22,969 - #30 )
+INFO  12:46:22,969 - #26 ;
+INFO  12:46:22,969 - #9 print
+INFO  12:46:22,969 - #29 (
+INFO  12:46:22,969 - #47 eol
+INFO  12:46:22,969 - #30 )
+INFO  12:46:22,969 - #26 ;
+INFO  12:46:22,969 - #9 print
+INFO  12:46:22,969 - #29 (
+INFO  12:46:22,969 - #47 niz
+INFO  12:46:22,969 - #33 [
+INFO  12:46:22,969 - #44 2
+INFO  12:46:22,969 - #34 ]
+INFO  12:46:22,969 - #30 )
+INFO  12:46:22,969 - #26 ;
+INFO  12:46:22,969 - #9 print
+INFO  12:46:22,969 - #29 (
+INFO  12:46:22,969 - #47 eol
+INFO  12:46:22,969 - #30 )
+INFO  12:46:22,969 - #26 ;
+INFO  12:46:22,969 - #47 nizch
+INFO  12:46:22,969 - #23 =
+INFO  12:46:22,970 - #8 new
+INFO  12:46:22,970 - #47 char
+INFO  12:46:22,970 - #33 [
+INFO  12:46:22,970 - #44 3
+INFO  12:46:22,970 - #34 ]
+INFO  12:46:22,970 - #26 ;
+INFO  12:46:22,970 - #47 nizch
+INFO  12:46:22,970 - #33 [
+INFO  12:46:22,970 - #44 0
+INFO  12:46:22,970 - #34 ]
+INFO  12:46:22,970 - #23 =
+INFO  12:46:22,970 - #45 a
+INFO  12:46:22,970 - #26 ;
+INFO  12:46:22,970 - #47 nizch
+INFO  12:46:22,970 - #33 [
+INFO  12:46:22,970 - #47 jedan
+INFO  12:46:22,970 - #34 ]
+INFO  12:46:22,970 - #23 =
+INFO  12:46:22,970 - #45 b
+INFO  12:46:22,970 - #26 ;
+INFO  12:46:22,970 - #47 nizch
+INFO  12:46:22,970 - #33 [
+INFO  12:46:22,970 - #47 pet
+INFO  12:46:22,970 - #19 -
+INFO  12:46:22,970 - #44 3
+INFO  12:46:22,971 - #34 ]
+INFO  12:46:22,971 - #23 =
+INFO  12:46:22,971 - #45 c
+INFO  12:46:22,971 - #26 ;
+INFO  12:46:22,971 - #9 print
+INFO  12:46:22,971 - #29 (
+INFO  12:46:22,971 - #47 nizch
+INFO  12:46:22,971 - #33 [
+INFO  12:46:22,971 - #44 1
+INFO  12:46:22,971 - #34 ]
+INFO  12:46:22,971 - #30 )
+INFO  12:46:22,971 - #26 ;
+INFO  12:46:22,971 - #9 print
+INFO  12:46:22,972 - #29 (
+INFO  12:46:22,972 - #47 eol
+INFO  12:46:22,972 - #30 )
+INFO  12:46:22,972 - #26 ;
+INFO  12:46:22,972 - #9 print
+INFO  12:46:22,972 - #29 (
+INFO  12:46:22,972 - #47 nizch
+INFO  12:46:22,972 - #33 [
+INFO  12:46:22,972 - #47 jedan
+INFO  12:46:22,972 - #22 *
+INFO  12:46:22,972 - #44 2
+INFO  12:46:22,972 - #34 ]
+INFO  12:46:22,972 - #30 )
+INFO  12:46:22,972 - #26 ;
+INFO  12:46:22,972 - #9 print
+INFO  12:46:22,972 - #29 (
+INFO  12:46:22,972 - #47 eol
+INFO  12:46:22,972 - #30 )
+INFO  12:46:22,972 - #26 ;
+INFO  12:46:22,972 - #9 print
+INFO  12:46:22,972 - #29 (
+INFO  12:46:22,972 - #47 ord
+INFO  12:46:22,972 - #29 (
+INFO  12:46:22,972 - #47 nizch
+INFO  12:46:22,972 - #33 [
+INFO  12:46:22,972 - #44 0
+INFO  12:46:22,972 - #34 ]
+INFO  12:46:22,972 - #30 )
+INFO  12:46:22,972 - #30 )
+INFO  12:46:22,973 - #26 ;
+INFO  12:46:22,973 - #47 a
+INFO  12:46:22,973 - #23 =
+INFO  12:46:22,973 - #44 1
+INFO  12:46:22,973 - #26 ;
+INFO  12:46:22,973 - #10 read
+INFO  12:46:22,973 - #29 (
+INFO  12:46:22,973 - #47 bodovi
+INFO  12:46:22,973 - #30 )
+INFO  12:46:22,973 - #26 ;
+INFO  12:46:22,973 - #47 bodovi
+INFO  12:46:22,973 - #23 =
+INFO  12:46:22,973 - #19 -
+INFO  12:46:22,973 - #47 bodovi
+INFO  12:46:22,973 - #18 +
+INFO  12:46:22,973 - #29 (
+INFO  12:46:22,973 - #47 pet
+INFO  12:46:22,973 - #22 *
+INFO  12:46:22,973 - #47 a
+INFO  12:46:22,973 - #20 /
+INFO  12:46:22,973 - #44 2
+INFO  12:46:22,973 - #19 -
+INFO  12:46:22,973 - #47 nula
+INFO  12:46:22,973 - #30 )
+INFO  12:46:22,973 - #22 *
+INFO  12:46:22,974 - #47 bodovi
+INFO  12:46:22,974 - #19 -
+INFO  12:46:22,974 - #29 (
+INFO  12:46:22,974 - #44 3
+INFO  12:46:22,974 - #21 %
+INFO  12:46:22,974 - #44 2
+INFO  12:46:22,975 - #18 +
+INFO  12:46:22,975 - #44 3
+INFO  12:46:22,975 - #22 *
+INFO  12:46:22,975 - #44 2
+INFO  12:46:22,975 - #19 -
+INFO  12:46:22,975 - #44 7
+INFO  12:46:22,975 - #30 )
+INFO  12:46:22,975 - #26 ;
+INFO  12:46:22,975 - #9 print
+INFO  12:46:22,975 - #29 (
+INFO  12:46:22,975 - #47 bodovi
+INFO  12:46:22,975 - #30 )
+INFO  12:46:22,975 - #26 ;
+INFO  12:46:22,975 - #47 niz
+INFO  12:46:22,975 - #33 [
+INFO  12:46:22,975 - #44 0
+INFO  12:46:22,975 - #34 ]
+INFO  12:46:22,975 - #23 =
+INFO  12:46:22,975 - #44 1
+INFO  12:46:22,975 - #26 ;
+INFO  12:46:22,976 - #47 niz
+INFO  12:46:22,976 - #33 [
+INFO  12:46:22,976 - #44 1
+INFO  12:46:22,976 - #34 ]
+INFO  12:46:22,976 - #23 =
+INFO  12:46:22,976 - #44 2
+INFO  12:46:22,976 - #26 ;
+INFO  12:46:22,976 - #47 niz
+INFO  12:46:22,976 - #33 [
+INFO  12:46:22,976 - #44 2
+INFO  12:46:22,976 - #34 ]
+INFO  12:46:22,976 - #23 =
+INFO  12:46:22,976 - #44 3
+INFO  12:46:22,976 - #26 ;
+INFO  12:46:22,976 - #47 s1
+INFO  12:46:22,976 - #23 =
+INFO  12:46:22,976 - #8 new
+INFO  12:46:22,976 - #47 set
+INFO  12:46:22,976 - #33 [
+INFO  12:46:22,976 - #44 5
+INFO  12:46:22,976 - #34 ]
+INFO  12:46:22,976 - #26 ;
+INFO  12:46:22,976 - #47 s2
+INFO  12:46:22,976 - #23 =
+INFO  12:46:22,976 - #8 new
+INFO  12:46:22,976 - #47 set
+INFO  12:46:22,976 - #33 [
+INFO  12:46:22,976 - #44 5
+INFO  12:46:22,976 - #34 ]
+INFO  12:46:22,976 - #26 ;
+INFO  12:46:22,977 - #47 s3
+INFO  12:46:22,977 - #23 =
+INFO  12:46:22,977 - #8 new
+INFO  12:46:22,977 - #47 set
+INFO  12:46:22,977 - #33 [
+INFO  12:46:22,977 - #44 10
+INFO  12:46:22,977 - #34 ]
+INFO  12:46:22,977 - #26 ;
+INFO  12:46:22,977 - #47 addAll
+INFO  12:46:22,977 - #29 (
+INFO  12:46:22,977 - #47 s1
+INFO  12:46:22,977 - #27 ,
+INFO  12:46:22,977 - #47 niz
+INFO  12:46:22,977 - #30 )
+INFO  12:46:22,977 - #26 ;
+INFO  12:46:22,977 - #47 add
+INFO  12:46:22,977 - #29 (
+INFO  12:46:22,977 - #47 s2
+INFO  12:46:22,977 - #27 ,
+INFO  12:46:22,977 - #44 3
+INFO  12:46:22,977 - #30 )
+INFO  12:46:22,977 - #26 ;
+INFO  12:46:22,977 - #47 add
+INFO  12:46:22,977 - #29 (
+INFO  12:46:22,977 - #47 s2
+INFO  12:46:22,977 - #27 ,
+INFO  12:46:22,977 - #44 4
+INFO  12:46:22,977 - #30 )
+INFO  12:46:22,977 - #26 ;
+INFO  12:46:22,977 - #47 add
+INFO  12:46:22,977 - #29 (
+INFO  12:46:22,977 - #47 s2
+INFO  12:46:22,977 - #27 ,
+INFO  12:46:22,977 - #44 5
+INFO  12:46:22,977 - #30 )
+INFO  12:46:22,977 - #26 ;
+INFO  12:46:22,977 - #47 s3
+INFO  12:46:22,977 - #23 =
+INFO  12:46:22,977 - #47 s1
+INFO  12:46:22,977 - #18 +
+INFO  12:46:22,977 - #47 s2
+INFO  12:46:22,977 - #26 ;
+INFO  12:46:22,977 - #9 print
+INFO  12:46:22,977 - #29 (
+INFO  12:46:22,978 - #47 s3
+INFO  12:46:22,978 - #30 )
+INFO  12:46:22,978 - #26 ;
+INFO  12:46:22,978 - #9 print
+INFO  12:46:22,978 - #29 (
+INFO  12:46:22,978 - #47 eol
+INFO  12:46:22,978 - #30 )
+INFO  12:46:22,978 - #26 ;
+INFO  12:46:22,978 - #47 niz
+INFO  12:46:22,978 - #33 [
+INFO  12:46:22,978 - #44 0
+INFO  12:46:22,978 - #34 ]
+INFO  12:46:22,978 - #23 =
+INFO  12:46:22,978 - #44 5
+INFO  12:46:22,978 - #26 ;
+INFO  12:46:22,978 - #47 niz
+INFO  12:46:22,978 - #33 [
+INFO  12:46:22,978 - #44 1
+INFO  12:46:22,978 - #34 ]
+INFO  12:46:22,978 - #23 =
+INFO  12:46:22,978 - #44 5
+INFO  12:46:22,978 - #26 ;
+INFO  12:46:22,978 - #47 niz
+INFO  12:46:22,978 - #33 [
+INFO  12:46:22,978 - #44 2
+INFO  12:46:22,978 - #34 ]
+INFO  12:46:22,978 - #23 =
+INFO  12:46:22,978 - #44 10
+INFO  12:46:22,978 - #26 ;
+INFO  12:46:22,978 - #47 s1
+INFO  12:46:22,978 - #23 =
+INFO  12:46:22,978 - #8 new
+INFO  12:46:22,978 - #47 set
+INFO  12:46:22,978 - #33 [
+INFO  12:46:22,978 - #44 5
+INFO  12:46:22,978 - #34 ]
+INFO  12:46:22,978 - #26 ;
+INFO  12:46:22,978 - #47 s2
+INFO  12:46:22,978 - #23 =
+INFO  12:46:22,978 - #8 new
+INFO  12:46:22,978 - #47 set
+INFO  12:46:22,978 - #33 [
+INFO  12:46:22,978 - #44 5
+INFO  12:46:22,978 - #34 ]
+INFO  12:46:22,978 - #26 ;
+INFO  12:46:22,978 - #47 s3
+INFO  12:46:22,978 - #23 =
+INFO  12:46:22,978 - #8 new
+INFO  12:46:22,978 - #47 set
+INFO  12:46:22,978 - #33 [
+INFO  12:46:22,978 - #44 10
+INFO  12:46:22,978 - #34 ]
+INFO  12:46:22,978 - #26 ;
+INFO  12:46:22,978 - #47 addAll
+INFO  12:46:22,978 - #29 (
+INFO  12:46:22,978 - #47 s1
+INFO  12:46:22,978 - #27 ,
+INFO  12:46:22,978 - #47 niz
+INFO  12:46:22,978 - #30 )
+INFO  12:46:22,978 - #26 ;
+INFO  12:46:22,978 - #10 read
+INFO  12:46:22,978 - #29 (
+INFO  12:46:22,979 - #47 temp
+INFO  12:46:22,979 - #30 )
+INFO  12:46:22,979 - #26 ;
+INFO  12:46:22,979 - #47 add
+INFO  12:46:22,979 - #29 (
+INFO  12:46:22,979 - #47 s2
+INFO  12:46:22,979 - #27 ,
+INFO  12:46:22,979 - #47 temp
+INFO  12:46:22,979 - #30 )
+INFO  12:46:22,979 - #26 ;
+INFO  12:46:22,979 - #10 read
+INFO  12:46:22,979 - #29 (
+INFO  12:46:22,979 - #47 temp
+INFO  12:46:22,979 - #30 )
+INFO  12:46:22,979 - #26 ;
+INFO  12:46:22,979 - #47 add
+INFO  12:46:22,979 - #29 (
+INFO  12:46:22,979 - #47 s2
+INFO  12:46:22,979 - #27 ,
+INFO  12:46:22,979 - #47 temp
+INFO  12:46:22,979 - #30 )
+INFO  12:46:22,979 - #26 ;
+INFO  12:46:22,979 - #10 read
+INFO  12:46:22,979 - #29 (
+INFO  12:46:22,979 - #47 temp
+INFO  12:46:22,979 - #30 )
+INFO  12:46:22,979 - #26 ;
+INFO  12:46:22,979 - #47 add
+INFO  12:46:22,979 - #29 (
+INFO  12:46:22,979 - #47 s2
+INFO  12:46:22,979 - #27 ,
+INFO  12:46:22,979 - #47 temp
+INFO  12:46:22,979 - #30 )
+INFO  12:46:22,979 - #26 ;
+INFO  12:46:22,979 - #47 s3
+INFO  12:46:22,979 - #23 =
+INFO  12:46:22,979 - #47 s1
+INFO  12:46:22,979 - #18 +
+INFO  12:46:22,979 - #47 s2
+INFO  12:46:22,979 - #26 ;
+INFO  12:46:22,979 - #9 print
+INFO  12:46:22,979 - #29 (
+INFO  12:46:22,979 - #47 s3
+INFO  12:46:22,979 - #30 )
+INFO  12:46:22,979 - #26 ;
+INFO  12:46:22,979 - #32 }
+INFO  12:46:22,979 - #32 }
+INFO  12:46:22,998 - Program(
+  ProgName(
+   test301
+  ) [ProgName]
+  ConstDecLists(
+    ConstDeclList(
+      Type(
+       int
+      ) [Type]
+     nula
+      NumConstant(
+       0
+      ) [NumConstant]
+      NoConstList(
+      ) [NoConstList]
+    ) [ConstDeclList]
+    ConstDecLists(
+      ConstDeclList(
+        Type(
+         int
+        ) [Type]
+       jedan
+        NumConstant(
+         1
+        ) [NumConstant]
+        NoConstList(
+        ) [NoConstList]
+      ) [ConstDeclList]
+      ConstDecLists(
+        ConstDeclList(
+          Type(
+           int
+          ) [Type]
+         pet
+          NumConstant(
+           5
+          ) [NumConstant]
+          NoConstList(
+          ) [NoConstList]
+        ) [ConstDeclList]
+        VarDecLists(
+          VarDecl(
+            Type(
+             int
+            ) [Type]
+            VarDeclarat(
+              VarDeclaration(
+               niz
+                Bracket(
+                ) [Bracket]
+              ) [VarDeclaration]
+            ) [VarDeclarat]
+          ) [VarDecl]
+          VarDecLists(
+            VarDecl(
+              Type(
+               char
+              ) [Type]
+              VarDeclarat(
+                VarDeclaration(
+                 nizch
+                  Bracket(
+                  ) [Bracket]
+                ) [VarDeclaration]
+              ) [VarDeclarat]
+            ) [VarDecl]
+            VarDecLists(
+              VarDecl(
+                Type(
+                 int
+                ) [Type]
+                VarDeclarat(
+                  VarDeclaration(
+                   a
+                    NoBracket(
+                    ) [NoBracket]
+                  ) [VarDeclaration]
+                ) [VarDeclarat]
+              ) [VarDecl]
+              VarDecLists(
+                VarDecl(
+                  Type(
+                   set
+                  ) [Type]
+                  VarDeclaratList(
+                    VarDeclaratList(
+                      VarDeclarat(
+                        VarDeclaration(
+                         s1
+                          NoBracket(
+                          ) [NoBracket]
+                        ) [VarDeclaration]
+                      ) [VarDeclarat]
+                      VarDeclaration(
+                       s2
+                        NoBracket(
+                        ) [NoBracket]
+                      ) [VarDeclaration]
+                    ) [VarDeclaratList]
+                    VarDeclaration(
+                     s3
+                      NoBracket(
+                      ) [NoBracket]
+                    ) [VarDeclaration]
+                  ) [VarDeclaratList]
+                ) [VarDecl]
+                NoDecLists(
+                ) [NoDecLists]
+              ) [VarDecLists]
+            ) [VarDecLists]
+          ) [VarDecLists]
+        ) [VarDecLists]
+      ) [ConstDecLists]
+    ) [ConstDecLists]
+  ) [ConstDecLists]
+  MethDeclList(
+    NoMethDeclList(
+    ) [NoMethDeclList]
+    MethodDecl(
+      NoMethTypeName(
+       main
+        NoFormalPars(
+        ) [NoFormalPars]
+      ) [NoMethTypeName]
+      VarDeclarList(
+        VarDeclarList(
+          NoVarDeclarList(
+          ) [NoVarDeclarList]
+          VarDecl(
+            Type(
+             int
+            ) [Type]
+            VarDeclarat(
+              VarDeclaration(
+               bodovi
+                NoBracket(
+                ) [NoBracket]
+              ) [VarDeclaration]
+            ) [VarDeclarat]
+          ) [VarDecl]
+        ) [VarDeclarList]
+        VarDecl(
+          Type(
+           int
+          ) [Type]
+          VarDeclarat(
+            VarDeclaration(
+             temp
+              NoBracket(
+              ) [NoBracket]
+            ) [VarDeclaration]
+          ) [VarDeclarat]
+        ) [VarDecl]
+      ) [VarDeclarList]
+      StmtList(
+        StmtList(
+          StmtList(
+            StmtList(
+              StmtList(
+                StmtList(
+                  StmtList(
+                    StmtList(
+                      StmtList(
+                        StmtList(
+                          StmtList(
+                            StmtList(
+                              StmtList(
+                                StmtList(
+                                  StmtList(
+                                    StmtList(
+                                      StmtList(
+                                        StmtList(
+                                          StmtList(
+                                            StmtList(
+                                              StmtList(
+                                                StmtList(
+                                                  StmtList(
+                                                    StmtList(
+                                                      StmtList(
+                                                        StmtList(
+                                                          StmtList(
+                                                            StmtList(
+                                                              StmtList(
+                                                                StmtList(
+                                                                  StmtList(
+                                                                    StmtList(
+                                                                      StmtList(
+                                                                        StmtList(
+                                                                          StmtList(
+                                                                            StmtList(
+                                                                              StmtList(
+                                                                                StmtList(
+                                                                                  StmtList(
+                                                                                    StmtList(
+                                                                                      StmtList(
+                                                                                        StmtList(
+                                                                                          StmtList(
+                                                                                            StmtList(
+                                                                                              StmtList(
+                                                                                                StmtList(
+                                                                                                  StmtList(
+                                                                                                    StmtList(
+                                                                                                      StmtList(
+                                                                                                        StmtList(
+                                                                                                          StmtList(
+                                                                                                            StmtList(
+                                                                                                              StmtList(
+                                                                                                                StmtList(
+                                                                                                                  StmtList(
+                                                                                                                    StmtList(
+                                                                                                                      StmtList(
+                                                                                                                        NoStmtList(
+                                                                                                                        ) [NoStmtList]
+                                                                                                                        MatchedStmt(
+                                                                                                                          DesStmt(
+                                                                                                                            DesginatorAssignop(
+                                                                                                                              DesignatorEl(
+                                                                                                                               bodovi
+                                                                                                                                NoDesElem(
+                                                                                                                                ) [NoDesElem]
+                                                                                                                              ) [DesignatorEl]
+                                                                                                                              Assignop(
+                                                                                                                              ) [Assignop]
+                                                                                                                              ExprTerm(
+                                                                                                                                TermFactor(
+                                                                                                                                  FactorNum(
+                                                                                                                                   0
+                                                                                                                                  ) [FactorNum]
+                                                                                                                                ) [TermFactor]
+                                                                                                                              ) [ExprTerm]
+                                                                                                                            ) [DesginatorAssignop]
+                                                                                                                          ) [DesStmt]
+                                                                                                                        ) [MatchedStmt]
+                                                                                                                      ) [StmtList]
+                                                                                                                      MatchedStmt(
+                                                                                                                        DesStmt(
+                                                                                                                          DesignatorInc(
+                                                                                                                            DesignatorEl(
+                                                                                                                             bodovi
+                                                                                                                              NoDesElem(
+                                                                                                                              ) [NoDesElem]
+                                                                                                                            ) [DesignatorEl]
+                                                                                                                          ) [DesignatorInc]
+                                                                                                                        ) [DesStmt]
+                                                                                                                      ) [MatchedStmt]
+                                                                                                                    ) [StmtList]
+                                                                                                                    MatchedStmt(
+                                                                                                                      DesStmt(
+                                                                                                                        DesginatorAssignop(
+                                                                                                                          DesignatorEl(
+                                                                                                                           bodovi
+                                                                                                                            NoDesElem(
+                                                                                                                            ) [NoDesElem]
+                                                                                                                          ) [DesignatorEl]
+                                                                                                                          Assignop(
+                                                                                                                          ) [Assignop]
+                                                                                                                          ExprAddop(
+                                                                                                                            ExprTerm(
+                                                                                                                              TermFactor(
+                                                                                                                                FactorDes(
+                                                                                                                                  DesignatorEl(
+                                                                                                                                   bodovi
+                                                                                                                                    NoDesElem(
+                                                                                                                                    ) [NoDesElem]
+                                                                                                                                  ) [DesignatorEl]
+                                                                                                                                ) [FactorDes]
+                                                                                                                              ) [TermFactor]
+                                                                                                                            ) [ExprTerm]
+                                                                                                                            AddopPlus(
+                                                                                                                            ) [AddopPlus]
+                                                                                                                            TermFactor(
+                                                                                                                              FactorDes(
+                                                                                                                                DesignatorEl(
+                                                                                                                                 jedan
+                                                                                                                                  NoDesElem(
+                                                                                                                                  ) [NoDesElem]
+                                                                                                                                ) [DesignatorEl]
+                                                                                                                              ) [FactorDes]
+                                                                                                                            ) [TermFactor]
+                                                                                                                          ) [ExprAddop]
+                                                                                                                        ) [DesginatorAssignop]
+                                                                                                                      ) [DesStmt]
+                                                                                                                    ) [MatchedStmt]
+                                                                                                                  ) [StmtList]
+                                                                                                                  MatchedStmt(
+                                                                                                                    DesStmt(
+                                                                                                                      DesginatorAssignop(
+                                                                                                                        DesignatorEl(
+                                                                                                                         bodovi
+                                                                                                                          NoDesElem(
+                                                                                                                          ) [NoDesElem]
+                                                                                                                        ) [DesignatorEl]
+                                                                                                                        Assignop(
+                                                                                                                        ) [Assignop]
+                                                                                                                        ExprTerm(
+                                                                                                                          TermMulop(
+                                                                                                                            TermFactor(
+                                                                                                                              FactorDes(
+                                                                                                                                DesignatorEl(
+                                                                                                                                 bodovi
+                                                                                                                                  NoDesElem(
+                                                                                                                                  ) [NoDesElem]
+                                                                                                                                ) [DesignatorEl]
+                                                                                                                              ) [FactorDes]
+                                                                                                                            ) [TermFactor]
+                                                                                                                            MulopMul(
+                                                                                                                            ) [MulopMul]
+                                                                                                                            FactorDes(
+                                                                                                                              DesignatorEl(
+                                                                                                                               pet
+                                                                                                                                NoDesElem(
+                                                                                                                                ) [NoDesElem]
+                                                                                                                              ) [DesignatorEl]
+                                                                                                                            ) [FactorDes]
+                                                                                                                          ) [TermMulop]
+                                                                                                                        ) [ExprTerm]
+                                                                                                                      ) [DesginatorAssignop]
+                                                                                                                    ) [DesStmt]
+                                                                                                                  ) [MatchedStmt]
+                                                                                                                ) [StmtList]
+                                                                                                                MatchedStmt(
+                                                                                                                  DesStmt(
+                                                                                                                    DesignatorDec(
+                                                                                                                      DesignatorEl(
+                                                                                                                       bodovi
+                                                                                                                        NoDesElem(
+                                                                                                                        ) [NoDesElem]
+                                                                                                                      ) [DesignatorEl]
+                                                                                                                    ) [DesignatorDec]
+                                                                                                                  ) [DesStmt]
+                                                                                                                ) [MatchedStmt]
+                                                                                                              ) [StmtList]
+                                                                                                              MatchedStmt(
+                                                                                                                PrintStmt(
+                                                                                                                  ExprTerm(
+                                                                                                                    TermFactor(
+                                                                                                                      FactorDes(
+                                                                                                                        DesignatorEl(
+                                                                                                                         bodovi
+                                                                                                                          NoDesElem(
+                                                                                                                          ) [NoDesElem]
+                                                                                                                        ) [DesignatorEl]
+                                                                                                                      ) [FactorDes]
+                                                                                                                    ) [TermFactor]
+                                                                                                                  ) [ExprTerm]
+                                                                                                                ) [PrintStmt]
+                                                                                                              ) [MatchedStmt]
+                                                                                                            ) [StmtList]
+                                                                                                            MatchedStmt(
+                                                                                                              PrintStmt(
+                                                                                                                ExprTerm(
+                                                                                                                  TermFactor(
+                                                                                                                    FactorDes(
+                                                                                                                      DesignatorEl(
+                                                                                                                       eol
+                                                                                                                        NoDesElem(
+                                                                                                                        ) [NoDesElem]
+                                                                                                                      ) [DesignatorEl]
+                                                                                                                    ) [FactorDes]
+                                                                                                                  ) [TermFactor]
+                                                                                                                ) [ExprTerm]
+                                                                                                              ) [PrintStmt]
+                                                                                                            ) [MatchedStmt]
+                                                                                                          ) [StmtList]
+                                                                                                          MatchedStmt(
+                                                                                                            DesStmt(
+                                                                                                              DesginatorAssignop(
+                                                                                                                DesignatorEl(
+                                                                                                                 niz
+                                                                                                                  NoDesElem(
+                                                                                                                  ) [NoDesElem]
+                                                                                                                ) [DesignatorEl]
+                                                                                                                Assignop(
+                                                                                                                ) [Assignop]
+                                                                                                                ExprTerm(
+                                                                                                                  TermFactor(
+                                                                                                                    FactorNewExpr(
+                                                                                                                      Type(
+                                                                                                                       int
+                                                                                                                      ) [Type]
+                                                                                                                      ExprTerm(
+                                                                                                                        TermFactor(
+                                                                                                                          FactorNum(
+                                                                                                                           3
+                                                                                                                          ) [FactorNum]
+                                                                                                                        ) [TermFactor]
+                                                                                                                      ) [ExprTerm]
+                                                                                                                    ) [FactorNewExpr]
+                                                                                                                  ) [TermFactor]
+                                                                                                                ) [ExprTerm]
+                                                                                                              ) [DesginatorAssignop]
+                                                                                                            ) [DesStmt]
+                                                                                                          ) [MatchedStmt]
+                                                                                                        ) [StmtList]
+                                                                                                        MatchedStmt(
+                                                                                                          DesStmt(
+                                                                                                            DesginatorAssignop(
+                                                                                                              DesignatorEl(
+                                                                                                               niz
+                                                                                                                DesElem(
+                                                                                                                  ExprTerm(
+                                                                                                                    TermFactor(
+                                                                                                                      FactorDes(
+                                                                                                                        DesignatorEl(
+                                                                                                                         nula
+                                                                                                                          NoDesElem(
+                                                                                                                          ) [NoDesElem]
+                                                                                                                        ) [DesignatorEl]
+                                                                                                                      ) [FactorDes]
+                                                                                                                    ) [TermFactor]
+                                                                                                                  ) [ExprTerm]
+                                                                                                                ) [DesElem]
+                                                                                                              ) [DesignatorEl]
+                                                                                                              Assignop(
+                                                                                                              ) [Assignop]
+                                                                                                              ExprTerm(
+                                                                                                                TermFactor(
+                                                                                                                  FactorDes(
+                                                                                                                    DesignatorEl(
+                                                                                                                     dva
+                                                                                                                      NoDesElem(
+                                                                                                                      ) [NoDesElem]
+                                                                                                                    ) [DesignatorEl]
+                                                                                                                  ) [FactorDes]
+                                                                                                                ) [TermFactor]
+                                                                                                              ) [ExprTerm]
+                                                                                                            ) [DesginatorAssignop]
+                                                                                                          ) [DesStmt]
+                                                                                                        ) [MatchedStmt]
+                                                                                                      ) [StmtList]
+                                                                                                      MatchedStmt(
+                                                                                                        DesStmt(
+                                                                                                          DesginatorAssignop(
+                                                                                                            DesignatorEl(
+                                                                                                             niz
+                                                                                                              DesElem(
+                                                                                                                ExprTerm(
+                                                                                                                  TermFactor(
+                                                                                                                    FactorDes(
+                                                                                                                      DesignatorEl(
+                                                                                                                       jedan
+                                                                                                                        NoDesElem(
+                                                                                                                        ) [NoDesElem]
+                                                                                                                      ) [DesignatorEl]
+                                                                                                                    ) [FactorDes]
+                                                                                                                  ) [TermFactor]
+                                                                                                                ) [ExprTerm]
+                                                                                                              ) [DesElem]
+                                                                                                            ) [DesignatorEl]
+                                                                                                            Assignop(
+                                                                                                            ) [Assignop]
+                                                                                                            ExprTerm(
+                                                                                                              TermFactor(
+                                                                                                                FactorNum(
+                                                                                                                 3
+                                                                                                                ) [FactorNum]
+                                                                                                              ) [TermFactor]
+                                                                                                            ) [ExprTerm]
+                                                                                                          ) [DesginatorAssignop]
+                                                                                                        ) [DesStmt]
+                                                                                                      ) [MatchedStmt]
+                                                                                                    ) [StmtList]
+                                                                                                    MatchedStmt(
+                                                                                                      DesStmt(
+                                                                                                        DesginatorAssignop(
+                                                                                                          DesignatorEl(
+                                                                                                           niz
+                                                                                                            DesElem(
+                                                                                                              ExprTerm(
+                                                                                                                TermFactor(
+                                                                                                                  FactorDes(
+                                                                                                                    DesignatorEl(
+                                                                                                                     niz
+                                                                                                                      DesElem(
+                                                                                                                        ExprTerm(
+                                                                                                                          TermFactor(
+                                                                                                                            FactorDes(
+                                                                                                                              DesignatorEl(
+                                                                                                                               nula
+                                                                                                                                NoDesElem(
+                                                                                                                                ) [NoDesElem]
+                                                                                                                              ) [DesignatorEl]
+                                                                                                                            ) [FactorDes]
+                                                                                                                          ) [TermFactor]
+                                                                                                                        ) [ExprTerm]
+                                                                                                                      ) [DesElem]
+                                                                                                                    ) [DesignatorEl]
+                                                                                                                  ) [FactorDes]
+                                                                                                                ) [TermFactor]
+                                                                                                              ) [ExprTerm]
+                                                                                                            ) [DesElem]
+                                                                                                          ) [DesignatorEl]
+                                                                                                          Assignop(
+                                                                                                          ) [Assignop]
+                                                                                                          ExprTerm(
+                                                                                                            TermMulop(
+                                                                                                              TermFactor(
+                                                                                                                FactorDes(
+                                                                                                                  DesignatorEl(
+                                                                                                                   niz
+                                                                                                                    DesElem(
+                                                                                                                      ExprTerm(
+                                                                                                                        TermFactor(
+                                                                                                                          FactorDes(
+                                                                                                                            DesignatorEl(
+                                                                                                                             niz
+                                                                                                                              DesElem(
+                                                                                                                                ExprTerm(
+                                                                                                                                  TermFactor(
+                                                                                                                                    FactorNum(
+                                                                                                                                     1
+                                                                                                                                    ) [FactorNum]
+                                                                                                                                  ) [TermFactor]
+                                                                                                                                ) [ExprTerm]
+                                                                                                                              ) [DesElem]
+                                                                                                                            ) [DesignatorEl]
+                                                                                                                          ) [FactorDes]
+                                                                                                                        ) [TermFactor]
+                                                                                                                      ) [ExprTerm]
+                                                                                                                    ) [DesElem]
+                                                                                                                  ) [DesignatorEl]
+                                                                                                                ) [FactorDes]
+                                                                                                              ) [TermFactor]
+                                                                                                              MulopMul(
+                                                                                                              ) [MulopMul]
+                                                                                                              FactorNum(
+                                                                                                               4
+                                                                                                              ) [FactorNum]
+                                                                                                            ) [TermMulop]
+                                                                                                          ) [ExprTerm]
+                                                                                                        ) [DesginatorAssignop]
+                                                                                                      ) [DesStmt]
+                                                                                                    ) [MatchedStmt]
+                                                                                                  ) [StmtList]
+                                                                                                  MatchedStmt(
+                                                                                                    DesStmt(
+                                                                                                      DesginatorAssignop(
+                                                                                                        DesignatorEl(
+                                                                                                         bodovi
+                                                                                                          NoDesElem(
+                                                                                                          ) [NoDesElem]
+                                                                                                        ) [DesignatorEl]
+                                                                                                        Assignop(
+                                                                                                        ) [Assignop]
+                                                                                                        ExprTerm(
+                                                                                                          TermMulop(
+                                                                                                            TermFactor(
+                                                                                                              FactorDes(
+                                                                                                                DesignatorEl(
+                                                                                                                 niz
+                                                                                                                  DesElem(
+                                                                                                                    ExprTerm(
+                                                                                                                      TermFactor(
+                                                                                                                        FactorNum(
+                                                                                                                         2
+                                                                                                                        ) [FactorNum]
+                                                                                                                      ) [TermFactor]
+                                                                                                                    ) [ExprTerm]
+                                                                                                                  ) [DesElem]
+                                                                                                                ) [DesignatorEl]
+                                                                                                              ) [FactorDes]
+                                                                                                            ) [TermFactor]
+                                                                                                            MulopDiv(
+                                                                                                            ) [MulopDiv]
+                                                                                                            FactorDes(
+                                                                                                              DesignatorEl(
+                                                                                                               niz
+                                                                                                                DesElem(
+                                                                                                                  ExprTerm(
+                                                                                                                    TermFactor(
+                                                                                                                      FactorNum(
+                                                                                                                       0
+                                                                                                                      ) [FactorNum]
+                                                                                                                    ) [TermFactor]
+                                                                                                                  ) [ExprTerm]
+                                                                                                                ) [DesElem]
+                                                                                                              ) [DesignatorEl]
+                                                                                                            ) [FactorDes]
+                                                                                                          ) [TermMulop]
+                                                                                                        ) [ExprTerm]
+                                                                                                      ) [DesginatorAssignop]
+                                                                                                    ) [DesStmt]
+                                                                                                  ) [MatchedStmt]
+                                                                                                ) [StmtList]
+                                                                                                MatchedStmt(
+                                                                                                  PrintStmt(
+                                                                                                    ExprTerm(
+                                                                                                      TermFactor(
+                                                                                                        FactorDes(
+                                                                                                          DesignatorEl(
+                                                                                                           bodovi
+                                                                                                            NoDesElem(
+                                                                                                            ) [NoDesElem]
+                                                                                                          ) [DesignatorEl]
+                                                                                                        ) [FactorDes]
+                                                                                                      ) [TermFactor]
+                                                                                                    ) [ExprTerm]
+                                                                                                  ) [PrintStmt]
+                                                                                                ) [MatchedStmt]
+                                                                                              ) [StmtList]
+                                                                                              MatchedStmt(
+                                                                                                PrintStmt(
+                                                                                                  ExprTerm(
+                                                                                                    TermFactor(
+                                                                                                      FactorDes(
+                                                                                                        DesignatorEl(
+                                                                                                         eol
+                                                                                                          NoDesElem(
+                                                                                                          ) [NoDesElem]
+                                                                                                        ) [DesignatorEl]
+                                                                                                      ) [FactorDes]
+                                                                                                    ) [TermFactor]
+                                                                                                  ) [ExprTerm]
+                                                                                                ) [PrintStmt]
+                                                                                              ) [MatchedStmt]
+                                                                                            ) [StmtList]
+                                                                                            MatchedStmt(
+                                                                                              PrintStmt(
+                                                                                                ExprTerm(
+                                                                                                  TermFactor(
+                                                                                                    FactorDes(
+                                                                                                      DesignatorEl(
+                                                                                                       niz
+                                                                                                        DesElem(
+                                                                                                          ExprTerm(
+                                                                                                            TermFactor(
+                                                                                                              FactorNum(
+                                                                                                               2
+                                                                                                              ) [FactorNum]
+                                                                                                            ) [TermFactor]
+                                                                                                          ) [ExprTerm]
+                                                                                                        ) [DesElem]
+                                                                                                      ) [DesignatorEl]
+                                                                                                    ) [FactorDes]
+                                                                                                  ) [TermFactor]
+                                                                                                ) [ExprTerm]
+                                                                                              ) [PrintStmt]
+                                                                                            ) [MatchedStmt]
+                                                                                          ) [StmtList]
+                                                                                          MatchedStmt(
+                                                                                            PrintStmt(
+                                                                                              ExprTerm(
+                                                                                                TermFactor(
+                                                                                                  FactorDes(
+                                                                                                    DesignatorEl(
+                                                                                                     eol
+                                                                                                      NoDesElem(
+                                                                                                      ) [NoDesElem]
+                                                                                                    ) [DesignatorEl]
+                                                                                                  ) [FactorDes]
+                                                                                                ) [TermFactor]
+                                                                                              ) [ExprTerm]
+                                                                                            ) [PrintStmt]
+                                                                                          ) [MatchedStmt]
+                                                                                        ) [StmtList]
+                                                                                        MatchedStmt(
+                                                                                          DesStmt(
+                                                                                            DesginatorAssignop(
+                                                                                              DesignatorEl(
+                                                                                               nizch
+                                                                                                NoDesElem(
+                                                                                                ) [NoDesElem]
+                                                                                              ) [DesignatorEl]
+                                                                                              Assignop(
+                                                                                              ) [Assignop]
+                                                                                              ExprTerm(
+                                                                                                TermFactor(
+                                                                                                  FactorNewExpr(
+                                                                                                    Type(
+                                                                                                     char
+                                                                                                    ) [Type]
+                                                                                                    ExprTerm(
+                                                                                                      TermFactor(
+                                                                                                        FactorNum(
+                                                                                                         3
+                                                                                                        ) [FactorNum]
+                                                                                                      ) [TermFactor]
+                                                                                                    ) [ExprTerm]
+                                                                                                  ) [FactorNewExpr]
+                                                                                                ) [TermFactor]
+                                                                                              ) [ExprTerm]
+                                                                                            ) [DesginatorAssignop]
+                                                                                          ) [DesStmt]
+                                                                                        ) [MatchedStmt]
+                                                                                      ) [StmtList]
+                                                                                      MatchedStmt(
+                                                                                        DesStmt(
+                                                                                          DesginatorAssignop(
+                                                                                            DesignatorEl(
+                                                                                             nizch
+                                                                                              DesElem(
+                                                                                                ExprTerm(
+                                                                                                  TermFactor(
+                                                                                                    FactorNum(
+                                                                                                     0
+                                                                                                    ) [FactorNum]
+                                                                                                  ) [TermFactor]
+                                                                                                ) [ExprTerm]
+                                                                                              ) [DesElem]
+                                                                                            ) [DesignatorEl]
+                                                                                            Assignop(
+                                                                                            ) [Assignop]
+                                                                                            ExprTerm(
+                                                                                              TermFactor(
+                                                                                                FactorChar(
+                                                                                                 a
+                                                                                                ) [FactorChar]
+                                                                                              ) [TermFactor]
+                                                                                            ) [ExprTerm]
+                                                                                          ) [DesginatorAssignop]
+                                                                                        ) [DesStmt]
+                                                                                      ) [MatchedStmt]
+                                                                                    ) [StmtList]
+                                                                                    MatchedStmt(
+                                                                                      DesStmt(
+                                                                                        DesginatorAssignop(
+                                                                                          DesignatorEl(
+                                                                                           nizch
+                                                                                            DesElem(
+                                                                                              ExprTerm(
+                                                                                                TermFactor(
+                                                                                                  FactorDes(
+                                                                                                    DesignatorEl(
+                                                                                                     jedan
+                                                                                                      NoDesElem(
+                                                                                                      ) [NoDesElem]
+                                                                                                    ) [DesignatorEl]
+                                                                                                  ) [FactorDes]
+                                                                                                ) [TermFactor]
+                                                                                              ) [ExprTerm]
+                                                                                            ) [DesElem]
+                                                                                          ) [DesignatorEl]
+                                                                                          Assignop(
+                                                                                          ) [Assignop]
+                                                                                          ExprTerm(
+                                                                                            TermFactor(
+                                                                                              FactorChar(
+                                                                                               b
+                                                                                              ) [FactorChar]
+                                                                                            ) [TermFactor]
+                                                                                          ) [ExprTerm]
+                                                                                        ) [DesginatorAssignop]
+                                                                                      ) [DesStmt]
+                                                                                    ) [MatchedStmt]
+                                                                                  ) [StmtList]
+                                                                                  MatchedStmt(
+                                                                                    DesStmt(
+                                                                                      DesginatorAssignop(
+                                                                                        DesignatorEl(
+                                                                                         nizch
+                                                                                          DesElem(
+                                                                                            ExprAddop(
+                                                                                              ExprTerm(
+                                                                                                TermFactor(
+                                                                                                  FactorDes(
+                                                                                                    DesignatorEl(
+                                                                                                     pet
+                                                                                                      NoDesElem(
+                                                                                                      ) [NoDesElem]
+                                                                                                    ) [DesignatorEl]
+                                                                                                  ) [FactorDes]
+                                                                                                ) [TermFactor]
+                                                                                              ) [ExprTerm]
+                                                                                              AddopMinus(
+                                                                                              ) [AddopMinus]
+                                                                                              TermFactor(
+                                                                                                FactorNum(
+                                                                                                 3
+                                                                                                ) [FactorNum]
+                                                                                              ) [TermFactor]
+                                                                                            ) [ExprAddop]
+                                                                                          ) [DesElem]
+                                                                                        ) [DesignatorEl]
+                                                                                        Assignop(
+                                                                                        ) [Assignop]
+                                                                                        ExprTerm(
+                                                                                          TermFactor(
+                                                                                            FactorChar(
+                                                                                             c
+                                                                                            ) [FactorChar]
+                                                                                          ) [TermFactor]
+                                                                                        ) [ExprTerm]
+                                                                                      ) [DesginatorAssignop]
+                                                                                    ) [DesStmt]
+                                                                                  ) [MatchedStmt]
+                                                                                ) [StmtList]
+                                                                                MatchedStmt(
+                                                                                  PrintStmt(
+                                                                                    ExprTerm(
+                                                                                      TermFactor(
+                                                                                        FactorDes(
+                                                                                          DesignatorEl(
+                                                                                           nizch
+                                                                                            DesElem(
+                                                                                              ExprTerm(
+                                                                                                TermFactor(
+                                                                                                  FactorNum(
+                                                                                                   1
+                                                                                                  ) [FactorNum]
+                                                                                                ) [TermFactor]
+                                                                                              ) [ExprTerm]
+                                                                                            ) [DesElem]
+                                                                                          ) [DesignatorEl]
+                                                                                        ) [FactorDes]
+                                                                                      ) [TermFactor]
+                                                                                    ) [ExprTerm]
+                                                                                  ) [PrintStmt]
+                                                                                ) [MatchedStmt]
+                                                                              ) [StmtList]
+                                                                              MatchedStmt(
+                                                                                PrintStmt(
+                                                                                  ExprTerm(
+                                                                                    TermFactor(
+                                                                                      FactorDes(
+                                                                                        DesignatorEl(
+                                                                                         eol
+                                                                                          NoDesElem(
+                                                                                          ) [NoDesElem]
+                                                                                        ) [DesignatorEl]
+                                                                                      ) [FactorDes]
+                                                                                    ) [TermFactor]
+                                                                                  ) [ExprTerm]
+                                                                                ) [PrintStmt]
+                                                                              ) [MatchedStmt]
+                                                                            ) [StmtList]
+                                                                            MatchedStmt(
+                                                                              PrintStmt(
+                                                                                ExprTerm(
+                                                                                  TermFactor(
+                                                                                    FactorDes(
+                                                                                      DesignatorEl(
+                                                                                       nizch
+                                                                                        DesElem(
+                                                                                          ExprTerm(
+                                                                                            TermMulop(
+                                                                                              TermFactor(
+                                                                                                FactorDes(
+                                                                                                  DesignatorEl(
+                                                                                                   jedan
+                                                                                                    NoDesElem(
+                                                                                                    ) [NoDesElem]
+                                                                                                  ) [DesignatorEl]
+                                                                                                ) [FactorDes]
+                                                                                              ) [TermFactor]
+                                                                                              MulopMul(
+                                                                                              ) [MulopMul]
+                                                                                              FactorNum(
+                                                                                               2
+                                                                                              ) [FactorNum]
+                                                                                            ) [TermMulop]
+                                                                                          ) [ExprTerm]
+                                                                                        ) [DesElem]
+                                                                                      ) [DesignatorEl]
+                                                                                    ) [FactorDes]
+                                                                                  ) [TermFactor]
+                                                                                ) [ExprTerm]
+                                                                              ) [PrintStmt]
+                                                                            ) [MatchedStmt]
+                                                                          ) [StmtList]
+                                                                          MatchedStmt(
+                                                                            PrintStmt(
+                                                                              ExprTerm(
+                                                                                TermFactor(
+                                                                                  FactorDes(
+                                                                                    DesignatorEl(
+                                                                                     eol
+                                                                                      NoDesElem(
+                                                                                      ) [NoDesElem]
+                                                                                    ) [DesignatorEl]
+                                                                                  ) [FactorDes]
+                                                                                ) [TermFactor]
+                                                                              ) [ExprTerm]
+                                                                            ) [PrintStmt]
+                                                                          ) [MatchedStmt]
+                                                                        ) [StmtList]
+                                                                        MatchedStmt(
+                                                                          PrintStmt(
+                                                                            ExprTerm(
+                                                                              TermFactor(
+                                                                                FactorDesActPars(
+                                                                                  DesignatorEl(
+                                                                                   ord
+                                                                                    NoDesElem(
+                                                                                    ) [NoDesElem]
+                                                                                  ) [DesignatorEl]
+                                                                                  ActParams(
+                                                                                    ActParamsExpr(
+                                                                                      ExprTerm(
+                                                                                        TermFactor(
+                                                                                          FactorDes(
+                                                                                            DesignatorEl(
+                                                                                             nizch
+                                                                                              DesElem(
+                                                                                                ExprTerm(
+                                                                                                  TermFactor(
+                                                                                                    FactorNum(
+                                                                                                     0
+                                                                                                    ) [FactorNum]
+                                                                                                  ) [TermFactor]
+                                                                                                ) [ExprTerm]
+                                                                                              ) [DesElem]
+                                                                                            ) [DesignatorEl]
+                                                                                          ) [FactorDes]
+                                                                                        ) [TermFactor]
+                                                                                      ) [ExprTerm]
+                                                                                    ) [ActParamsExpr]
+                                                                                  ) [ActParams]
+                                                                                ) [FactorDesActPars]
+                                                                              ) [TermFactor]
+                                                                            ) [ExprTerm]
+                                                                          ) [PrintStmt]
+                                                                        ) [MatchedStmt]
+                                                                      ) [StmtList]
+                                                                      MatchedStmt(
+                                                                        DesStmt(
+                                                                          DesginatorAssignop(
+                                                                            DesignatorEl(
+                                                                             a
+                                                                              NoDesElem(
+                                                                              ) [NoDesElem]
+                                                                            ) [DesignatorEl]
+                                                                            Assignop(
+                                                                            ) [Assignop]
+                                                                            ExprTerm(
+                                                                              TermFactor(
+                                                                                FactorNum(
+                                                                                 1
+                                                                                ) [FactorNum]
+                                                                              ) [TermFactor]
+                                                                            ) [ExprTerm]
+                                                                          ) [DesginatorAssignop]
+                                                                        ) [DesStmt]
+                                                                      ) [MatchedStmt]
+                                                                    ) [StmtList]
+                                                                    MatchedStmt(
+                                                                      ReadStmt(
+                                                                        DesignatorEl(
+                                                                         bodovi
+                                                                          NoDesElem(
+                                                                          ) [NoDesElem]
+                                                                        ) [DesignatorEl]
+                                                                      ) [ReadStmt]
+                                                                    ) [MatchedStmt]
+                                                                  ) [StmtList]
+                                                                  MatchedStmt(
+                                                                    DesStmt(
+                                                                      DesginatorAssignop(
+                                                                        DesignatorEl(
+                                                                         bodovi
+                                                                          NoDesElem(
+                                                                          ) [NoDesElem]
+                                                                        ) [DesignatorEl]
+                                                                        Assignop(
+                                                                        ) [Assignop]
+                                                                        ExprAddop(
+                                                                          ExprAddop(
+                                                                            ExprMinusTerm(
+                                                                              TermFactor(
+                                                                                FactorDes(
+                                                                                  DesignatorEl(
+                                                                                   bodovi
+                                                                                    NoDesElem(
+                                                                                    ) [NoDesElem]
+                                                                                  ) [DesignatorEl]
+                                                                                ) [FactorDes]
+                                                                              ) [TermFactor]
+                                                                            ) [ExprMinusTerm]
+                                                                            AddopPlus(
+                                                                            ) [AddopPlus]
+                                                                            TermMulop(
+                                                                              TermFactor(
+                                                                                FactorExpr(
+                                                                                  ExprAddop(
+                                                                                    ExprTerm(
+                                                                                      TermMulop(
+                                                                                        TermMulop(
+                                                                                          TermFactor(
+                                                                                            FactorDes(
+                                                                                              DesignatorEl(
+                                                                                               pet
+                                                                                                NoDesElem(
+                                                                                                ) [NoDesElem]
+                                                                                              ) [DesignatorEl]
+                                                                                            ) [FactorDes]
+                                                                                          ) [TermFactor]
+                                                                                          MulopMul(
+                                                                                          ) [MulopMul]
+                                                                                          FactorDes(
+                                                                                            DesignatorEl(
+                                                                                             a
+                                                                                              NoDesElem(
+                                                                                              ) [NoDesElem]
+                                                                                            ) [DesignatorEl]
+                                                                                          ) [FactorDes]
+                                                                                        ) [TermMulop]
+                                                                                        MulopDiv(
+                                                                                        ) [MulopDiv]
+                                                                                        FactorNum(
+                                                                                         2
+                                                                                        ) [FactorNum]
+                                                                                      ) [TermMulop]
+                                                                                    ) [ExprTerm]
+                                                                                    AddopMinus(
+                                                                                    ) [AddopMinus]
+                                                                                    TermFactor(
+                                                                                      FactorDes(
+                                                                                        DesignatorEl(
+                                                                                         nula
+                                                                                          NoDesElem(
+                                                                                          ) [NoDesElem]
+                                                                                        ) [DesignatorEl]
+                                                                                      ) [FactorDes]
+                                                                                    ) [TermFactor]
+                                                                                  ) [ExprAddop]
+                                                                                ) [FactorExpr]
+                                                                              ) [TermFactor]
+                                                                              MulopMul(
+                                                                              ) [MulopMul]
+                                                                              FactorDes(
+                                                                                DesignatorEl(
+                                                                                 bodovi
+                                                                                  NoDesElem(
+                                                                                  ) [NoDesElem]
+                                                                                ) [DesignatorEl]
+                                                                              ) [FactorDes]
+                                                                            ) [TermMulop]
+                                                                          ) [ExprAddop]
+                                                                          AddopMinus(
+                                                                          ) [AddopMinus]
+                                                                          TermFactor(
+                                                                            FactorExpr(
+                                                                              ExprAddop(
+                                                                                ExprAddop(
+                                                                                  ExprTerm(
+                                                                                    TermMulop(
+                                                                                      TermFactor(
+                                                                                        FactorNum(
+                                                                                         3
+                                                                                        ) [FactorNum]
+                                                                                      ) [TermFactor]
+                                                                                      MulopMod(
+                                                                                      ) [MulopMod]
+                                                                                      FactorNum(
+                                                                                       2
+                                                                                      ) [FactorNum]
+                                                                                    ) [TermMulop]
+                                                                                  ) [ExprTerm]
+                                                                                  AddopPlus(
+                                                                                  ) [AddopPlus]
+                                                                                  TermMulop(
+                                                                                    TermFactor(
+                                                                                      FactorNum(
+                                                                                       3
+                                                                                      ) [FactorNum]
+                                                                                    ) [TermFactor]
+                                                                                    MulopMul(
+                                                                                    ) [MulopMul]
+                                                                                    FactorNum(
+                                                                                     2
+                                                                                    ) [FactorNum]
+                                                                                  ) [TermMulop]
+                                                                                ) [ExprAddop]
+                                                                                AddopMinus(
+                                                                                ) [AddopMinus]
+                                                                                TermFactor(
+                                                                                  FactorNum(
+                                                                                   7
+                                                                                  ) [FactorNum]
+                                                                                ) [TermFactor]
+                                                                              ) [ExprAddop]
+                                                                            ) [FactorExpr]
+                                                                          ) [TermFactor]
+                                                                        ) [ExprAddop]
+                                                                      ) [DesginatorAssignop]
+                                                                    ) [DesStmt]
+                                                                  ) [MatchedStmt]
+                                                                ) [StmtList]
+                                                                MatchedStmt(
+                                                                  PrintStmt(
+                                                                    ExprTerm(
+                                                                      TermFactor(
+                                                                        FactorDes(
+                                                                          DesignatorEl(
+                                                                           bodovi
+                                                                            NoDesElem(
+                                                                            ) [NoDesElem]
+                                                                          ) [DesignatorEl]
+                                                                        ) [FactorDes]
+                                                                      ) [TermFactor]
+                                                                    ) [ExprTerm]
+                                                                  ) [PrintStmt]
+                                                                ) [MatchedStmt]
+                                                              ) [StmtList]
+                                                              MatchedStmt(
+                                                                DesStmt(
+                                                                  DesginatorAssignop(
+                                                                    DesignatorEl(
+                                                                     niz
+                                                                      DesElem(
+                                                                        ExprTerm(
+                                                                          TermFactor(
+                                                                            FactorNum(
+                                                                             0
+                                                                            ) [FactorNum]
+                                                                          ) [TermFactor]
+                                                                        ) [ExprTerm]
+                                                                      ) [DesElem]
+                                                                    ) [DesignatorEl]
+                                                                    Assignop(
+                                                                    ) [Assignop]
+                                                                    ExprTerm(
+                                                                      TermFactor(
+                                                                        FactorNum(
+                                                                         1
+                                                                        ) [FactorNum]
+                                                                      ) [TermFactor]
+                                                                    ) [ExprTerm]
+                                                                  ) [DesginatorAssignop]
+                                                                ) [DesStmt]
+                                                              ) [MatchedStmt]
+                                                            ) [StmtList]
+                                                            MatchedStmt(
+                                                              DesStmt(
+                                                                DesginatorAssignop(
+                                                                  DesignatorEl(
+                                                                   niz
+                                                                    DesElem(
+                                                                      ExprTerm(
+                                                                        TermFactor(
+                                                                          FactorNum(
+                                                                           1
+                                                                          ) [FactorNum]
+                                                                        ) [TermFactor]
+                                                                      ) [ExprTerm]
+                                                                    ) [DesElem]
+                                                                  ) [DesignatorEl]
+                                                                  Assignop(
+                                                                  ) [Assignop]
+                                                                  ExprTerm(
+                                                                    TermFactor(
+                                                                      FactorNum(
+                                                                       2
+                                                                      ) [FactorNum]
+                                                                    ) [TermFactor]
+                                                                  ) [ExprTerm]
+                                                                ) [DesginatorAssignop]
+                                                              ) [DesStmt]
+                                                            ) [MatchedStmt]
+                                                          ) [StmtList]
+                                                          MatchedStmt(
+                                                            DesStmt(
+                                                              DesginatorAssignop(
+                                                                DesignatorEl(
+                                                                 niz
+                                                                  DesElem(
+                                                                    ExprTerm(
+                                                                      TermFactor(
+                                                                        FactorNum(
+                                                                         2
+                                                                        ) [FactorNum]
+                                                                      ) [TermFactor]
+                                                                    ) [ExprTerm]
+                                                                  ) [DesElem]
+                                                                ) [DesignatorEl]
+                                                                Assignop(
+                                                                ) [Assignop]
+                                                                ExprTerm(
+                                                                  TermFactor(
+                                                                    FactorNum(
+                                                                     3
+                                                                    ) [FactorNum]
+                                                                  ) [TermFactor]
+                                                                ) [ExprTerm]
+                                                              ) [DesginatorAssignop]
+                                                            ) [DesStmt]
+                                                          ) [MatchedStmt]
+                                                        ) [StmtList]
+                                                        MatchedStmt(
+                                                          DesStmt(
+                                                            DesginatorAssignop(
+                                                              DesignatorEl(
+                                                               s1
+                                                                NoDesElem(
+                                                                ) [NoDesElem]
+                                                              ) [DesignatorEl]
+                                                              Assignop(
+                                                              ) [Assignop]
+                                                              ExprTerm(
+                                                                TermFactor(
+                                                                  FactorNewExpr(
+                                                                    Type(
+                                                                     set
+                                                                    ) [Type]
+                                                                    ExprTerm(
+                                                                      TermFactor(
+                                                                        FactorNum(
+                                                                         5
+                                                                        ) [FactorNum]
+                                                                      ) [TermFactor]
+                                                                    ) [ExprTerm]
+                                                                  ) [FactorNewExpr]
+                                                                ) [TermFactor]
+                                                              ) [ExprTerm]
+                                                            ) [DesginatorAssignop]
+                                                          ) [DesStmt]
+                                                        ) [MatchedStmt]
+                                                      ) [StmtList]
+                                                      MatchedStmt(
+                                                        DesStmt(
+                                                          DesginatorAssignop(
+                                                            DesignatorEl(
+                                                             s2
+                                                              NoDesElem(
+                                                              ) [NoDesElem]
+                                                            ) [DesignatorEl]
+                                                            Assignop(
+                                                            ) [Assignop]
+                                                            ExprTerm(
+                                                              TermFactor(
+                                                                FactorNewExpr(
+                                                                  Type(
+                                                                   set
+                                                                  ) [Type]
+                                                                  ExprTerm(
+                                                                    TermFactor(
+                                                                      FactorNum(
+                                                                       5
+                                                                      ) [FactorNum]
+                                                                    ) [TermFactor]
+                                                                  ) [ExprTerm]
+                                                                ) [FactorNewExpr]
+                                                              ) [TermFactor]
+                                                            ) [ExprTerm]
+                                                          ) [DesginatorAssignop]
+                                                        ) [DesStmt]
+                                                      ) [MatchedStmt]
+                                                    ) [StmtList]
+                                                    MatchedStmt(
+                                                      DesStmt(
+                                                        DesginatorAssignop(
+                                                          DesignatorEl(
+                                                           s3
+                                                            NoDesElem(
+                                                            ) [NoDesElem]
+                                                          ) [DesignatorEl]
+                                                          Assignop(
+                                                          ) [Assignop]
+                                                          ExprTerm(
+                                                            TermFactor(
+                                                              FactorNewExpr(
+                                                                Type(
+                                                                 set
+                                                                ) [Type]
+                                                                ExprTerm(
+                                                                  TermFactor(
+                                                                    FactorNum(
+                                                                     10
+                                                                    ) [FactorNum]
+                                                                  ) [TermFactor]
+                                                                ) [ExprTerm]
+                                                              ) [FactorNewExpr]
+                                                            ) [TermFactor]
+                                                          ) [ExprTerm]
+                                                        ) [DesginatorAssignop]
+                                                      ) [DesStmt]
+                                                    ) [MatchedStmt]
+                                                  ) [StmtList]
+                                                  MatchedStmt(
+                                                    DesStmt(
+                                                      DesignatorActPars(
+                                                        DesignatorEl(
+                                                         addAll
+                                                          NoDesElem(
+                                                          ) [NoDesElem]
+                                                        ) [DesignatorEl]
+                                                        ActParams(
+                                                          ActParamsList(
+                                                            ActParamsExpr(
+                                                              ExprTerm(
+                                                                TermFactor(
+                                                                  FactorDes(
+                                                                    DesignatorEl(
+                                                                     s1
+                                                                      NoDesElem(
+                                                                      ) [NoDesElem]
+                                                                    ) [DesignatorEl]
+                                                                  ) [FactorDes]
+                                                                ) [TermFactor]
+                                                              ) [ExprTerm]
+                                                            ) [ActParamsExpr]
+                                                            ExprTerm(
+                                                              TermFactor(
+                                                                FactorDes(
+                                                                  DesignatorEl(
+                                                                   niz
+                                                                    NoDesElem(
+                                                                    ) [NoDesElem]
+                                                                  ) [DesignatorEl]
+                                                                ) [FactorDes]
+                                                              ) [TermFactor]
+                                                            ) [ExprTerm]
+                                                          ) [ActParamsList]
+                                                        ) [ActParams]
+                                                      ) [DesignatorActPars]
+                                                    ) [DesStmt]
+                                                  ) [MatchedStmt]
+                                                ) [StmtList]
+                                                MatchedStmt(
+                                                  DesStmt(
+                                                    DesignatorActPars(
+                                                      DesignatorEl(
+                                                       add
+                                                        NoDesElem(
+                                                        ) [NoDesElem]
+                                                      ) [DesignatorEl]
+                                                      ActParams(
+                                                        ActParamsList(
+                                                          ActParamsExpr(
+                                                            ExprTerm(
+                                                              TermFactor(
+                                                                FactorDes(
+                                                                  DesignatorEl(
+                                                                   s2
+                                                                    NoDesElem(
+                                                                    ) [NoDesElem]
+                                                                  ) [DesignatorEl]
+                                                                ) [FactorDes]
+                                                              ) [TermFactor]
+                                                            ) [ExprTerm]
+                                                          ) [ActParamsExpr]
+                                                          ExprTerm(
+                                                            TermFactor(
+                                                              FactorNum(
+                                                               3
+                                                              ) [FactorNum]
+                                                            ) [TermFactor]
+                                                          ) [ExprTerm]
+                                                        ) [ActParamsList]
+                                                      ) [ActParams]
+                                                    ) [DesignatorActPars]
+                                                  ) [DesStmt]
+                                                ) [MatchedStmt]
+                                              ) [StmtList]
+                                              MatchedStmt(
+                                                DesStmt(
+                                                  DesignatorActPars(
+                                                    DesignatorEl(
+                                                     add
+                                                      NoDesElem(
+                                                      ) [NoDesElem]
+                                                    ) [DesignatorEl]
+                                                    ActParams(
+                                                      ActParamsList(
+                                                        ActParamsExpr(
+                                                          ExprTerm(
+                                                            TermFactor(
+                                                              FactorDes(
+                                                                DesignatorEl(
+                                                                 s2
+                                                                  NoDesElem(
+                                                                  ) [NoDesElem]
+                                                                ) [DesignatorEl]
+                                                              ) [FactorDes]
+                                                            ) [TermFactor]
+                                                          ) [ExprTerm]
+                                                        ) [ActParamsExpr]
+                                                        ExprTerm(
+                                                          TermFactor(
+                                                            FactorNum(
+                                                             4
+                                                            ) [FactorNum]
+                                                          ) [TermFactor]
+                                                        ) [ExprTerm]
+                                                      ) [ActParamsList]
+                                                    ) [ActParams]
+                                                  ) [DesignatorActPars]
+                                                ) [DesStmt]
+                                              ) [MatchedStmt]
+                                            ) [StmtList]
+                                            MatchedStmt(
+                                              DesStmt(
+                                                DesignatorActPars(
+                                                  DesignatorEl(
+                                                   add
+                                                    NoDesElem(
+                                                    ) [NoDesElem]
+                                                  ) [DesignatorEl]
+                                                  ActParams(
+                                                    ActParamsList(
+                                                      ActParamsExpr(
+                                                        ExprTerm(
+                                                          TermFactor(
+                                                            FactorDes(
+                                                              DesignatorEl(
+                                                               s2
+                                                                NoDesElem(
+                                                                ) [NoDesElem]
+                                                              ) [DesignatorEl]
+                                                            ) [FactorDes]
+                                                          ) [TermFactor]
+                                                        ) [ExprTerm]
+                                                      ) [ActParamsExpr]
+                                                      ExprTerm(
+                                                        TermFactor(
+                                                          FactorNum(
+                                                           5
+                                                          ) [FactorNum]
+                                                        ) [TermFactor]
+                                                      ) [ExprTerm]
+                                                    ) [ActParamsList]
+                                                  ) [ActParams]
+                                                ) [DesignatorActPars]
+                                              ) [DesStmt]
+                                            ) [MatchedStmt]
+                                          ) [StmtList]
+                                          MatchedStmt(
+                                            DesStmt(
+                                              DesginatorAssignop(
+                                                DesignatorEl(
+                                                 s3
+                                                  NoDesElem(
+                                                  ) [NoDesElem]
+                                                ) [DesignatorEl]
+                                                Assignop(
+                                                ) [Assignop]
+                                                ExprAddop(
+                                                  ExprTerm(
+                                                    TermFactor(
+                                                      FactorDes(
+                                                        DesignatorEl(
+                                                         s1
+                                                          NoDesElem(
+                                                          ) [NoDesElem]
+                                                        ) [DesignatorEl]
+                                                      ) [FactorDes]
+                                                    ) [TermFactor]
+                                                  ) [ExprTerm]
+                                                  AddopPlus(
+                                                  ) [AddopPlus]
+                                                  TermFactor(
+                                                    FactorDes(
+                                                      DesignatorEl(
+                                                       s2
+                                                        NoDesElem(
+                                                        ) [NoDesElem]
+                                                      ) [DesignatorEl]
+                                                    ) [FactorDes]
+                                                  ) [TermFactor]
+                                                ) [ExprAddop]
+                                              ) [DesginatorAssignop]
+                                            ) [DesStmt]
+                                          ) [MatchedStmt]
+                                        ) [StmtList]
+                                        MatchedStmt(
+                                          PrintStmt(
+                                            ExprTerm(
+                                              TermFactor(
+                                                FactorDes(
+                                                  DesignatorEl(
+                                                   s3
+                                                    NoDesElem(
+                                                    ) [NoDesElem]
+                                                  ) [DesignatorEl]
+                                                ) [FactorDes]
+                                              ) [TermFactor]
+                                            ) [ExprTerm]
+                                          ) [PrintStmt]
+                                        ) [MatchedStmt]
+                                      ) [StmtList]
+                                      MatchedStmt(
+                                        PrintStmt(
+                                          ExprTerm(
+                                            TermFactor(
+                                              FactorDes(
+                                                DesignatorEl(
+                                                 eol
+                                                  NoDesElem(
+                                                  ) [NoDesElem]
+                                                ) [DesignatorEl]
+                                              ) [FactorDes]
+                                            ) [TermFactor]
+                                          ) [ExprTerm]
+                                        ) [PrintStmt]
+                                      ) [MatchedStmt]
+                                    ) [StmtList]
+                                    MatchedStmt(
+                                      DesStmt(
+                                        DesginatorAssignop(
+                                          DesignatorEl(
+                                           niz
+                                            DesElem(
+                                              ExprTerm(
+                                                TermFactor(
+                                                  FactorNum(
+                                                   0
+                                                  ) [FactorNum]
+                                                ) [TermFactor]
+                                              ) [ExprTerm]
+                                            ) [DesElem]
+                                          ) [DesignatorEl]
+                                          Assignop(
+                                          ) [Assignop]
+                                          ExprTerm(
+                                            TermFactor(
+                                              FactorNum(
+                                               5
+                                              ) [FactorNum]
+                                            ) [TermFactor]
+                                          ) [ExprTerm]
+                                        ) [DesginatorAssignop]
+                                      ) [DesStmt]
+                                    ) [MatchedStmt]
+                                  ) [StmtList]
+                                  MatchedStmt(
+                                    DesStmt(
+                                      DesginatorAssignop(
+                                        DesignatorEl(
+                                         niz
+                                          DesElem(
+                                            ExprTerm(
+                                              TermFactor(
+                                                FactorNum(
+                                                 1
+                                                ) [FactorNum]
+                                              ) [TermFactor]
+                                            ) [ExprTerm]
+                                          ) [DesElem]
+                                        ) [DesignatorEl]
+                                        Assignop(
+                                        ) [Assignop]
+                                        ExprTerm(
+                                          TermFactor(
+                                            FactorNum(
+                                             5
+                                            ) [FactorNum]
+                                          ) [TermFactor]
+                                        ) [ExprTerm]
+                                      ) [DesginatorAssignop]
+                                    ) [DesStmt]
+                                  ) [MatchedStmt]
+                                ) [StmtList]
+                                MatchedStmt(
+                                  DesStmt(
+                                    DesginatorAssignop(
+                                      DesignatorEl(
+                                       niz
+                                        DesElem(
+                                          ExprTerm(
+                                            TermFactor(
+                                              FactorNum(
+                                               2
+                                              ) [FactorNum]
+                                            ) [TermFactor]
+                                          ) [ExprTerm]
+                                        ) [DesElem]
+                                      ) [DesignatorEl]
+                                      Assignop(
+                                      ) [Assignop]
+                                      ExprTerm(
+                                        TermFactor(
+                                          FactorNum(
+                                           10
+                                          ) [FactorNum]
+                                        ) [TermFactor]
+                                      ) [ExprTerm]
+                                    ) [DesginatorAssignop]
+                                  ) [DesStmt]
+                                ) [MatchedStmt]
+                              ) [StmtList]
+                              MatchedStmt(
+                                DesStmt(
+                                  DesginatorAssignop(
+                                    DesignatorEl(
+                                     s1
+                                      NoDesElem(
+                                      ) [NoDesElem]
+                                    ) [DesignatorEl]
+                                    Assignop(
+                                    ) [Assignop]
+                                    ExprTerm(
+                                      TermFactor(
+                                        FactorNewExpr(
+                                          Type(
+                                           set
+                                          ) [Type]
+                                          ExprTerm(
+                                            TermFactor(
+                                              FactorNum(
+                                               5
+                                              ) [FactorNum]
+                                            ) [TermFactor]
+                                          ) [ExprTerm]
+                                        ) [FactorNewExpr]
+                                      ) [TermFactor]
+                                    ) [ExprTerm]
+                                  ) [DesginatorAssignop]
+                                ) [DesStmt]
+                              ) [MatchedStmt]
+                            ) [StmtList]
+                            MatchedStmt(
+                              DesStmt(
+                                DesginatorAssignop(
+                                  DesignatorEl(
+                                   s2
+                                    NoDesElem(
+                                    ) [NoDesElem]
+                                  ) [DesignatorEl]
+                                  Assignop(
+                                  ) [Assignop]
+                                  ExprTerm(
+                                    TermFactor(
+                                      FactorNewExpr(
+                                        Type(
+                                         set
+                                        ) [Type]
+                                        ExprTerm(
+                                          TermFactor(
+                                            FactorNum(
+                                             5
+                                            ) [FactorNum]
+                                          ) [TermFactor]
+                                        ) [ExprTerm]
+                                      ) [FactorNewExpr]
+                                    ) [TermFactor]
+                                  ) [ExprTerm]
+                                ) [DesginatorAssignop]
+                              ) [DesStmt]
+                            ) [MatchedStmt]
+                          ) [StmtList]
+                          MatchedStmt(
+                            DesStmt(
+                              DesginatorAssignop(
+                                DesignatorEl(
+                                 s3
+                                  NoDesElem(
+                                  ) [NoDesElem]
+                                ) [DesignatorEl]
+                                Assignop(
+                                ) [Assignop]
+                                ExprTerm(
+                                  TermFactor(
+                                    FactorNewExpr(
+                                      Type(
+                                       set
+                                      ) [Type]
+                                      ExprTerm(
+                                        TermFactor(
+                                          FactorNum(
+                                           10
+                                          ) [FactorNum]
+                                        ) [TermFactor]
+                                      ) [ExprTerm]
+                                    ) [FactorNewExpr]
+                                  ) [TermFactor]
+                                ) [ExprTerm]
+                              ) [DesginatorAssignop]
+                            ) [DesStmt]
+                          ) [MatchedStmt]
+                        ) [StmtList]
+                        MatchedStmt(
+                          DesStmt(
+                            DesignatorActPars(
+                              DesignatorEl(
+                               addAll
+                                NoDesElem(
+                                ) [NoDesElem]
+                              ) [DesignatorEl]
+                              ActParams(
+                                ActParamsList(
+                                  ActParamsExpr(
+                                    ExprTerm(
+                                      TermFactor(
+                                        FactorDes(
+                                          DesignatorEl(
+                                           s1
+                                            NoDesElem(
+                                            ) [NoDesElem]
+                                          ) [DesignatorEl]
+                                        ) [FactorDes]
+                                      ) [TermFactor]
+                                    ) [ExprTerm]
+                                  ) [ActParamsExpr]
+                                  ExprTerm(
+                                    TermFactor(
+                                      FactorDes(
+                                        DesignatorEl(
+                                         niz
+                                          NoDesElem(
+                                          ) [NoDesElem]
+                                        ) [DesignatorEl]
+                                      ) [FactorDes]
+                                    ) [TermFactor]
+                                  ) [ExprTerm]
+                                ) [ActParamsList]
+                              ) [ActParams]
+                            ) [DesignatorActPars]
+                          ) [DesStmt]
+                        ) [MatchedStmt]
+                      ) [StmtList]
+                      MatchedStmt(
+                        ReadStmt(
+                          DesignatorEl(
+                           temp
+                            NoDesElem(
+                            ) [NoDesElem]
+                          ) [DesignatorEl]
+                        ) [ReadStmt]
+                      ) [MatchedStmt]
+                    ) [StmtList]
+                    MatchedStmt(
+                      DesStmt(
+                        DesignatorActPars(
+                          DesignatorEl(
+                           add
+                            NoDesElem(
+                            ) [NoDesElem]
+                          ) [DesignatorEl]
+                          ActParams(
+                            ActParamsList(
+                              ActParamsExpr(
+                                ExprTerm(
+                                  TermFactor(
+                                    FactorDes(
+                                      DesignatorEl(
+                                       s2
+                                        NoDesElem(
+                                        ) [NoDesElem]
+                                      ) [DesignatorEl]
+                                    ) [FactorDes]
+                                  ) [TermFactor]
+                                ) [ExprTerm]
+                              ) [ActParamsExpr]
+                              ExprTerm(
+                                TermFactor(
+                                  FactorDes(
+                                    DesignatorEl(
+                                     temp
+                                      NoDesElem(
+                                      ) [NoDesElem]
+                                    ) [DesignatorEl]
+                                  ) [FactorDes]
+                                ) [TermFactor]
+                              ) [ExprTerm]
+                            ) [ActParamsList]
+                          ) [ActParams]
+                        ) [DesignatorActPars]
+                      ) [DesStmt]
+                    ) [MatchedStmt]
+                  ) [StmtList]
+                  MatchedStmt(
+                    ReadStmt(
+                      DesignatorEl(
+                       temp
+                        NoDesElem(
+                        ) [NoDesElem]
+                      ) [DesignatorEl]
+                    ) [ReadStmt]
+                  ) [MatchedStmt]
+                ) [StmtList]
+                MatchedStmt(
+                  DesStmt(
+                    DesignatorActPars(
+                      DesignatorEl(
+                       add
+                        NoDesElem(
+                        ) [NoDesElem]
+                      ) [DesignatorEl]
+                      ActParams(
+                        ActParamsList(
+                          ActParamsExpr(
+                            ExprTerm(
+                              TermFactor(
+                                FactorDes(
+                                  DesignatorEl(
+                                   s2
+                                    NoDesElem(
+                                    ) [NoDesElem]
+                                  ) [DesignatorEl]
+                                ) [FactorDes]
+                              ) [TermFactor]
+                            ) [ExprTerm]
+                          ) [ActParamsExpr]
+                          ExprTerm(
+                            TermFactor(
+                              FactorDes(
+                                DesignatorEl(
+                                 temp
+                                  NoDesElem(
+                                  ) [NoDesElem]
+                                ) [DesignatorEl]
+                              ) [FactorDes]
+                            ) [TermFactor]
+                          ) [ExprTerm]
+                        ) [ActParamsList]
+                      ) [ActParams]
+                    ) [DesignatorActPars]
+                  ) [DesStmt]
+                ) [MatchedStmt]
+              ) [StmtList]
+              MatchedStmt(
+                ReadStmt(
+                  DesignatorEl(
+                   temp
+                    NoDesElem(
+                    ) [NoDesElem]
+                  ) [DesignatorEl]
+                ) [ReadStmt]
+              ) [MatchedStmt]
+            ) [StmtList]
+            MatchedStmt(
+              DesStmt(
+                DesignatorActPars(
+                  DesignatorEl(
+                   add
+                    NoDesElem(
+                    ) [NoDesElem]
+                  ) [DesignatorEl]
+                  ActParams(
+                    ActParamsList(
+                      ActParamsExpr(
+                        ExprTerm(
+                          TermFactor(
+                            FactorDes(
+                              DesignatorEl(
+                               s2
+                                NoDesElem(
+                                ) [NoDesElem]
+                              ) [DesignatorEl]
+                            ) [FactorDes]
+                          ) [TermFactor]
+                        ) [ExprTerm]
+                      ) [ActParamsExpr]
+                      ExprTerm(
+                        TermFactor(
+                          FactorDes(
+                            DesignatorEl(
+                             temp
+                              NoDesElem(
+                              ) [NoDesElem]
+                            ) [DesignatorEl]
+                          ) [FactorDes]
+                        ) [TermFactor]
+                      ) [ExprTerm]
+                    ) [ActParamsList]
+                  ) [ActParams]
+                ) [DesignatorActPars]
+              ) [DesStmt]
+            ) [MatchedStmt]
+          ) [StmtList]
+          MatchedStmt(
+            DesStmt(
+              DesginatorAssignop(
+                DesignatorEl(
+                 s3
+                  NoDesElem(
+                  ) [NoDesElem]
+                ) [DesignatorEl]
+                Assignop(
+                ) [Assignop]
+                ExprAddop(
+                  ExprTerm(
+                    TermFactor(
+                      FactorDes(
+                        DesignatorEl(
+                         s1
+                          NoDesElem(
+                          ) [NoDesElem]
+                        ) [DesignatorEl]
+                      ) [FactorDes]
+                    ) [TermFactor]
+                  ) [ExprTerm]
+                  AddopPlus(
+                  ) [AddopPlus]
+                  TermFactor(
+                    FactorDes(
+                      DesignatorEl(
+                       s2
+                        NoDesElem(
+                        ) [NoDesElem]
+                      ) [DesignatorEl]
+                    ) [FactorDes]
+                  ) [TermFactor]
+                ) [ExprAddop]
+              ) [DesginatorAssignop]
+            ) [DesStmt]
+          ) [MatchedStmt]
+        ) [StmtList]
+        MatchedStmt(
+          PrintStmt(
+            ExprTerm(
+              TermFactor(
+                FactorDes(
+                  DesignatorEl(
+                   s3
+                    NoDesElem(
+                    ) [NoDesElem]
+                  ) [DesignatorEl]
+                ) [FactorDes]
+              ) [TermFactor]
+            ) [ExprTerm]
+          ) [PrintStmt]
+        ) [MatchedStmt]
+      ) [StmtList]
+    ) [MethodDecl]
+  ) [MethDeclList]
+) [Program]
+INFO  12:46:23,000 - ===================================
