@@ -1,6 +1,6 @@
 // generated with ast extension for cup
 // version 0.8
-// 16/11/2024 13:50:13
+// 16/11/2024 19:45:59
 
 
 package rs.ac.bg.etf.pp1.ast;
@@ -9,6 +9,7 @@ public abstract class VisitorAdaptor implements Visitor {
 
     public void visit(Unmatched Unmatched) { }
     public void visit(DeclarationList DeclarationList) { }
+    public void visit(ConditionWithStatement ConditionWithStatement) { }
     public void visit(Mulop Mulop) { }
     public void visit(ConstantList ConstantList) { }
     public void visit(Matched Matched) { }
@@ -85,10 +86,12 @@ public abstract class VisitorAdaptor implements Visitor {
     public void visit(WhileStart WhileStart) { visit(); }
     public void visit(DoWhileEnd DoWhileEnd) { visit(); }
     public void visit(DoWhileStart DoWhileStart) { visit(); }
+    public void visit(ConditionWithStatementDerived3 ConditionWithStatementDerived3) { visit(); }
+    public void visit(ConditionWithStatementDerived2 ConditionWithStatementDerived2) { visit(); }
+    public void visit(ConditionWithStatementDerived1 ConditionWithStatementDerived1) { visit(); }
+    public void visit(BracedStmt BracedStmt) { visit(); }
     public void visit(IfElseStmt IfElseStmt) { visit(); }
     public void visit(DoWhileStatementWithStmt DoWhileStatementWithStmt) { visit(); }
-    public void visit(DoWhileStatementWithoutCond DoWhileStatementWithoutCond) { visit(); }
-    public void visit(DoWhileStatement DoWhileStatement) { visit(); }
     public void visit(ReturnEmptyStmt ReturnEmptyStmt) { visit(); }
     public void visit(ReturnStmt ReturnStmt) { visit(); }
     public void visit(ContinueStmt ContinueStmt) { visit(); }
@@ -103,6 +106,7 @@ public abstract class VisitorAdaptor implements Visitor {
     public void visit(MatchedStmt MatchedStmt) { visit(); }
     public void visit(NoStmtList NoStmtList) { visit(); }
     public void visit(StmtList StmtList) { visit(); }
+    public void visit(Statements Statements) { visit(); }
     public void visit(Type Type) { visit(); }
     public void visit(NoBracket NoBracket) { visit(); }
     public void visit(Bracket Bracket) { visit(); }

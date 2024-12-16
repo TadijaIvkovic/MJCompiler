@@ -1,6 +1,6 @@
 // generated with ast extension for cup
 // version 0.8
-// 16/11/2024 13:50:13
+// 16/11/2024 19:45:59
 
 
 package rs.ac.bg.etf.pp1.ast;
@@ -9,6 +9,7 @@ public interface Visitor {
 
     public void visit(Unmatched Unmatched);
     public void visit(DeclarationList DeclarationList);
+    public void visit(ConditionWithStatement ConditionWithStatement);
     public void visit(Mulop Mulop);
     public void visit(ConstantList ConstantList);
     public void visit(Matched Matched);
@@ -85,10 +86,12 @@ public interface Visitor {
     public void visit(WhileStart WhileStart);
     public void visit(DoWhileEnd DoWhileEnd);
     public void visit(DoWhileStart DoWhileStart);
+    public void visit(ConditionWithStatementDerived3 ConditionWithStatementDerived3);
+    public void visit(ConditionWithStatementDerived2 ConditionWithStatementDerived2);
+    public void visit(ConditionWithStatementDerived1 ConditionWithStatementDerived1);
+    public void visit(BracedStmt BracedStmt);
     public void visit(IfElseStmt IfElseStmt);
     public void visit(DoWhileStatementWithStmt DoWhileStatementWithStmt);
-    public void visit(DoWhileStatementWithoutCond DoWhileStatementWithoutCond);
-    public void visit(DoWhileStatement DoWhileStatement);
     public void visit(ReturnEmptyStmt ReturnEmptyStmt);
     public void visit(ReturnStmt ReturnStmt);
     public void visit(ContinueStmt ContinueStmt);
@@ -103,6 +106,7 @@ public interface Visitor {
     public void visit(MatchedStmt MatchedStmt);
     public void visit(NoStmtList NoStmtList);
     public void visit(StmtList StmtList);
+    public void visit(Statements Statements);
     public void visit(Type Type);
     public void visit(NoBracket NoBracket);
     public void visit(Bracket Bracket);

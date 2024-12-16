@@ -1,6 +1,6 @@
 // generated with ast extension for cup
 // version 0.8
-// 16/11/2024 13:50:13
+// 16/11/2024 19:45:59
 
 
 package rs.ac.bg.etf.pp1.ast;
@@ -10,21 +10,18 @@ public class DoWhileStatementWithStmt extends Matched {
     private DoWhileStart DoWhileStart;
     private Statement Statement;
     private WhileStart WhileStart;
-    private Condition Condition;
-    private Statement Statement1;
+    private ConditionWithStatement ConditionWithStatement;
     private DoWhileEnd DoWhileEnd;
 
-    public DoWhileStatementWithStmt (DoWhileStart DoWhileStart, Statement Statement, WhileStart WhileStart, Condition Condition, Statement Statement1, DoWhileEnd DoWhileEnd) {
+    public DoWhileStatementWithStmt (DoWhileStart DoWhileStart, Statement Statement, WhileStart WhileStart, ConditionWithStatement ConditionWithStatement, DoWhileEnd DoWhileEnd) {
         this.DoWhileStart=DoWhileStart;
         if(DoWhileStart!=null) DoWhileStart.setParent(this);
         this.Statement=Statement;
         if(Statement!=null) Statement.setParent(this);
         this.WhileStart=WhileStart;
         if(WhileStart!=null) WhileStart.setParent(this);
-        this.Condition=Condition;
-        if(Condition!=null) Condition.setParent(this);
-        this.Statement1=Statement1;
-        if(Statement1!=null) Statement1.setParent(this);
+        this.ConditionWithStatement=ConditionWithStatement;
+        if(ConditionWithStatement!=null) ConditionWithStatement.setParent(this);
         this.DoWhileEnd=DoWhileEnd;
         if(DoWhileEnd!=null) DoWhileEnd.setParent(this);
     }
@@ -53,20 +50,12 @@ public class DoWhileStatementWithStmt extends Matched {
         this.WhileStart=WhileStart;
     }
 
-    public Condition getCondition() {
-        return Condition;
+    public ConditionWithStatement getConditionWithStatement() {
+        return ConditionWithStatement;
     }
 
-    public void setCondition(Condition Condition) {
-        this.Condition=Condition;
-    }
-
-    public Statement getStatement1() {
-        return Statement1;
-    }
-
-    public void setStatement1(Statement Statement1) {
-        this.Statement1=Statement1;
+    public void setConditionWithStatement(ConditionWithStatement ConditionWithStatement) {
+        this.ConditionWithStatement=ConditionWithStatement;
     }
 
     public DoWhileEnd getDoWhileEnd() {
@@ -85,8 +74,7 @@ public class DoWhileStatementWithStmt extends Matched {
         if(DoWhileStart!=null) DoWhileStart.accept(visitor);
         if(Statement!=null) Statement.accept(visitor);
         if(WhileStart!=null) WhileStart.accept(visitor);
-        if(Condition!=null) Condition.accept(visitor);
-        if(Statement1!=null) Statement1.accept(visitor);
+        if(ConditionWithStatement!=null) ConditionWithStatement.accept(visitor);
         if(DoWhileEnd!=null) DoWhileEnd.accept(visitor);
     }
 
@@ -95,8 +83,7 @@ public class DoWhileStatementWithStmt extends Matched {
         if(DoWhileStart!=null) DoWhileStart.traverseTopDown(visitor);
         if(Statement!=null) Statement.traverseTopDown(visitor);
         if(WhileStart!=null) WhileStart.traverseTopDown(visitor);
-        if(Condition!=null) Condition.traverseTopDown(visitor);
-        if(Statement1!=null) Statement1.traverseTopDown(visitor);
+        if(ConditionWithStatement!=null) ConditionWithStatement.traverseTopDown(visitor);
         if(DoWhileEnd!=null) DoWhileEnd.traverseTopDown(visitor);
     }
 
@@ -104,8 +91,7 @@ public class DoWhileStatementWithStmt extends Matched {
         if(DoWhileStart!=null) DoWhileStart.traverseBottomUp(visitor);
         if(Statement!=null) Statement.traverseBottomUp(visitor);
         if(WhileStart!=null) WhileStart.traverseBottomUp(visitor);
-        if(Condition!=null) Condition.traverseBottomUp(visitor);
-        if(Statement1!=null) Statement1.traverseBottomUp(visitor);
+        if(ConditionWithStatement!=null) ConditionWithStatement.traverseBottomUp(visitor);
         if(DoWhileEnd!=null) DoWhileEnd.traverseBottomUp(visitor);
         accept(visitor);
     }
@@ -133,14 +119,8 @@ public class DoWhileStatementWithStmt extends Matched {
             buffer.append(tab+"  null");
         buffer.append("\n");
 
-        if(Condition!=null)
-            buffer.append(Condition.toString("  "+tab));
-        else
-            buffer.append(tab+"  null");
-        buffer.append("\n");
-
-        if(Statement1!=null)
-            buffer.append(Statement1.toString("  "+tab));
+        if(ConditionWithStatement!=null)
+            buffer.append(ConditionWithStatement.toString("  "+tab));
         else
             buffer.append(tab+"  null");
         buffer.append("\n");

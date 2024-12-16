@@ -71,7 +71,7 @@ nonterminal Program, ProgName, DeclarationList, ConstDeclList, ConstantList, Con
 nonterminal VarDeclList, VarDecl, VarDeclarationList, VarDeclaration, MethodDeclList, MethodDecl, MethodSignature, Type;
 nonterminal Brackets, FormPars, FormalParamList, FormalParamDecl, StatementList, Statement, Expr;
 nonterminal Term, Factor, DesignatorStatement, ActPars, ActParamList, Designator, DesignatorElem, Label, Assignop, Relop, Addop, Mulop, Setop;
-nonterminal Condition, CondTerm, CondFact, Matched, Unmatched, WhileStart, DoWhileEnd, DoWhileStart;
+nonterminal Condition, CondTerm, CondFact, Matched, Unmatched, Statements, WhileStart, DoWhileEnd, DoWhileStart, ConditionWithStatement;
 
 
 Program ::= (Program) PROG ProgName:p DeclarationList LBRACE MethodDeclList RBRACE ;
@@ -89,16 +89,16 @@ DeclarationList ::= (ConstDecLists) ConstDeclList DeclarationList
 ConstDeclList ::= (ConstDeclList) CONST Type IDENT EQUAL Constants ConstantList SEMI;
 
 ConstantList ::= (ConstList) ConstantList COMMA IDENT EQUAL Constants
-				|
+				 |
 				 (NoConstList) /* epsilon */
-				;
+				 ;
 
 Constants ::=(NumConstant) NUMBER 
-			| 
-			(CharConstant) CHAR_CONST 
-			|
-			(BoolConstant) BOOL_CONST
-			;
+			 | 
+			 (CharConstant) CHAR_CONST 
+			 |
+			 (BoolConstant) BOOL_CONST
+			 ;
 
 
 VarDeclList ::= (VarDeclarList) VarDeclList VarDecl  
@@ -109,24 +109,23 @@ VarDeclList ::= (VarDeclarList) VarDeclList VarDecl
 VarDecl ::= (VarDecl) Type:varType VarDeclarationList SEMI ;
 
 VarDeclarationList ::=  (VarDeclaratList) VarDeclarationList  COMMA VarDeclaration
-					|
-					 (VarDeclarat) VarDeclaration
-					;
+						|
+					    (VarDeclarat) VarDeclaration
+						;
 					
 VarDeclaration ::= (VarDeclaration) IDENT Brackets ;
 
-MethodDeclList ::= (MethDeclList) MethodDeclList MethodDecl
+MethodDeclList ::=  (MethDeclList) MethodDeclList MethodDecl
 					|
 					(NoMethDeclList) /* epsilon */
 					;
 
-MethodDecl ::= (MethodDecl)  MethodSignature VarDeclList LBRACE StatementList RBRACE 
-			   ;
+MethodDecl ::= (MethodDecl)  MethodSignature VarDeclList LBRACE StatementList RBRACE ;
 
 MethodSignature ::= (MethTypeName) Type:retType IDENT:methName LPAREN FormPars RPAREN
-				|
-				(NoMethTypeName) VOID IDENT:methName LPAREN FormPars RPAREN
-				;
+					|
+					(NoMethTypeName) VOID IDENT:methName LPAREN FormPars RPAREN
+					;
 
 FormPars ::= (FormalPars) FormalParamList 
 			 |
@@ -148,6 +147,8 @@ Brackets ::= (Bracket) LBRACKET RBRACKET
 			 ;
 
 Type ::= (Type) IDENT:typeName ;
+
+Statements ::= (Statements) LBRACE StatementList RBRACE ;
 		 
 StatementList ::= (StmtList)  StatementList Statement 
 				  |
@@ -155,9 +156,9 @@ StatementList ::= (StmtList)  StatementList Statement
 				  ;
 
 Statement ::= (MatchedStmt) Matched
-		   |
-		   (UnmatchedStmt) Unmatched
-		   ; 
+		      |
+		      (UnmatchedStmt) Unmatched
+		      ; 
 
 Unmatched ::= (UnmatchedIf) IF LPAREN Condition RPAREN Statement
 		 	  |
@@ -180,14 +181,19 @@ Matched ::=   (PrintStmt) PRINT LPAREN Expr RPAREN SEMI
 			  |
 			  (ReturnEmptyStmt) RETURN SEMI
 			  |
-			  (DoWhileStatement) DO DoWhileStart Statement WHILE WhileStart LPAREN Condition RPAREN DoWhileEnd SEMI
-			  |
-			  (DoWhileStatementWithoutCond) DO DoWhileStart Statement WHILE WhileStart LPAREN RPAREN DoWhileEnd SEMI
-			  |
-			  (DoWhileStatementWithStmt) DO DoWhileStart Statement WHILE WhileStart LPAREN Condition COMMA Statement RPAREN DoWhileEnd SEMI
+			  (DoWhileStatementWithStmt) DO DoWhileStart Statement WHILE WhileStart LPAREN ConditionWithStatement RPAREN DoWhileEnd SEMI
 			  |
 			  (IfElseStmt) IF LPAREN Condition RPAREN Matched ELSE Matched
+			  |
+			  (BracedStmt) Statements
 			  ;
+			  
+ConditionWithStatement ::=  (CondWithStatement) Condition COMMA DesignatorStatement
+							|
+							(CondSolo)Condition
+							|
+							(WithoutCond) /* epsilon */
+							;
 			  
 DoWhileStart ::= (DoWhileStart) /* epsilon */;
 
@@ -197,40 +203,40 @@ WhileStart ::= (WhileStart) /* epsilon */;
 
 
 DesignatorStatement ::= (DesginatorAssignop) Designator Assignop Expr
-					|
-					(DesignatorInc) Designator PLUS PLUS
-					|
-					(DesignatorDec) Designator MINUS MINUS
-					| 
-					(DesignatorSetop) Designator Assignop Designator Setop Designator
-					|
-					(DesignatorActPars) Designator LPAREN ActPars RPAREN
-					;
+						|
+						(DesignatorInc) Designator PLUS PLUS
+						|
+						(DesignatorDec) Designator MINUS MINUS
+						| 
+						(DesignatorSetop) Designator Assignop Designator Setop Designator
+						|
+						(DesignatorActPars) Designator LPAREN ActPars RPAREN
+						;
 
 ActPars ::=  (ActParams) ActParamList 
-			| 
+			 | 
 		     (NoActParams) /* epsilon */ 
-		    ;
+		     ;
 			   
 ActParamList ::= (ActParamsList) ActParamList COMMA Expr
-				|
+				 |
 				 (ActParamsExpr) Expr
-				;
+				 ;
 		
-Condition ::= (ConditionList)Condition LINE LINE CondTerm
+Condition ::=   (ConditionList)Condition LINE LINE CondTerm
 				|
 				(ConditionTerm) CondTerm
 				;
 
 CondTerm ::= (CondTermList) CondTerm AMPER AMPER CondFact
-			|
-			(ConditionFact) CondFact
-			;
+			 |
+			 (ConditionFact) CondFact
+			 ;
 			
 CondFact ::= (Cond) Expr
-			|
-			(CondExpr) Expr Relop Expr
-			;
+			 |
+			 (CondExpr) Expr Relop Expr
+			 ;
 		
 Expr ::= (ExprAddop) Expr:te Addop Term:t
 		 |
@@ -242,12 +248,12 @@ Expr ::= (ExprAddop) Expr:te Addop Term:t
 		 ;
 
 Term ::= (TermMulop) Term:te Mulop Factor:f
-		|
-		(TermFactor) Factor:f
-		;
+		 |
+		 (TermFactor) Factor:f
+		 ;
 
 
-Factor ::= (FactorNum) NUMBER
+Factor ::=  (FactorNum) NUMBER
 			|
 			(FactorChar) CHAR_CONST
 			|
@@ -266,14 +272,14 @@ Factor ::= (FactorNum) NUMBER
 
 
 Designator ::= (DesignatorEl) IDENT:desName DesignatorElem
-			|
-			(DesignatorIdent) IDENT DOT IDENT
-			;
+			   |
+			   (DesignatorIdent) IDENT DOT IDENT
+			   ;
 
 DesignatorElem ::= (DesElem) LBRACKET Expr RBRACKET 
-				|
-				(NoDesElem) /* epsilon */
-				;
+				   |
+				   (NoDesElem) /* epsilon */
+				   ;
 					
 
 Label ::= (Label) IDENT;
@@ -295,17 +301,17 @@ Relop ::= (RelopEqual) EQUAL EQUAL
 		;
 
 Addop ::= (AddopPlus)  PLUS 
-		|
-		(AddopMinus) MINUS
-		;
+		  |
+		  (AddopMinus) MINUS
+		  ;
 		
 		
 Mulop ::= (MulopMul) MUL
-		|
-		(MulopDiv) DIV
-		|
-		(MulopMod) MOD
-		;
+		  |
+		  (MulopDiv) DIV
+		  |
+		  (MulopMod) MOD
+		  ;
 		
 Setop ::= (Setop) UNION ;
 		

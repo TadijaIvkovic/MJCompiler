@@ -106,9 +106,11 @@ nonterminal CondTerm CondTerm;
 nonterminal CondFact CondFact;
 nonterminal Matched Matched;
 nonterminal Unmatched Unmatched;
+nonterminal Statements Statements;
 nonterminal WhileStart WhileStart;
 nonterminal DoWhileEnd DoWhileEnd;
 nonterminal DoWhileStart DoWhileStart;
+nonterminal ConditionWithStatement ConditionWithStatement;
 
 
 Program ::= (Program) PROG ProgName:p DeclarationList:D1 LBRACE MethodDeclList:M2 RBRACE {: RESULT=new Program(p, D1, M2); RESULT.setLine(pleft); :} ;
@@ -185,6 +187,8 @@ Brackets ::= (Bracket) LBRACKET RBRACKET {: RESULT=new Bracket(); :}
 			 ;
 
 Type ::= (Type) IDENT:typeName {: RESULT=new Type(typeName); RESULT.setLine(typeNameleft); :} ;
+
+Statements ::= (Statements) LBRACE StatementList:S1 RBRACE {: RESULT=new Statements(S1); RESULT.setLine(S1left); :} ;
 		 
 StatementList ::= (StmtList)  StatementList:S1 Statement:S2 {: RESULT=new StmtList(S1, S2); RESULT.setLine(S1left); :} 
 				  |
@@ -217,14 +221,19 @@ Matched ::=   (PrintStmt) PRINT LPAREN Expr:E1 RPAREN SEMI {: RESULT=new PrintSt
 			  |
 			  (ReturnEmptyStmt) RETURN SEMI {: RESULT=new ReturnEmptyStmt(); :}
 			  |
-			  (DoWhileStatement) DO DoWhileStart:D1 Statement:S2 WHILE WhileStart:W3 LPAREN Condition:C4 RPAREN DoWhileEnd:D5 SEMI {: RESULT=new DoWhileStatement(D1, S2, W3, C4, D5); RESULT.setLine(D1left); :}
-			  |
-			  (DoWhileStatementWithoutCond) DO DoWhileStart:D1 Statement:S2 WHILE WhileStart:W3 LPAREN RPAREN DoWhileEnd:D4 SEMI {: RESULT=new DoWhileStatementWithoutCond(D1, S2, W3, D4); RESULT.setLine(D1left); :}
-			  |
-			  (DoWhileStatementWithStmt) DO DoWhileStart:D1 Statement:S2 WHILE WhileStart:W3 LPAREN Condition:C4 COMMA Statement:S5 RPAREN DoWhileEnd:D6 SEMI {: RESULT=new DoWhileStatementWithStmt(D1, S2, W3, C4, S5, D6); RESULT.setLine(D1left); :}
+			  (DoWhileStatementWithStmt) DO DoWhileStart:D1 Statement:S2 WHILE WhileStart:W3 LPAREN ConditionWithStatement:C4 DoWhileEnd:D5 RPAREN SEMI {: RESULT=new DoWhileStatementWithStmt(D1, S2, W3, C4, D5); RESULT.setLine(D1left); :}
 			  |
 			  (IfElseStmt) IF LPAREN Condition:C1 RPAREN Matched:M2 ELSE Matched:M3 {: RESULT=new IfElseStmt(C1, M2, M3); RESULT.setLine(C1left); :}
+			  |
+			  (BracedStmt) Statements:S1 {: RESULT=new BracedStmt(S1); RESULT.setLine(S1left); :}
 			  ;
+			  
+ConditionWithStatement ::= Condition:C1 COMMA DesignatorStatement:D2 {: RESULT=new ConditionWithStatementDerived1(C1, D2); RESULT.setLine(C1left); :}
+						|
+						Condition:C1 {: RESULT=new ConditionWithStatementDerived2(C1); RESULT.setLine(C1left); :}
+						| {: RESULT=new ConditionWithStatementDerived3(); :}
+						/* epsilon */
+						;
 			  
 DoWhileStart ::= (DoWhileStart) {: RESULT=new DoWhileStart(); :} /* epsilon */;
 
