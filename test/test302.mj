@@ -12,7 +12,7 @@ int a;
 
 {
 	int sum(int z, int d){
-		return z + d;
+		return z + ;
 	}	
 
 	int inkrement(int a, int inc) 

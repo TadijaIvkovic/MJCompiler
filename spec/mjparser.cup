@@ -167,6 +167,9 @@ Unmatched ::= (UnmatchedIf) IF LPAREN Condition RPAREN Statement
 				  
 Matched ::=   (PrintStmt) PRINT LPAREN Expr RPAREN SEMI
   			  |
+  			  error SEMI:l
+  			  {: parser.report_error("Izvrsen oporavak do ; u liniji " + lleft, null); :}
+  			  |
 			  (PrintStmtTwo) PRINT LPAREN Expr COMMA NUMBER RPAREN SEMI	 
 			  |
 			  (ReadStmt) READ LPAREN Designator RPAREN SEMI

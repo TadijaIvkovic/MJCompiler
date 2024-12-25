@@ -1,6 +1,6 @@
 // generated with ast extension for cup
 // version 0.8
-// 16/11/2024 19:45:59
+// 25/11/2024 15:28:25
 
 
 package rs.ac.bg.etf.pp1.ast;
@@ -86,9 +86,9 @@ public abstract class VisitorAdaptor implements Visitor {
     public void visit(WhileStart WhileStart) { visit(); }
     public void visit(DoWhileEnd DoWhileEnd) { visit(); }
     public void visit(DoWhileStart DoWhileStart) { visit(); }
-    public void visit(ConditionWithStatementDerived3 ConditionWithStatementDerived3) { visit(); }
-    public void visit(ConditionWithStatementDerived2 ConditionWithStatementDerived2) { visit(); }
-    public void visit(ConditionWithStatementDerived1 ConditionWithStatementDerived1) { visit(); }
+    public void visit(WithoutCond WithoutCond) { visit(); }
+    public void visit(CondSolo CondSolo) { visit(); }
+    public void visit(CondWithStatement CondWithStatement) { visit(); }
     public void visit(BracedStmt BracedStmt) { visit(); }
     public void visit(IfElseStmt IfElseStmt) { visit(); }
     public void visit(DoWhileStatementWithStmt DoWhileStatementWithStmt) { visit(); }
@@ -99,6 +99,7 @@ public abstract class VisitorAdaptor implements Visitor {
     public void visit(DesStmt DesStmt) { visit(); }
     public void visit(ReadStmt ReadStmt) { visit(); }
     public void visit(PrintStmtTwo PrintStmtTwo) { visit(); }
+    public void visit(MatchedDerived1 MatchedDerived1) { visit(); }
     public void visit(PrintStmt PrintStmt) { visit(); }
     public void visit(UnmatchedIfElse UnmatchedIfElse) { visit(); }
     public void visit(UnmatchedIf UnmatchedIf) { visit(); }

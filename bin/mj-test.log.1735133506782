@@ -1,0 +1,504 @@
+INFO  14:30:46,556 - Compiling source file: C:\Users\The Workstation\eclipse-workspace\MJCompiler\test\testing.mj
+INFO  14:30:46,588 - #2 program
+INFO  14:30:46,588 - #47 test302
+INFO  14:30:46,588 - #47 int
+INFO  14:30:46,589 - #47 i
+INFO  14:30:46,589 - #26 ;
+INFO  14:30:46,591 - #47 bool
+INFO  14:30:46,592 - #47 ibool
+INFO  14:30:46,592 - #26 ;
+INFO  14:30:46,592 - #47 int
+INFO  14:30:46,592 - #47 niz2
+INFO  14:30:46,592 - #26 ;
+INFO  14:30:46,592 - #47 int
+INFO  14:30:46,592 - #47 niz
+INFO  14:30:46,592 - #33 [
+INFO  14:30:46,592 - #34 ]
+INFO  14:30:46,592 - #26 ;
+INFO  14:30:46,592 - #47 int
+INFO  14:30:46,593 - #47 a
+INFO  14:30:46,593 - #26 ;
+INFO  14:30:46,593 - #31 {
+INFO  14:30:46,593 - #47 int
+INFO  14:30:46,602 - #47 sum
+INFO  14:30:46,602 - #29 (
+INFO  14:30:46,603 - #47 int
+INFO  14:30:46,603 - #47 z
+INFO  14:30:46,603 - #27 ,
+INFO  14:30:46,603 - #47 int
+INFO  14:30:46,604 - #47 d
+INFO  14:30:46,604 - #30 )
+INFO  14:30:46,604 - #31 {
+INFO  14:30:46,604 - #11 return
+INFO  14:30:46,605 - #47 z
+INFO  14:30:46,605 - #18 +
+INFO  14:30:46,606 - #26 ;
+ERROR 14:30:46,606 - 
+Sintaksna greska na liniji 15
+INFO  14:30:46,606 - #32 }
+INFO  14:30:46,606 - #12 void
+INFO  14:30:46,606 - #47 main
+ERROR 14:30:46,608 - Izvrsen oporavak do ; u liniji15
+INFO  14:30:46,609 - #29 (
+INFO  14:30:46,609 - #30 )
+INFO  14:30:46,610 - #31 {
+INFO  14:30:46,610 - #10 read
+INFO  14:30:46,610 - #29 (
+INFO  14:30:46,610 - #47 niz
+INFO  14:30:46,610 - #33 [
+INFO  14:30:46,610 - #44 0
+INFO  14:30:46,610 - #34 ]
+INFO  14:30:46,610 - #30 )
+INFO  14:30:46,610 - #26 ;
+INFO  14:30:46,610 - #10 read
+INFO  14:30:46,611 - #29 (
+INFO  14:30:46,611 - #47 niz
+INFO  14:30:46,611 - #33 [
+INFO  14:30:46,611 - #44 1
+INFO  14:30:46,611 - #34 ]
+INFO  14:30:46,611 - #30 )
+INFO  14:30:46,611 - #26 ;
+INFO  14:30:46,611 - #10 read
+INFO  14:30:46,611 - #29 (
+INFO  14:30:46,611 - #47 niz
+INFO  14:30:46,611 - #33 [
+INFO  14:30:46,611 - #44 2
+INFO  14:30:46,611 - #34 ]
+INFO  14:30:46,611 - #30 )
+INFO  14:30:46,611 - #26 ;
+INFO  14:30:46,611 - #9 print
+INFO  14:30:46,611 - #29 (
+INFO  14:30:46,611 - #47 eol
+INFO  14:30:46,611 - #30 )
+INFO  14:30:46,611 - #26 ;
+INFO  14:30:46,611 - #9 print
+INFO  14:30:46,611 - #29 (
+INFO  14:30:46,611 - #47 sum
+INFO  14:30:46,611 - #29 (
+INFO  14:30:46,611 - #47 sum
+INFO  14:30:46,611 - #29 (
+INFO  14:30:46,611 - #47 niz
+INFO  14:30:46,611 - #33 [
+INFO  14:30:46,611 - #44 0
+INFO  14:30:46,612 - #34 ]
+INFO  14:30:46,612 - #27 ,
+INFO  14:30:46,612 - #47 niz
+INFO  14:30:46,612 - #33 [
+INFO  14:30:46,612 - #44 1
+INFO  14:30:46,612 - #34 ]
+INFO  14:30:46,612 - #30 )
+INFO  14:30:46,612 - #27 ,
+INFO  14:30:46,612 - #47 niz
+INFO  14:30:46,613 - #33 [
+INFO  14:30:46,613 - #44 2
+INFO  14:30:46,613 - #34 ]
+INFO  14:30:46,613 - #30 )
+INFO  14:30:46,613 - #30 )
+INFO  14:30:46,613 - #26 ;
+INFO  14:30:46,613 - #9 print
+INFO  14:30:46,613 - #29 (
+INFO  14:30:46,613 - #47 eol
+INFO  14:30:46,613 - #30 )
+INFO  14:30:46,613 - #26 ;
+INFO  14:30:46,613 - #9 print
+INFO  14:30:46,613 - #29 (
+INFO  14:30:46,613 - #47 inkrement
+INFO  14:30:46,613 - #29 (
+INFO  14:30:46,613 - #47 niz
+INFO  14:30:46,613 - #33 [
+INFO  14:30:46,613 - #44 2
+INFO  14:30:46,613 - #34 ]
+INFO  14:30:46,613 - #27 ,
+INFO  14:30:46,613 - #44 2
+INFO  14:30:46,613 - #30 )
+INFO  14:30:46,613 - #30 )
+INFO  14:30:46,613 - #26 ;
+INFO  14:30:46,613 - #9 print
+INFO  14:30:46,614 - #29 (
+INFO  14:30:46,614 - #47 eol
+INFO  14:30:46,614 - #30 )
+INFO  14:30:46,614 - #26 ;
+INFO  14:30:46,614 - #32 }
+INFO  14:30:46,614 - #32 }
+INFO  14:30:46,617 - Program(
+  ProgName(
+   test302
+  ) [ProgName]
+  VarDecLists(
+    VarDecl(
+      Type(
+       int
+      ) [Type]
+      VarDeclarat(
+        VarDeclaration(
+         i
+          NoBracket(
+          ) [NoBracket]
+        ) [VarDeclaration]
+      ) [VarDeclarat]
+    ) [VarDecl]
+    VarDecLists(
+      VarDecl(
+        Type(
+         bool
+        ) [Type]
+        VarDeclarat(
+          VarDeclaration(
+           ibool
+            NoBracket(
+            ) [NoBracket]
+          ) [VarDeclaration]
+        ) [VarDeclarat]
+      ) [VarDecl]
+      VarDecLists(
+        VarDecl(
+          Type(
+           int
+          ) [Type]
+          VarDeclarat(
+            VarDeclaration(
+             niz2
+              NoBracket(
+              ) [NoBracket]
+            ) [VarDeclaration]
+          ) [VarDeclarat]
+        ) [VarDecl]
+        VarDecLists(
+          VarDecl(
+            Type(
+             int
+            ) [Type]
+            VarDeclarat(
+              VarDeclaration(
+               niz
+                Bracket(
+                ) [Bracket]
+              ) [VarDeclaration]
+            ) [VarDeclarat]
+          ) [VarDecl]
+          VarDecLists(
+            VarDecl(
+              Type(
+               int
+              ) [Type]
+              VarDeclarat(
+                VarDeclaration(
+                 a
+                  NoBracket(
+                  ) [NoBracket]
+                ) [VarDeclaration]
+              ) [VarDeclarat]
+            ) [VarDecl]
+            NoDecLists(
+            ) [NoDecLists]
+          ) [VarDecLists]
+        ) [VarDecLists]
+      ) [VarDecLists]
+    ) [VarDecLists]
+  ) [VarDecLists]
+  MethDeclList(
+    MethDeclList(
+      NoMethDeclList(
+      ) [NoMethDeclList]
+      MethodDecl(
+        MethTypeName(
+          Type(
+           int
+          ) [Type]
+         sum
+          FormalPars(
+            FormalParsList(
+              FormalParsDecl(
+                FormalParamDecl(
+                  Type(
+                   int
+                  ) [Type]
+                 z
+                  NoBracket(
+                  ) [NoBracket]
+                ) [FormalParamDecl]
+              ) [FormalParsDecl]
+              FormalParamDecl(
+                Type(
+                 int
+                ) [Type]
+               d
+                NoBracket(
+                ) [NoBracket]
+              ) [FormalParamDecl]
+            ) [FormalParsList]
+          ) [FormalPars]
+        ) [MethTypeName]
+        NoVarDeclarList(
+        ) [NoVarDeclarList]
+        StmtList(
+          NoStmtList(
+          ) [NoStmtList]
+          MatchedStmt(
+            MatchedDerived1(
+            ) [MatchedDerived1]
+          ) [MatchedStmt]
+        ) [StmtList]
+      ) [MethodDecl]
+    ) [MethDeclList]
+    MethodDecl(
+      NoMethTypeName(
+       main
+        NoFormalPars(
+        ) [NoFormalPars]
+      ) [NoMethTypeName]
+      NoVarDeclarList(
+      ) [NoVarDeclarList]
+      StmtList(
+        StmtList(
+          StmtList(
+            StmtList(
+              StmtList(
+                StmtList(
+                  StmtList(
+                    StmtList(
+                      NoStmtList(
+                      ) [NoStmtList]
+                      MatchedStmt(
+                        ReadStmt(
+                          DesignatorEl(
+                           niz
+                            DesElem(
+                              ExprTerm(
+                                TermFactor(
+                                  FactorNum(
+                                   0
+                                  ) [FactorNum]
+                                ) [TermFactor]
+                              ) [ExprTerm]
+                            ) [DesElem]
+                          ) [DesignatorEl]
+                        ) [ReadStmt]
+                      ) [MatchedStmt]
+                    ) [StmtList]
+                    MatchedStmt(
+                      ReadStmt(
+                        DesignatorEl(
+                         niz
+                          DesElem(
+                            ExprTerm(
+                              TermFactor(
+                                FactorNum(
+                                 1
+                                ) [FactorNum]
+                              ) [TermFactor]
+                            ) [ExprTerm]
+                          ) [DesElem]
+                        ) [DesignatorEl]
+                      ) [ReadStmt]
+                    ) [MatchedStmt]
+                  ) [StmtList]
+                  MatchedStmt(
+                    ReadStmt(
+                      DesignatorEl(
+                       niz
+                        DesElem(
+                          ExprTerm(
+                            TermFactor(
+                              FactorNum(
+                               2
+                              ) [FactorNum]
+                            ) [TermFactor]
+                          ) [ExprTerm]
+                        ) [DesElem]
+                      ) [DesignatorEl]
+                    ) [ReadStmt]
+                  ) [MatchedStmt]
+                ) [StmtList]
+                MatchedStmt(
+                  PrintStmt(
+                    ExprTerm(
+                      TermFactor(
+                        FactorDes(
+                          DesignatorEl(
+                           eol
+                            NoDesElem(
+                            ) [NoDesElem]
+                          ) [DesignatorEl]
+                        ) [FactorDes]
+                      ) [TermFactor]
+                    ) [ExprTerm]
+                  ) [PrintStmt]
+                ) [MatchedStmt]
+              ) [StmtList]
+              MatchedStmt(
+                PrintStmt(
+                  ExprTerm(
+                    TermFactor(
+                      FactorDesActPars(
+                        DesignatorEl(
+                         sum
+                          NoDesElem(
+                          ) [NoDesElem]
+                        ) [DesignatorEl]
+                        ActParams(
+                          ActParamsList(
+                            ActParamsExpr(
+                              ExprTerm(
+                                TermFactor(
+                                  FactorDesActPars(
+                                    DesignatorEl(
+                                     sum
+                                      NoDesElem(
+                                      ) [NoDesElem]
+                                    ) [DesignatorEl]
+                                    ActParams(
+                                      ActParamsList(
+                                        ActParamsExpr(
+                                          ExprTerm(
+                                            TermFactor(
+                                              FactorDes(
+                                                DesignatorEl(
+                                                 niz
+                                                  DesElem(
+                                                    ExprTerm(
+                                                      TermFactor(
+                                                        FactorNum(
+                                                         0
+                                                        ) [FactorNum]
+                                                      ) [TermFactor]
+                                                    ) [ExprTerm]
+                                                  ) [DesElem]
+                                                ) [DesignatorEl]
+                                              ) [FactorDes]
+                                            ) [TermFactor]
+                                          ) [ExprTerm]
+                                        ) [ActParamsExpr]
+                                        ExprTerm(
+                                          TermFactor(
+                                            FactorDes(
+                                              DesignatorEl(
+                                               niz
+                                                DesElem(
+                                                  ExprTerm(
+                                                    TermFactor(
+                                                      FactorNum(
+                                                       1
+                                                      ) [FactorNum]
+                                                    ) [TermFactor]
+                                                  ) [ExprTerm]
+                                                ) [DesElem]
+                                              ) [DesignatorEl]
+                                            ) [FactorDes]
+                                          ) [TermFactor]
+                                        ) [ExprTerm]
+                                      ) [ActParamsList]
+                                    ) [ActParams]
+                                  ) [FactorDesActPars]
+                                ) [TermFactor]
+                              ) [ExprTerm]
+                            ) [ActParamsExpr]
+                            ExprTerm(
+                              TermFactor(
+                                FactorDes(
+                                  DesignatorEl(
+                                   niz
+                                    DesElem(
+                                      ExprTerm(
+                                        TermFactor(
+                                          FactorNum(
+                                           2
+                                          ) [FactorNum]
+                                        ) [TermFactor]
+                                      ) [ExprTerm]
+                                    ) [DesElem]
+                                  ) [DesignatorEl]
+                                ) [FactorDes]
+                              ) [TermFactor]
+                            ) [ExprTerm]
+                          ) [ActParamsList]
+                        ) [ActParams]
+                      ) [FactorDesActPars]
+                    ) [TermFactor]
+                  ) [ExprTerm]
+                ) [PrintStmt]
+              ) [MatchedStmt]
+            ) [StmtList]
+            MatchedStmt(
+              PrintStmt(
+                ExprTerm(
+                  TermFactor(
+                    FactorDes(
+                      DesignatorEl(
+                       eol
+                        NoDesElem(
+                        ) [NoDesElem]
+                      ) [DesignatorEl]
+                    ) [FactorDes]
+                  ) [TermFactor]
+                ) [ExprTerm]
+              ) [PrintStmt]
+            ) [MatchedStmt]
+          ) [StmtList]
+          MatchedStmt(
+            PrintStmt(
+              ExprTerm(
+                TermFactor(
+                  FactorDesActPars(
+                    DesignatorEl(
+                     inkrement
+                      NoDesElem(
+                      ) [NoDesElem]
+                    ) [DesignatorEl]
+                    ActParams(
+                      ActParamsList(
+                        ActParamsExpr(
+                          ExprTerm(
+                            TermFactor(
+                              FactorDes(
+                                DesignatorEl(
+                                 niz
+                                  DesElem(
+                                    ExprTerm(
+                                      TermFactor(
+                                        FactorNum(
+                                         2
+                                        ) [FactorNum]
+                                      ) [TermFactor]
+                                    ) [ExprTerm]
+                                  ) [DesElem]
+                                ) [DesignatorEl]
+                              ) [FactorDes]
+                            ) [TermFactor]
+                          ) [ExprTerm]
+                        ) [ActParamsExpr]
+                        ExprTerm(
+                          TermFactor(
+                            FactorNum(
+                             2
+                            ) [FactorNum]
+                          ) [TermFactor]
+                        ) [ExprTerm]
+                      ) [ActParamsList]
+                    ) [ActParams]
+                  ) [FactorDesActPars]
+                ) [TermFactor]
+              ) [ExprTerm]
+            ) [PrintStmt]
+          ) [MatchedStmt]
+        ) [StmtList]
+        MatchedStmt(
+          PrintStmt(
+            ExprTerm(
+              TermFactor(
+                FactorDes(
+                  DesignatorEl(
+                   eol
+                    NoDesElem(
+                    ) [NoDesElem]
+                  ) [DesignatorEl]
+                ) [FactorDes]
+              ) [TermFactor]
+            ) [ExprTerm]
+          ) [PrintStmt]
+        ) [MatchedStmt]
+      ) [StmtList]
+    ) [MethodDecl]
+  ) [MethDeclList]
+) [Program]
+INFO  14:30:46,618 - ===================================

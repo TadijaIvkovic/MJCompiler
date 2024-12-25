@@ -1,6 +1,6 @@
 // generated with ast extension for cup
 // version 0.8
-// 16/11/2024 19:45:59
+// 25/11/2024 15:28:25
 
 
 package rs.ac.bg.etf.pp1.ast;
@@ -86,9 +86,9 @@ public interface Visitor {
     public void visit(WhileStart WhileStart);
     public void visit(DoWhileEnd DoWhileEnd);
     public void visit(DoWhileStart DoWhileStart);
-    public void visit(ConditionWithStatementDerived3 ConditionWithStatementDerived3);
-    public void visit(ConditionWithStatementDerived2 ConditionWithStatementDerived2);
-    public void visit(ConditionWithStatementDerived1 ConditionWithStatementDerived1);
+    public void visit(WithoutCond WithoutCond);
+    public void visit(CondSolo CondSolo);
+    public void visit(CondWithStatement CondWithStatement);
     public void visit(BracedStmt BracedStmt);
     public void visit(IfElseStmt IfElseStmt);
     public void visit(DoWhileStatementWithStmt DoWhileStatementWithStmt);
@@ -99,6 +99,7 @@ public interface Visitor {
     public void visit(DesStmt DesStmt);
     public void visit(ReadStmt ReadStmt);
     public void visit(PrintStmtTwo PrintStmtTwo);
+    public void visit(MatchedDerived1 MatchedDerived1);
     public void visit(PrintStmt PrintStmt);
     public void visit(UnmatchedIfElse UnmatchedIfElse);
     public void visit(UnmatchedIf UnmatchedIf);
