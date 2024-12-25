@@ -1,0 +1,616 @@
+INFO  16:15:01,654 - Compiling source file: C:\Users\The Workstation\eclipse-workspace\MJCompiler\test\testing.mj
+INFO  16:15:01,680 - #2 program
+INFO  16:15:01,680 - #47 test302
+INFO  16:15:01,680 - #47 int
+INFO  16:15:01,681 - #47 i
+INFO  16:15:01,681 - #26 ;
+INFO  16:15:01,683 - #47 bool
+INFO  16:15:01,683 - #47 ibool
+INFO  16:15:01,683 - #26 ;
+INFO  16:15:01,683 - #47 int
+INFO  16:15:01,683 - #47 niz2
+INFO  16:15:01,683 - #26 ;
+INFO  16:15:01,683 - #47 int
+INFO  16:15:01,684 - #47 niz
+INFO  16:15:01,684 - #33 [
+INFO  16:15:01,684 - #34 ]
+INFO  16:15:01,684 - #26 ;
+INFO  16:15:01,684 - #47 int
+INFO  16:15:01,685 - #47 a
+INFO  16:15:01,685 - #26 ;
+INFO  16:15:01,685 - #31 {
+INFO  16:15:01,685 - #47 int
+INFO  16:15:01,686 - #47 sum
+INFO  16:15:01,686 - #29 (
+INFO  16:15:01,686 - #47 int
+INFO  16:15:01,686 - #47 z
+INFO  16:15:01,686 - #27 ,
+INFO  16:15:01,687 - #47 int
+INFO  16:15:01,687 - #47 d
+INFO  16:15:01,687 - #30 )
+INFO  16:15:01,687 - #31 {
+INFO  16:15:01,687 - #11 return
+INFO  16:15:01,688 - #47 z
+INFO  16:15:01,688 - #18 +
+INFO  16:15:01,688 - #47 d
+INFO  16:15:01,689 - #26 ;
+INFO  16:15:01,689 - #32 }
+INFO  16:15:01,689 - #12 void
+INFO  16:15:01,690 - #47 main
+INFO  16:15:01,690 - #29 (
+INFO  16:15:01,690 - #30 )
+INFO  16:15:01,691 - #31 {
+INFO  16:15:01,691 - #47 i
+INFO  16:15:01,691 - #23 =
+INFO  16:15:01,691 - #19 -
+INFO  16:15:01,691 - #47 z
+INFO  16:15:01,691 - #18 +
+INFO  16:15:01,691 - #47 d
+INFO  16:15:01,691 - #26 ;
+INFO  16:15:01,691 - #10 read
+INFO  16:15:01,692 - #29 (
+INFO  16:15:01,692 - #47 niz
+INFO  16:15:01,692 - #33 [
+INFO  16:15:01,692 - #44 0
+INFO  16:15:01,692 - #34 ]
+INFO  16:15:01,692 - #30 )
+INFO  16:15:01,692 - #26 ;
+INFO  16:15:01,692 - #10 read
+INFO  16:15:01,692 - #29 (
+INFO  16:15:01,692 - #47 niz
+INFO  16:15:01,692 - #33 [
+INFO  16:15:01,692 - #44 1
+INFO  16:15:01,692 - #34 ]
+INFO  16:15:01,692 - #30 )
+INFO  16:15:01,692 - #26 ;
+INFO  16:15:01,692 - #10 read
+INFO  16:15:01,692 - #29 (
+INFO  16:15:01,692 - #47 niz
+INFO  16:15:01,692 - #33 [
+INFO  16:15:01,692 - #44 2
+INFO  16:15:01,692 - #34 ]
+INFO  16:15:01,692 - #30 )
+INFO  16:15:01,692 - #26 ;
+INFO  16:15:01,692 - #9 print
+INFO  16:15:01,692 - #29 (
+INFO  16:15:01,692 - #47 eol
+INFO  16:15:01,692 - #30 )
+INFO  16:15:01,692 - #26 ;
+INFO  16:15:01,692 - #9 print
+INFO  16:15:01,693 - #29 (
+INFO  16:15:01,693 - #47 sum
+INFO  16:15:01,693 - #29 (
+INFO  16:15:01,693 - #47 sum
+INFO  16:15:01,693 - #29 (
+INFO  16:15:01,693 - #47 niz
+INFO  16:15:01,693 - #33 [
+INFO  16:15:01,693 - #44 0
+INFO  16:15:01,693 - #34 ]
+INFO  16:15:01,693 - #27 ,
+INFO  16:15:01,693 - #47 niz
+INFO  16:15:01,693 - #33 [
+INFO  16:15:01,693 - #44 1
+INFO  16:15:01,693 - #34 ]
+INFO  16:15:01,693 - #30 )
+INFO  16:15:01,693 - #27 ,
+INFO  16:15:01,693 - #47 niz
+INFO  16:15:01,693 - #33 [
+INFO  16:15:01,693 - #44 2
+INFO  16:15:01,693 - #34 ]
+INFO  16:15:01,693 - #30 )
+INFO  16:15:01,693 - #30 )
+INFO  16:15:01,693 - #26 ;
+INFO  16:15:01,693 - #9 print
+INFO  16:15:01,693 - #29 (
+INFO  16:15:01,693 - #47 eol
+INFO  16:15:01,693 - #30 )
+INFO  16:15:01,693 - #26 ;
+INFO  16:15:01,693 - #9 print
+INFO  16:15:01,694 - #29 (
+INFO  16:15:01,694 - #47 inkrement
+INFO  16:15:01,694 - #29 (
+INFO  16:15:01,694 - #47 niz
+INFO  16:15:01,694 - #33 [
+INFO  16:15:01,694 - #44 2
+INFO  16:15:01,694 - #34 ]
+INFO  16:15:01,694 - #27 ,
+INFO  16:15:01,694 - #44 2
+INFO  16:15:01,694 - #30 )
+INFO  16:15:01,694 - #30 )
+INFO  16:15:01,694 - #26 ;
+INFO  16:15:01,694 - #9 print
+INFO  16:15:01,694 - #29 (
+INFO  16:15:01,694 - #47 eol
+INFO  16:15:01,694 - #30 )
+INFO  16:15:01,694 - #26 ;
+INFO  16:15:01,694 - #32 }
+INFO  16:15:01,694 - #32 }
+INFO  16:15:01,698 - Program(
+  ProgName(
+   test302
+  ) [ProgName]
+  VarDecLists(
+    VarDecl(
+      Type(
+       int
+      ) [Type]
+      VarDeclarat(
+        VarDeclaration(
+         i
+          NoBracket(
+          ) [NoBracket]
+        ) [VarDeclaration]
+      ) [VarDeclarat]
+    ) [VarDecl]
+    VarDecLists(
+      VarDecl(
+        Type(
+         bool
+        ) [Type]
+        VarDeclarat(
+          VarDeclaration(
+           ibool
+            NoBracket(
+            ) [NoBracket]
+          ) [VarDeclaration]
+        ) [VarDeclarat]
+      ) [VarDecl]
+      VarDecLists(
+        VarDecl(
+          Type(
+           int
+          ) [Type]
+          VarDeclarat(
+            VarDeclaration(
+             niz2
+              NoBracket(
+              ) [NoBracket]
+            ) [VarDeclaration]
+          ) [VarDeclarat]
+        ) [VarDecl]
+        VarDecLists(
+          VarDecl(
+            Type(
+             int
+            ) [Type]
+            VarDeclarat(
+              VarDeclaration(
+               niz
+                Bracket(
+                ) [Bracket]
+              ) [VarDeclaration]
+            ) [VarDeclarat]
+          ) [VarDecl]
+          VarDecLists(
+            VarDecl(
+              Type(
+               int
+              ) [Type]
+              VarDeclarat(
+                VarDeclaration(
+                 a
+                  NoBracket(
+                  ) [NoBracket]
+                ) [VarDeclaration]
+              ) [VarDeclarat]
+            ) [VarDecl]
+            NoDecLists(
+            ) [NoDecLists]
+          ) [VarDecLists]
+        ) [VarDecLists]
+      ) [VarDecLists]
+    ) [VarDecLists]
+  ) [VarDecLists]
+  MethDeclList(
+    MethDeclList(
+      NoMethDeclList(
+      ) [NoMethDeclList]
+      MethodDecl(
+        MethTypeName(
+          Type(
+           int
+          ) [Type]
+         sum
+          FormalPars(
+            FormalParsList(
+              FormalParsDecl(
+                FormalParamDecl(
+                  Type(
+                   int
+                  ) [Type]
+                 z
+                  NoBracket(
+                  ) [NoBracket]
+                ) [FormalParamDecl]
+              ) [FormalParsDecl]
+              FormalParamDecl(
+                Type(
+                 int
+                ) [Type]
+               d
+                NoBracket(
+                ) [NoBracket]
+              ) [FormalParamDecl]
+            ) [FormalParsList]
+          ) [FormalPars]
+        ) [MethTypeName]
+        NoVarDeclarList(
+        ) [NoVarDeclarList]
+        StmtList(
+          NoStmtList(
+          ) [NoStmtList]
+          MatchedStmt(
+            ReturnStmt(
+              ExprAddop(
+                ExprTerm(
+                  TermFactor(
+                    UnaryFactor(
+                      FactorDes(
+                        DesignatorEl(
+                         z
+                          NoDesElem(
+                          ) [NoDesElem]
+                        ) [DesignatorEl]
+                      ) [FactorDes]
+                    ) [UnaryFactor]
+                  ) [TermFactor]
+                ) [ExprTerm]
+                AddopPlus(
+                ) [AddopPlus]
+                TermFactor(
+                  UnaryFactor(
+                    FactorDes(
+                      DesignatorEl(
+                       d
+                        NoDesElem(
+                        ) [NoDesElem]
+                      ) [DesignatorEl]
+                    ) [FactorDes]
+                  ) [UnaryFactor]
+                ) [TermFactor]
+              ) [ExprAddop]
+            ) [ReturnStmt]
+          ) [MatchedStmt]
+        ) [StmtList]
+      ) [MethodDecl]
+    ) [MethDeclList]
+    MethodDecl(
+      NoMethTypeName(
+       main
+        NoFormalPars(
+        ) [NoFormalPars]
+      ) [NoMethTypeName]
+      NoVarDeclarList(
+      ) [NoVarDeclarList]
+      StmtList(
+        StmtList(
+          StmtList(
+            StmtList(
+              StmtList(
+                StmtList(
+                  StmtList(
+                    StmtList(
+                      StmtList(
+                        NoStmtList(
+                        ) [NoStmtList]
+                        MatchedStmt(
+                          DesStmt(
+                            DesginatorAssignop(
+                              DesignatorEl(
+                               i
+                                NoDesElem(
+                                ) [NoDesElem]
+                              ) [DesignatorEl]
+                              Assignop(
+                              ) [Assignop]
+                              ExprAddop(
+                                ExprTerm(
+                                  TermFactor(
+                                    UnaryMinusFactor(
+                                      FactorDes(
+                                        DesignatorEl(
+                                         z
+                                          NoDesElem(
+                                          ) [NoDesElem]
+                                        ) [DesignatorEl]
+                                      ) [FactorDes]
+                                    ) [UnaryMinusFactor]
+                                  ) [TermFactor]
+                                ) [ExprTerm]
+                                AddopPlus(
+                                ) [AddopPlus]
+                                TermFactor(
+                                  UnaryFactor(
+                                    FactorDes(
+                                      DesignatorEl(
+                                       d
+                                        NoDesElem(
+                                        ) [NoDesElem]
+                                      ) [DesignatorEl]
+                                    ) [FactorDes]
+                                  ) [UnaryFactor]
+                                ) [TermFactor]
+                              ) [ExprAddop]
+                            ) [DesginatorAssignop]
+                          ) [DesStmt]
+                        ) [MatchedStmt]
+                      ) [StmtList]
+                      MatchedStmt(
+                        ReadStmt(
+                          DesignatorEl(
+                           niz
+                            DesElem(
+                              ExprTerm(
+                                TermFactor(
+                                  UnaryFactor(
+                                    FactorNum(
+                                     0
+                                    ) [FactorNum]
+                                  ) [UnaryFactor]
+                                ) [TermFactor]
+                              ) [ExprTerm]
+                            ) [DesElem]
+                          ) [DesignatorEl]
+                        ) [ReadStmt]
+                      ) [MatchedStmt]
+                    ) [StmtList]
+                    MatchedStmt(
+                      ReadStmt(
+                        DesignatorEl(
+                         niz
+                          DesElem(
+                            ExprTerm(
+                              TermFactor(
+                                UnaryFactor(
+                                  FactorNum(
+                                   1
+                                  ) [FactorNum]
+                                ) [UnaryFactor]
+                              ) [TermFactor]
+                            ) [ExprTerm]
+                          ) [DesElem]
+                        ) [DesignatorEl]
+                      ) [ReadStmt]
+                    ) [MatchedStmt]
+                  ) [StmtList]
+                  MatchedStmt(
+                    ReadStmt(
+                      DesignatorEl(
+                       niz
+                        DesElem(
+                          ExprTerm(
+                            TermFactor(
+                              UnaryFactor(
+                                FactorNum(
+                                 2
+                                ) [FactorNum]
+                              ) [UnaryFactor]
+                            ) [TermFactor]
+                          ) [ExprTerm]
+                        ) [DesElem]
+                      ) [DesignatorEl]
+                    ) [ReadStmt]
+                  ) [MatchedStmt]
+                ) [StmtList]
+                MatchedStmt(
+                  PrintStmt(
+                    ExprTerm(
+                      TermFactor(
+                        UnaryFactor(
+                          FactorDes(
+                            DesignatorEl(
+                             eol
+                              NoDesElem(
+                              ) [NoDesElem]
+                            ) [DesignatorEl]
+                          ) [FactorDes]
+                        ) [UnaryFactor]
+                      ) [TermFactor]
+                    ) [ExprTerm]
+                  ) [PrintStmt]
+                ) [MatchedStmt]
+              ) [StmtList]
+              MatchedStmt(
+                PrintStmt(
+                  ExprTerm(
+                    TermFactor(
+                      UnaryFactor(
+                        FactorDesActPars(
+                          DesignatorEl(
+                           sum
+                            NoDesElem(
+                            ) [NoDesElem]
+                          ) [DesignatorEl]
+                          ActParams(
+                            ActParamsList(
+                              ActParamsExpr(
+                                ExprTerm(
+                                  TermFactor(
+                                    UnaryFactor(
+                                      FactorDesActPars(
+                                        DesignatorEl(
+                                         sum
+                                          NoDesElem(
+                                          ) [NoDesElem]
+                                        ) [DesignatorEl]
+                                        ActParams(
+                                          ActParamsList(
+                                            ActParamsExpr(
+                                              ExprTerm(
+                                                TermFactor(
+                                                  UnaryFactor(
+                                                    FactorDes(
+                                                      DesignatorEl(
+                                                       niz
+                                                        DesElem(
+                                                          ExprTerm(
+                                                            TermFactor(
+                                                              UnaryFactor(
+                                                                FactorNum(
+                                                                 0
+                                                                ) [FactorNum]
+                                                              ) [UnaryFactor]
+                                                            ) [TermFactor]
+                                                          ) [ExprTerm]
+                                                        ) [DesElem]
+                                                      ) [DesignatorEl]
+                                                    ) [FactorDes]
+                                                  ) [UnaryFactor]
+                                                ) [TermFactor]
+                                              ) [ExprTerm]
+                                            ) [ActParamsExpr]
+                                            ExprTerm(
+                                              TermFactor(
+                                                UnaryFactor(
+                                                  FactorDes(
+                                                    DesignatorEl(
+                                                     niz
+                                                      DesElem(
+                                                        ExprTerm(
+                                                          TermFactor(
+                                                            UnaryFactor(
+                                                              FactorNum(
+                                                               1
+                                                              ) [FactorNum]
+                                                            ) [UnaryFactor]
+                                                          ) [TermFactor]
+                                                        ) [ExprTerm]
+                                                      ) [DesElem]
+                                                    ) [DesignatorEl]
+                                                  ) [FactorDes]
+                                                ) [UnaryFactor]
+                                              ) [TermFactor]
+                                            ) [ExprTerm]
+                                          ) [ActParamsList]
+                                        ) [ActParams]
+                                      ) [FactorDesActPars]
+                                    ) [UnaryFactor]
+                                  ) [TermFactor]
+                                ) [ExprTerm]
+                              ) [ActParamsExpr]
+                              ExprTerm(
+                                TermFactor(
+                                  UnaryFactor(
+                                    FactorDes(
+                                      DesignatorEl(
+                                       niz
+                                        DesElem(
+                                          ExprTerm(
+                                            TermFactor(
+                                              UnaryFactor(
+                                                FactorNum(
+                                                 2
+                                                ) [FactorNum]
+                                              ) [UnaryFactor]
+                                            ) [TermFactor]
+                                          ) [ExprTerm]
+                                        ) [DesElem]
+                                      ) [DesignatorEl]
+                                    ) [FactorDes]
+                                  ) [UnaryFactor]
+                                ) [TermFactor]
+                              ) [ExprTerm]
+                            ) [ActParamsList]
+                          ) [ActParams]
+                        ) [FactorDesActPars]
+                      ) [UnaryFactor]
+                    ) [TermFactor]
+                  ) [ExprTerm]
+                ) [PrintStmt]
+              ) [MatchedStmt]
+            ) [StmtList]
+            MatchedStmt(
+              PrintStmt(
+                ExprTerm(
+                  TermFactor(
+                    UnaryFactor(
+                      FactorDes(
+                        DesignatorEl(
+                         eol
+                          NoDesElem(
+                          ) [NoDesElem]
+                        ) [DesignatorEl]
+                      ) [FactorDes]
+                    ) [UnaryFactor]
+                  ) [TermFactor]
+                ) [ExprTerm]
+              ) [PrintStmt]
+            ) [MatchedStmt]
+          ) [StmtList]
+          MatchedStmt(
+            PrintStmt(
+              ExprTerm(
+                TermFactor(
+                  UnaryFactor(
+                    FactorDesActPars(
+                      DesignatorEl(
+                       inkrement
+                        NoDesElem(
+                        ) [NoDesElem]
+                      ) [DesignatorEl]
+                      ActParams(
+                        ActParamsList(
+                          ActParamsExpr(
+                            ExprTerm(
+                              TermFactor(
+                                UnaryFactor(
+                                  FactorDes(
+                                    DesignatorEl(
+                                     niz
+                                      DesElem(
+                                        ExprTerm(
+                                          TermFactor(
+                                            UnaryFactor(
+                                              FactorNum(
+                                               2
+                                              ) [FactorNum]
+                                            ) [UnaryFactor]
+                                          ) [TermFactor]
+                                        ) [ExprTerm]
+                                      ) [DesElem]
+                                    ) [DesignatorEl]
+                                  ) [FactorDes]
+                                ) [UnaryFactor]
+                              ) [TermFactor]
+                            ) [ExprTerm]
+                          ) [ActParamsExpr]
+                          ExprTerm(
+                            TermFactor(
+                              UnaryFactor(
+                                FactorNum(
+                                 2
+                                ) [FactorNum]
+                              ) [UnaryFactor]
+                            ) [TermFactor]
+                          ) [ExprTerm]
+                        ) [ActParamsList]
+                      ) [ActParams]
+                    ) [FactorDesActPars]
+                  ) [UnaryFactor]
+                ) [TermFactor]
+              ) [ExprTerm]
+            ) [PrintStmt]
+          ) [MatchedStmt]
+        ) [StmtList]
+        MatchedStmt(
+          PrintStmt(
+            ExprTerm(
+              TermFactor(
+                UnaryFactor(
+                  FactorDes(
+                    DesignatorEl(
+                     eol
+                      NoDesElem(
+                      ) [NoDesElem]
+                    ) [DesignatorEl]
+                  ) [FactorDes]
+                ) [UnaryFactor]
+              ) [TermFactor]
+            ) [ExprTerm]
+          ) [PrintStmt]
+        ) [MatchedStmt]
+      ) [StmtList]
+    ) [MethodDecl]
+  ) [MethDeclList]
+) [Program]
+INFO  16:15:01,698 - ===================================

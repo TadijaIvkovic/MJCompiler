@@ -1,25 +1,25 @@
 // generated with ast extension for cup
 // version 0.8
-// 25/11/2024 15:28:25
+// 25/11/2024 17:4:4
 
 
 package rs.ac.bg.etf.pp1.ast;
 
 public class TermFactor extends Term {
 
-    private Factor Factor;
+    private Unary Unary;
 
-    public TermFactor (Factor Factor) {
-        this.Factor=Factor;
-        if(Factor!=null) Factor.setParent(this);
+    public TermFactor (Unary Unary) {
+        this.Unary=Unary;
+        if(Unary!=null) Unary.setParent(this);
     }
 
-    public Factor getFactor() {
-        return Factor;
+    public Unary getUnary() {
+        return Unary;
     }
 
-    public void setFactor(Factor Factor) {
-        this.Factor=Factor;
+    public void setUnary(Unary Unary) {
+        this.Unary=Unary;
     }
 
     public void accept(Visitor visitor) {
@@ -27,16 +27,16 @@ public class TermFactor extends Term {
     }
 
     public void childrenAccept(Visitor visitor) {
-        if(Factor!=null) Factor.accept(visitor);
+        if(Unary!=null) Unary.accept(visitor);
     }
 
     public void traverseTopDown(Visitor visitor) {
         accept(visitor);
-        if(Factor!=null) Factor.traverseTopDown(visitor);
+        if(Unary!=null) Unary.traverseTopDown(visitor);
     }
 
     public void traverseBottomUp(Visitor visitor) {
-        if(Factor!=null) Factor.traverseBottomUp(visitor);
+        if(Unary!=null) Unary.traverseBottomUp(visitor);
         accept(visitor);
     }
 
@@ -45,8 +45,8 @@ public class TermFactor extends Term {
         buffer.append(tab);
         buffer.append("TermFactor(\n");
 
-        if(Factor!=null)
-            buffer.append(Factor.toString("  "+tab));
+        if(Unary!=null)
+            buffer.append(Unary.toString("  "+tab));
         else
             buffer.append(tab+"  null");
         buffer.append("\n");

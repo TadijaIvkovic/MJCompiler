@@ -1,6 +1,6 @@
 // generated with ast extension for cup
 // version 0.8
-// 25/11/2024 15:28:25
+// 25/11/2024 17:4:4
 
 
 package rs.ac.bg.etf.pp1.ast;
@@ -9,15 +9,15 @@ public class TermMulop extends Term {
 
     private Term Term;
     private Mulop Mulop;
-    private Factor Factor;
+    private Unary Unary;
 
-    public TermMulop (Term Term, Mulop Mulop, Factor Factor) {
+    public TermMulop (Term Term, Mulop Mulop, Unary Unary) {
         this.Term=Term;
         if(Term!=null) Term.setParent(this);
         this.Mulop=Mulop;
         if(Mulop!=null) Mulop.setParent(this);
-        this.Factor=Factor;
-        if(Factor!=null) Factor.setParent(this);
+        this.Unary=Unary;
+        if(Unary!=null) Unary.setParent(this);
     }
 
     public Term getTerm() {
@@ -36,12 +36,12 @@ public class TermMulop extends Term {
         this.Mulop=Mulop;
     }
 
-    public Factor getFactor() {
-        return Factor;
+    public Unary getUnary() {
+        return Unary;
     }
 
-    public void setFactor(Factor Factor) {
-        this.Factor=Factor;
+    public void setUnary(Unary Unary) {
+        this.Unary=Unary;
     }
 
     public void accept(Visitor visitor) {
@@ -51,20 +51,20 @@ public class TermMulop extends Term {
     public void childrenAccept(Visitor visitor) {
         if(Term!=null) Term.accept(visitor);
         if(Mulop!=null) Mulop.accept(visitor);
-        if(Factor!=null) Factor.accept(visitor);
+        if(Unary!=null) Unary.accept(visitor);
     }
 
     public void traverseTopDown(Visitor visitor) {
         accept(visitor);
         if(Term!=null) Term.traverseTopDown(visitor);
         if(Mulop!=null) Mulop.traverseTopDown(visitor);
-        if(Factor!=null) Factor.traverseTopDown(visitor);
+        if(Unary!=null) Unary.traverseTopDown(visitor);
     }
 
     public void traverseBottomUp(Visitor visitor) {
         if(Term!=null) Term.traverseBottomUp(visitor);
         if(Mulop!=null) Mulop.traverseBottomUp(visitor);
-        if(Factor!=null) Factor.traverseBottomUp(visitor);
+        if(Unary!=null) Unary.traverseBottomUp(visitor);
         accept(visitor);
     }
 
@@ -85,8 +85,8 @@ public class TermMulop extends Term {
             buffer.append(tab+"  null");
         buffer.append("\n");
 
-        if(Factor!=null)
-            buffer.append(Factor.toString("  "+tab));
+        if(Unary!=null)
+            buffer.append(Unary.toString("  "+tab));
         else
             buffer.append(tab+"  null");
         buffer.append("\n");

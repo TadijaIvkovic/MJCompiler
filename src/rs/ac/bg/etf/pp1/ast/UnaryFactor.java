@@ -1,25 +1,25 @@
 // generated with ast extension for cup
 // version 0.8
-// 25/11/2024 15:28:25
+// 25/11/2024 17:4:4
 
 
 package rs.ac.bg.etf.pp1.ast;
 
-public class ExprMinusTerm extends Expr {
+public class UnaryFactor extends Unary {
 
-    private Term Term;
+    private Factor Factor;
 
-    public ExprMinusTerm (Term Term) {
-        this.Term=Term;
-        if(Term!=null) Term.setParent(this);
+    public UnaryFactor (Factor Factor) {
+        this.Factor=Factor;
+        if(Factor!=null) Factor.setParent(this);
     }
 
-    public Term getTerm() {
-        return Term;
+    public Factor getFactor() {
+        return Factor;
     }
 
-    public void setTerm(Term Term) {
-        this.Term=Term;
+    public void setFactor(Factor Factor) {
+        this.Factor=Factor;
     }
 
     public void accept(Visitor visitor) {
@@ -27,32 +27,32 @@ public class ExprMinusTerm extends Expr {
     }
 
     public void childrenAccept(Visitor visitor) {
-        if(Term!=null) Term.accept(visitor);
+        if(Factor!=null) Factor.accept(visitor);
     }
 
     public void traverseTopDown(Visitor visitor) {
         accept(visitor);
-        if(Term!=null) Term.traverseTopDown(visitor);
+        if(Factor!=null) Factor.traverseTopDown(visitor);
     }
 
     public void traverseBottomUp(Visitor visitor) {
-        if(Term!=null) Term.traverseBottomUp(visitor);
+        if(Factor!=null) Factor.traverseBottomUp(visitor);
         accept(visitor);
     }
 
     public String toString(String tab) {
         StringBuffer buffer=new StringBuffer();
         buffer.append(tab);
-        buffer.append("ExprMinusTerm(\n");
+        buffer.append("UnaryFactor(\n");
 
-        if(Term!=null)
-            buffer.append(Term.toString("  "+tab));
+        if(Factor!=null)
+            buffer.append(Factor.toString("  "+tab));
         else
             buffer.append(tab+"  null");
         buffer.append("\n");
 
         buffer.append(tab);
-        buffer.append(") [ExprMinusTerm]");
+        buffer.append(") [UnaryFactor]");
         return buffer.toString();
     }
 }

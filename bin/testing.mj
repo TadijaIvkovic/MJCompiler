@@ -12,13 +12,13 @@ int a;
 
 {
 	int sum(int z, int d){
-		return z + ;
+		return z + d;
 	}	
 
 	void main()
 	{
 		
-	
+		i = - z+d;
 		read(niz[0]);
 		read(niz[1]);
 		read(niz[2]);

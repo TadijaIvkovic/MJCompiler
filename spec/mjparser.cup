@@ -63,14 +63,14 @@ terminal LBRACKET, RBRACKET, LARROW, RARROW, EXCL, AMPER, LINE, MAP, DO, WHILE, 
 
 terminal Integer NUMBER ;
 terminal Character CHAR_CONST;
-terminal BOOL_CONST;
+terminal Integer BOOL_CONST;
 terminal String IDENT ;
 
 
 nonterminal Program, ProgName, DeclarationList, ConstDeclList, ConstantList, Constants;
 nonterminal VarDeclList, VarDecl, VarDeclarationList, VarDeclaration, MethodDeclList, MethodDecl, MethodSignature, Type;
 nonterminal Brackets, FormPars, FormalParamList, FormalParamDecl, StatementList, Statement, Expr;
-nonterminal Term, Factor, DesignatorStatement, ActPars, ActParamList, Designator, DesignatorElem, Label, Assignop, Relop, Addop, Mulop, Setop;
+nonterminal Term, Unary, Factor, DesignatorStatement, ActPars, ActParamList, Designator, DesignatorName, DesignatorElem, Label, Assignop, Relop, Addop, Mulop, Setop;
 nonterminal Condition, CondTerm, CondFact, Matched, Unmatched, Statements, WhileStart, DoWhileEnd, DoWhileStart, ConditionWithStatement;
 
 
@@ -245,16 +245,18 @@ Expr ::= (ExprAddop) Expr:te Addop Term:t
 		 |
 		 (ExprTerm) Term:t
 		 |
-		 (ExprMinusTerm) MINUS Term:t
-		 |
 		 (ExprMap) Designator MAP Designator
 		 ;
 
-Term ::= (TermMulop) Term:te Mulop Factor:f
+Term ::= (TermMulop) Term:te Mulop Unary:u
 		 |
-		 (TermFactor) Factor:f
+		 (TermFactor) Unary:u
 		 ;
 
+Unary ::= (UnaryFactor) Factor 
+			|
+			(UnaryMinusFactor) MINUS Factor
+			;
 
 Factor ::=  (FactorNum) NUMBER
 			|
@@ -274,7 +276,7 @@ Factor ::=  (FactorNum) NUMBER
 		    ;
 
 
-Designator ::= (DesignatorEl) IDENT:desName DesignatorElem
+Designator ::= (DesignatorEl) DesignatorName DesignatorElem
 			   |
 			   (DesignatorIdent) IDENT DOT IDENT
 			   ;
@@ -284,6 +286,7 @@ DesignatorElem ::= (DesElem) LBRACKET Expr RBRACKET
 				   (NoDesElem) /* epsilon */
 				   ;
 					
+DesignatorName ::= (DesignatorName) IDENT;
 
 Label ::= (Label) IDENT;
 

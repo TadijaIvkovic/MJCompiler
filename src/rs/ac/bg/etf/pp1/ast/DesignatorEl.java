@@ -1,27 +1,28 @@
 // generated with ast extension for cup
 // version 0.8
-// 25/11/2024 15:28:25
+// 25/11/2024 17:4:4
 
 
 package rs.ac.bg.etf.pp1.ast;
 
 public class DesignatorEl extends Designator {
 
-    private String desName;
+    private DesignatorName DesignatorName;
     private DesignatorElem DesignatorElem;
 
-    public DesignatorEl (String desName, DesignatorElem DesignatorElem) {
-        this.desName=desName;
+    public DesignatorEl (DesignatorName DesignatorName, DesignatorElem DesignatorElem) {
+        this.DesignatorName=DesignatorName;
+        if(DesignatorName!=null) DesignatorName.setParent(this);
         this.DesignatorElem=DesignatorElem;
         if(DesignatorElem!=null) DesignatorElem.setParent(this);
     }
 
-    public String getDesName() {
-        return desName;
+    public DesignatorName getDesignatorName() {
+        return DesignatorName;
     }
 
-    public void setDesName(String desName) {
-        this.desName=desName;
+    public void setDesignatorName(DesignatorName DesignatorName) {
+        this.DesignatorName=DesignatorName;
     }
 
     public DesignatorElem getDesignatorElem() {
@@ -37,15 +38,18 @@ public class DesignatorEl extends Designator {
     }
 
     public void childrenAccept(Visitor visitor) {
+        if(DesignatorName!=null) DesignatorName.accept(visitor);
         if(DesignatorElem!=null) DesignatorElem.accept(visitor);
     }
 
     public void traverseTopDown(Visitor visitor) {
         accept(visitor);
+        if(DesignatorName!=null) DesignatorName.traverseTopDown(visitor);
         if(DesignatorElem!=null) DesignatorElem.traverseTopDown(visitor);
     }
 
     public void traverseBottomUp(Visitor visitor) {
+        if(DesignatorName!=null) DesignatorName.traverseBottomUp(visitor);
         if(DesignatorElem!=null) DesignatorElem.traverseBottomUp(visitor);
         accept(visitor);
     }
@@ -55,7 +59,10 @@ public class DesignatorEl extends Designator {
         buffer.append(tab);
         buffer.append("DesignatorEl(\n");
 
-        buffer.append(" "+tab+desName);
+        if(DesignatorName!=null)
+            buffer.append(DesignatorName.toString("  "+tab));
+        else
+            buffer.append(tab+"  null");
         buffer.append("\n");
 
         if(DesignatorElem!=null)
