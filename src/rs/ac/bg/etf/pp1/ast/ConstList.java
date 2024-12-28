@@ -1,6 +1,6 @@
 // generated with ast extension for cup
 // version 0.8
-// 25/11/2024 17:4:4
+// 28/11/2024 19:26:29
 
 
 package rs.ac.bg.etf.pp1.ast;
@@ -8,13 +8,13 @@ package rs.ac.bg.etf.pp1.ast;
 public class ConstList extends ConstantList {
 
     private ConstantList ConstantList;
-    private String I2;
+    private String constDecl2;
     private Constants Constants;
 
-    public ConstList (ConstantList ConstantList, String I2, Constants Constants) {
+    public ConstList (ConstantList ConstantList, String constDecl2, Constants Constants) {
         this.ConstantList=ConstantList;
         if(ConstantList!=null) ConstantList.setParent(this);
-        this.I2=I2;
+        this.constDecl2=constDecl2;
         this.Constants=Constants;
         if(Constants!=null) Constants.setParent(this);
     }
@@ -27,12 +27,12 @@ public class ConstList extends ConstantList {
         this.ConstantList=ConstantList;
     }
 
-    public String getI2() {
-        return I2;
+    public String getConstDecl2() {
+        return constDecl2;
     }
 
-    public void setI2(String I2) {
-        this.I2=I2;
+    public void setConstDecl2(String constDecl2) {
+        this.constDecl2=constDecl2;
     }
 
     public Constants getConstants() {
@@ -75,7 +75,7 @@ public class ConstList extends ConstantList {
             buffer.append(tab+"  null");
         buffer.append("\n");
 
-        buffer.append(" "+tab+I2);
+        buffer.append(" "+tab+constDecl2);
         buffer.append("\n");
 
         if(Constants!=null)

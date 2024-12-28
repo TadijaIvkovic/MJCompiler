@@ -1,0 +1,116 @@
+INFO  19:29:10,165 - Compiling source file: C:\Users\The Workstation\eclipse-workspace\MJCompiler\test\testing.mj
+INFO  19:29:10,194 - #2 program
+INFO  19:29:10,194 - #47 Testiranje
+INFO  19:29:10,194 - #6 const
+INFO  19:29:10,194 - #47 int
+INFO  19:29:10,195 - #47 pi
+INFO  19:29:10,195 - #23 =
+INFO  19:29:10,195 - #44 3
+INFO  19:29:10,195 - #26 ;
+INFO  19:29:10,196 - #6 const
+INFO  19:29:10,196 - #47 int
+INFO  19:29:10,196 - #47 g
+INFO  19:29:10,196 - #23 =
+INFO  19:29:10,197 - #44 5
+INFO  19:29:10,197 - #26 ;
+INFO  19:29:10,197 - #6 const
+INFO  19:29:10,197 - #47 char
+INFO  19:29:10,197 - #47 c
+INFO  19:29:10,197 - #23 =
+INFO  19:29:10,197 - #45 a
+INFO  19:29:10,197 - #26 ;
+INFO  19:29:10,197 - #47 char
+INFO  19:29:10,197 - #47 a
+INFO  19:29:10,197 - #27 ,
+INFO  19:29:10,197 - #47 b
+INFO  19:29:10,197 - #26 ;
+INFO  19:29:10,197 - #31 {
+INFO  19:29:10,199 - #12 void
+INFO  19:29:10,199 - #47 main
+INFO  19:29:10,199 - #29 (
+INFO  19:29:10,199 - #30 )
+INFO  19:29:10,200 - #31 {
+INFO  19:29:10,200 - #32 }
+INFO  19:29:10,201 - #32 }
+INFO  19:29:10,203 - Program(
+  ProgName(
+   Testiranje
+  ) [ProgName]
+  ConstDecLists(
+    ConstDeclList(
+      Type(
+       int
+      ) [Type]
+     pi
+      NumConstant(
+       3
+      ) [NumConstant]
+      NoConstList(
+      ) [NoConstList]
+    ) [ConstDeclList]
+    ConstDecLists(
+      ConstDeclList(
+        Type(
+         int
+        ) [Type]
+       g
+        NumConstant(
+         5
+        ) [NumConstant]
+        NoConstList(
+        ) [NoConstList]
+      ) [ConstDeclList]
+      ConstDecLists(
+        ConstDeclList(
+          Type(
+           char
+          ) [Type]
+         c
+          CharConstant(
+           a
+          ) [CharConstant]
+          NoConstList(
+          ) [NoConstList]
+        ) [ConstDeclList]
+        VarDecLists(
+          VarDecl(
+            Type(
+             char
+            ) [Type]
+            VarDeclaratList(
+              VarDeclarat(
+                VarDeclarationSingle(
+                 a
+                ) [VarDeclarationSingle]
+              ) [VarDeclarat]
+              VarDeclarationSingle(
+               b
+              ) [VarDeclarationSingle]
+            ) [VarDeclaratList]
+          ) [VarDecl]
+          NoDecLists(
+          ) [NoDecLists]
+        ) [VarDecLists]
+      ) [ConstDecLists]
+    ) [ConstDecLists]
+  ) [ConstDecLists]
+  MethDeclList(
+    NoMethDeclList(
+    ) [NoMethDeclList]
+    MethodDecl(
+      NoMethTypeName(
+       main
+        NoFormalPars(
+        ) [NoFormalPars]
+      ) [NoMethTypeName]
+      NoVarDeclarList(
+      ) [NoVarDeclarList]
+      NoStmtList(
+      ) [NoStmtList]
+    ) [MethodDecl]
+  ) [MethDeclList]
+) [Program]
+INFO  19:29:10,203 - =====================================================================
+INFO  19:29:10,207 - Prepoznata varDecl naredba.
+INFO  19:29:10,207 - =====================================================================
+INFO  19:29:10,207 - Parsiranje uspesno zavrseno!

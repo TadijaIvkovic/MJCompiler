@@ -1,0 +1,55 @@
+INFO  18:03:52,457 - Compiling source file: C:\Users\The Workstation\eclipse-workspace\MJCompiler\test\testing.mj
+INFO  18:03:52,487 - #2 program
+INFO  18:03:52,487 - #47 Testiranje
+INFO  18:03:52,487 - #6 const
+INFO  18:03:52,487 - #47 int
+INFO  18:03:52,487 - #47 pi
+INFO  18:03:52,488 - #23 =
+INFO  18:03:52,488 - #44 3
+INFO  18:03:52,488 - #26 ;
+INFO  18:03:52,488 - #31 {
+INFO  18:03:52,489 - #12 void
+INFO  18:03:52,490 - #47 main
+INFO  18:03:52,490 - #29 (
+INFO  18:03:52,490 - #30 )
+INFO  18:03:52,490 - #31 {
+INFO  18:03:52,491 - #32 }
+INFO  18:03:52,491 - #32 }
+INFO  18:03:52,494 - Program(
+  ProgName(
+   Testiranje
+  ) [ProgName]
+  ConstDecLists(
+    ConstDeclList(
+      Type(
+       int
+      ) [Type]
+     pi
+      NumConstant(
+       3
+      ) [NumConstant]
+      NoConstList(
+      ) [NoConstList]
+    ) [ConstDeclList]
+    NoDecLists(
+    ) [NoDecLists]
+  ) [ConstDecLists]
+  MethDeclList(
+    NoMethDeclList(
+    ) [NoMethDeclList]
+    MethodDecl(
+      NoMethTypeName(
+       main
+        NoFormalPars(
+        ) [NoFormalPars]
+      ) [NoMethTypeName]
+      NoVarDeclarList(
+      ) [NoVarDeclarList]
+      NoStmtList(
+      ) [NoStmtList]
+    ) [MethodDecl]
+  ) [MethDeclList]
+) [Program]
+INFO  18:03:52,494 - =====================================================================
+INFO  18:03:52,499 - =====================================================================
+INFO  18:03:52,499 - Parsiranje uspesno zavrseno!

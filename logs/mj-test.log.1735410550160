@@ -1,0 +1,27 @@
+INFO  19:28:11,534 - Compiling source file: C:\Users\The Workstation\eclipse-workspace\MJCompiler\test\testing.mj
+INFO  19:28:11,565 - #2 program
+INFO  19:28:11,565 - #47 Testiranje
+INFO  19:28:11,565 - #6 const
+INFO  19:28:11,566 - #47 int
+INFO  19:28:11,566 - #47 pi
+INFO  19:28:11,567 - #23 =
+INFO  19:28:11,567 - #44 3
+INFO  19:28:11,567 - #26 ;
+INFO  19:28:11,568 - #6 const
+INFO  19:28:11,568 - #47 int
+INFO  19:28:11,568 - #47 g
+INFO  19:28:11,568 - #23 =
+INFO  19:28:11,568 - #44 5
+INFO  19:28:11,568 - #26 ;
+INFO  19:28:11,568 - #6 const
+INFO  19:28:11,568 - #47 char
+INFO  19:28:11,568 - #47 c
+INFO  19:28:11,568 - #23 =
+INFO  19:28:11,568 - #45 a
+INFO  19:28:11,568 - #26 ;
+INFO  19:28:11,569 - #47 char
+INFO  19:28:11,579 - #47 a
+INFO  19:28:11,579 - #23 =
+ERROR 19:28:11,579 - 
+Sintaksna greska na liniji 7
+ERROR 19:28:11,579 - Fatalna greska, parsiranje se ne moze nastaviti na liniji 7

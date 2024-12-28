@@ -1,13 +1,13 @@
 // generated with ast extension for cup
 // version 0.8
-// 25/11/2024 17:4:4
+// 28/11/2024 19:26:29
 
 
 package rs.ac.bg.etf.pp1.ast;
 
-public class MatchedDerived1 extends Matched {
+public class ErrorStmt extends Matched {
 
-    public MatchedDerived1 () {
+    public ErrorStmt () {
     }
 
     public void accept(Visitor visitor) {
@@ -28,10 +28,10 @@ public class MatchedDerived1 extends Matched {
     public String toString(String tab) {
         StringBuffer buffer=new StringBuffer();
         buffer.append(tab);
-        buffer.append("MatchedDerived1(\n");
+        buffer.append("ErrorStmt(\n");
 
         buffer.append(tab);
-        buffer.append(") [MatchedDerived1]");
+        buffer.append(") [ErrorStmt]");
         return buffer.toString();
     }
 }

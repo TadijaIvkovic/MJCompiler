@@ -67,8 +67,6 @@ terminal Integer BOOL_CONST;
 terminal String IDENT ;
 
 
-nonterminal Program Program;
-nonterminal ProgName ProgName;
 nonterminal DeclarationList DeclarationList;
 nonterminal ConstDeclList ConstDeclList;
 nonterminal ConstantList ConstantList;
@@ -81,7 +79,6 @@ nonterminal MethodDeclList MethodDeclList;
 nonterminal MethodDecl MethodDecl;
 nonterminal MethodSignature MethodSignature;
 nonterminal Type Type;
-nonterminal Brackets Brackets;
 nonterminal FormPars FormPars;
 nonterminal FormalParamList FormalParamList;
 nonterminal FormalParamDecl FormalParamDecl;
@@ -114,11 +111,12 @@ nonterminal DoWhileEnd DoWhileEnd;
 nonterminal DoWhileStart DoWhileStart;
 nonterminal ConditionWithStatement ConditionWithStatement;
 
+nonterminal rs.etf.pp1.symboltable.concepts.Obj ProgName, Program;
 
 Program ::= (Program) PROG ProgName:p DeclarationList:D1 LBRACE MethodDeclList:M2 RBRACE {: RESULT=new Program(p, D1, M2); RESULT.setLine(pleft); :} ;
 
 
-ProgName ::= (ProgName) IDENT:pName {: RESULT=new ProgName(pName); RESULT.setLine(pNameleft); :} ;
+ProgName ::= (ProgName) IDENT:progName {: RESULT=new ProgName(progName); RESULT.setLine(progNameleft); :} ;
 
 DeclarationList ::= (ConstDecLists) ConstDeclList:C1 DeclarationList:D2 {: RESULT=new ConstDecLists(C1, D2); RESULT.setLine(C1left); :}
 				    |
@@ -127,9 +125,9 @@ DeclarationList ::= (ConstDecLists) ConstDeclList:C1 DeclarationList:D2 {: RESUL
 				     (NoDecLists) {: RESULT=new NoDecLists(); :} /* epsilon */
 				    ;
 
-ConstDeclList ::= (ConstDeclList) CONST Type:T1 IDENT:I2 EQUAL Constants:C3 ConstantList:C4 SEMI {: RESULT=new ConstDeclList(T1, I2, C3, C4); RESULT.setLine(T1left); :};
+ConstDeclList ::= (ConstDeclList) CONST Type:T1 IDENT:constDecl EQUAL Constants:C2 ConstantList:C3 SEMI {: RESULT=new ConstDeclList(T1, constDecl, C2, C3); RESULT.setLine(T1left); :};
 
-ConstantList ::= (ConstList) ConstantList:C1 COMMA IDENT:I2 EQUAL Constants:C3 {: RESULT=new ConstList(C1, I2, C3); RESULT.setLine(C1left); :}
+ConstantList ::= (ConstList) ConstantList:C1 COMMA IDENT:constDecl2 EQUAL Constants:C2 {: RESULT=new ConstList(C1, constDecl2, C2); RESULT.setLine(C1left); :}
 				 |
 				 (NoConstList) {: RESULT=new NoConstList(); :} /* epsilon */
 				 ;
@@ -154,7 +152,10 @@ VarDeclarationList ::=  (VarDeclaratList) VarDeclarationList:V1  COMMA VarDeclar
 					    (VarDeclarat) VarDeclaration:V1 {: RESULT=new VarDeclarat(V1); RESULT.setLine(V1left); :}
 						;
 					
-VarDeclaration ::= (VarDeclaration) IDENT:I1 Brackets:B2 {: RESULT=new VarDeclaration(I1, B2); RESULT.setLine(I1left); :} ;
+VarDeclaration ::= (VarDeclarationSingle) IDENT:varDeclaration {: RESULT=new VarDeclarationSingle(varDeclaration); RESULT.setLine(varDeclarationleft); :} 
+					|
+					(VarDeclarationArray) IDENT:varDeclaration LBRACKET RBRACKET {: RESULT=new VarDeclarationArray(varDeclaration); RESULT.setLine(varDeclarationleft); :}
+					;
 
 MethodDeclList ::=  (MethDeclList) MethodDeclList:M1 MethodDecl:M2 {: RESULT=new MethDeclList(M1, M2); RESULT.setLine(M1left); :}
 					|
@@ -179,13 +180,11 @@ FormalParamList ::= (FormalParsList) FormalParamList:F1  COMMA FormalParamDecl:F
 					(FormalParsDecl) FormalParamDecl:F1 {: RESULT=new FormalParsDecl(F1); RESULT.setLine(F1left); :}
 					;
 					
-FormalParamDecl ::= (FormalParamDecl) Type:T1 IDENT:I2 Brackets:B3 {: RESULT=new FormalParamDecl(T1, I2, B3); RESULT.setLine(T1left); :} ;
+FormalParamDecl ::= (FormalParamSingle) Type:T1 IDENT:I2 {: RESULT=new FormalParamSingle(T1, I2); RESULT.setLine(T1left); :}
+					|
+					(FormalParamArray) Type:T1 IDENT:I2 LBRACKET RBRACKET {: RESULT=new FormalParamArray(T1, I2); RESULT.setLine(T1left); :}
+					;
 
-
-Brackets ::= (Bracket) LBRACKET RBRACKET {: RESULT=new Bracket(); :}
-			 |
-			 (NoBracket) {: RESULT=new NoBracket(); :} /* epsilon */
-			 ;
 
 Type ::= (Type) IDENT:typeName {: RESULT=new Type(typeName); RESULT.setLine(typeNameleft); :} ;
 
@@ -208,8 +207,8 @@ Unmatched ::= (UnmatchedIf) IF LPAREN Condition:C1 RPAREN Statement:S2 {: RESULT
 				  
 Matched ::=   (PrintStmt) PRINT LPAREN Expr:E1 RPAREN SEMI {: RESULT=new PrintStmt(E1); RESULT.setLine(E1left); :}
   			  |
-  			  error SEMI:l
-  			  {: parser.report_error("Izvrsen oporavak do ; u liniji " + lleft, null); :} {: RESULT=new MatchedDerived1(); :}
+  			  (ErrorStmt) error SEMI:l
+  			  {: parser.report_error("Izvrsen oporavak do ; u liniji " + lleft, null); :} {: RESULT=new ErrorStmt(); :}
   			  |
 			  (PrintStmtTwo) PRINT LPAREN Expr:E1 COMMA NUMBER:N2 RPAREN SEMI {: RESULT=new PrintStmtTwo(E1, N2); RESULT.setLine(E1left); :}	 
 			  |

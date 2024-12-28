@@ -67,17 +67,18 @@ terminal Integer BOOL_CONST;
 terminal String IDENT ;
 
 
-nonterminal Program, ProgName, DeclarationList, ConstDeclList, ConstantList, Constants;
+nonterminal DeclarationList, ConstDeclList, ConstantList, Constants;
 nonterminal VarDeclList, VarDecl, VarDeclarationList, VarDeclaration, MethodDeclList, MethodDecl, MethodSignature, Type;
-nonterminal Brackets, FormPars, FormalParamList, FormalParamDecl, StatementList, Statement, Expr;
+nonterminal FormPars, FormalParamList, FormalParamDecl, StatementList, Statement, Expr;
 nonterminal Term, Unary, Factor, DesignatorStatement, ActPars, ActParamList, Designator, DesignatorName, DesignatorElem, Label, Assignop, Relop, Addop, Mulop, Setop;
 nonterminal Condition, CondTerm, CondFact, Matched, Unmatched, Statements, WhileStart, DoWhileEnd, DoWhileStart, ConditionWithStatement;
 
+nonterminal rs.etf.pp1.symboltable.concepts.Obj ProgName, Program;
 
 Program ::= (Program) PROG ProgName:p DeclarationList LBRACE MethodDeclList RBRACE ;
 
 
-ProgName ::= (ProgName) IDENT:pName ;
+ProgName ::= (ProgName) IDENT:progName ;
 
 DeclarationList ::= (ConstDecLists) ConstDeclList DeclarationList
 				    |
@@ -86,9 +87,9 @@ DeclarationList ::= (ConstDecLists) ConstDeclList DeclarationList
 				     (NoDecLists) /* epsilon */
 				    ;
 
-ConstDeclList ::= (ConstDeclList) CONST Type IDENT EQUAL Constants ConstantList SEMI;
+ConstDeclList ::= (ConstDeclList) CONST Type IDENT:constDecl EQUAL Constants ConstantList SEMI;
 
-ConstantList ::= (ConstList) ConstantList COMMA IDENT EQUAL Constants
+ConstantList ::= (ConstList) ConstantList COMMA IDENT:constDecl2 EQUAL Constants
 				 |
 				 (NoConstList) /* epsilon */
 				 ;
@@ -113,7 +114,10 @@ VarDeclarationList ::=  (VarDeclaratList) VarDeclarationList  COMMA VarDeclarati
 					    (VarDeclarat) VarDeclaration
 						;
 					
-VarDeclaration ::= (VarDeclaration) IDENT Brackets ;
+VarDeclaration ::= (VarDeclarationSingle) IDENT:varDeclaration 
+					|
+					(VarDeclarationArray) IDENT:varDeclaration LBRACKET RBRACKET
+					;
 
 MethodDeclList ::=  (MethDeclList) MethodDeclList MethodDecl
 					|
@@ -138,13 +142,11 @@ FormalParamList ::= (FormalParsList) FormalParamList  COMMA FormalParamDecl
 					(FormalParsDecl) FormalParamDecl
 					;
 					
-FormalParamDecl ::= (FormalParamDecl) Type IDENT Brackets ;
+FormalParamDecl ::= (FormalParamSingle) Type IDENT
+					|
+					(FormalParamArray) Type IDENT LBRACKET RBRACKET
+					;
 
-
-Brackets ::= (Bracket) LBRACKET RBRACKET
-			 |
-			 (NoBracket) /* epsilon */
-			 ;
 
 Type ::= (Type) IDENT:typeName ;
 
@@ -167,7 +169,7 @@ Unmatched ::= (UnmatchedIf) IF LPAREN Condition RPAREN Statement
 				  
 Matched ::=   (PrintStmt) PRINT LPAREN Expr RPAREN SEMI
   			  |
-  			  error SEMI:l
+  			  (ErrorStmt) error SEMI:l
   			  {: parser.report_error("Izvrsen oporavak do ; u liniji " + lleft, null); :}
   			  |
 			  (PrintStmtTwo) PRINT LPAREN Expr COMMA NUMBER RPAREN SEMI	 

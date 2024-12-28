@@ -1,0 +1,75 @@
+INFO  18:15:55,212 - Compiling source file: C:\Users\The Workstation\eclipse-workspace\MJCompiler\test\testing.mj
+INFO  18:15:55,240 - #2 program
+INFO  18:15:55,240 - #47 Testiranje
+INFO  18:15:55,240 - #6 const
+INFO  18:15:55,240 - #47 int
+INFO  18:15:55,240 - #47 pi
+INFO  18:15:55,241 - #23 =
+INFO  18:15:55,241 - #44 3
+INFO  18:15:55,241 - #26 ;
+INFO  18:15:55,241 - #6 const
+INFO  18:15:55,242 - #47 int
+INFO  18:15:55,242 - #47 pi
+INFO  18:15:55,242 - #23 =
+INFO  18:15:55,242 - #44 2
+INFO  18:15:55,242 - #26 ;
+INFO  18:15:55,242 - #31 {
+INFO  18:15:55,243 - #12 void
+INFO  18:15:55,243 - #47 main
+INFO  18:15:55,243 - #29 (
+INFO  18:15:55,243 - #30 )
+INFO  18:15:55,244 - #31 {
+INFO  18:15:55,244 - #32 }
+INFO  18:15:55,245 - #32 }
+INFO  18:15:55,247 - Program(
+  ProgName(
+   Testiranje
+  ) [ProgName]
+  ConstDecLists(
+    ConstDeclList(
+      Type(
+       int
+      ) [Type]
+     pi
+      NumConstant(
+       3
+      ) [NumConstant]
+      NoConstList(
+      ) [NoConstList]
+    ) [ConstDeclList]
+    ConstDecLists(
+      ConstDeclList(
+        Type(
+         int
+        ) [Type]
+       pi
+        NumConstant(
+         2
+        ) [NumConstant]
+        NoConstList(
+        ) [NoConstList]
+      ) [ConstDeclList]
+      NoDecLists(
+      ) [NoDecLists]
+    ) [ConstDecLists]
+  ) [ConstDecLists]
+  MethDeclList(
+    NoMethDeclList(
+    ) [NoMethDeclList]
+    MethodDecl(
+      NoMethTypeName(
+       main
+        NoFormalPars(
+        ) [NoFormalPars]
+      ) [NoMethTypeName]
+      NoVarDeclarList(
+      ) [NoVarDeclarList]
+      NoStmtList(
+      ) [NoStmtList]
+    ) [MethodDecl]
+  ) [MethDeclList]
+) [Program]
+INFO  18:15:55,247 - =====================================================================
+ERROR 18:15:55,251 - Dvostruka definicija konstante: pi na liniji 4
+INFO  18:15:55,251 - =====================================================================
+ERROR 18:15:55,251 - Parsiranje NIJE uspesno zavrseno!

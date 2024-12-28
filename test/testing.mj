@@ -1,33 +1,17 @@
-//Test 302
+program Testiranje
 
-program test302
+const int pi =3;
+const int g =5;
+const char c= 'a';
 
-int i;
-bool ibool;
-
-int niz2;
-
-int niz[];
-int a;
+char a ,b;
+int x,z[];
 
 {
-	int sum(int z, int d){
-		return z + d;
-	}	
 
-	void main()
-	{
-		
-		i = - z+d;
-		read(niz[0]);
-		read(niz[1]);
-		read(niz[2]);
-		print(eol);
-		print(sum(sum(niz[0], niz[1]), niz[2])); //suma procitanih brojeva
-		print(eol); 
-		print(inkrement(niz[2], 2)); //2*niz[2]
-		print(eol);
-
+	void main() int x,y; {
+	
 	}
-}
 
+
+}

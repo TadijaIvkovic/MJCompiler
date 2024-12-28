@@ -1,0 +1,93 @@
+INFO  18:16:51,641 - Compiling source file: C:\Users\The Workstation\eclipse-workspace\MJCompiler\test\testing.mj
+INFO  18:16:51,669 - #2 program
+INFO  18:16:51,670 - #47 Testiranje
+INFO  18:16:51,670 - #6 const
+INFO  18:16:51,671 - #47 int
+INFO  18:16:51,671 - #47 pi
+INFO  18:16:51,671 - #23 =
+INFO  18:16:51,672 - #44 3
+INFO  18:16:51,672 - #26 ;
+INFO  18:16:51,672 - #6 const
+INFO  18:16:51,673 - #47 int
+INFO  18:16:51,673 - #47 g
+INFO  18:16:51,673 - #23 =
+INFO  18:16:51,673 - #44 12
+INFO  18:16:51,673 - #26 ;
+INFO  18:16:51,673 - #6 const
+INFO  18:16:51,673 - #47 char
+INFO  18:16:51,673 - #47 c
+INFO  18:16:51,673 - #23 =
+INFO  18:16:51,673 - #45 a
+INFO  18:16:51,673 - #26 ;
+INFO  18:16:51,674 - #31 {
+INFO  18:16:51,674 - #12 void
+INFO  18:16:51,675 - #47 main
+INFO  18:16:51,675 - #29 (
+INFO  18:16:51,675 - #30 )
+INFO  18:16:51,675 - #31 {
+INFO  18:16:51,676 - #32 }
+INFO  18:16:51,677 - #32 }
+INFO  18:16:51,680 - Program(
+  ProgName(
+   Testiranje
+  ) [ProgName]
+  ConstDecLists(
+    ConstDeclList(
+      Type(
+       int
+      ) [Type]
+     pi
+      NumConstant(
+       3
+      ) [NumConstant]
+      NoConstList(
+      ) [NoConstList]
+    ) [ConstDeclList]
+    ConstDecLists(
+      ConstDeclList(
+        Type(
+         int
+        ) [Type]
+       g
+        NumConstant(
+         12
+        ) [NumConstant]
+        NoConstList(
+        ) [NoConstList]
+      ) [ConstDeclList]
+      ConstDecLists(
+        ConstDeclList(
+          Type(
+           char
+          ) [Type]
+         c
+          CharConstant(
+           a
+          ) [CharConstant]
+          NoConstList(
+          ) [NoConstList]
+        ) [ConstDeclList]
+        NoDecLists(
+        ) [NoDecLists]
+      ) [ConstDecLists]
+    ) [ConstDecLists]
+  ) [ConstDecLists]
+  MethDeclList(
+    NoMethDeclList(
+    ) [NoMethDeclList]
+    MethodDecl(
+      NoMethTypeName(
+       main
+        NoFormalPars(
+        ) [NoFormalPars]
+      ) [NoMethTypeName]
+      NoVarDeclarList(
+      ) [NoVarDeclarList]
+      NoStmtList(
+      ) [NoStmtList]
+    ) [MethodDecl]
+  ) [MethDeclList]
+) [Program]
+INFO  18:16:51,680 - =====================================================================
+INFO  18:16:51,684 - =====================================================================
+INFO  18:16:51,684 - Parsiranje uspesno zavrseno!
