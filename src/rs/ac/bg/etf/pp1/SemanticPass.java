@@ -16,7 +16,8 @@ public class SemanticPass extends VisitorAdaptor {
 	private int constant;
 	private Struct constantType;
 	private Struct boolType=Tab.find("bool").getType();
-	private Object currentMethod;
+	private Obj currentMethod =null;
+	private boolean mainMethodExists = false;
 
 	
 	public void report_error(String message, SyntaxNode info) {
@@ -66,6 +67,10 @@ public class SemanticPass extends VisitorAdaptor {
 	public void visit(Program program) {
 		Tab.chainLocalSymbols(program.getProgName().obj);
 		Tab.closeScope();
+		
+		if(!mainMethodExists)
+			report_error("Ne postoji definicija za main ", program);
+
 	}
     
     @Override
@@ -142,7 +147,7 @@ public class SemanticPass extends VisitorAdaptor {
     	
     	
     	if(varObj == null ||varObj == Tab.noObj) {
-    		varObj = Tab.insert(Obj.Var, varDeclarationSingle.getVarDeclaration(), new Struct(Struct.Array, currentType));
+    		varObj = Tab.insert(Obj.Var, varDeclarationSingle.getVarDeclaration(), currentType);
     	}
     	else {
 			report_error("Dvostruka definicija promenljive: "+ varDeclarationSingle.getVarDeclaration(), varDeclarationSingle);
@@ -172,6 +177,77 @@ public class SemanticPass extends VisitorAdaptor {
     
     /* Method declarations  */
     
+    @Override
+    public void visit(MethodDecl methodDecl) {
+    	
+    	Tab.chainLocalSymbols(currentMethod);
+    	Tab.closeScope();
+    	currentMethod=null;
+    	
+    }
+    
+    @Override
+    public void visit(NoMethTypeName noMethTypeName) {
+    	
+    	if(noMethTypeName.getMethName().equalsIgnoreCase("main")) {
+    		mainMethodExists =true;
+    	}
+    	
+    	currentMethod=Tab.insert(Obj.Meth, noMethTypeName.getMethName(), Tab.noType);
+    	Tab.openScope();
+    	
+    }
+    
+    @Override
+    public void visit(MethTypeName methTypeName) {
+    	
+    	currentMethod=Tab.insert(Obj.Meth, methTypeName.getMethName(), currentType);
+
+    	Tab.openScope();
+    	
+    }
+    
+    /* FormalParameters declarations: */
+    
+    @Override
+    public void visit(FormalParamSingle formalParamSingle) {
+    	Obj fparObj = null;
+    	if(currentMethod==null)
+			report_error("Formalni parametar javljen u metodi koja je jednaka null. [formalParamSingle]", formalParamSingle);
+    	else
+    		fparObj = Tab.currentScope().findSymbol(formalParamSingle.getFparDeclaration());
+    	
+    	
+    	if(fparObj == null ||fparObj == Tab.noObj) {
+    		fparObj = Tab.insert(Obj.Var, formalParamSingle.getFparDeclaration(), currentType);
+    		fparObj.setFpPos(1);
+    		currentMethod.setLevel(currentMethod.getLevel()+1);
+    	}
+    	else {
+			report_error("Dvostruka definicija promenljive: "+ formalParamSingle.getFparDeclaration(), formalParamSingle);
+
+    	}
+    }
+    
+    @Override
+    public void visit(FormalParamArray formalParamArray) {
+    	Obj fparObj = null;
+    	if(currentMethod==null)
+			report_error("Formalni parametar javljen u metodi koja je jednaka null. [formalParamArray]", formalParamArray);
+    	else
+    		fparObj = Tab.currentScope().findSymbol(formalParamArray.getFparDeclaration());
+    	
+    	if(fparObj == null ||fparObj == Tab.noObj) {
+    		fparObj = Tab.insert(Obj.Var, formalParamArray.getFparDeclaration(), new Struct(Struct.Array, currentType));
+    		fparObj.setFpPos(1);
+    		currentMethod.setLevel(currentMethod.getLevel()+1);
+    	}
+    	else {
+			report_error("Dvostruka definicija promenljive: "+ formalParamArray.getFparDeclaration(), formalParamArray);
+
+    	}
+    }
+    
     
     
     @Override
@@ -183,6 +259,7 @@ public class SemanticPass extends VisitorAdaptor {
 		}
 		else if(typeObj.getKind()!= Obj.Type) {
 			report_error("Neadekvatan tip podataka: "+ type.getTypeName(), type);
+			currentType=Tab.noType;
 		}
 		else
 			currentType=typeObj.getType();

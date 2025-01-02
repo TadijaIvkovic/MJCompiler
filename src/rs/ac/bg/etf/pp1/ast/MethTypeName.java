@@ -1,6 +1,6 @@
 // generated with ast extension for cup
 // version 0.8
-// 28/11/2024 19:26:29
+// 2/0/2025 18:17:23
 
 
 package rs.ac.bg.etf.pp1.ast;
@@ -9,14 +9,11 @@ public class MethTypeName extends MethodSignature {
 
     private Type Type;
     private String methName;
-    private FormPars FormPars;
 
-    public MethTypeName (Type Type, String methName, FormPars FormPars) {
+    public MethTypeName (Type Type, String methName) {
         this.Type=Type;
         if(Type!=null) Type.setParent(this);
         this.methName=methName;
-        this.FormPars=FormPars;
-        if(FormPars!=null) FormPars.setParent(this);
     }
 
     public Type getType() {
@@ -35,32 +32,21 @@ public class MethTypeName extends MethodSignature {
         this.methName=methName;
     }
 
-    public FormPars getFormPars() {
-        return FormPars;
-    }
-
-    public void setFormPars(FormPars FormPars) {
-        this.FormPars=FormPars;
-    }
-
     public void accept(Visitor visitor) {
         visitor.visit(this);
     }
 
     public void childrenAccept(Visitor visitor) {
         if(Type!=null) Type.accept(visitor);
-        if(FormPars!=null) FormPars.accept(visitor);
     }
 
     public void traverseTopDown(Visitor visitor) {
         accept(visitor);
         if(Type!=null) Type.traverseTopDown(visitor);
-        if(FormPars!=null) FormPars.traverseTopDown(visitor);
     }
 
     public void traverseBottomUp(Visitor visitor) {
         if(Type!=null) Type.traverseBottomUp(visitor);
-        if(FormPars!=null) FormPars.traverseBottomUp(visitor);
         accept(visitor);
     }
 
@@ -76,12 +62,6 @@ public class MethTypeName extends MethodSignature {
         buffer.append("\n");
 
         buffer.append(" "+tab+methName);
-        buffer.append("\n");
-
-        if(FormPars!=null)
-            buffer.append(FormPars.toString("  "+tab));
-        else
-            buffer.append(tab+"  null");
         buffer.append("\n");
 
         buffer.append(tab);

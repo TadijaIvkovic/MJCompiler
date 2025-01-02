@@ -162,11 +162,11 @@ MethodDeclList ::=  (MethDeclList) MethodDeclList:M1 MethodDecl:M2 {: RESULT=new
 					(NoMethDeclList) {: RESULT=new NoMethDeclList(); :} /* epsilon */
 					;
 
-MethodDecl ::= (MethodDecl)  MethodSignature:M1 VarDeclList:V2 LBRACE StatementList:S3 RBRACE {: RESULT=new MethodDecl(M1, V2, S3); RESULT.setLine(M1left); :} ;
+MethodDecl ::= (MethodDecl)  MethodSignature:M1 LPAREN FormPars:F2 RPAREN VarDeclList:V3 LBRACE StatementList:S4 RBRACE {: RESULT=new MethodDecl(M1, F2, V3, S4); RESULT.setLine(M1left); :} ;
 
-MethodSignature ::= (MethTypeName) Type:retType IDENT:methName LPAREN FormPars:F1 RPAREN {: RESULT=new MethTypeName(retType, methName, F1); RESULT.setLine(retTypeleft); :}
+MethodSignature ::= (MethTypeName) Type:retType IDENT:methName {: RESULT=new MethTypeName(retType, methName); RESULT.setLine(retTypeleft); :}
 					|
-					(NoMethTypeName) VOID IDENT:methName LPAREN FormPars:F1 RPAREN {: RESULT=new NoMethTypeName(methName, F1); RESULT.setLine(methNameleft); :}
+					(NoMethTypeName) VOID IDENT:methName {: RESULT=new NoMethTypeName(methName); RESULT.setLine(methNameleft); :}
 					;
 
 FormPars ::= (FormalPars) FormalParamList:F1 {: RESULT=new FormalPars(F1); RESULT.setLine(F1left); :} 
@@ -180,9 +180,9 @@ FormalParamList ::= (FormalParsList) FormalParamList:F1  COMMA FormalParamDecl:F
 					(FormalParsDecl) FormalParamDecl:F1 {: RESULT=new FormalParsDecl(F1); RESULT.setLine(F1left); :}
 					;
 					
-FormalParamDecl ::= (FormalParamSingle) Type:T1 IDENT:I2 {: RESULT=new FormalParamSingle(T1, I2); RESULT.setLine(T1left); :}
+FormalParamDecl ::= (FormalParamSingle) Type:T1 IDENT:fparDeclaration {: RESULT=new FormalParamSingle(T1, fparDeclaration); RESULT.setLine(T1left); :}
 					|
-					(FormalParamArray) Type:T1 IDENT:I2 LBRACKET RBRACKET {: RESULT=new FormalParamArray(T1, I2); RESULT.setLine(T1left); :}
+					(FormalParamArray) Type:T1 IDENT:fparDeclaration LBRACKET RBRACKET {: RESULT=new FormalParamArray(T1, fparDeclaration); RESULT.setLine(T1left); :}
 					;
 
 

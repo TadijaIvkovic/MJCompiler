@@ -124,11 +124,11 @@ MethodDeclList ::=  (MethDeclList) MethodDeclList MethodDecl
 					(NoMethDeclList) /* epsilon */
 					;
 
-MethodDecl ::= (MethodDecl)  MethodSignature VarDeclList LBRACE StatementList RBRACE ;
+MethodDecl ::= (MethodDecl)  MethodSignature LPAREN FormPars RPAREN VarDeclList LBRACE StatementList RBRACE ;
 
-MethodSignature ::= (MethTypeName) Type:retType IDENT:methName LPAREN FormPars RPAREN
+MethodSignature ::= (MethTypeName) Type:retType IDENT:methName
 					|
-					(NoMethTypeName) VOID IDENT:methName LPAREN FormPars RPAREN
+					(NoMethTypeName) VOID IDENT:methName
 					;
 
 FormPars ::= (FormalPars) FormalParamList 
@@ -142,9 +142,9 @@ FormalParamList ::= (FormalParsList) FormalParamList  COMMA FormalParamDecl
 					(FormalParsDecl) FormalParamDecl
 					;
 					
-FormalParamDecl ::= (FormalParamSingle) Type IDENT
+FormalParamDecl ::= (FormalParamSingle) Type IDENT:fparDeclaration
 					|
-					(FormalParamArray) Type IDENT LBRACKET RBRACKET
+					(FormalParamArray) Type IDENT:fparDeclaration LBRACKET RBRACKET
 					;
 
 

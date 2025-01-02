@@ -1,0 +1,225 @@
+INFO  15:40:31,047 - Compiling source file: C:\Users\The Workstation\eclipse-workspace\MJCompiler\test\testing.mj
+INFO  15:40:31,081 - #2 program
+INFO  15:40:31,081 - #47 Testiranje
+INFO  15:40:31,081 - #6 const
+INFO  15:40:31,081 - #47 int
+INFO  15:40:31,081 - #47 pi
+INFO  15:40:31,082 - #23 =
+INFO  15:40:31,082 - #44 3
+INFO  15:40:31,082 - #26 ;
+INFO  15:40:31,083 - #6 const
+INFO  15:40:31,083 - #47 int
+INFO  15:40:31,083 - #47 g
+INFO  15:40:31,083 - #23 =
+INFO  15:40:31,083 - #44 5
+INFO  15:40:31,084 - #26 ;
+INFO  15:40:31,084 - #6 const
+INFO  15:40:31,084 - #47 char
+INFO  15:40:31,084 - #47 c
+INFO  15:40:31,084 - #23 =
+INFO  15:40:31,084 - #45 a
+INFO  15:40:31,084 - #26 ;
+INFO  15:40:31,084 - #47 char
+INFO  15:40:31,084 - #47 a
+INFO  15:40:31,084 - #27 ,
+INFO  15:40:31,084 - #47 b
+INFO  15:40:31,085 - #26 ;
+INFO  15:40:31,085 - #47 int
+INFO  15:40:31,085 - #47 x
+INFO  15:40:31,085 - #27 ,
+INFO  15:40:31,085 - #47 z
+INFO  15:40:31,085 - #33 [
+INFO  15:40:31,085 - #34 ]
+INFO  15:40:31,085 - #26 ;
+INFO  15:40:31,085 - #31 {
+INFO  15:40:31,086 - #12 void
+INFO  15:40:31,086 - #47 mainn
+INFO  15:40:31,086 - #29 (
+INFO  15:40:31,086 - #30 )
+INFO  15:40:31,087 - #47 int
+INFO  15:40:31,088 - #47 x
+INFO  15:40:31,088 - #27 ,
+INFO  15:40:31,088 - #47 y
+INFO  15:40:31,088 - #27 ,
+INFO  15:40:31,088 - #47 z
+INFO  15:40:31,088 - #33 [
+INFO  15:40:31,088 - #34 ]
+INFO  15:40:31,088 - #26 ;
+INFO  15:40:31,088 - #31 {
+INFO  15:40:31,088 - #32 }
+INFO  15:40:31,089 - #12 void
+INFO  15:40:31,089 - #47 mainx
+INFO  15:40:31,089 - #29 (
+INFO  15:40:31,089 - #30 )
+INFO  15:40:31,090 - #47 int
+INFO  15:40:31,090 - #47 x
+INFO  15:40:31,090 - #27 ,
+INFO  15:40:31,090 - #47 y
+INFO  15:40:31,090 - #27 ,
+INFO  15:40:31,090 - #47 z
+INFO  15:40:31,090 - #33 [
+INFO  15:40:31,090 - #34 ]
+INFO  15:40:31,090 - #26 ;
+INFO  15:40:31,090 - #31 {
+INFO  15:40:31,090 - #32 }
+INFO  15:40:31,090 - #32 }
+INFO  15:40:31,092 - Program(
+  ProgName(
+   Testiranje
+  ) [ProgName]
+  ConstDecLists(
+    ConstDeclList(
+      Type(
+       int
+      ) [Type]
+     pi
+      NumConstant(
+       3
+      ) [NumConstant]
+      NoConstList(
+      ) [NoConstList]
+    ) [ConstDeclList]
+    ConstDecLists(
+      ConstDeclList(
+        Type(
+         int
+        ) [Type]
+       g
+        NumConstant(
+         5
+        ) [NumConstant]
+        NoConstList(
+        ) [NoConstList]
+      ) [ConstDeclList]
+      ConstDecLists(
+        ConstDeclList(
+          Type(
+           char
+          ) [Type]
+         c
+          CharConstant(
+           a
+          ) [CharConstant]
+          NoConstList(
+          ) [NoConstList]
+        ) [ConstDeclList]
+        VarDecLists(
+          VarDecl(
+            Type(
+             char
+            ) [Type]
+            VarDeclaratList(
+              VarDeclarat(
+                VarDeclarationSingle(
+                 a
+                ) [VarDeclarationSingle]
+              ) [VarDeclarat]
+              VarDeclarationSingle(
+               b
+              ) [VarDeclarationSingle]
+            ) [VarDeclaratList]
+          ) [VarDecl]
+          VarDecLists(
+            VarDecl(
+              Type(
+               int
+              ) [Type]
+              VarDeclaratList(
+                VarDeclarat(
+                  VarDeclarationSingle(
+                   x
+                  ) [VarDeclarationSingle]
+                ) [VarDeclarat]
+                VarDeclarationArray(
+                 z
+                ) [VarDeclarationArray]
+              ) [VarDeclaratList]
+            ) [VarDecl]
+            NoDecLists(
+            ) [NoDecLists]
+          ) [VarDecLists]
+        ) [VarDecLists]
+      ) [ConstDecLists]
+    ) [ConstDecLists]
+  ) [ConstDecLists]
+  MethDeclList(
+    MethDeclList(
+      NoMethDeclList(
+      ) [NoMethDeclList]
+      MethodDecl(
+        NoMethTypeName(
+         mainn
+        ) [NoMethTypeName]
+        NoFormalPars(
+        ) [NoFormalPars]
+        VarDeclarList(
+          NoVarDeclarList(
+          ) [NoVarDeclarList]
+          VarDecl(
+            Type(
+             int
+            ) [Type]
+            VarDeclaratList(
+              VarDeclaratList(
+                VarDeclarat(
+                  VarDeclarationSingle(
+                   x
+                  ) [VarDeclarationSingle]
+                ) [VarDeclarat]
+                VarDeclarationSingle(
+                 y
+                ) [VarDeclarationSingle]
+              ) [VarDeclaratList]
+              VarDeclarationArray(
+               z
+              ) [VarDeclarationArray]
+            ) [VarDeclaratList]
+          ) [VarDecl]
+        ) [VarDeclarList]
+        NoStmtList(
+        ) [NoStmtList]
+      ) [MethodDecl]
+    ) [MethDeclList]
+    MethodDecl(
+      NoMethTypeName(
+       mainx
+      ) [NoMethTypeName]
+      NoFormalPars(
+      ) [NoFormalPars]
+      VarDeclarList(
+        NoVarDeclarList(
+        ) [NoVarDeclarList]
+        VarDecl(
+          Type(
+           int
+          ) [Type]
+          VarDeclaratList(
+            VarDeclaratList(
+              VarDeclarat(
+                VarDeclarationSingle(
+                 x
+                ) [VarDeclarationSingle]
+              ) [VarDeclarat]
+              VarDeclarationSingle(
+               y
+              ) [VarDeclarationSingle]
+            ) [VarDeclaratList]
+            VarDeclarationArray(
+             z
+            ) [VarDeclarationArray]
+          ) [VarDeclaratList]
+        ) [VarDecl]
+      ) [VarDeclarList]
+      NoStmtList(
+      ) [NoStmtList]
+    ) [MethodDecl]
+  ) [MethDeclList]
+) [Program]
+INFO  15:40:31,092 - =====================================================================
+INFO  15:40:31,097 - Prepoznata varDecl naredba.
+INFO  15:40:31,097 - Prepoznata varDecl naredba.
+INFO  15:40:31,097 - Prepoznata varDecl naredba.
+INFO  15:40:31,097 - Prepoznata varDecl naredba.
+ERROR 15:40:31,097 - Ne postoji definicija za main  na liniji 1
+INFO  15:40:31,097 - =====================================================================
+ERROR 15:40:31,098 - Parsiranje NIJE uspesno zavrseno!

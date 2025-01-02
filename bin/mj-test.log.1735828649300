@@ -1,0 +1,192 @@
+INFO  15:19:04,078 - Compiling source file: C:\Users\The Workstation\eclipse-workspace\MJCompiler\test\testing.mj
+INFO  15:19:04,106 - #2 program
+INFO  15:19:04,107 - #47 Testiranje
+INFO  15:19:04,107 - #6 const
+INFO  15:19:04,107 - #47 int
+INFO  15:19:04,107 - #47 pi
+INFO  15:19:04,108 - #23 =
+INFO  15:19:04,108 - #44 3
+INFO  15:19:04,108 - #26 ;
+INFO  15:19:04,108 - #6 const
+INFO  15:19:04,109 - #47 int
+INFO  15:19:04,109 - #47 g
+INFO  15:19:04,109 - #23 =
+INFO  15:19:04,109 - #44 5
+INFO  15:19:04,109 - #26 ;
+INFO  15:19:04,109 - #6 const
+INFO  15:19:04,109 - #47 char
+INFO  15:19:04,109 - #47 c
+INFO  15:19:04,109 - #23 =
+INFO  15:19:04,109 - #45 a
+INFO  15:19:04,109 - #26 ;
+INFO  15:19:04,109 - #47 char
+INFO  15:19:04,109 - #47 a
+INFO  15:19:04,110 - #27 ,
+INFO  15:19:04,110 - #47 b
+INFO  15:19:04,110 - #26 ;
+INFO  15:19:04,110 - #47 int
+INFO  15:19:04,110 - #47 x
+INFO  15:19:04,110 - #27 ,
+INFO  15:19:04,110 - #47 z
+INFO  15:19:04,110 - #33 [
+INFO  15:19:04,110 - #34 ]
+INFO  15:19:04,110 - #26 ;
+INFO  15:19:04,111 - #47 int
+INFO  15:19:04,111 - #47 eol
+INFO  15:19:04,111 - #26 ;
+INFO  15:19:04,111 - #31 {
+INFO  15:19:04,111 - #12 void
+INFO  15:19:04,112 - #47 main
+INFO  15:19:04,112 - #29 (
+INFO  15:19:04,112 - #30 )
+INFO  15:19:04,112 - #47 int
+INFO  15:19:04,113 - #47 x
+INFO  15:19:04,113 - #27 ,
+INFO  15:19:04,113 - #47 y
+INFO  15:19:04,113 - #27 ,
+INFO  15:19:04,113 - #47 z
+INFO  15:19:04,113 - #33 [
+INFO  15:19:04,113 - #34 ]
+INFO  15:19:04,113 - #26 ;
+INFO  15:19:04,113 - #31 {
+INFO  15:19:04,113 - #32 }
+INFO  15:19:04,114 - #32 }
+INFO  15:19:04,116 - Program(
+  ProgName(
+   Testiranje
+  ) [ProgName]
+  ConstDecLists(
+    ConstDeclList(
+      Type(
+       int
+      ) [Type]
+     pi
+      NumConstant(
+       3
+      ) [NumConstant]
+      NoConstList(
+      ) [NoConstList]
+    ) [ConstDeclList]
+    ConstDecLists(
+      ConstDeclList(
+        Type(
+         int
+        ) [Type]
+       g
+        NumConstant(
+         5
+        ) [NumConstant]
+        NoConstList(
+        ) [NoConstList]
+      ) [ConstDeclList]
+      ConstDecLists(
+        ConstDeclList(
+          Type(
+           char
+          ) [Type]
+         c
+          CharConstant(
+           a
+          ) [CharConstant]
+          NoConstList(
+          ) [NoConstList]
+        ) [ConstDeclList]
+        VarDecLists(
+          VarDecl(
+            Type(
+             char
+            ) [Type]
+            VarDeclaratList(
+              VarDeclarat(
+                VarDeclarationSingle(
+                 a
+                ) [VarDeclarationSingle]
+              ) [VarDeclarat]
+              VarDeclarationSingle(
+               b
+              ) [VarDeclarationSingle]
+            ) [VarDeclaratList]
+          ) [VarDecl]
+          VarDecLists(
+            VarDecl(
+              Type(
+               int
+              ) [Type]
+              VarDeclaratList(
+                VarDeclarat(
+                  VarDeclarationSingle(
+                   x
+                  ) [VarDeclarationSingle]
+                ) [VarDeclarat]
+                VarDeclarationArray(
+                 z
+                ) [VarDeclarationArray]
+              ) [VarDeclaratList]
+            ) [VarDecl]
+            VarDecLists(
+              VarDecl(
+                Type(
+                 int
+                ) [Type]
+                VarDeclarat(
+                  VarDeclarationSingle(
+                   eol
+                  ) [VarDeclarationSingle]
+                ) [VarDeclarat]
+              ) [VarDecl]
+              NoDecLists(
+              ) [NoDecLists]
+            ) [VarDecLists]
+          ) [VarDecLists]
+        ) [VarDecLists]
+      ) [ConstDecLists]
+    ) [ConstDecLists]
+  ) [ConstDecLists]
+  MethDeclList(
+    NoMethDeclList(
+    ) [NoMethDeclList]
+    MethodDecl(
+      NoMethTypeName(
+       main
+      ) [NoMethTypeName]
+      NoFormalPars(
+      ) [NoFormalPars]
+      VarDeclarList(
+        NoVarDeclarList(
+        ) [NoVarDeclarList]
+        VarDecl(
+          Type(
+           int
+          ) [Type]
+          VarDeclaratList(
+            VarDeclaratList(
+              VarDeclarat(
+                VarDeclarationSingle(
+                 x
+                ) [VarDeclarationSingle]
+              ) [VarDeclarat]
+              VarDeclarationSingle(
+               y
+              ) [VarDeclarationSingle]
+            ) [VarDeclaratList]
+            VarDeclarationArray(
+             z
+            ) [VarDeclarationArray]
+          ) [VarDeclaratList]
+        ) [VarDecl]
+      ) [VarDeclarList]
+      NoStmtList(
+      ) [NoStmtList]
+    ) [MethodDecl]
+  ) [MethDeclList]
+) [Program]
+INFO  15:19:04,116 - =====================================================================
+INFO  15:19:04,120 - Prepoznata varDecl naredba.
+INFO  15:19:04,120 - Prepoznata varDecl naredba.
+ERROR 15:19:04,120 - Dvostruka definicija promenljive: eol na liniji 9
+INFO  15:19:04,120 - Prepoznata varDecl naredba.
+ERROR 15:19:04,120 - Dvostruka definicija promenljive: x na liniji 13
+ERROR 15:19:04,120 - Dvostruka definicija promenljive: z na liniji 13
+INFO  15:19:04,120 - Prepoznata varDecl naredba.
+INFO  15:19:04,120 - =====================================================================
+ERROR 15:19:04,121 - Parsiranje NIJE uspesno zavrseno!
