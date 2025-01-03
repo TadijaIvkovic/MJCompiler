@@ -1,93 +1,91 @@
-INFO  14:54:55,444 - Compiling source file: C:\Users\The Workstation\eclipse-workspace\MJCompiler\test\testing.mj
-INFO  14:54:55,473 - #2 program
-INFO  14:54:55,473 - #47 Testiranje
-INFO  14:54:55,473 - #6 const
-INFO  14:54:55,474 - #47 int
-INFO  14:54:55,474 - #47 pi
-INFO  14:54:55,475 - #23 =
-INFO  14:54:55,475 - #44 3
-INFO  14:54:55,475 - #26 ;
-INFO  14:54:55,476 - #6 const
-INFO  14:54:55,477 - #47 int
-INFO  14:54:55,477 - #47 g
-INFO  14:54:55,477 - #23 =
-INFO  14:54:55,477 - #44 5
-INFO  14:54:55,477 - #26 ;
-INFO  14:54:55,477 - #6 const
-INFO  14:54:55,477 - #47 char
-INFO  14:54:55,477 - #47 c
-INFO  14:54:55,477 - #23 =
-INFO  14:54:55,477 - #45 a
-INFO  14:54:55,477 - #26 ;
-INFO  14:54:55,477 - #47 char
-INFO  14:54:55,477 - #47 a
-INFO  14:54:55,478 - #27 ,
-INFO  14:54:55,478 - #47 b
-INFO  14:54:55,478 - #26 ;
-INFO  14:54:55,478 - #47 int
-INFO  14:54:55,478 - #47 x
-INFO  14:54:55,479 - #27 ,
-INFO  14:54:55,479 - #47 z
-INFO  14:54:55,479 - #33 [
-INFO  14:54:55,479 - #34 ]
-INFO  14:54:55,479 - #26 ;
-INFO  14:54:55,479 - #31 {
-INFO  14:54:55,480 - #47 int
-INFO  14:54:55,480 - #47 f1
-INFO  14:54:55,480 - #29 (
-INFO  14:54:55,480 - #47 int
-INFO  14:54:55,480 - #47 p
-INFO  14:54:55,480 - #27 ,
-INFO  14:54:55,480 - #47 char
-INFO  14:54:55,481 - #47 zz
-INFO  14:54:55,481 - #33 [
-INFO  14:54:55,481 - #34 ]
-INFO  14:54:55,481 - #30 )
-INFO  14:54:55,481 - #47 int
-INFO  14:54:55,481 - #47 x
-INFO  14:54:55,481 - #27 ,
-INFO  14:54:55,482 - #47 y
-INFO  14:54:55,482 - #27 ,
-INFO  14:54:55,482 - #47 z
-INFO  14:54:55,482 - #33 [
-INFO  14:54:55,482 - #34 ]
-INFO  14:54:55,482 - #26 ;
-INFO  14:54:55,482 - #31 {
-INFO  14:54:55,482 - #32 }
-INFO  14:54:55,482 - #47 char
-INFO  14:54:55,483 - #47 f2
-INFO  14:54:55,483 - #29 (
-INFO  14:54:55,483 - #30 )
-INFO  14:54:55,483 - #47 int
-INFO  14:54:55,484 - #47 x
-INFO  14:54:55,484 - #27 ,
-INFO  14:54:55,484 - #47 y
-INFO  14:54:55,484 - #27 ,
-INFO  14:54:55,484 - #47 z
-INFO  14:54:55,484 - #33 [
-INFO  14:54:55,484 - #34 ]
-INFO  14:54:55,484 - #26 ;
-INFO  14:54:55,484 - #31 {
-INFO  14:54:55,484 - #32 }
-INFO  14:54:55,484 - #12 void
-INFO  14:54:55,484 - #47 main
-INFO  14:54:55,484 - #29 (
-INFO  14:54:55,484 - #47 int
-INFO  14:54:55,484 - #47 fp1
-INFO  14:54:55,484 - #30 )
-INFO  14:54:55,484 - #47 int
-INFO  14:54:55,484 - #47 x
-INFO  14:54:55,484 - #27 ,
-INFO  14:54:55,484 - #47 y
-INFO  14:54:55,484 - #27 ,
-INFO  14:54:55,484 - #47 z
-INFO  14:54:55,484 - #33 [
-INFO  14:54:55,484 - #34 ]
-INFO  14:54:55,484 - #26 ;
-INFO  14:54:55,484 - #31 {
-INFO  14:54:55,484 - #32 }
-INFO  14:54:55,484 - #32 }
-INFO  14:54:55,487 - Program(
+INFO  14:32:18,891 - Compiling source file: C:\Users\The Workstation\eclipse-workspace\MJCompiler\test\testing.mj
+INFO  14:32:18,922 - #2 program
+INFO  14:32:18,922 - #47 Testiranje
+INFO  14:32:18,922 - #6 const
+INFO  14:32:18,923 - #47 int
+INFO  14:32:18,923 - #47 pi
+INFO  14:32:18,923 - #23 =
+INFO  14:32:18,923 - #44 3
+INFO  14:32:18,923 - #26 ;
+INFO  14:32:18,923 - #6 const
+INFO  14:32:18,924 - #47 int
+INFO  14:32:18,924 - #47 g
+INFO  14:32:18,924 - #23 =
+INFO  14:32:18,924 - #44 5
+INFO  14:32:18,924 - #26 ;
+INFO  14:32:18,924 - #6 const
+INFO  14:32:18,924 - #47 char
+INFO  14:32:18,924 - #47 c
+INFO  14:32:18,924 - #23 =
+INFO  14:32:18,924 - #45 a
+INFO  14:32:18,925 - #26 ;
+INFO  14:32:18,925 - #47 char
+INFO  14:32:18,925 - #47 a
+INFO  14:32:18,925 - #27 ,
+INFO  14:32:18,925 - #47 b
+INFO  14:32:18,925 - #26 ;
+INFO  14:32:18,925 - #47 int
+INFO  14:32:18,926 - #47 x
+INFO  14:32:18,926 - #27 ,
+INFO  14:32:18,926 - #47 z
+INFO  14:32:18,926 - #33 [
+INFO  14:32:18,926 - #34 ]
+INFO  14:32:18,926 - #26 ;
+INFO  14:32:18,926 - #31 {
+INFO  14:32:18,927 - #47 int
+INFO  14:32:18,927 - #47 f1
+INFO  14:32:18,927 - #29 (
+INFO  14:32:18,928 - #47 int
+INFO  14:32:18,928 - #47 p
+INFO  14:32:18,928 - #27 ,
+INFO  14:32:18,928 - #47 char
+INFO  14:32:18,928 - #47 zz
+INFO  14:32:18,928 - #33 [
+INFO  14:32:18,928 - #34 ]
+INFO  14:32:18,928 - #30 )
+INFO  14:32:18,928 - #47 int
+INFO  14:32:18,929 - #47 x
+INFO  14:32:18,929 - #27 ,
+INFO  14:32:18,929 - #47 y
+INFO  14:32:18,929 - #27 ,
+INFO  14:32:18,929 - #47 z
+INFO  14:32:18,929 - #33 [
+INFO  14:32:18,929 - #34 ]
+INFO  14:32:18,929 - #26 ;
+INFO  14:32:18,929 - #31 {
+INFO  14:32:18,929 - #32 }
+INFO  14:32:18,930 - #47 char
+INFO  14:32:18,931 - #47 f2
+INFO  14:32:18,931 - #29 (
+INFO  14:32:18,931 - #30 )
+INFO  14:32:18,931 - #47 int
+INFO  14:32:18,931 - #47 x
+INFO  14:32:18,931 - #27 ,
+INFO  14:32:18,931 - #47 y
+INFO  14:32:18,931 - #27 ,
+INFO  14:32:18,931 - #47 z
+INFO  14:32:18,932 - #33 [
+INFO  14:32:18,932 - #34 ]
+INFO  14:32:18,932 - #26 ;
+INFO  14:32:18,932 - #31 {
+INFO  14:32:18,932 - #32 }
+INFO  14:32:18,932 - #12 void
+INFO  14:32:18,932 - #47 main
+INFO  14:32:18,932 - #29 (
+INFO  14:32:18,932 - #30 )
+INFO  14:32:18,932 - #47 int
+INFO  14:32:18,932 - #47 x
+INFO  14:32:18,932 - #27 ,
+INFO  14:32:18,932 - #47 y
+INFO  14:32:18,932 - #27 ,
+INFO  14:32:18,932 - #47 z
+INFO  14:32:18,932 - #33 [
+INFO  14:32:18,932 - #34 ]
+INFO  14:32:18,932 - #26 ;
+INFO  14:32:18,932 - #31 {
+INFO  14:32:18,932 - #32 }
+INFO  14:32:18,932 - #32 }
+INFO  14:32:18,935 - Program(
   ProgName(
    Testiranje
   ) [ProgName]
@@ -265,16 +263,8 @@ INFO  14:54:55,487 - Program(
       NoMethTypeName(
        main
       ) [NoMethTypeName]
-      FormalPars(
-        FormalParsDecl(
-          FormalParamSingle(
-            Type(
-             int
-            ) [Type]
-           fp1
-          ) [FormalParamSingle]
-        ) [FormalParsDecl]
-      ) [FormalPars]
+      NoFormalPars(
+      ) [NoFormalPars]
       VarDeclarList(
         NoVarDeclarList(
         ) [NoVarDeclarList]
@@ -304,12 +294,11 @@ INFO  14:54:55,487 - Program(
     ) [MethodDecl]
   ) [MethDeclList]
 ) [Program]
-INFO  14:54:55,487 - =====================================================================
-INFO  14:54:55,491 - Prepoznata varDecl naredba.
-INFO  14:54:55,491 - Prepoznata varDecl naredba.
-INFO  14:54:55,491 - Prepoznata varDecl naredba.
-INFO  14:54:55,491 - Prepoznata varDecl naredba.
-INFO  14:54:55,491 - Prepoznata varDecl naredba.
-ERROR 14:54:55,491 - Nema adekvatne main metode na liniji 1
-INFO  14:54:55,491 - =====================================================================
-ERROR 14:54:55,492 - Parsiranje NIJE uspesno zavrseno!
+INFO  14:32:18,935 - =====================================================================
+INFO  14:32:18,939 - Prepoznata varDecl naredba.
+INFO  14:32:18,939 - Prepoznata varDecl naredba.
+INFO  14:32:18,939 - Prepoznata varDecl naredba.
+INFO  14:32:18,939 - Prepoznata varDecl naredba.
+INFO  14:32:18,939 - Prepoznata varDecl naredba.
+INFO  14:32:18,939 - =====================================================================
+INFO  14:32:18,940 - Parsiranje uspesno zavrseno!

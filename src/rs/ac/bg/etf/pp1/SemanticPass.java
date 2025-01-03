@@ -18,6 +18,7 @@ public class SemanticPass extends VisitorAdaptor {
 	private Struct boolType=Tab.find("bool").getType();
 	private Obj currentMethod =null;
 	private boolean mainMethodExists = false;
+	private Obj mainMethod=null;
 
 	
 	public void report_error(String message, SyntaxNode info) {
@@ -68,8 +69,8 @@ public class SemanticPass extends VisitorAdaptor {
 		Tab.chainLocalSymbols(program.getProgName().obj);
 		Tab.closeScope();
 		
-		if(!mainMethodExists)
-			report_error("Ne postoji definicija za main ", program);
+		if(!mainMethodExists || mainMethod.getLevel()>0)
+			report_error("Nema adekvatne main metode", program);
 
 	}
     
@@ -189,12 +190,14 @@ public class SemanticPass extends VisitorAdaptor {
     @Override
     public void visit(NoMethTypeName noMethTypeName) {
     	
-    	if(noMethTypeName.getMethName().equalsIgnoreCase("main")) {
-    		mainMethodExists =true;
-    	}
+
     	
     	currentMethod=Tab.insert(Obj.Meth, noMethTypeName.getMethName(), Tab.noType);
     	Tab.openScope();
+    	if(noMethTypeName.getMethName().equalsIgnoreCase("main")) {
+    		mainMethodExists =true;
+    		mainMethod=currentMethod;
+    	}
     	
     }
     
