@@ -1,0 +1,326 @@
+INFO  18:03:44,355 - Compiling source file: C:\Users\The Workstation\eclipse-workspace\MJCompiler\test\testing.mj
+INFO  18:03:44,385 - #2 program
+INFO  18:03:44,385 - #47 Testiranje
+INFO  18:03:44,385 - #6 const
+INFO  18:03:44,385 - #47 int
+INFO  18:03:44,385 - #47 pi
+INFO  18:03:44,386 - #23 =
+INFO  18:03:44,386 - #44 3
+INFO  18:03:44,386 - #26 ;
+INFO  18:03:44,386 - #6 const
+INFO  18:03:44,387 - #47 int
+INFO  18:03:44,387 - #47 g
+INFO  18:03:44,387 - #23 =
+INFO  18:03:44,387 - #44 5
+INFO  18:03:44,387 - #26 ;
+INFO  18:03:44,387 - #6 const
+INFO  18:03:44,387 - #47 char
+INFO  18:03:44,387 - #47 c
+INFO  18:03:44,387 - #23 =
+INFO  18:03:44,387 - #45 a
+INFO  18:03:44,387 - #26 ;
+INFO  18:03:44,387 - #47 char
+INFO  18:03:44,388 - #47 a
+INFO  18:03:44,388 - #27 ,
+INFO  18:03:44,388 - #47 b
+INFO  18:03:44,388 - #26 ;
+INFO  18:03:44,388 - #47 int
+INFO  18:03:44,388 - #47 x
+INFO  18:03:44,388 - #27 ,
+INFO  18:03:44,388 - #47 z
+INFO  18:03:44,389 - #33 [
+INFO  18:03:44,389 - #34 ]
+INFO  18:03:44,389 - #26 ;
+INFO  18:03:44,389 - #31 {
+INFO  18:03:44,389 - #47 int
+INFO  18:03:44,390 - #47 f1
+INFO  18:03:44,390 - #29 (
+INFO  18:03:44,390 - #47 int
+INFO  18:03:44,390 - #47 p
+INFO  18:03:44,390 - #27 ,
+INFO  18:03:44,390 - #47 char
+INFO  18:03:44,390 - #47 zz
+INFO  18:03:44,390 - #33 [
+INFO  18:03:44,390 - #34 ]
+INFO  18:03:44,390 - #30 )
+INFO  18:03:44,390 - #47 int
+INFO  18:03:44,391 - #47 x
+INFO  18:03:44,391 - #27 ,
+INFO  18:03:44,391 - #47 y
+INFO  18:03:44,391 - #27 ,
+INFO  18:03:44,391 - #47 z
+INFO  18:03:44,391 - #33 [
+INFO  18:03:44,391 - #34 ]
+INFO  18:03:44,391 - #26 ;
+INFO  18:03:44,391 - #31 {
+INFO  18:03:44,391 - #32 }
+INFO  18:03:44,392 - #47 char
+INFO  18:03:44,392 - #47 f2
+INFO  18:03:44,392 - #29 (
+INFO  18:03:44,392 - #30 )
+INFO  18:03:44,393 - #47 int
+INFO  18:03:44,393 - #47 x
+INFO  18:03:44,393 - #27 ,
+INFO  18:03:44,393 - #47 y
+INFO  18:03:44,393 - #27 ,
+INFO  18:03:44,393 - #47 z
+INFO  18:03:44,393 - #33 [
+INFO  18:03:44,393 - #34 ]
+INFO  18:03:44,393 - #26 ;
+INFO  18:03:44,393 - #31 {
+INFO  18:03:44,393 - #32 }
+INFO  18:03:44,393 - #12 void
+INFO  18:03:44,393 - #47 main
+INFO  18:03:44,393 - #29 (
+INFO  18:03:44,393 - #30 )
+INFO  18:03:44,393 - #47 int
+INFO  18:03:44,393 - #47 x
+INFO  18:03:44,393 - #27 ,
+INFO  18:03:44,393 - #47 y
+INFO  18:03:44,393 - #27 ,
+INFO  18:03:44,393 - #47 z
+INFO  18:03:44,393 - #33 [
+INFO  18:03:44,393 - #34 ]
+INFO  18:03:44,393 - #26 ;
+INFO  18:03:44,393 - #31 {
+INFO  18:03:44,393 - #9 print
+INFO  18:03:44,393 - #29 (
+INFO  18:03:44,394 - #19 -
+INFO  18:03:44,394 - #45 a
+INFO  18:03:44,394 - #30 )
+INFO  18:03:44,394 - #26 ;
+INFO  18:03:44,394 - #32 }
+INFO  18:03:44,394 - #32 }
+INFO  18:03:44,397 - Program(
+  ProgName(
+   Testiranje
+  ) [ProgName]
+  ConstDecLists(
+    ConstDeclList(
+      Type(
+       int
+      ) [Type]
+     pi
+      NumConstant(
+       3
+      ) [NumConstant]
+      NoConstList(
+      ) [NoConstList]
+    ) [ConstDeclList]
+    ConstDecLists(
+      ConstDeclList(
+        Type(
+         int
+        ) [Type]
+       g
+        NumConstant(
+         5
+        ) [NumConstant]
+        NoConstList(
+        ) [NoConstList]
+      ) [ConstDeclList]
+      ConstDecLists(
+        ConstDeclList(
+          Type(
+           char
+          ) [Type]
+         c
+          CharConstant(
+           a
+          ) [CharConstant]
+          NoConstList(
+          ) [NoConstList]
+        ) [ConstDeclList]
+        VarDecLists(
+          VarDecl(
+            Type(
+             char
+            ) [Type]
+            VarDeclaratList(
+              VarDeclarat(
+                VarDeclarationSingle(
+                 a
+                ) [VarDeclarationSingle]
+              ) [VarDeclarat]
+              VarDeclarationSingle(
+               b
+              ) [VarDeclarationSingle]
+            ) [VarDeclaratList]
+          ) [VarDecl]
+          VarDecLists(
+            VarDecl(
+              Type(
+               int
+              ) [Type]
+              VarDeclaratList(
+                VarDeclarat(
+                  VarDeclarationSingle(
+                   x
+                  ) [VarDeclarationSingle]
+                ) [VarDeclarat]
+                VarDeclarationArray(
+                 z
+                ) [VarDeclarationArray]
+              ) [VarDeclaratList]
+            ) [VarDecl]
+            NoDecLists(
+            ) [NoDecLists]
+          ) [VarDecLists]
+        ) [VarDecLists]
+      ) [ConstDecLists]
+    ) [ConstDecLists]
+  ) [ConstDecLists]
+  MethDeclList(
+    MethDeclList(
+      MethDeclList(
+        NoMethDeclList(
+        ) [NoMethDeclList]
+        MethodDecl(
+          MethTypeName(
+            Type(
+             int
+            ) [Type]
+           f1
+          ) [MethTypeName]
+          FormalPars(
+            FormalParsList(
+              FormalParsDecl(
+                FormalParamSingle(
+                  Type(
+                   int
+                  ) [Type]
+                 p
+                ) [FormalParamSingle]
+              ) [FormalParsDecl]
+              FormalParamArray(
+                Type(
+                 char
+                ) [Type]
+               zz
+              ) [FormalParamArray]
+            ) [FormalParsList]
+          ) [FormalPars]
+          VarDeclarList(
+            NoVarDeclarList(
+            ) [NoVarDeclarList]
+            VarDecl(
+              Type(
+               int
+              ) [Type]
+              VarDeclaratList(
+                VarDeclaratList(
+                  VarDeclarat(
+                    VarDeclarationSingle(
+                     x
+                    ) [VarDeclarationSingle]
+                  ) [VarDeclarat]
+                  VarDeclarationSingle(
+                   y
+                  ) [VarDeclarationSingle]
+                ) [VarDeclaratList]
+                VarDeclarationArray(
+                 z
+                ) [VarDeclarationArray]
+              ) [VarDeclaratList]
+            ) [VarDecl]
+          ) [VarDeclarList]
+          NoStmtList(
+          ) [NoStmtList]
+        ) [MethodDecl]
+      ) [MethDeclList]
+      MethodDecl(
+        MethTypeName(
+          Type(
+           char
+          ) [Type]
+         f2
+        ) [MethTypeName]
+        NoFormalPars(
+        ) [NoFormalPars]
+        VarDeclarList(
+          NoVarDeclarList(
+          ) [NoVarDeclarList]
+          VarDecl(
+            Type(
+             int
+            ) [Type]
+            VarDeclaratList(
+              VarDeclaratList(
+                VarDeclarat(
+                  VarDeclarationSingle(
+                   x
+                  ) [VarDeclarationSingle]
+                ) [VarDeclarat]
+                VarDeclarationSingle(
+                 y
+                ) [VarDeclarationSingle]
+              ) [VarDeclaratList]
+              VarDeclarationArray(
+               z
+              ) [VarDeclarationArray]
+            ) [VarDeclaratList]
+          ) [VarDecl]
+        ) [VarDeclarList]
+        NoStmtList(
+        ) [NoStmtList]
+      ) [MethodDecl]
+    ) [MethDeclList]
+    MethodDecl(
+      NoMethTypeName(
+       main
+      ) [NoMethTypeName]
+      NoFormalPars(
+      ) [NoFormalPars]
+      VarDeclarList(
+        NoVarDeclarList(
+        ) [NoVarDeclarList]
+        VarDecl(
+          Type(
+           int
+          ) [Type]
+          VarDeclaratList(
+            VarDeclaratList(
+              VarDeclarat(
+                VarDeclarationSingle(
+                 x
+                ) [VarDeclarationSingle]
+              ) [VarDeclarat]
+              VarDeclarationSingle(
+               y
+              ) [VarDeclarationSingle]
+            ) [VarDeclaratList]
+            VarDeclarationArray(
+             z
+            ) [VarDeclarationArray]
+          ) [VarDeclaratList]
+        ) [VarDecl]
+      ) [VarDeclarList]
+      StmtList(
+        NoStmtList(
+        ) [NoStmtList]
+        MatchedStmt(
+          PrintStmt(
+            ExprTerm(
+              TermFactor(
+                UnaryMinusFactor(
+                  FactorChar(
+                   a
+                  ) [FactorChar]
+                ) [UnaryMinusFactor]
+              ) [TermFactor]
+            ) [ExprTerm]
+          ) [PrintStmt]
+        ) [MatchedStmt]
+      ) [StmtList]
+    ) [MethodDecl]
+  ) [MethDeclList]
+) [Program]
+INFO  18:03:44,397 - =====================================================================
+INFO  18:03:44,401 - Prepoznata varDecl naredba.
+INFO  18:03:44,401 - Prepoznata varDecl naredba.
+INFO  18:03:44,401 - Prepoznata varDecl naredba.
+INFO  18:03:44,401 - Prepoznata varDecl naredba.
+INFO  18:03:44,401 - Prepoznata varDecl naredba.
+ERROR 18:03:44,401 - Negacija vrednosti koja nije broj  na liniji 21
+INFO  18:03:44,401 - =====================================================================
+ERROR 18:03:44,401 - Parsiranje NIJE uspesno zavrseno!

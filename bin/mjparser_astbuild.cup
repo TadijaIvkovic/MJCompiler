@@ -63,7 +63,7 @@ terminal LBRACKET, RBRACKET, LARROW, RARROW, EXCL, AMPER, LINE, MAP, DO, WHILE, 
 
 terminal Integer NUMBER ;
 terminal Character CHAR_CONST;
-terminal Integer BOOL_CONST;
+terminal Integer BOOL;
 terminal String IDENT ;
 
 
@@ -84,16 +84,9 @@ nonterminal FormalParamList FormalParamList;
 nonterminal FormalParamDecl FormalParamDecl;
 nonterminal StatementList StatementList;
 nonterminal Statement Statement;
-nonterminal Expr Expr;
-nonterminal Term Term;
-nonterminal Unary Unary;
-nonterminal Factor Factor;
 nonterminal DesignatorStatement DesignatorStatement;
 nonterminal ActPars ActPars;
 nonterminal ActParamList ActParamList;
-nonterminal Designator Designator;
-nonterminal DesignatorName DesignatorName;
-nonterminal DesignatorElem DesignatorElem;
 nonterminal Label Label;
 nonterminal Assignop Assignop;
 nonterminal Relop Relop;
@@ -111,7 +104,9 @@ nonterminal DoWhileEnd DoWhileEnd;
 nonterminal DoWhileStart DoWhileStart;
 nonterminal ConditionWithStatement ConditionWithStatement;
 
-nonterminal rs.etf.pp1.symboltable.concepts.Obj ProgName, Program;
+nonterminal rs.etf.pp1.symboltable.concepts.Obj ProgName, Program, Designator, DesignatorName;
+
+nonterminal rs.etf.pp1.symboltable.concepts.Struct Unary, Factor, Term, Expr;
 
 Program ::= (Program) PROG ProgName:p DeclarationList:D1 LBRACE MethodDeclList:M2 RBRACE {: RESULT=new Program(p, D1, M2); RESULT.setLine(pleft); :} ;
 
@@ -136,7 +131,7 @@ Constants ::=(NumConstant) NUMBER:N1 {: RESULT=new NumConstant(N1); RESULT.setLi
 			 | 
 			 (CharConstant) CHAR_CONST:C1 {: RESULT=new CharConstant(C1); RESULT.setLine(C1left); :} 
 			 |
-			 (BoolConstant) BOOL_CONST:B1 {: RESULT=new BoolConstant(B1); RESULT.setLine(B1left); :}
+			 (BoolConstant) BOOL:B1 {: RESULT=new BoolConstant(B1); RESULT.setLine(B1left); :}
 			 ;
 
 
@@ -302,7 +297,7 @@ Factor ::=  (FactorNum) NUMBER:N1 {: RESULT=new FactorNum(N1); RESULT.setLine(N1
 			|
 			(FactorChar) CHAR_CONST:C1 {: RESULT=new FactorChar(C1); RESULT.setLine(C1left); :}
 			|
-			(FactorBool) BOOL_CONST:B1 {: RESULT=new FactorBool(B1); RESULT.setLine(B1left); :}
+			(FactorBool) BOOL:B1 {: RESULT=new FactorBool(B1); RESULT.setLine(B1left); :}
 			|
 			(FactorNewExpr) NEW Type:T1 LBRACKET Expr:E2 RBRACKET {: RESULT=new FactorNewExpr(T1, E2); RESULT.setLine(T1left); :}
 			|
@@ -316,17 +311,12 @@ Factor ::=  (FactorNum) NUMBER:N1 {: RESULT=new FactorNum(N1); RESULT.setLine(N1
 		    ;
 
 
-Designator ::= (DesignatorEl) DesignatorName:D1 DesignatorElem:D2 {: RESULT=new DesignatorEl(D1, D2); RESULT.setLine(D1left); :}
+Designator ::= (DesignatorArray) DesignatorName:D1 LBRACKET Expr:E2 RBRACKET {: RESULT=new DesignatorArray(D1, E2); RESULT.setLine(D1left); :}
 			   |
-			   (DesignatorIdent) IDENT:I1 DOT IDENT:I2 {: RESULT=new DesignatorIdent(I1, I2); RESULT.setLine(I1left); :}
+			   (DesignatorIdent) IDENT:d {: RESULT=new DesignatorIdent(d); RESULT.setLine(dleft); :}
 			   ;
-
-DesignatorElem ::= (DesElem) LBRACKET Expr:E1 RBRACKET {: RESULT=new DesElem(E1); RESULT.setLine(E1left); :} 
-				   |
-				   (NoDesElem) {: RESULT=new NoDesElem(); :} /* epsilon */
-				   ;
 					
-DesignatorName ::= (DesignatorName) IDENT:I1 {: RESULT=new DesignatorName(I1); RESULT.setLine(I1left); :};
+DesignatorName ::= (DesignatorName) IDENT:d {: RESULT=new DesignatorName(d); RESULT.setLine(dleft); :};
 
 Label ::= (Label) IDENT:I1 {: RESULT=new Label(I1); RESULT.setLine(I1left); :};
 

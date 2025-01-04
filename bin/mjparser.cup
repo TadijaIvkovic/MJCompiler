@@ -63,17 +63,19 @@ terminal LBRACKET, RBRACKET, LARROW, RARROW, EXCL, AMPER, LINE, MAP, DO, WHILE, 
 
 terminal Integer NUMBER ;
 terminal Character CHAR_CONST;
-terminal Integer BOOL_CONST;
+terminal Integer BOOL;
 terminal String IDENT ;
 
 
 nonterminal DeclarationList, ConstDeclList, ConstantList, Constants;
 nonterminal VarDeclList, VarDecl, VarDeclarationList, VarDeclaration, MethodDeclList, MethodDecl, MethodSignature, Type;
-nonterminal FormPars, FormalParamList, FormalParamDecl, StatementList, Statement, Expr;
-nonterminal Term, Unary, Factor, DesignatorStatement, ActPars, ActParamList, Designator, DesignatorName, DesignatorElem, Label, Assignop, Relop, Addop, Mulop, Setop;
+nonterminal FormPars, FormalParamList, FormalParamDecl, StatementList, Statement;
+nonterminal DesignatorStatement, ActPars, ActParamList, Label, Assignop, Relop, Addop, Mulop, Setop;
 nonterminal Condition, CondTerm, CondFact, Matched, Unmatched, Statements, WhileStart, DoWhileEnd, DoWhileStart, ConditionWithStatement;
 
-nonterminal rs.etf.pp1.symboltable.concepts.Obj ProgName, Program;
+nonterminal rs.etf.pp1.symboltable.concepts.Obj ProgName, Program, Designator, DesignatorName;
+
+nonterminal rs.etf.pp1.symboltable.concepts.Struct Unary, Factor, Term, Expr;
 
 Program ::= (Program) PROG ProgName:p DeclarationList LBRACE MethodDeclList RBRACE ;
 
@@ -98,7 +100,7 @@ Constants ::=(NumConstant) NUMBER
 			 | 
 			 (CharConstant) CHAR_CONST 
 			 |
-			 (BoolConstant) BOOL_CONST
+			 (BoolConstant) BOOL
 			 ;
 
 
@@ -264,7 +266,7 @@ Factor ::=  (FactorNum) NUMBER
 			|
 			(FactorChar) CHAR_CONST
 			|
-			(FactorBool) BOOL_CONST
+			(FactorBool) BOOL
 			|
 			(FactorNewExpr) NEW Type LBRACKET Expr RBRACKET
 			|
@@ -278,17 +280,12 @@ Factor ::=  (FactorNum) NUMBER
 		    ;
 
 
-Designator ::= (DesignatorEl) DesignatorName DesignatorElem
+Designator ::= (DesignatorArray) DesignatorName LBRACKET Expr RBRACKET
 			   |
-			   (DesignatorIdent) IDENT DOT IDENT
+			   (DesignatorIdent) IDENT:d
 			   ;
-
-DesignatorElem ::= (DesElem) LBRACKET Expr RBRACKET 
-				   |
-				   (NoDesElem) /* epsilon */
-				   ;
 					
-DesignatorName ::= (DesignatorName) IDENT;
+DesignatorName ::= (DesignatorName) IDENT:d;
 
 Label ::= (Label) IDENT;
 

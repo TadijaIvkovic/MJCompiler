@@ -1,6 +1,6 @@
 // generated with ast extension for cup
 // version 0.8
-// 2/0/2025 18:17:23
+// 4/0/2025 18:36:11
 
 
 package rs.ac.bg.etf.pp1.ast;
@@ -9,18 +9,20 @@ public class DesignatorName implements SyntaxNode {
 
     private SyntaxNode parent;
     private int line;
-    private String I1;
+    public rs.etf.pp1.symboltable.concepts.Obj obj = null;
 
-    public DesignatorName (String I1) {
-        this.I1=I1;
+    private String d;
+
+    public DesignatorName (String d) {
+        this.d=d;
     }
 
-    public String getI1() {
-        return I1;
+    public String getD() {
+        return d;
     }
 
-    public void setI1(String I1) {
-        this.I1=I1;
+    public void setD(String d) {
+        this.d=d;
     }
 
     public SyntaxNode getParent() {
@@ -59,7 +61,7 @@ public class DesignatorName implements SyntaxNode {
         buffer.append(tab);
         buffer.append("DesignatorName(\n");
 
-        buffer.append(" "+tab+I1);
+        buffer.append(" "+tab+d);
         buffer.append("\n");
 
         buffer.append(tab);

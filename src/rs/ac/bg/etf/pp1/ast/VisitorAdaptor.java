@@ -1,6 +1,6 @@
 // generated with ast extension for cup
 // version 0.8
-// 2/0/2025 18:17:23
+// 4/0/2025 18:36:11
 
 
 package rs.ac.bg.etf.pp1.ast;
@@ -16,7 +16,6 @@ public abstract class VisitorAdaptor implements Visitor {
     public void visit(Matched Matched) { }
     public void visit(Relop Relop) { }
     public void visit(Constants Constants) { }
-    public void visit(DesignatorElem DesignatorElem) { }
     public void visit(FormalParamDecl FormalParamDecl) { }
     public void visit(Unary Unary) { }
     public void visit(MethodSignature MethodSignature) { }
@@ -29,8 +28,8 @@ public abstract class VisitorAdaptor implements Visitor {
     public void visit(Condition Condition) { }
     public void visit(VarDeclList VarDeclList) { }
     public void visit(FormalParamList FormalParamList) { }
-    public void visit(VarDeclarationList VarDeclarationList) { }
     public void visit(Expr Expr) { }
+    public void visit(VarDeclarationList VarDeclarationList) { }
     public void visit(ActPars ActPars) { }
     public void visit(DesignatorStatement DesignatorStatement) { }
     public void visit(Statement Statement) { }
@@ -53,10 +52,8 @@ public abstract class VisitorAdaptor implements Visitor {
     public void visit(Assignop Assignop) { visit(); }
     public void visit(Label Label) { visit(); }
     public void visit(DesignatorName DesignatorName) { visit(); }
-    public void visit(NoDesElem NoDesElem) { visit(); }
-    public void visit(DesElem DesElem) { visit(); }
     public void visit(DesignatorIdent DesignatorIdent) { visit(); }
-    public void visit(DesignatorEl DesignatorEl) { visit(); }
+    public void visit(DesignatorArray DesignatorArray) { visit(); }
     public void visit(FactorDesActPars FactorDesActPars) { visit(); }
     public void visit(FactorDes FactorDes) { visit(); }
     public void visit(FactorExpr FactorExpr) { visit(); }

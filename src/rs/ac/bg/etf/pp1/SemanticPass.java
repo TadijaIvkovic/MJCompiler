@@ -251,8 +251,6 @@ public class SemanticPass extends VisitorAdaptor {
     	}
     }
     
-    
-    
     @Override
 	public void visit(Type type) {
 		Obj typeObj = Tab.find(type.getTypeName());
@@ -267,6 +265,50 @@ public class SemanticPass extends VisitorAdaptor {
 		else
 			currentType=typeObj.getType();
     }
-	
+    
+    /* Kontekstni uslovi */
+    
+    @Override
+	public void visit(UnaryMinusFactor unaryMinusFactor) {
+    	//provera uslova za dozvoljenost negiranja
+    	if(unaryMinusFactor.getFactor().struct.equals(Tab.intType)) {
+    		unaryMinusFactor.struct=Tab.intType;
+    	}
+    	else {
+			report_error("Negacija vrednosti koja nije broj ", unaryMinusFactor);
+			unaryMinusFactor.struct=Tab.noType;
+    	}
+    }
+    
+    @Override
+	public void visit(UnaryFactor unaryFactor) {
+
+    	unaryFactor.struct=unaryFactor.getFactor().struct;
+    	
+    }
+    
+    @Override
+	public void visit(FactorBool factorBool) {
+
+    	factorBool.struct=boolType;
+
+    	
+    }
+    
+    @Override
+	public void visit(FactorChar factorChar) {
+
+    	factorChar.struct=Tab.charType;
+//    	factorChar.struct=boolType;
+
+    	
+    }
+
+    @Override
+	public void visit(FactorNum factorNum) {
+
+    	factorNum.struct=Tab.intType;
+    	
+    }
     
 }

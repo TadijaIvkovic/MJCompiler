@@ -1,7 +1,0 @@
-INFO  13:08:11,556 - Compiling source file: C:\Users\The Workstation\eclipse-workspace\MJCompiler\test\program3.mj
-INFO  13:08:11,584 - #2 program
-INFO  13:08:11,584 - #47 test301
-INFO  13:08:11,584 - #24 union
-ERROR 13:08:11,584 - 
-Sintaksna greska na liniji 4
-ERROR 13:08:11,584 - Fatalna greska, parsiranje se ne moze nastaviti na liniji 4
