@@ -1,0 +1,183 @@
+INFO  15:11:31,238 - Compiling source file: C:\Users\Lenovo\Desktop\MJCompilerGithub\test\testing.mj
+INFO  15:11:31,277 - #2 program
+INFO  15:11:31,278 - #47 Test
+INFO  15:11:31,278 - #6 const
+INFO  15:11:31,279 - #47 int
+INFO  15:11:31,279 - #47 pi
+INFO  15:11:31,282 - #23 =
+INFO  15:11:31,283 - #44 3
+INFO  15:11:31,283 - #27 ,
+INFO  15:11:31,285 - #47 g
+INFO  15:11:31,286 - #23 =
+INFO  15:11:31,286 - #44 11
+INFO  15:11:31,286 - #26 ;
+INFO  15:11:31,286 - #47 char
+INFO  15:11:31,287 - #47 x
+INFO  15:11:31,287 - #27 ,
+INFO  15:11:31,289 - #47 y
+INFO  15:11:31,289 - #33 [
+INFO  15:11:31,289 - #34 ]
+INFO  15:11:31,289 - #26 ;
+INFO  15:11:31,289 - #6 const
+INFO  15:11:31,291 - #47 bool
+INFO  15:11:31,291 - #47 t
+INFO  15:11:31,291 - #23 =
+INFO  15:11:31,291 - #46 1
+INFO  15:11:31,291 - #26 ;
+INFO  15:11:31,291 - #31 {
+INFO  15:11:31,292 - #12 void
+INFO  15:11:31,292 - #47 main
+INFO  15:11:31,292 - #29 (
+INFO  15:11:31,292 - #30 )
+INFO  15:11:31,293 - #47 int
+INFO  15:11:31,294 - #47 a
+INFO  15:11:31,294 - #27 ,
+INFO  15:11:31,294 - #47 b
+INFO  15:11:31,294 - #33 [
+INFO  15:11:31,294 - #34 ]
+INFO  15:11:31,294 - #26 ;
+INFO  15:11:31,295 - #47 int
+INFO  15:11:31,295 - #47 x
+INFO  15:11:31,295 - #33 [
+INFO  15:11:31,295 - #34 ]
+INFO  15:11:31,295 - #27 ,
+INFO  15:11:31,295 - #47 y
+INFO  15:11:31,296 - #26 ;
+INFO  15:11:31,296 - #31 {
+INFO  15:11:31,296 - #9 print
+INFO  15:11:31,298 - #29 (
+INFO  15:11:31,299 - #47 pik
+INFO  15:11:31,299 - #30 )
+INFO  15:11:31,299 - #26 ;
+INFO  15:11:31,299 - #32 }
+INFO  15:11:31,299 - #32 }
+INFO  15:11:31,304 - Program(
+  ProgName(
+   Test
+  ) [ProgName]
+  ConstDecLists(
+    ConstDeclList(
+      Type(
+       int
+      ) [Type]
+      ConDecl(
+       pi
+        NumConstant(
+         3
+        ) [NumConstant]
+      ) [ConDecl]
+      ConstList(
+        NoConstList(
+        ) [NoConstList]
+        ConDecl(
+         g
+          NumConstant(
+           11
+          ) [NumConstant]
+        ) [ConDecl]
+      ) [ConstList]
+    ) [ConstDeclList]
+    VarDecLists(
+      VarDecl(
+        Type(
+         char
+        ) [Type]
+        VarDeclaratList(
+          VarDeclarat(
+            VarDeclarationVar(
+             x
+            ) [VarDeclarationVar]
+          ) [VarDeclarat]
+          VarDeclarationArray(
+           y
+          ) [VarDeclarationArray]
+        ) [VarDeclaratList]
+      ) [VarDecl]
+      ConstDecLists(
+        ConstDeclList(
+          Type(
+           bool
+          ) [Type]
+          ConDecl(
+           t
+            BoolConstant(
+             1
+            ) [BoolConstant]
+          ) [ConDecl]
+          NoConstList(
+          ) [NoConstList]
+        ) [ConstDeclList]
+        NoDecLists(
+        ) [NoDecLists]
+      ) [ConstDecLists]
+    ) [VarDecLists]
+  ) [ConstDecLists]
+  MethodDeclList(
+    MethodDecl(
+      NoMethTypeName(
+       main
+      ) [NoMethTypeName]
+      NoFormalPars(
+      ) [NoFormalPars]
+      VarDeclarList(
+        VarDeclarList(
+          NoVarDeclarList(
+          ) [NoVarDeclarList]
+          VarDecl(
+            Type(
+             int
+            ) [Type]
+            VarDeclaratList(
+              VarDeclarat(
+                VarDeclarationVar(
+                 a
+                ) [VarDeclarationVar]
+              ) [VarDeclarat]
+              VarDeclarationArray(
+               b
+              ) [VarDeclarationArray]
+            ) [VarDeclaratList]
+          ) [VarDecl]
+        ) [VarDeclarList]
+        VarDecl(
+          Type(
+           int
+          ) [Type]
+          VarDeclaratList(
+            VarDeclarat(
+              VarDeclarationArray(
+               x
+              ) [VarDeclarationArray]
+            ) [VarDeclarat]
+            VarDeclarationVar(
+             y
+            ) [VarDeclarationVar]
+          ) [VarDeclaratList]
+        ) [VarDecl]
+      ) [VarDeclarList]
+      StmtList(
+        NoStmtList(
+        ) [NoStmtList]
+        StatementSingle(
+          PrintStmt(
+            ExprTerm(
+              TermFactor(
+                UnaryFactor(
+                  FactorDes(
+                    DesignatorVar(
+                     pik
+                    ) [DesignatorVar]
+                  ) [FactorDes]
+                ) [UnaryFactor]
+              ) [TermFactor]
+            ) [ExprTerm]
+          ) [PrintStmt]
+        ) [StatementSingle]
+      ) [StmtList]
+    ) [MethodDecl]
+  ) [MethodDeclList]
+) [Program]
+INFO  15:11:31,305 - =====================================================================
+ERROR 15:11:31,310 - Pristup nedefinisanoj promenljivoj: pik na liniji 15
+INFO  15:11:31,310 - =====================================================================
+ERROR 15:11:31,310 - Parsiranje NIJE uspesno zavrseno!

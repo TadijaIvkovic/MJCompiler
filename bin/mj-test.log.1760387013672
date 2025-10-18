@@ -1,0 +1,60 @@
+INFO  22:23:15,432 - Compiling source file: C:\Users\Lenovo\Desktop\MJCompilerGithub\test\testing.mj
+INFO  22:23:15,460 - #2 program
+INFO  22:23:15,460 - #47 Testiranje
+INFO  22:23:15,460 - #6 const
+INFO  22:23:15,461 - #47 int
+INFO  22:23:15,461 - #47 pi
+INFO  22:23:15,462 - #23 =
+INFO  22:23:15,462 - #44 3
+INFO  22:23:15,462 - #26 ;
+INFO  22:23:15,464 - #31 {
+INFO  22:23:15,465 - #12 void
+INFO  22:23:15,465 - #47 main
+INFO  22:23:15,467 - #29 (
+INFO  22:23:15,468 - #30 )
+INFO  22:23:15,468 - #31 {
+INFO  22:23:15,470 - #32 }
+INFO  22:23:15,470 - #32 }
+INFO  22:23:15,473 - Program(
+  ProgName(
+   Testiranje
+  ) [ProgName]
+  ConstDecLists(
+    ConstDeclList(
+      Type(
+       int
+      ) [Type]
+      ConDecl(
+       pi
+        NumConstant(
+         3
+        ) [NumConstant]
+      ) [ConDecl]
+      NoConstList(
+      ) [NoConstList]
+    ) [ConstDeclList]
+    NoDecLists(
+    ) [NoDecLists]
+  ) [ConstDecLists]
+  MethDeclList(
+    NoMethDeclList(
+    ) [NoMethDeclList]
+    MethodDecl(
+      NoMethTypeName(
+       main
+      ) [NoMethTypeName]
+      NoFormalPars(
+      ) [NoFormalPars]
+      NoVarDeclarList(
+      ) [NoVarDeclarList]
+      NoStmtList(
+      ) [NoStmtList]
+    ) [MethodDecl]
+  ) [MethDeclList]
+) [Program]
+INFO  22:23:15,473 - =====================================================================
+ERROR 22:23:15,493 - Nepostojeci tip podataka: int na liniji 3
+ERROR 22:23:15,493 - Dvostruka definicija const: pi na liniji 3
+INFO  22:23:15,493 - Posecen cvor program na liniji 1
+INFO  22:23:15,493 - =====================================================================
+ERROR 22:23:15,494 - Parsiranje NIJE uspesno zavrseno!

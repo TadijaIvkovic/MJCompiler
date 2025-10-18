@@ -68,14 +68,17 @@ terminal String IDENT ;
 
 
 nonterminal DeclarationList, ConstDeclList, ConstantList, Constants;
-nonterminal VarDeclList, VarDecl, VarDeclarationList, VarDeclaration, MethodDeclList, MethodDecl, MethodSignature, Type;
-nonterminal FormPars, FormalParamList, FormalParamDecl, StatementList, Statement;
-nonterminal DesignatorStatement, ActPars, ActParamList, Label, Assignop, Relop, Addop, Mulop, Setop;
-nonterminal Condition, CondTerm, CondFact, Matched, Unmatched, Statements, WhileStart, DoWhileEnd, DoWhileStart, ConditionWithStatement;
+nonterminal VarDeclList, VarDecl, VarDeclarationList, VarDeclaration, MethodDeclList, MethodDecl, MethodSignature;
+nonterminal  StatementList, Statement;
+nonterminal DesignatorStatement, ActPars, ActParamList, Assignop, Addop, Mulop, Setop;
+nonterminal SingleStatement, Statements;
+/* nonterminal Condition, CondTerm, CondFact, Matched, Unmatched, Statements, WhileStart, DoWhileEnd, DoWhileStart, ConditionWithStatement; */
+nonterminal ConDecl;
 
-nonterminal rs.etf.pp1.symboltable.concepts.Obj ProgName, Program, Designator, DesignatorName;
 
-nonterminal rs.etf.pp1.symboltable.concepts.Struct Unary, Factor, Term, Expr;
+nonterminal rs.etf.pp1.symboltable.concepts.Obj ProgName, Program, Designator, DesignatorArrayName;
+
+nonterminal rs.etf.pp1.symboltable.concepts.Struct Unary, Factor, Term, TermList, Expr, ExprList, Type;
 
 Program ::= (Program) PROG ProgName:p DeclarationList LBRACE MethodDeclList RBRACE ;
 
@@ -89,9 +92,11 @@ DeclarationList ::= (ConstDecLists) ConstDeclList DeclarationList
 				     (NoDecLists) /* epsilon */
 				    ;
 
-ConstDeclList ::= (ConstDeclList) CONST Type IDENT:constDecl EQUAL Constants ConstantList SEMI;
+ConstDeclList ::= (ConstDeclList) CONST Type ConDecl ConstantList SEMI;
 
-ConstantList ::= (ConstList) ConstantList COMMA IDENT:constDecl2 EQUAL Constants
+ConDecl ::= (ConDecl) IDENT:constDecl EQUAL Constants;
+
+ConstantList ::= (ConstList) ConstantList COMMA ConDecl
 				 |
 				 (NoConstList) /* epsilon */
 				 ;
@@ -116,60 +121,31 @@ VarDeclarationList ::=  (VarDeclaratList) VarDeclarationList  COMMA VarDeclarati
 					    (VarDeclarat) VarDeclaration
 						;
 					
-VarDeclaration ::= (VarDeclarationSingle) IDENT:varDeclaration 
+VarDeclaration ::= (VarDeclarationVar) IDENT:varDeclarationV
 					|
-					(VarDeclarationArray) IDENT:varDeclaration LBRACKET RBRACKET
+					(VarDeclarationArray) IDENT:varDeclarationA LBRACKET RBRACKET
 					;
 
-MethodDeclList ::=  (MethDeclList) MethodDeclList MethodDecl
-					|
-					(NoMethDeclList) /* epsilon */
-					;
+MethodDeclList ::=  (MethodDeclList)  MethodDecl ;
 
-MethodDecl ::= (MethodDecl)  MethodSignature LPAREN FormPars RPAREN VarDeclList LBRACE StatementList RBRACE ;
+MethodDecl ::= (MethodDecl)  MethodSignature LPAREN RPAREN VarDeclList LBRACE StatementList RBRACE ;
 
-MethodSignature ::= (MethTypeName) Type:retType IDENT:methName
-					|
-					(NoMethTypeName) VOID IDENT:methName
-					;
-
-FormPars ::= (FormalPars) FormalParamList 
-			 |
-			 (NoFormalPars)/* epsilon */ ;
-
-
-
-FormalParamList ::= (FormalParsList) FormalParamList  COMMA FormalParamDecl
-					|
-					(FormalParsDecl) FormalParamDecl
-					;
+MethodSignature ::=  (MethodSignature) VOID IDENT:methName;
 					
-FormalParamDecl ::= (FormalParamSingle) Type IDENT:fparDeclaration
-					|
-					(FormalParamArray) Type IDENT:fparDeclaration LBRACKET RBRACKET
-					;
-
-
 Type ::= (Type) IDENT:typeName ;
 
-Statements ::= (Statements) LBRACE StatementList RBRACE ;
-		 
 StatementList ::= (StmtList)  StatementList Statement 
 				  |
 				  (NoStmtList) /* epsilon */
 				  ;
 
-Statement ::= (MatchedStmt) Matched
-		      |
-		      (UnmatchedStmt) Unmatched
-		      ; 
+Statement ::=  (StatementSingle) SingleStatement
+				|
+				(StatementMultiple)Statements
+				;
 
-Unmatched ::= (UnmatchedIf) IF LPAREN Condition RPAREN Statement
-		 	  |
-		 	  (UnmatchedIfElse) IF LPAREN Condition RPAREN Matched ELSE Unmatched
-		 	  ;
-				  
-Matched ::=   (PrintStmt) PRINT LPAREN Expr RPAREN SEMI
+
+SingleStatement ::= (PrintStmt) PRINT LPAREN Expr RPAREN SEMI
   			  |
   			  (ErrorStmt) error SEMI:l
   			  {: parser.report_error("Izvrsen oporavak do ; u liniji " + lleft, null); :}
@@ -180,34 +156,11 @@ Matched ::=   (PrintStmt) PRINT LPAREN Expr RPAREN SEMI
 			  |
 			  (DesStmt) DesignatorStatement SEMI
 			  |
-			  (BreakStmt) BREAK SEMI
-			  |
-			  (ContinueStmt) CONTINUE SEMI
-			  |
-			  (ReturnStmt) RETURN Expr SEMI
-			  |
-			  (ReturnEmptyStmt) RETURN SEMI
-			  |
-			  (DoWhileStatementWithStmt) DO DoWhileStart Statement WHILE WhileStart LPAREN ConditionWithStatement RPAREN DoWhileEnd SEMI
-			  |
-			  (IfElseStmt) IF LPAREN Condition RPAREN Matched ELSE Matched
-			  |
-			  (BracedStmt) Statements
+			  (ReturnStmt) RETURN SEMI
 			  ;
+			
+Statements::= (Statements) LBRACE StatementList RBRACE;
 			  
-ConditionWithStatement ::=  (CondWithStatement) Condition COMMA DesignatorStatement
-							|
-							(CondSolo)Condition
-							|
-							(WithoutCond) /* epsilon */
-							;
-			  
-DoWhileStart ::= (DoWhileStart) /* epsilon */;
-
-DoWhileEnd ::= (DoWhileEnd) /* epsilon */;
-
-WhileStart ::= (WhileStart) /* epsilon */;
-
 
 DesignatorStatement ::= (DesginatorAssignop) Designator Assignop Expr
 						|
@@ -229,30 +182,18 @@ ActParamList ::= (ActParamsList) ActParamList COMMA Expr
 				 |
 				 (ActParamsExpr) Expr
 				 ;
-		
-Condition ::=   (ConditionList)Condition LINE LINE CondTerm
-				|
-				(ConditionTerm) CondTerm
-				;
-
-CondTerm ::= (CondTermList) CondTerm AMPER AMPER CondFact
-			 |
-			 (ConditionFact) CondFact
-			 ;
-			
-CondFact ::= (Cond) Expr
-			 |
-			 (CondExpr) Expr Relop Expr
-			 ;
-		
-Expr ::= (ExprAddop) Expr:te Addop Term:t
+	
+Expr ::= (Expr) ExprList;	
+	
+ExprList ::= (ExprAddopList) ExprList:te Addop Term:t
 		 |
 		 (ExprTerm) Term:t
-		 |
-		 (ExprMap) Designator MAP Designator
 		 ;
+		
+		
+Term ::= (Term) TermList;
 
-Term ::= (TermMulop) Term:te Mulop Unary:u
+TermList ::= (TermMulopList) TermList:te Mulop Unary:u
 		 |
 		 (TermFactor) Unary:u
 		 ;
@@ -270,40 +211,23 @@ Factor ::=  (FactorNum) NUMBER
 			|
 			(FactorNewExpr) NEW Type LBRACKET Expr RBRACKET
 			|
-			(FactorNewActPars) NEW Type LPAREN ActPars RPAREN
-			|
 			(FactorExpr) LPAREN Expr RPAREN
 			|
 		    (FactorDes) Designator:d
-		    |
-		    (FactorDesActPars) Designator LPAREN ActPars RPAREN
+		   	|
+		    (FactorMeth) Designator LPAREN ActPars RPAREN
 		    ;
 
 
-Designator ::= (DesignatorArray) DesignatorName LBRACKET Expr RBRACKET
+Designator ::= (DesignatorArray) DesignatorArrayName LBRACKET Expr RBRACKET
 			   |
-			   (DesignatorIdent) IDENT:d
+			   (DesignatorVar) IDENT:d
 			   ;
 					
-DesignatorName ::= (DesignatorName) IDENT:d;
-
-Label ::= (Label) IDENT;
+DesignatorArrayName ::= (DesignatorArrayName) IDENT:d;
 
 Assignop ::= (Assignop) EQUAL;
 
-
-Relop ::= (RelopEqual) EQUAL EQUAL
-		|
-		 (RelopNotEqual) EXCL EQUAL
-		|
-		(RelopRArrow) RARROW
-		|
-		(RelopLArrow) LARROW
-		|
-		(RelopLess) LARROW EQUAL
-		|
-		(RelopMore) RARROW EQUAL
-		;
 
 Addop ::= (AddopPlus)  PLUS 
 		  |

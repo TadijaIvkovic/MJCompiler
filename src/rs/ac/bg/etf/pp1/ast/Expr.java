@@ -1,17 +1,30 @@
 // generated with ast extension for cup
 // version 0.8
-// 4/0/2025 18:36:11
+// 18/9/2025 18:25:34
 
 
 package rs.ac.bg.etf.pp1.ast;
 
-public abstract class Expr implements SyntaxNode {
+public class Expr implements SyntaxNode {
 
     private SyntaxNode parent;
-
     private int line;
-
     public rs.etf.pp1.symboltable.concepts.Struct struct = null;
+
+    private ExprList ExprList;
+
+    public Expr (ExprList ExprList) {
+        this.ExprList=ExprList;
+        if(ExprList!=null) ExprList.setParent(this);
+    }
+
+    public ExprList getExprList() {
+        return ExprList;
+    }
+
+    public void setExprList(ExprList ExprList) {
+        this.ExprList=ExprList;
+    }
 
     public SyntaxNode getParent() {
         return parent;
@@ -29,11 +42,37 @@ public abstract class Expr implements SyntaxNode {
         this.line=line;
     }
 
-    public abstract void accept(Visitor visitor);
-    public abstract void childrenAccept(Visitor visitor);
-    public abstract void traverseTopDown(Visitor visitor);
-    public abstract void traverseBottomUp(Visitor visitor);
+    public void accept(Visitor visitor) {
+        visitor.visit(this);
+    }
 
-    public String toString() { return toString(""); }
-    public abstract String toString(String tab);
+    public void childrenAccept(Visitor visitor) {
+        if(ExprList!=null) ExprList.accept(visitor);
+    }
+
+    public void traverseTopDown(Visitor visitor) {
+        accept(visitor);
+        if(ExprList!=null) ExprList.traverseTopDown(visitor);
+    }
+
+    public void traverseBottomUp(Visitor visitor) {
+        if(ExprList!=null) ExprList.traverseBottomUp(visitor);
+        accept(visitor);
+    }
+
+    public String toString(String tab) {
+        StringBuffer buffer=new StringBuffer();
+        buffer.append(tab);
+        buffer.append("Expr(\n");
+
+        if(ExprList!=null)
+            buffer.append(ExprList.toString("  "+tab));
+        else
+            buffer.append(tab+"  null");
+        buffer.append("\n");
+
+        buffer.append(tab);
+        buffer.append(") [Expr]");
+        return buffer.toString();
+    }
 }

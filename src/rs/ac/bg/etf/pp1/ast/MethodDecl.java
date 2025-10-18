@@ -1,6 +1,6 @@
 // generated with ast extension for cup
 // version 0.8
-// 4/0/2025 18:36:11
+// 18/9/2025 18:25:34
 
 
 package rs.ac.bg.etf.pp1.ast;
@@ -10,15 +10,12 @@ public class MethodDecl implements SyntaxNode {
     private SyntaxNode parent;
     private int line;
     private MethodSignature MethodSignature;
-    private FormPars FormPars;
     private VarDeclList VarDeclList;
     private StatementList StatementList;
 
-    public MethodDecl (MethodSignature MethodSignature, FormPars FormPars, VarDeclList VarDeclList, StatementList StatementList) {
+    public MethodDecl (MethodSignature MethodSignature, VarDeclList VarDeclList, StatementList StatementList) {
         this.MethodSignature=MethodSignature;
         if(MethodSignature!=null) MethodSignature.setParent(this);
-        this.FormPars=FormPars;
-        if(FormPars!=null) FormPars.setParent(this);
         this.VarDeclList=VarDeclList;
         if(VarDeclList!=null) VarDeclList.setParent(this);
         this.StatementList=StatementList;
@@ -31,14 +28,6 @@ public class MethodDecl implements SyntaxNode {
 
     public void setMethodSignature(MethodSignature MethodSignature) {
         this.MethodSignature=MethodSignature;
-    }
-
-    public FormPars getFormPars() {
-        return FormPars;
-    }
-
-    public void setFormPars(FormPars FormPars) {
-        this.FormPars=FormPars;
     }
 
     public VarDeclList getVarDeclList() {
@@ -79,7 +68,6 @@ public class MethodDecl implements SyntaxNode {
 
     public void childrenAccept(Visitor visitor) {
         if(MethodSignature!=null) MethodSignature.accept(visitor);
-        if(FormPars!=null) FormPars.accept(visitor);
         if(VarDeclList!=null) VarDeclList.accept(visitor);
         if(StatementList!=null) StatementList.accept(visitor);
     }
@@ -87,14 +75,12 @@ public class MethodDecl implements SyntaxNode {
     public void traverseTopDown(Visitor visitor) {
         accept(visitor);
         if(MethodSignature!=null) MethodSignature.traverseTopDown(visitor);
-        if(FormPars!=null) FormPars.traverseTopDown(visitor);
         if(VarDeclList!=null) VarDeclList.traverseTopDown(visitor);
         if(StatementList!=null) StatementList.traverseTopDown(visitor);
     }
 
     public void traverseBottomUp(Visitor visitor) {
         if(MethodSignature!=null) MethodSignature.traverseBottomUp(visitor);
-        if(FormPars!=null) FormPars.traverseBottomUp(visitor);
         if(VarDeclList!=null) VarDeclList.traverseBottomUp(visitor);
         if(StatementList!=null) StatementList.traverseBottomUp(visitor);
         accept(visitor);
@@ -107,12 +93,6 @@ public class MethodDecl implements SyntaxNode {
 
         if(MethodSignature!=null)
             buffer.append(MethodSignature.toString("  "+tab));
-        else
-            buffer.append(tab+"  null");
-        buffer.append("\n");
-
-        if(FormPars!=null)
-            buffer.append(FormPars.toString("  "+tab));
         else
             buffer.append(tab+"  null");
         buffer.append("\n");

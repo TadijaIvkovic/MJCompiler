@@ -1,24 +1,24 @@
 // generated with ast extension for cup
 // version 0.8
-// 4/0/2025 18:36:11
+// 18/9/2025 18:25:34
 
 
 package rs.ac.bg.etf.pp1.ast;
 
 public class VarDeclarationArray extends VarDeclaration {
 
-    private String varDeclaration;
+    private String varDeclarationA;
 
-    public VarDeclarationArray (String varDeclaration) {
-        this.varDeclaration=varDeclaration;
+    public VarDeclarationArray (String varDeclarationA) {
+        this.varDeclarationA=varDeclarationA;
     }
 
-    public String getVarDeclaration() {
-        return varDeclaration;
+    public String getVarDeclarationA() {
+        return varDeclarationA;
     }
 
-    public void setVarDeclaration(String varDeclaration) {
-        this.varDeclaration=varDeclaration;
+    public void setVarDeclarationA(String varDeclarationA) {
+        this.varDeclarationA=varDeclarationA;
     }
 
     public void accept(Visitor visitor) {
@@ -41,7 +41,7 @@ public class VarDeclarationArray extends VarDeclaration {
         buffer.append(tab);
         buffer.append("VarDeclarationArray(\n");
 
-        buffer.append(" "+tab+varDeclaration);
+        buffer.append(" "+tab+varDeclarationA);
         buffer.append("\n");
 
         buffer.append(tab);

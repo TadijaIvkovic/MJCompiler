@@ -1,0 +1,165 @@
+INFO  17:43:57,541 - Compiling source file: C:\Users\Lenovo\Desktop\MJCompilerGithub\test\testing.mj
+INFO  17:43:57,581 - #2 program
+INFO  17:43:57,581 - #47 Testiranje
+INFO  17:43:57,581 - #6 const
+INFO  17:43:57,582 - #47 bool
+INFO  17:43:57,582 - #47 nekiBool
+INFO  17:43:57,582 - #23 =
+INFO  17:43:57,583 - #46 1
+INFO  17:43:57,583 - #26 ;
+INFO  17:43:57,585 - #6 const
+INFO  17:43:57,585 - #47 int
+INFO  17:43:57,586 - #47 pi
+INFO  17:43:57,586 - #23 =
+INFO  17:43:57,586 - #44 2
+INFO  17:43:57,587 - #26 ;
+INFO  17:43:57,588 - #47 char
+INFO  17:43:57,588 - #47 x
+INFO  17:43:57,588 - #27 ,
+INFO  17:43:57,588 - #47 y
+INFO  17:43:57,588 - #33 [
+INFO  17:43:57,588 - #34 ]
+INFO  17:43:57,589 - #26 ;
+INFO  17:43:57,589 - #47 int
+INFO  17:43:57,589 - #47 qwe
+INFO  17:43:57,589 - #27 ,
+INFO  17:43:57,589 - #47 qwer
+INFO  17:43:57,589 - #27 ,
+INFO  17:43:57,590 - #47 qwert
+INFO  17:43:57,590 - #26 ;
+INFO  17:43:57,590 - #31 {
+INFO  17:43:57,590 - #47 int
+INFO  17:43:57,592 - #47 maiaan
+INFO  17:43:57,592 - #29 (
+INFO  17:43:57,592 - #30 )
+INFO  17:43:57,592 - #47 int
+INFO  17:43:57,593 - #47 x
+INFO  17:43:57,593 - #27 ,
+INFO  17:43:57,593 - #47 y
+INFO  17:43:57,593 - #33 [
+INFO  17:43:57,593 - #34 ]
+INFO  17:43:57,593 - #27 ,
+INFO  17:43:57,593 - #47 a
+INFO  17:43:57,593 - #26 ;
+INFO  17:43:57,593 - #31 {
+INFO  17:43:57,594 - #32 }
+INFO  17:43:57,594 - #32 }
+INFO  17:43:57,599 - Program(
+  ProgName(
+   Testiranje
+  ) [ProgName]
+  ConstDecLists(
+    ConstDeclList(
+      Type(
+       bool
+      ) [Type]
+      ConDecl(
+       nekiBool
+        BoolConstant(
+         1
+        ) [BoolConstant]
+      ) [ConDecl]
+      NoConstList(
+      ) [NoConstList]
+    ) [ConstDeclList]
+    ConstDecLists(
+      ConstDeclList(
+        Type(
+         int
+        ) [Type]
+        ConDecl(
+         pi
+          NumConstant(
+           2
+          ) [NumConstant]
+        ) [ConDecl]
+        NoConstList(
+        ) [NoConstList]
+      ) [ConstDeclList]
+      VarDecLists(
+        VarDecl(
+          Type(
+           char
+          ) [Type]
+          VarDeclaratList(
+            VarDeclarat(
+              VarDeclarationVar(
+               x
+              ) [VarDeclarationVar]
+            ) [VarDeclarat]
+            VarDeclarationArray(
+             y
+            ) [VarDeclarationArray]
+          ) [VarDeclaratList]
+        ) [VarDecl]
+        VarDecLists(
+          VarDecl(
+            Type(
+             int
+            ) [Type]
+            VarDeclaratList(
+              VarDeclaratList(
+                VarDeclarat(
+                  VarDeclarationVar(
+                   qwe
+                  ) [VarDeclarationVar]
+                ) [VarDeclarat]
+                VarDeclarationVar(
+                 qwer
+                ) [VarDeclarationVar]
+              ) [VarDeclaratList]
+              VarDeclarationVar(
+               qwert
+              ) [VarDeclarationVar]
+            ) [VarDeclaratList]
+          ) [VarDecl]
+          NoDecLists(
+          ) [NoDecLists]
+        ) [VarDecLists]
+      ) [VarDecLists]
+    ) [ConstDecLists]
+  ) [ConstDecLists]
+  MethDeclList(
+    NoMethDeclList(
+    ) [NoMethDeclList]
+    MethodDecl(
+      MethTypeName(
+        Type(
+         int
+        ) [Type]
+       maiaan
+      ) [MethTypeName]
+      NoFormalPars(
+      ) [NoFormalPars]
+      VarDeclarList(
+        NoVarDeclarList(
+        ) [NoVarDeclarList]
+        VarDecl(
+          Type(
+           int
+          ) [Type]
+          VarDeclaratList(
+            VarDeclaratList(
+              VarDeclarat(
+                VarDeclarationVar(
+                 x
+                ) [VarDeclarationVar]
+              ) [VarDeclarat]
+              VarDeclarationArray(
+               y
+              ) [VarDeclarationArray]
+            ) [VarDeclaratList]
+            VarDeclarationVar(
+             a
+            ) [VarDeclarationVar]
+          ) [VarDeclaratList]
+        ) [VarDecl]
+      ) [VarDeclarList]
+      NoStmtList(
+      ) [NoStmtList]
+    ) [MethodDecl]
+  ) [MethDeclList]
+) [Program]
+INFO  17:43:57,599 - =====================================================================
+INFO  17:43:57,621 - =====================================================================
+INFO  17:43:57,622 - Parsiranje uspesno zavrseno!

@@ -1,15 +1,28 @@
 // generated with ast extension for cup
 // version 0.8
-// 4/0/2025 18:36:11
+// 18/9/2025 18:25:34
 
 
 package rs.ac.bg.etf.pp1.ast;
 
-public abstract class MethodDeclList implements SyntaxNode {
+public class MethodDeclList implements SyntaxNode {
 
     private SyntaxNode parent;
-
     private int line;
+    private MethodDecl MethodDecl;
+
+    public MethodDeclList (MethodDecl MethodDecl) {
+        this.MethodDecl=MethodDecl;
+        if(MethodDecl!=null) MethodDecl.setParent(this);
+    }
+
+    public MethodDecl getMethodDecl() {
+        return MethodDecl;
+    }
+
+    public void setMethodDecl(MethodDecl MethodDecl) {
+        this.MethodDecl=MethodDecl;
+    }
 
     public SyntaxNode getParent() {
         return parent;
@@ -27,11 +40,37 @@ public abstract class MethodDeclList implements SyntaxNode {
         this.line=line;
     }
 
-    public abstract void accept(Visitor visitor);
-    public abstract void childrenAccept(Visitor visitor);
-    public abstract void traverseTopDown(Visitor visitor);
-    public abstract void traverseBottomUp(Visitor visitor);
+    public void accept(Visitor visitor) {
+        visitor.visit(this);
+    }
 
-    public String toString() { return toString(""); }
-    public abstract String toString(String tab);
+    public void childrenAccept(Visitor visitor) {
+        if(MethodDecl!=null) MethodDecl.accept(visitor);
+    }
+
+    public void traverseTopDown(Visitor visitor) {
+        accept(visitor);
+        if(MethodDecl!=null) MethodDecl.traverseTopDown(visitor);
+    }
+
+    public void traverseBottomUp(Visitor visitor) {
+        if(MethodDecl!=null) MethodDecl.traverseBottomUp(visitor);
+        accept(visitor);
+    }
+
+    public String toString(String tab) {
+        StringBuffer buffer=new StringBuffer();
+        buffer.append(tab);
+        buffer.append("MethodDeclList(\n");
+
+        if(MethodDecl!=null)
+            buffer.append(MethodDecl.toString("  "+tab));
+        else
+            buffer.append(tab+"  null");
+        buffer.append("\n");
+
+        buffer.append(tab);
+        buffer.append(") [MethodDeclList]");
+        return buffer.toString();
+    }
 }

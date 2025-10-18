@@ -1,0 +1,23 @@
+INFO  14:40:47,951 - Compiling source file: C:\Users\Lenovo\Desktop\MJCompilerGithub\test\testing.mj
+INFO  14:40:48,016 - #2 program
+INFO  14:40:48,017 - #47 Testiranje
+INFO  14:40:48,017 - #6 const
+INFO  14:40:48,019 - #47 int
+INFO  14:40:48,021 - #47 pi
+INFO  14:40:48,023 - #23 =
+INFO  14:40:48,024 - #44 3
+INFO  14:40:48,025 - #26 ;
+INFO  14:40:48,027 - #6 const
+INFO  14:40:48,029 - #47 int
+INFO  14:40:48,030 - #47 g
+INFO  14:40:48,031 - #23 =
+INFO  14:40:48,033 - #44 5
+INFO  14:40:48,034 - #26 ;
+INFO  14:40:48,035 - #6 const
+INFO  14:40:48,035 - #47 char
+INFO  14:40:48,036 - #47 c
+INFO  14:40:48,036 - #23 =
+INFO  14:40:48,036 - #26 ;
+ERROR 14:40:48,036 - 
+Sintaksna greska na liniji 5
+ERROR 14:40:48,036 - Fatalna greska, parsiranje se ne moze nastaviti na liniji 5

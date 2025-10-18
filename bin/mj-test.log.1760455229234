@@ -1,0 +1,150 @@
+INFO  17:09:39,074 - Compiling source file: C:\Users\Lenovo\Desktop\MJCompilerGithub\test\testing.mj
+INFO  17:09:39,111 - #2 program
+INFO  17:09:39,111 - #47 Testiranje
+INFO  17:09:39,111 - #6 const
+INFO  17:09:39,111 - #47 bool
+INFO  17:09:39,111 - #47 nekiBool
+INFO  17:09:39,112 - #23 =
+INFO  17:09:39,112 - #46 1
+INFO  17:09:39,112 - #26 ;
+INFO  17:09:39,114 - #6 const
+INFO  17:09:39,115 - #47 int
+INFO  17:09:39,115 - #47 pi
+INFO  17:09:39,115 - #23 =
+INFO  17:09:39,115 - #44 2
+INFO  17:09:39,116 - #26 ;
+INFO  17:09:39,116 - #47 char
+INFO  17:09:39,116 - #47 x
+INFO  17:09:39,116 - #27 ,
+INFO  17:09:39,117 - #47 y
+INFO  17:09:39,117 - #33 [
+INFO  17:09:39,117 - #34 ]
+INFO  17:09:39,117 - #26 ;
+INFO  17:09:39,117 - #47 int
+INFO  17:09:39,118 - #47 qwe
+INFO  17:09:39,118 - #27 ,
+INFO  17:09:39,118 - #47 qwer
+INFO  17:09:39,118 - #27 ,
+INFO  17:09:39,118 - #47 qwert
+INFO  17:09:39,118 - #26 ;
+INFO  17:09:39,118 - #31 {
+INFO  17:09:39,119 - #47 int
+INFO  17:09:39,120 - #47 main
+INFO  17:09:39,120 - #29 (
+INFO  17:09:39,120 - #30 )
+INFO  17:09:39,121 - #47 int
+INFO  17:09:39,121 - #47 x
+INFO  17:09:39,121 - #26 ;
+INFO  17:09:39,121 - #31 {
+INFO  17:09:39,121 - #32 }
+INFO  17:09:39,122 - #32 }
+INFO  17:09:39,125 - Program(
+  ProgName(
+   Testiranje
+  ) [ProgName]
+  ConstDecLists(
+    ConstDeclList(
+      Type(
+       bool
+      ) [Type]
+      ConDecl(
+       nekiBool
+        BoolConstant(
+         1
+        ) [BoolConstant]
+      ) [ConDecl]
+      NoConstList(
+      ) [NoConstList]
+    ) [ConstDeclList]
+    ConstDecLists(
+      ConstDeclList(
+        Type(
+         int
+        ) [Type]
+        ConDecl(
+         pi
+          NumConstant(
+           2
+          ) [NumConstant]
+        ) [ConDecl]
+        NoConstList(
+        ) [NoConstList]
+      ) [ConstDeclList]
+      VarDecLists(
+        VarDecl(
+          Type(
+           char
+          ) [Type]
+          VarDeclaratList(
+            VarDeclarat(
+              VarDeclarationVar(
+               x
+              ) [VarDeclarationVar]
+            ) [VarDeclarat]
+            VarDeclarationArray(
+             y
+            ) [VarDeclarationArray]
+          ) [VarDeclaratList]
+        ) [VarDecl]
+        VarDecLists(
+          VarDecl(
+            Type(
+             int
+            ) [Type]
+            VarDeclaratList(
+              VarDeclaratList(
+                VarDeclarat(
+                  VarDeclarationVar(
+                   qwe
+                  ) [VarDeclarationVar]
+                ) [VarDeclarat]
+                VarDeclarationVar(
+                 qwer
+                ) [VarDeclarationVar]
+              ) [VarDeclaratList]
+              VarDeclarationVar(
+               qwert
+              ) [VarDeclarationVar]
+            ) [VarDeclaratList]
+          ) [VarDecl]
+          NoDecLists(
+          ) [NoDecLists]
+        ) [VarDecLists]
+      ) [VarDecLists]
+    ) [ConstDecLists]
+  ) [ConstDecLists]
+  MethDeclList(
+    NoMethDeclList(
+    ) [NoMethDeclList]
+    MethodDecl(
+      MethTypeName(
+        Type(
+         int
+        ) [Type]
+       main
+      ) [MethTypeName]
+      NoFormalPars(
+      ) [NoFormalPars]
+      VarDeclarList(
+        NoVarDeclarList(
+        ) [NoVarDeclarList]
+        VarDecl(
+          Type(
+           int
+          ) [Type]
+          VarDeclarat(
+            VarDeclarationVar(
+             x
+            ) [VarDeclarationVar]
+          ) [VarDeclarat]
+        ) [VarDecl]
+      ) [VarDeclarList]
+      NoStmtList(
+      ) [NoStmtList]
+    ) [MethodDecl]
+  ) [MethDeclList]
+) [Program]
+INFO  17:09:39,126 - =====================================================================
+ERROR 17:09:39,131 - Dvostruka definicija varijable: x na liniji 10
+INFO  17:09:39,131 - =====================================================================
+ERROR 17:09:39,131 - Parsiranje NIJE uspesno zavrseno!

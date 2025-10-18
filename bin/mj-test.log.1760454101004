@@ -1,0 +1,57 @@
+INFO  17:01:16,405 - Compiling source file: C:\Users\Lenovo\Desktop\MJCompilerGithub\test\testing.mj
+INFO  17:01:16,430 - #2 program
+INFO  17:01:16,430 - #47 Testiranje
+INFO  17:01:16,430 - #6 const
+INFO  17:01:16,431 - #47 bool
+INFO  17:01:16,431 - #47 pi
+INFO  17:01:16,432 - #23 =
+INFO  17:01:16,432 - #46 1
+INFO  17:01:16,432 - #26 ;
+INFO  17:01:16,433 - #31 {
+INFO  17:01:16,434 - #12 void
+INFO  17:01:16,434 - #47 main
+INFO  17:01:16,434 - #29 (
+INFO  17:01:16,435 - #30 )
+INFO  17:01:16,435 - #31 {
+INFO  17:01:16,436 - #32 }
+INFO  17:01:16,436 - #32 }
+INFO  17:01:16,439 - Program(
+  ProgName(
+   Testiranje
+  ) [ProgName]
+  ConstDecLists(
+    ConstDeclList(
+      Type(
+       bool
+      ) [Type]
+      ConDecl(
+       pi
+        BoolConstant(
+         1
+        ) [BoolConstant]
+      ) [ConDecl]
+      NoConstList(
+      ) [NoConstList]
+    ) [ConstDeclList]
+    NoDecLists(
+    ) [NoDecLists]
+  ) [ConstDecLists]
+  MethDeclList(
+    NoMethDeclList(
+    ) [NoMethDeclList]
+    MethodDecl(
+      NoMethTypeName(
+       main
+      ) [NoMethTypeName]
+      NoFormalPars(
+      ) [NoFormalPars]
+      NoVarDeclarList(
+      ) [NoVarDeclarList]
+      NoStmtList(
+      ) [NoStmtList]
+    ) [MethodDecl]
+  ) [MethDeclList]
+) [Program]
+INFO  17:01:16,440 - =====================================================================
+INFO  17:01:16,462 - =====================================================================
+INFO  17:01:16,462 - Parsiranje uspesno zavrseno!

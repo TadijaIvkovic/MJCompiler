@@ -1,0 +1,59 @@
+INFO  22:00:39,947 - Compiling source file: C:\Users\Lenovo\Desktop\MJCompilerGithub\test\testing.mj
+INFO  22:00:39,976 - #2 program
+INFO  22:00:39,977 - #47 Testiranje
+INFO  22:00:39,977 - #6 const
+INFO  22:00:39,978 - #47 byte
+INFO  22:00:39,978 - #47 pi
+INFO  22:00:39,979 - #23 =
+INFO  22:00:39,979 - #44 3
+INFO  22:00:39,979 - #26 ;
+INFO  22:00:39,980 - #31 {
+INFO  22:00:39,981 - #12 void
+INFO  22:00:39,982 - #47 main
+INFO  22:00:39,982 - #29 (
+INFO  22:00:39,982 - #30 )
+INFO  22:00:39,983 - #31 {
+INFO  22:00:39,983 - #32 }
+INFO  22:00:39,984 - #32 }
+INFO  22:00:39,987 - Program(
+  ProgName(
+   Testiranje
+  ) [ProgName]
+  ConstDecLists(
+    ConstDeclList(
+      Type(
+       byte
+      ) [Type]
+      ConDecl(
+       pi
+        NumConstant(
+         3
+        ) [NumConstant]
+      ) [ConDecl]
+      NoConstList(
+      ) [NoConstList]
+    ) [ConstDeclList]
+    NoDecLists(
+    ) [NoDecLists]
+  ) [ConstDecLists]
+  MethDeclList(
+    NoMethDeclList(
+    ) [NoMethDeclList]
+    MethodDecl(
+      NoMethTypeName(
+       main
+      ) [NoMethTypeName]
+      NoFormalPars(
+      ) [NoFormalPars]
+      NoVarDeclarList(
+      ) [NoVarDeclarList]
+      NoStmtList(
+      ) [NoStmtList]
+    ) [MethodDecl]
+  ) [MethDeclList]
+) [Program]
+INFO  22:00:39,988 - =====================================================================
+ERROR 22:00:39,991 - Nepostojeci tip podataka: byte na liniji 3
+INFO  22:00:39,992 - Posecen cvor program na liniji 1
+INFO  22:00:39,992 - =====================================================================
+INFO  22:00:39,992 - Parsiranje uspesno zavrseno!

@@ -8,6 +8,7 @@
 				<exclude name="Yylex.java"/>
 				<exclude name="RuleVisitor.java"/>
 				<exclude name="SemanticPass.java"/>
+				<exclude name="SemanticPass1.java"/>
 				<exclude name="SymTab.java"/>
 			</fileset>
 		</delete>

@@ -1,0 +1,149 @@
+INFO  17:02:30,130 - Compiling source file: C:\Users\Lenovo\Desktop\MJCompilerGithub\test\testing.mj
+INFO  17:02:30,171 - #2 program
+INFO  17:02:30,171 - #47 Testiranje
+INFO  17:02:30,171 - #6 const
+INFO  17:02:30,172 - #47 bool
+INFO  17:02:30,172 - #47 nekiBool
+INFO  17:02:30,173 - #23 =
+INFO  17:02:30,173 - #46 1
+INFO  17:02:30,173 - #26 ;
+INFO  17:02:30,174 - #6 const
+INFO  17:02:30,175 - #47 int
+INFO  17:02:30,175 - #47 pi
+INFO  17:02:30,175 - #23 =
+INFO  17:02:30,175 - #44 2
+INFO  17:02:30,175 - #26 ;
+INFO  17:02:30,175 - #47 char
+INFO  17:02:30,175 - #47 x
+INFO  17:02:30,175 - #27 ,
+INFO  17:02:30,175 - #47 y
+INFO  17:02:30,175 - #33 [
+INFO  17:02:30,176 - #34 ]
+INFO  17:02:30,176 - #26 ;
+INFO  17:02:30,176 - #47 int
+INFO  17:02:30,177 - #47 qwe
+INFO  17:02:30,178 - #27 ,
+INFO  17:02:30,178 - #47 qwer
+INFO  17:02:30,178 - #27 ,
+INFO  17:02:30,178 - #47 qwert
+INFO  17:02:30,178 - #26 ;
+INFO  17:02:30,178 - #31 {
+INFO  17:02:30,179 - #47 int
+INFO  17:02:30,180 - #47 main
+INFO  17:02:30,180 - #29 (
+INFO  17:02:30,180 - #30 )
+INFO  17:02:30,181 - #47 int
+INFO  17:02:30,181 - #47 a
+INFO  17:02:30,181 - #26 ;
+INFO  17:02:30,181 - #31 {
+INFO  17:02:30,181 - #32 }
+INFO  17:02:30,182 - #32 }
+INFO  17:02:30,186 - Program(
+  ProgName(
+   Testiranje
+  ) [ProgName]
+  ConstDecLists(
+    ConstDeclList(
+      Type(
+       bool
+      ) [Type]
+      ConDecl(
+       nekiBool
+        BoolConstant(
+         1
+        ) [BoolConstant]
+      ) [ConDecl]
+      NoConstList(
+      ) [NoConstList]
+    ) [ConstDeclList]
+    ConstDecLists(
+      ConstDeclList(
+        Type(
+         int
+        ) [Type]
+        ConDecl(
+         pi
+          NumConstant(
+           2
+          ) [NumConstant]
+        ) [ConDecl]
+        NoConstList(
+        ) [NoConstList]
+      ) [ConstDeclList]
+      VarDecLists(
+        VarDecl(
+          Type(
+           char
+          ) [Type]
+          VarDeclaratList(
+            VarDeclarat(
+              VarDeclarationVar(
+               x
+              ) [VarDeclarationVar]
+            ) [VarDeclarat]
+            VarDeclarationArray(
+             y
+            ) [VarDeclarationArray]
+          ) [VarDeclaratList]
+        ) [VarDecl]
+        VarDecLists(
+          VarDecl(
+            Type(
+             int
+            ) [Type]
+            VarDeclaratList(
+              VarDeclaratList(
+                VarDeclarat(
+                  VarDeclarationVar(
+                   qwe
+                  ) [VarDeclarationVar]
+                ) [VarDeclarat]
+                VarDeclarationVar(
+                 qwer
+                ) [VarDeclarationVar]
+              ) [VarDeclaratList]
+              VarDeclarationVar(
+               qwert
+              ) [VarDeclarationVar]
+            ) [VarDeclaratList]
+          ) [VarDecl]
+          NoDecLists(
+          ) [NoDecLists]
+        ) [VarDecLists]
+      ) [VarDecLists]
+    ) [ConstDecLists]
+  ) [ConstDecLists]
+  MethDeclList(
+    NoMethDeclList(
+    ) [NoMethDeclList]
+    MethodDecl(
+      MethTypeName(
+        Type(
+         int
+        ) [Type]
+       main
+      ) [MethTypeName]
+      NoFormalPars(
+      ) [NoFormalPars]
+      VarDeclarList(
+        NoVarDeclarList(
+        ) [NoVarDeclarList]
+        VarDecl(
+          Type(
+           int
+          ) [Type]
+          VarDeclarat(
+            VarDeclarationVar(
+             a
+            ) [VarDeclarationVar]
+          ) [VarDeclarat]
+        ) [VarDecl]
+      ) [VarDeclarList]
+      NoStmtList(
+      ) [NoStmtList]
+    ) [MethodDecl]
+  ) [MethDeclList]
+) [Program]
+INFO  17:02:30,187 - =====================================================================
+INFO  17:02:30,192 - =====================================================================
+INFO  17:02:30,193 - Parsiranje uspesno zavrseno!

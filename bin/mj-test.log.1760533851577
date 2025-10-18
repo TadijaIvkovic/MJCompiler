@@ -1,0 +1,181 @@
+INFO  14:33:13,727 - Compiling source file: C:\Users\Lenovo\Desktop\MJCompilerGithub\test\testing.mj
+INFO  14:33:13,756 - #2 program
+INFO  14:33:13,756 - #47 Test
+INFO  14:33:13,756 - #6 const
+INFO  14:33:13,757 - #47 int
+INFO  14:33:13,757 - #47 pi
+INFO  14:33:13,757 - #23 =
+INFO  14:33:13,757 - #44 3
+INFO  14:33:13,758 - #27 ,
+INFO  14:33:13,759 - #47 g
+INFO  14:33:13,759 - #23 =
+INFO  14:33:13,759 - #44 11
+INFO  14:33:13,759 - #26 ;
+INFO  14:33:13,759 - #47 char
+INFO  14:33:13,759 - #47 x
+INFO  14:33:13,760 - #27 ,
+INFO  14:33:13,760 - #47 y
+INFO  14:33:13,760 - #33 [
+INFO  14:33:13,761 - #34 ]
+INFO  14:33:13,761 - #26 ;
+INFO  14:33:13,761 - #6 const
+INFO  14:33:13,761 - #47 bool
+INFO  14:33:13,761 - #47 t
+INFO  14:33:13,762 - #23 =
+INFO  14:33:13,762 - #46 1
+INFO  14:33:13,762 - #26 ;
+INFO  14:33:13,762 - #31 {
+INFO  14:33:13,763 - #12 void
+INFO  14:33:13,763 - #47 main
+INFO  14:33:13,763 - #29 (
+INFO  14:33:13,763 - #30 )
+INFO  14:33:13,764 - #47 int
+INFO  14:33:13,764 - #47 a
+INFO  14:33:13,764 - #27 ,
+INFO  14:33:13,764 - #47 b
+INFO  14:33:13,764 - #33 [
+INFO  14:33:13,765 - #34 ]
+INFO  14:33:13,765 - #26 ;
+INFO  14:33:13,765 - #47 int
+INFO  14:33:13,765 - #47 x
+INFO  14:33:13,765 - #33 [
+INFO  14:33:13,765 - #34 ]
+INFO  14:33:13,765 - #27 ,
+INFO  14:33:13,765 - #47 y
+INFO  14:33:13,765 - #26 ;
+INFO  14:33:13,765 - #31 {
+INFO  14:33:13,765 - #9 print
+INFO  14:33:13,766 - #29 (
+INFO  14:33:13,766 - #19 -
+INFO  14:33:13,766 - #44 3
+INFO  14:33:13,766 - #30 )
+INFO  14:33:13,766 - #26 ;
+INFO  14:33:13,766 - #32 }
+INFO  14:33:13,767 - #32 }
+INFO  14:33:13,771 - Program(
+  ProgName(
+   Test
+  ) [ProgName]
+  ConstDecLists(
+    ConstDeclList(
+      Type(
+       int
+      ) [Type]
+      ConDecl(
+       pi
+        NumConstant(
+         3
+        ) [NumConstant]
+      ) [ConDecl]
+      ConstList(
+        NoConstList(
+        ) [NoConstList]
+        ConDecl(
+         g
+          NumConstant(
+           11
+          ) [NumConstant]
+        ) [ConDecl]
+      ) [ConstList]
+    ) [ConstDeclList]
+    VarDecLists(
+      VarDecl(
+        Type(
+         char
+        ) [Type]
+        VarDeclaratList(
+          VarDeclarat(
+            VarDeclarationVar(
+             x
+            ) [VarDeclarationVar]
+          ) [VarDeclarat]
+          VarDeclarationArray(
+           y
+          ) [VarDeclarationArray]
+        ) [VarDeclaratList]
+      ) [VarDecl]
+      ConstDecLists(
+        ConstDeclList(
+          Type(
+           bool
+          ) [Type]
+          ConDecl(
+           t
+            BoolConstant(
+             1
+            ) [BoolConstant]
+          ) [ConDecl]
+          NoConstList(
+          ) [NoConstList]
+        ) [ConstDeclList]
+        NoDecLists(
+        ) [NoDecLists]
+      ) [ConstDecLists]
+    ) [VarDecLists]
+  ) [ConstDecLists]
+  MethodDeclList(
+    MethodDecl(
+      NoMethTypeName(
+       main
+      ) [NoMethTypeName]
+      NoFormalPars(
+      ) [NoFormalPars]
+      VarDeclarList(
+        VarDeclarList(
+          NoVarDeclarList(
+          ) [NoVarDeclarList]
+          VarDecl(
+            Type(
+             int
+            ) [Type]
+            VarDeclaratList(
+              VarDeclarat(
+                VarDeclarationVar(
+                 a
+                ) [VarDeclarationVar]
+              ) [VarDeclarat]
+              VarDeclarationArray(
+               b
+              ) [VarDeclarationArray]
+            ) [VarDeclaratList]
+          ) [VarDecl]
+        ) [VarDeclarList]
+        VarDecl(
+          Type(
+           int
+          ) [Type]
+          VarDeclaratList(
+            VarDeclarat(
+              VarDeclarationArray(
+               x
+              ) [VarDeclarationArray]
+            ) [VarDeclarat]
+            VarDeclarationVar(
+             y
+            ) [VarDeclarationVar]
+          ) [VarDeclaratList]
+        ) [VarDecl]
+      ) [VarDeclarList]
+      StmtList(
+        NoStmtList(
+        ) [NoStmtList]
+        StatementSingle(
+          PrintStmt(
+            ExprTerm(
+              TermFactor(
+                UnaryMinusFactor(
+                  FactorNum(
+                   3
+                  ) [FactorNum]
+                ) [UnaryMinusFactor]
+              ) [TermFactor]
+            ) [ExprTerm]
+          ) [PrintStmt]
+        ) [StatementSingle]
+      ) [StmtList]
+    ) [MethodDecl]
+  ) [MethodDeclList]
+) [Program]
+INFO  14:33:13,771 - =====================================================================
+INFO  14:33:13,775 - =====================================================================
+INFO  14:33:13,776 - Parsiranje uspesno zavrseno!

@@ -31,7 +31,7 @@ public class Compiler {
 		
 		Reader br = null;
 		try {
-			File sourceCode = new File("test/testing.mj");
+			File sourceCode = new File("test/test301.mj");
 			log.info("Compiling source file: " + sourceCode.getAbsolutePath());
 			
 			br = new BufferedReader(new FileReader(sourceCode));
@@ -53,6 +53,10 @@ public class Compiler {
 			Obj boolObj = Tab.insert(Obj.Type, "bool", boolType);
 			boolObj.setAdr(-1);
 			boolObj.setLevel(-1);
+			Struct setType = new Struct(Struct.Interface);
+			Obj setObj = Tab.insert(Obj.Type, "set", setType);
+			setObj.setAdr(-1);
+			setObj.setLevel(-1);
 			
 			/* Semanticka analiza */
 			SemanticPass sp = new SemanticPass();
@@ -63,6 +67,7 @@ public class Compiler {
 			Tab.dump();
 			
 			if(!p.errorDetected && sp.passed()){
+//			if(!p.errorDetected){
 				log.info("Parsiranje uspesno zavrseno!");
 			}else{
 				log.error("Parsiranje NIJE uspesno zavrseno!");

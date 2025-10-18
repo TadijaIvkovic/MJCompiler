@@ -1,0 +1,58 @@
+INFO  16:36:02,288 - Compiling source file: C:\Users\Lenovo\Desktop\MJCompilerGithub\test\testing.mj
+INFO  16:36:03,327 - #2 program
+INFO  16:36:03,327 - #47 Testiranje
+INFO  16:36:03,327 - #6 const
+INFO  16:36:03,340 - #47 bool
+INFO  16:36:03,340 - #47 pi
+INFO  16:36:03,354 - #23 =
+INFO  16:36:03,354 - #44 3
+INFO  16:36:03,354 - #26 ;
+INFO  16:36:03,382 - #31 {
+INFO  16:36:03,406 - #12 void
+INFO  16:36:03,419 - #47 main
+INFO  16:36:03,419 - #29 (
+INFO  16:36:03,419 - #30 )
+INFO  16:36:03,432 - #31 {
+INFO  16:36:03,442 - #32 }
+INFO  16:36:03,454 - #32 }
+INFO  16:36:03,483 - Program(
+  ProgName(
+   Testiranje
+  ) [ProgName]
+  ConstDecLists(
+    ConstDeclList(
+      Type(
+       bool
+      ) [Type]
+      ConDecl(
+       pi
+        NumConstant(
+         3
+        ) [NumConstant]
+      ) [ConDecl]
+      NoConstList(
+      ) [NoConstList]
+    ) [ConstDeclList]
+    NoDecLists(
+    ) [NoDecLists]
+  ) [ConstDecLists]
+  MethDeclList(
+    NoMethDeclList(
+    ) [NoMethDeclList]
+    MethodDecl(
+      NoMethTypeName(
+       main
+      ) [NoMethTypeName]
+      NoFormalPars(
+      ) [NoFormalPars]
+      NoVarDeclarList(
+      ) [NoVarDeclarList]
+      NoStmtList(
+      ) [NoStmtList]
+    ) [MethodDecl]
+  ) [MethDeclList]
+) [Program]
+INFO  16:36:03,484 - =====================================================================
+ERROR 16:36:03,516 - Neadekvatna dodela vrednosti konstante: pi na liniji 3
+INFO  16:36:03,516 - =====================================================================
+ERROR 16:36:03,516 - Parsiranje NIJE uspesno zavrseno!
