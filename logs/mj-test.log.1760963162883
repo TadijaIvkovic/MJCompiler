@@ -1,0 +1,156 @@
+INFO  14:25:56,853 - Compiling source file: C:\Users\Lenovo\Desktop\MJCompilerGithub\test\program.mj
+INFO  14:25:56,902 - #2 program
+INFO  14:25:56,903 - #47 Testiranje
+INFO  14:25:56,903 - #6 const
+INFO  14:25:56,904 - #47 int
+INFO  14:25:56,904 - #47 x
+INFO  14:25:56,905 - #23 =
+INFO  14:25:56,905 - #44 2
+INFO  14:25:56,906 - #26 ;
+INFO  14:25:56,910 - #47 int
+INFO  14:25:56,912 - #47 p
+INFO  14:25:56,913 - #27 ,
+INFO  14:25:56,914 - #47 y
+INFO  14:25:56,914 - #33 [
+INFO  14:25:56,914 - #34 ]
+INFO  14:25:56,914 - #26 ;
+INFO  14:25:56,915 - #31 {
+INFO  14:25:56,916 - #12 void
+INFO  14:25:56,916 - #47 main
+INFO  14:25:56,916 - #29 (
+INFO  14:25:56,917 - #30 )
+INFO  14:25:56,917 - #47 int
+INFO  14:25:56,917 - #47 x
+INFO  14:25:56,917 - #27 ,
+INFO  14:25:56,918 - #47 y
+INFO  14:25:56,918 - #33 [
+INFO  14:25:56,918 - #34 ]
+INFO  14:25:56,918 - #26 ;
+INFO  14:25:56,918 - #47 char
+INFO  14:25:56,918 - #47 a
+INFO  14:25:56,918 - #26 ;
+INFO  14:25:56,918 - #31 {
+INFO  14:25:56,918 - #9 print
+INFO  14:25:56,919 - #29 (
+INFO  14:25:56,919 - #44 1
+INFO  14:25:56,919 - #19 -
+INFO  14:25:56,920 - #44 3
+INFO  14:25:56,921 - #30 )
+INFO  14:25:56,921 - #26 ;
+INFO  14:25:56,921 - #32 }
+INFO  14:25:56,921 - #32 }
+INFO  14:25:56,925 - Program(
+  ProgName(
+   Testiranje
+  ) [ProgName]
+  ConstDecLists(
+    ConstDeclList(
+      Type(
+       int
+      ) [Type]
+      ConDecl(
+       x
+        NumConstant(
+         2
+        ) [NumConstant]
+      ) [ConDecl]
+      NoConstList(
+      ) [NoConstList]
+    ) [ConstDeclList]
+    VarDecLists(
+      VarDecl(
+        Type(
+         int
+        ) [Type]
+        VarDeclaratList(
+          VarDeclarat(
+            VarDeclarationVar(
+             p
+            ) [VarDeclarationVar]
+          ) [VarDeclarat]
+          VarDeclarationArray(
+           y
+          ) [VarDeclarationArray]
+        ) [VarDeclaratList]
+      ) [VarDecl]
+      NoDecLists(
+      ) [NoDecLists]
+    ) [VarDecLists]
+  ) [ConstDecLists]
+  MethodDeclList(
+    MethodDecl(
+      MethodSignature(
+       main
+      ) [MethodSignature]
+      VarDeclarList(
+        VarDeclarList(
+          NoVarDeclarList(
+          ) [NoVarDeclarList]
+          VarDecl(
+            Type(
+             int
+            ) [Type]
+            VarDeclaratList(
+              VarDeclarat(
+                VarDeclarationVar(
+                 x
+                ) [VarDeclarationVar]
+              ) [VarDeclarat]
+              VarDeclarationArray(
+               y
+              ) [VarDeclarationArray]
+            ) [VarDeclaratList]
+          ) [VarDecl]
+        ) [VarDeclarList]
+        VarDecl(
+          Type(
+           char
+          ) [Type]
+          VarDeclarat(
+            VarDeclarationVar(
+             a
+            ) [VarDeclarationVar]
+          ) [VarDeclarat]
+        ) [VarDecl]
+      ) [VarDeclarList]
+      StmtList(
+        NoStmtList(
+        ) [NoStmtList]
+        StatementSingle(
+          PrintStmt(
+            Expr(
+              ExprAddopList(
+                ExprTerm(
+                  Term(
+                    TermFactor(
+                      UnaryFactor(
+                        FactorNum(
+                         1
+                        ) [FactorNum]
+                      ) [UnaryFactor]
+                    ) [TermFactor]
+                  ) [Term]
+                ) [ExprTerm]
+                AddopMinus(
+                ) [AddopMinus]
+                Term(
+                  TermFactor(
+                    UnaryFactor(
+                      FactorNum(
+                       3
+                      ) [FactorNum]
+                    ) [UnaryFactor]
+                  ) [TermFactor]
+                ) [Term]
+              ) [ExprAddopList]
+            ) [Expr]
+          ) [PrintStmt]
+        ) [StatementSingle]
+      ) [StmtList]
+    ) [MethodDecl]
+  ) [MethodDeclList]
+) [Program]
+INFO  14:25:56,925 - =====================================================================
+INFO  14:25:56,932 - =====================================================================
+INFO  14:25:56,933 - Parsiranje uspesno zavrseno!
+INFO  14:25:56,967 - Generisanje koda uspesno zavrseno!

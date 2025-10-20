@@ -14,6 +14,7 @@ import org.apache.log4j.xml.DOMConfigurator;
 
 import rs.ac.bg.etf.pp1.ast.*;
 import rs.ac.bg.etf.pp1.util.Log4JUtils;
+import rs.etf.pp1.mj.runtime.Code;
 import rs.etf.pp1.symboltable.*;
 import rs.etf.pp1.symboltable.concepts.Obj;
 import rs.etf.pp1.symboltable.concepts.Struct;
@@ -69,6 +70,20 @@ public class Compiler {
 			if(!p.errorDetected && sp.passed()){
 //			if(!p.errorDetected){
 				log.info("Parsiranje uspesno zavrseno!");
+				
+				// Generisanje koda
+				
+				File objFile = new File("test/program.obj");
+				if(objFile.exists()) objFile.delete();
+				
+				CodeGenerator codeGenerator= new CodeGenerator();
+				prog.traverseBottomUp(codeGenerator);
+				Code.dataSize=sp.nVars;
+//				Code.mainPc=codeGenerator.getMainPc();
+				Code.mainPc=0;
+				Code.write(new FileOutputStream(objFile));
+				
+				log.info("Generisanje koda uspesno zavrseno!");
 			}else{
 				log.error("Parsiranje NIJE uspesno zavrseno!");
 			}

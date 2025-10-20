@@ -1,6 +1,6 @@
 // generated with ast extension for cup
 // version 0.8
-// 18/9/2025 18:25:34
+// 20/9/2025 17:57:57
 
 
 package rs.ac.bg.etf.pp1.ast;
@@ -9,6 +9,8 @@ public class MethodSignature implements SyntaxNode {
 
     private SyntaxNode parent;
     private int line;
+    public rs.etf.pp1.symboltable.concepts.Obj obj = null;
+
     private String methName;
 
     public MethodSignature (String methName) {

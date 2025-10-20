@@ -68,7 +68,7 @@ terminal String IDENT ;
 
 
 nonterminal DeclarationList, ConstDeclList, ConstantList, Constants;
-nonterminal VarDeclList, VarDecl, VarDeclarationList, VarDeclaration, MethodDeclList, MethodDecl, MethodSignature;
+nonterminal VarDeclList, VarDecl, VarDeclarationList, VarDeclaration, MethodDeclList, MethodDecl;
 nonterminal  StatementList, Statement;
 nonterminal DesignatorStatement, ActPars, ActParamList, Assignop, Addop, Mulop, Setop;
 nonterminal SingleStatement, Statements;
@@ -76,7 +76,7 @@ nonterminal SingleStatement, Statements;
 nonterminal ConDecl;
 
 
-nonterminal rs.etf.pp1.symboltable.concepts.Obj ProgName, Program, Designator, DesignatorArrayName;
+nonterminal rs.etf.pp1.symboltable.concepts.Obj ProgName, Program, Designator, DesignatorArrayName, MethodSignature;
 
 nonterminal rs.etf.pp1.symboltable.concepts.Struct Unary, Factor, Term, TermList, Expr, ExprList, Type;
 
@@ -162,7 +162,7 @@ SingleStatement ::= (PrintStmt) PRINT LPAREN Expr RPAREN SEMI
 Statements::= (Statements) LBRACE StatementList RBRACE;
 			  
 
-DesignatorStatement ::= (DesginatorAssignop) Designator Assignop Expr
+DesignatorStatement ::= (DesignatorAssignop) Designator Assignop Expr
 						|
 						(DesignatorInc) Designator PLUS PLUS
 						|

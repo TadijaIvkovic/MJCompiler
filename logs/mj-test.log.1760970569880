@@ -1,0 +1,266 @@
+INFO  16:24:43,929 - Compiling source file: C:\Users\Lenovo\Desktop\MJCompilerGithub\test\program.mj
+INFO  16:24:43,964 - #2 program
+INFO  16:24:43,964 - #47 Testiranje
+INFO  16:24:43,964 - #6 const
+INFO  16:24:43,965 - #47 int
+INFO  16:24:43,965 - #47 x
+INFO  16:24:43,966 - #23 =
+INFO  16:24:43,966 - #44 2
+INFO  16:24:43,966 - #26 ;
+INFO  16:24:43,967 - #47 int
+INFO  16:24:43,968 - #47 p
+INFO  16:24:43,968 - #27 ,
+INFO  16:24:43,968 - #47 y
+INFO  16:24:43,968 - #33 [
+INFO  16:24:43,968 - #34 ]
+INFO  16:24:43,968 - #26 ;
+INFO  16:24:43,968 - #31 {
+INFO  16:24:43,970 - #12 void
+INFO  16:24:43,970 - #47 main
+INFO  16:24:43,970 - #29 (
+INFO  16:24:43,972 - #30 )
+INFO  16:24:43,972 - #47 char
+INFO  16:24:43,972 - #47 y
+INFO  16:24:43,973 - #33 [
+INFO  16:24:43,973 - #34 ]
+INFO  16:24:43,973 - #26 ;
+INFO  16:24:43,973 - #47 char
+INFO  16:24:43,973 - #47 a
+INFO  16:24:43,973 - #26 ;
+INFO  16:24:43,973 - #47 int
+INFO  16:24:43,973 - #47 k
+INFO  16:24:43,973 - #26 ;
+INFO  16:24:43,973 - #31 {
+INFO  16:24:43,973 - #47 y
+INFO  16:24:43,975 - #23 =
+INFO  16:24:43,975 - #8 new
+INFO  16:24:43,975 - #47 char
+INFO  16:24:43,975 - #33 [
+INFO  16:24:43,975 - #44 5
+INFO  16:24:43,975 - #34 ]
+INFO  16:24:43,977 - #26 ;
+INFO  16:24:43,977 - #47 y
+INFO  16:24:43,977 - #33 [
+INFO  16:24:43,978 - #44 1
+INFO  16:24:43,978 - #34 ]
+INFO  16:24:43,978 - #23 =
+INFO  16:24:43,978 - #45 p
+INFO  16:24:43,978 - #26 ;
+INFO  16:24:43,978 - #9 print
+INFO  16:24:43,978 - #29 (
+INFO  16:24:43,978 - #47 y
+INFO  16:24:43,978 - #33 [
+INFO  16:24:43,979 - #44 1
+INFO  16:24:43,979 - #34 ]
+INFO  16:24:43,979 - #30 )
+INFO  16:24:43,979 - #26 ;
+INFO  16:24:43,979 - #32 }
+INFO  16:24:43,979 - #32 }
+INFO  16:24:43,984 - Program(
+  ProgName(
+   Testiranje
+  ) [ProgName]
+  ConstDecLists(
+    ConstDeclList(
+      Type(
+       int
+      ) [Type]
+      ConDecl(
+       x
+        NumConstant(
+         2
+        ) [NumConstant]
+      ) [ConDecl]
+      NoConstList(
+      ) [NoConstList]
+    ) [ConstDeclList]
+    VarDecLists(
+      VarDecl(
+        Type(
+         int
+        ) [Type]
+        VarDeclaratList(
+          VarDeclarat(
+            VarDeclarationVar(
+             p
+            ) [VarDeclarationVar]
+          ) [VarDeclarat]
+          VarDeclarationArray(
+           y
+          ) [VarDeclarationArray]
+        ) [VarDeclaratList]
+      ) [VarDecl]
+      NoDecLists(
+      ) [NoDecLists]
+    ) [VarDecLists]
+  ) [ConstDecLists]
+  MethodDeclList(
+    MethodDecl(
+      MethodSignature(
+       main
+      ) [MethodSignature]
+      VarDeclarList(
+        VarDeclarList(
+          VarDeclarList(
+            NoVarDeclarList(
+            ) [NoVarDeclarList]
+            VarDecl(
+              Type(
+               char
+              ) [Type]
+              VarDeclarat(
+                VarDeclarationArray(
+                 y
+                ) [VarDeclarationArray]
+              ) [VarDeclarat]
+            ) [VarDecl]
+          ) [VarDeclarList]
+          VarDecl(
+            Type(
+             char
+            ) [Type]
+            VarDeclarat(
+              VarDeclarationVar(
+               a
+              ) [VarDeclarationVar]
+            ) [VarDeclarat]
+          ) [VarDecl]
+        ) [VarDeclarList]
+        VarDecl(
+          Type(
+           int
+          ) [Type]
+          VarDeclarat(
+            VarDeclarationVar(
+             k
+            ) [VarDeclarationVar]
+          ) [VarDeclarat]
+        ) [VarDecl]
+      ) [VarDeclarList]
+      StmtList(
+        StmtList(
+          StmtList(
+            NoStmtList(
+            ) [NoStmtList]
+            StatementSingle(
+              DesStmt(
+                DesignatorAssignop(
+                  DesignatorVar(
+                   y
+                  ) [DesignatorVar]
+                  Assignop(
+                  ) [Assignop]
+                  Expr(
+                    ExprTerm(
+                      Term(
+                        TermFactor(
+                          UnaryFactor(
+                            FactorNewExpr(
+                              Type(
+                               char
+                              ) [Type]
+                              Expr(
+                                ExprTerm(
+                                  Term(
+                                    TermFactor(
+                                      UnaryFactor(
+                                        FactorNum(
+                                         5
+                                        ) [FactorNum]
+                                      ) [UnaryFactor]
+                                    ) [TermFactor]
+                                  ) [Term]
+                                ) [ExprTerm]
+                              ) [Expr]
+                            ) [FactorNewExpr]
+                          ) [UnaryFactor]
+                        ) [TermFactor]
+                      ) [Term]
+                    ) [ExprTerm]
+                  ) [Expr]
+                ) [DesignatorAssignop]
+              ) [DesStmt]
+            ) [StatementSingle]
+          ) [StmtList]
+          StatementSingle(
+            DesStmt(
+              DesignatorAssignop(
+                DesignatorArray(
+                  DesignatorArrayName(
+                   y
+                  ) [DesignatorArrayName]
+                  Expr(
+                    ExprTerm(
+                      Term(
+                        TermFactor(
+                          UnaryFactor(
+                            FactorNum(
+                             1
+                            ) [FactorNum]
+                          ) [UnaryFactor]
+                        ) [TermFactor]
+                      ) [Term]
+                    ) [ExprTerm]
+                  ) [Expr]
+                ) [DesignatorArray]
+                Assignop(
+                ) [Assignop]
+                Expr(
+                  ExprTerm(
+                    Term(
+                      TermFactor(
+                        UnaryFactor(
+                          FactorChar(
+                           p
+                          ) [FactorChar]
+                        ) [UnaryFactor]
+                      ) [TermFactor]
+                    ) [Term]
+                  ) [ExprTerm]
+                ) [Expr]
+              ) [DesignatorAssignop]
+            ) [DesStmt]
+          ) [StatementSingle]
+        ) [StmtList]
+        StatementSingle(
+          PrintStmt(
+            Expr(
+              ExprTerm(
+                Term(
+                  TermFactor(
+                    UnaryFactor(
+                      FactorDes(
+                        DesignatorArray(
+                          DesignatorArrayName(
+                           y
+                          ) [DesignatorArrayName]
+                          Expr(
+                            ExprTerm(
+                              Term(
+                                TermFactor(
+                                  UnaryFactor(
+                                    FactorNum(
+                                     1
+                                    ) [FactorNum]
+                                  ) [UnaryFactor]
+                                ) [TermFactor]
+                              ) [Term]
+                            ) [ExprTerm]
+                          ) [Expr]
+                        ) [DesignatorArray]
+                      ) [FactorDes]
+                    ) [UnaryFactor]
+                  ) [TermFactor]
+                ) [Term]
+              ) [ExprTerm]
+            ) [Expr]
+          ) [PrintStmt]
+        ) [StatementSingle]
+      ) [StmtList]
+    ) [MethodDecl]
+  ) [MethodDeclList]
+) [Program]
+INFO  16:24:43,985 - =====================================================================
+INFO  16:24:43,993 - =====================================================================
+INFO  16:24:43,994 - Parsiranje uspesno zavrseno!
+INFO  16:24:43,999 - Generisanje koda uspesno zavrseno!

@@ -156,24 +156,10 @@ public class SemanticPass extends VisitorAdaptor {
 		mainMethodExists =true;
 		//mainMethod=currentMethod;
 	}
-		currentMethod = Tab.insert(Obj.Meth, methodSignature.getMethName(), Tab.noType);
+		methodSignature.obj = currentMethod = Tab.insert(Obj.Meth, methodSignature.getMethName(), Tab.noType);
 		Tab.openScope();
 		
 	}
-	
-//  @Override
-//  public void visit(MethTypeName methodTypeName) {
-//  	
-//	  
-//  	if(methodTypeName.getMethName().equalsIgnoreCase("main")) {
-//		mainMethodExists =true;
-//		mainMethod=currentMethod;
-//	}
-//  	currentMethod=Tab.insert(Obj.Meth, methodTypeName.getMethName(), currentType);
-//
-//  	Tab.openScope();
-//  	
-//  }
 	
 	@Override
 	public void visit(MethodDecl methodDecl) {
@@ -192,16 +178,16 @@ public class SemanticPass extends VisitorAdaptor {
 //		report_info(""+typeObj.getKind() +" " + typeObj.getType() + " " + type.getTypeName() + " na pocetku type klase" , type);
 		if(typeObj == Tab.noObj) {
 			report_error("Nepostojeci tip podataka: " + type.getTypeName(),type);
-			currentType =Tab.noType;
+			type.struct=currentType =Tab.noType;
 		}
 		else if(typeObj.getKind()!=Obj.Type) {
 			report_error("Neadekvatan tip podataka: " + type.getTypeName(),type);
-			currentType =Tab.noType;
+			type.struct=currentType =Tab.noType;
 		}
 		else {
 			
-			currentType=typeObj.getType();
-			type.struct=typeObj.getType();
+			type.struct= currentType=typeObj.getType();
+			
 //			report_info("" + currentType.getKind() + " u type klasi", type);
 		}
 	}
@@ -416,7 +402,7 @@ public class SemanticPass extends VisitorAdaptor {
     //Designator statements
     
     @Override
-    public void visit(DesginatorAssignop designatorAssignop) {
+    public void visit(DesignatorAssignop designatorAssignop) {
     	
     	int desKind=designatorAssignop.getDesignator().obj.getKind();
 //		report_info("Designator assignop klasa " + designatorAssignop.getDesignator().obj.getType().getKind() + " " + designatorAssignop.getExpr().struct.getKind() ,designatorAssignop);

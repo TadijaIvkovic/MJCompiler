@@ -77,7 +77,6 @@ nonterminal VarDeclarationList VarDeclarationList;
 nonterminal VarDeclaration VarDeclaration;
 nonterminal MethodDeclList MethodDeclList;
 nonterminal MethodDecl MethodDecl;
-nonterminal MethodSignature MethodSignature;
 nonterminal  StatementList StatementList;
 nonterminal Statement Statement;
 nonterminal DesignatorStatement DesignatorStatement;
@@ -93,7 +92,7 @@ nonterminal Statements Statements;
 nonterminal ConDecl ConDecl;
 
 
-nonterminal rs.etf.pp1.symboltable.concepts.Obj ProgName, Program, Designator, DesignatorArrayName;
+nonterminal rs.etf.pp1.symboltable.concepts.Obj ProgName, Program, Designator, DesignatorArrayName, MethodSignature;
 
 nonterminal rs.etf.pp1.symboltable.concepts.Struct Unary, Factor, Term, TermList, Expr, ExprList, Type;
 
@@ -179,7 +178,7 @@ SingleStatement ::= (PrintStmt) PRINT LPAREN Expr:E1 RPAREN SEMI {: RESULT=new P
 Statements::= (Statements) LBRACE StatementList:S1 RBRACE {: RESULT=new Statements(S1); RESULT.setLine(S1left); :};
 			  
 
-DesignatorStatement ::= (DesginatorAssignop) Designator:D1 Assignop:A2 Expr:E3 {: RESULT=new DesginatorAssignop(D1, A2, E3); RESULT.setLine(D1left); :}
+DesignatorStatement ::= (DesignatorAssignop) Designator:D1 Assignop:A2 Expr:E3 {: RESULT=new DesignatorAssignop(D1, A2, E3); RESULT.setLine(D1left); :}
 						|
 						(DesignatorInc) Designator:D1 PLUS PLUS {: RESULT=new DesignatorInc(D1); RESULT.setLine(D1left); :}
 						|

@@ -1,0 +1,141 @@
+INFO  12:09:13,671 - Compiling source file: C:\Users\Lenovo\Desktop\MJCompilerGithub\test\program.mj
+INFO  12:09:13,704 - #2 program
+INFO  12:09:13,705 - #47 Testiranje
+INFO  12:09:13,705 - #6 const
+INFO  12:09:13,705 - #47 int
+INFO  12:09:13,705 - #47 x
+INFO  12:09:13,706 - #23 =
+INFO  12:09:13,706 - #44 2
+INFO  12:09:13,706 - #26 ;
+INFO  12:09:13,706 - #47 int
+INFO  12:09:13,707 - #47 p
+INFO  12:09:13,707 - #27 ,
+INFO  12:09:13,707 - #47 y
+INFO  12:09:13,707 - #33 [
+INFO  12:09:13,707 - #34 ]
+INFO  12:09:13,707 - #26 ;
+INFO  12:09:13,707 - #31 {
+INFO  12:09:13,708 - #12 void
+INFO  12:09:13,708 - #47 main
+INFO  12:09:13,709 - #29 (
+INFO  12:09:13,710 - #30 )
+INFO  12:09:13,710 - #47 int
+INFO  12:09:13,710 - #47 x
+INFO  12:09:13,711 - #27 ,
+INFO  12:09:13,711 - #47 y
+INFO  12:09:13,711 - #33 [
+INFO  12:09:13,711 - #34 ]
+INFO  12:09:13,711 - #26 ;
+INFO  12:09:13,711 - #47 char
+INFO  12:09:13,711 - #47 a
+INFO  12:09:13,711 - #26 ;
+INFO  12:09:13,711 - #31 {
+INFO  12:09:13,712 - #9 print
+INFO  12:09:13,712 - #29 (
+INFO  12:09:13,712 - #44 1
+INFO  12:09:13,712 - #30 )
+INFO  12:09:13,714 - #26 ;
+INFO  12:09:13,714 - #32 }
+INFO  12:09:13,714 - #32 }
+INFO  12:09:13,718 - Program(
+  ProgName(
+   Testiranje
+  ) [ProgName]
+  ConstDecLists(
+    ConstDeclList(
+      Type(
+       int
+      ) [Type]
+      ConDecl(
+       x
+        NumConstant(
+         2
+        ) [NumConstant]
+      ) [ConDecl]
+      NoConstList(
+      ) [NoConstList]
+    ) [ConstDeclList]
+    VarDecLists(
+      VarDecl(
+        Type(
+         int
+        ) [Type]
+        VarDeclaratList(
+          VarDeclarat(
+            VarDeclarationVar(
+             p
+            ) [VarDeclarationVar]
+          ) [VarDeclarat]
+          VarDeclarationArray(
+           y
+          ) [VarDeclarationArray]
+        ) [VarDeclaratList]
+      ) [VarDecl]
+      NoDecLists(
+      ) [NoDecLists]
+    ) [VarDecLists]
+  ) [ConstDecLists]
+  MethodDeclList(
+    MethodDecl(
+      MethodSignature(
+       main
+      ) [MethodSignature]
+      VarDeclarList(
+        VarDeclarList(
+          NoVarDeclarList(
+          ) [NoVarDeclarList]
+          VarDecl(
+            Type(
+             int
+            ) [Type]
+            VarDeclaratList(
+              VarDeclarat(
+                VarDeclarationVar(
+                 x
+                ) [VarDeclarationVar]
+              ) [VarDeclarat]
+              VarDeclarationArray(
+               y
+              ) [VarDeclarationArray]
+            ) [VarDeclaratList]
+          ) [VarDecl]
+        ) [VarDeclarList]
+        VarDecl(
+          Type(
+           char
+          ) [Type]
+          VarDeclarat(
+            VarDeclarationVar(
+             a
+            ) [VarDeclarationVar]
+          ) [VarDeclarat]
+        ) [VarDecl]
+      ) [VarDeclarList]
+      StmtList(
+        NoStmtList(
+        ) [NoStmtList]
+        StatementSingle(
+          PrintStmt(
+            Expr(
+              ExprTerm(
+                Term(
+                  TermFactor(
+                    UnaryFactor(
+                      FactorNum(
+                       1
+                      ) [FactorNum]
+                    ) [UnaryFactor]
+                  ) [TermFactor]
+                ) [Term]
+              ) [ExprTerm]
+            ) [Expr]
+          ) [PrintStmt]
+        ) [StatementSingle]
+      ) [StmtList]
+    ) [MethodDecl]
+  ) [MethodDeclList]
+) [Program]
+INFO  12:09:13,718 - =====================================================================
+INFO  12:09:13,722 - =====================================================================
+INFO  12:09:13,722 - Parsiranje uspesno zavrseno!
+INFO  12:09:13,726 - Generisanje koda uspesno zavrseno!

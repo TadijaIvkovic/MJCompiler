@@ -1,0 +1,215 @@
+INFO  15:11:16,103 - Compiling source file: C:\Users\Lenovo\Desktop\MJCompilerGithub\test\program.mj
+INFO  15:11:16,136 - #2 program
+INFO  15:11:16,136 - #47 Testiranje
+INFO  15:11:16,136 - #6 const
+INFO  15:11:16,137 - #47 int
+INFO  15:11:16,137 - #47 x
+INFO  15:11:16,138 - #23 =
+INFO  15:11:16,138 - #44 2
+INFO  15:11:16,138 - #26 ;
+INFO  15:11:16,139 - #47 int
+INFO  15:11:16,139 - #47 p
+INFO  15:11:16,139 - #27 ,
+INFO  15:11:16,140 - #47 y
+INFO  15:11:16,140 - #33 [
+INFO  15:11:16,140 - #34 ]
+INFO  15:11:16,140 - #26 ;
+INFO  15:11:16,140 - #31 {
+INFO  15:11:16,141 - #12 void
+INFO  15:11:16,141 - #47 main
+INFO  15:11:16,142 - #29 (
+INFO  15:11:16,142 - #30 )
+INFO  15:11:16,142 - #47 char
+INFO  15:11:16,142 - #47 y
+INFO  15:11:16,142 - #33 [
+INFO  15:11:16,143 - #34 ]
+INFO  15:11:16,143 - #26 ;
+INFO  15:11:16,143 - #47 char
+INFO  15:11:16,143 - #47 a
+INFO  15:11:16,143 - #26 ;
+INFO  15:11:16,143 - #47 int
+INFO  15:11:16,143 - #47 k
+INFO  15:11:16,143 - #26 ;
+INFO  15:11:16,143 - #31 {
+INFO  15:11:16,143 - #47 k
+INFO  15:11:16,144 - #23 =
+INFO  15:11:16,144 - #44 2
+INFO  15:11:16,145 - #26 ;
+INFO  15:11:16,146 - #47 k
+INFO  15:11:16,146 - #23 =
+INFO  15:11:16,146 - #19 -
+INFO  15:11:16,146 - #47 k
+INFO  15:11:16,146 - #26 ;
+INFO  15:11:16,146 - #9 print
+INFO  15:11:16,146 - #29 (
+INFO  15:11:16,146 - #19 -
+INFO  15:11:16,146 - #47 k
+INFO  15:11:16,147 - #30 )
+INFO  15:11:16,147 - #26 ;
+INFO  15:11:16,147 - #32 }
+INFO  15:11:16,147 - #32 }
+INFO  15:11:16,150 - Program(
+  ProgName(
+   Testiranje
+  ) [ProgName]
+  ConstDecLists(
+    ConstDeclList(
+      Type(
+       int
+      ) [Type]
+      ConDecl(
+       x
+        NumConstant(
+         2
+        ) [NumConstant]
+      ) [ConDecl]
+      NoConstList(
+      ) [NoConstList]
+    ) [ConstDeclList]
+    VarDecLists(
+      VarDecl(
+        Type(
+         int
+        ) [Type]
+        VarDeclaratList(
+          VarDeclarat(
+            VarDeclarationVar(
+             p
+            ) [VarDeclarationVar]
+          ) [VarDeclarat]
+          VarDeclarationArray(
+           y
+          ) [VarDeclarationArray]
+        ) [VarDeclaratList]
+      ) [VarDecl]
+      NoDecLists(
+      ) [NoDecLists]
+    ) [VarDecLists]
+  ) [ConstDecLists]
+  MethodDeclList(
+    MethodDecl(
+      MethodSignature(
+       main
+      ) [MethodSignature]
+      VarDeclarList(
+        VarDeclarList(
+          VarDeclarList(
+            NoVarDeclarList(
+            ) [NoVarDeclarList]
+            VarDecl(
+              Type(
+               char
+              ) [Type]
+              VarDeclarat(
+                VarDeclarationArray(
+                 y
+                ) [VarDeclarationArray]
+              ) [VarDeclarat]
+            ) [VarDecl]
+          ) [VarDeclarList]
+          VarDecl(
+            Type(
+             char
+            ) [Type]
+            VarDeclarat(
+              VarDeclarationVar(
+               a
+              ) [VarDeclarationVar]
+            ) [VarDeclarat]
+          ) [VarDecl]
+        ) [VarDeclarList]
+        VarDecl(
+          Type(
+           int
+          ) [Type]
+          VarDeclarat(
+            VarDeclarationVar(
+             k
+            ) [VarDeclarationVar]
+          ) [VarDeclarat]
+        ) [VarDecl]
+      ) [VarDeclarList]
+      StmtList(
+        StmtList(
+          StmtList(
+            NoStmtList(
+            ) [NoStmtList]
+            StatementSingle(
+              DesStmt(
+                DesignatorAssignop(
+                  DesignatorVar(
+                   k
+                  ) [DesignatorVar]
+                  Assignop(
+                  ) [Assignop]
+                  Expr(
+                    ExprTerm(
+                      Term(
+                        TermFactor(
+                          UnaryFactor(
+                            FactorNum(
+                             2
+                            ) [FactorNum]
+                          ) [UnaryFactor]
+                        ) [TermFactor]
+                      ) [Term]
+                    ) [ExprTerm]
+                  ) [Expr]
+                ) [DesignatorAssignop]
+              ) [DesStmt]
+            ) [StatementSingle]
+          ) [StmtList]
+          StatementSingle(
+            DesStmt(
+              DesignatorAssignop(
+                DesignatorVar(
+                 k
+                ) [DesignatorVar]
+                Assignop(
+                ) [Assignop]
+                Expr(
+                  ExprTerm(
+                    Term(
+                      TermFactor(
+                        UnaryMinusFactor(
+                          FactorDes(
+                            DesignatorVar(
+                             k
+                            ) [DesignatorVar]
+                          ) [FactorDes]
+                        ) [UnaryMinusFactor]
+                      ) [TermFactor]
+                    ) [Term]
+                  ) [ExprTerm]
+                ) [Expr]
+              ) [DesignatorAssignop]
+            ) [DesStmt]
+          ) [StatementSingle]
+        ) [StmtList]
+        StatementSingle(
+          PrintStmt(
+            Expr(
+              ExprTerm(
+                Term(
+                  TermFactor(
+                    UnaryMinusFactor(
+                      FactorDes(
+                        DesignatorVar(
+                         k
+                        ) [DesignatorVar]
+                      ) [FactorDes]
+                    ) [UnaryMinusFactor]
+                  ) [TermFactor]
+                ) [Term]
+              ) [ExprTerm]
+            ) [Expr]
+          ) [PrintStmt]
+        ) [StatementSingle]
+      ) [StmtList]
+    ) [MethodDecl]
+  ) [MethodDeclList]
+) [Program]
+INFO  15:11:16,151 - =====================================================================
+INFO  15:11:16,156 - =====================================================================
+INFO  15:11:16,157 - Parsiranje uspesno zavrseno!
+INFO  15:11:16,161 - Generisanje koda uspesno zavrseno!

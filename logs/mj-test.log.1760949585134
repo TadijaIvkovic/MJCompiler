@@ -1,0 +1,2276 @@
+INFO  23:35:13,383 - Compiling source file: C:\Users\Lenovo\Desktop\MJCompilerGithub\test\test301.mj
+INFO  23:35:14,106 - #2 program
+INFO  23:35:14,106 - #47 test301
+INFO  23:35:14,106 - #6 const
+INFO  23:35:14,119 - #47 int
+INFO  23:35:14,119 - #47 nula
+INFO  23:35:14,130 - #23 =
+INFO  23:35:14,130 - #44 0
+INFO  23:35:14,130 - #26 ;
+INFO  23:35:14,154 - #6 const
+INFO  23:35:14,166 - #47 int
+INFO  23:35:14,167 - #47 jedan
+INFO  23:35:14,167 - #23 =
+INFO  23:35:14,167 - #44 1
+INFO  23:35:14,167 - #26 ;
+INFO  23:35:14,167 - #6 const
+INFO  23:35:14,167 - #47 int
+INFO  23:35:14,167 - #47 pet
+INFO  23:35:14,167 - #23 =
+INFO  23:35:14,167 - #44 5
+INFO  23:35:14,167 - #26 ;
+INFO  23:35:14,167 - #47 int
+INFO  23:35:14,168 - #47 niz
+INFO  23:35:14,170 - #33 [
+INFO  23:35:14,170 - #34 ]
+INFO  23:35:14,170 - #26 ;
+INFO  23:35:14,170 - #47 char
+INFO  23:35:14,181 - #47 nizch
+INFO  23:35:14,181 - #33 [
+INFO  23:35:14,182 - #34 ]
+INFO  23:35:14,182 - #26 ;
+INFO  23:35:14,182 - #47 int
+INFO  23:35:14,182 - #47 a
+INFO  23:35:14,182 - #26 ;
+INFO  23:35:14,182 - #47 set
+INFO  23:35:14,182 - #47 s1
+INFO  23:35:14,182 - #27 ,
+INFO  23:35:14,182 - #47 s2
+INFO  23:35:14,182 - #27 ,
+INFO  23:35:14,182 - #47 s3
+INFO  23:35:14,182 - #26 ;
+INFO  23:35:14,182 - #31 {
+INFO  23:35:14,193 - #12 void
+INFO  23:35:14,193 - #47 main
+INFO  23:35:14,193 - #29 (
+INFO  23:35:14,204 - #30 )
+INFO  23:35:14,205 - #47 int
+INFO  23:35:14,215 - #47 bodovi
+INFO  23:35:14,215 - #26 ;
+INFO  23:35:14,215 - #47 int
+INFO  23:35:14,215 - #47 temp
+INFO  23:35:14,215 - #26 ;
+INFO  23:35:14,215 - #31 {
+INFO  23:35:14,216 - #47 bodovi
+INFO  23:35:14,228 - #23 =
+INFO  23:35:14,228 - #44 0
+INFO  23:35:14,239 - #26 ;
+INFO  23:35:14,262 - #47 bodovi
+INFO  23:35:14,262 - #18 +
+INFO  23:35:14,262 - #18 +
+INFO  23:35:14,262 - #26 ;
+INFO  23:35:14,262 - #47 bodovi
+INFO  23:35:14,263 - #23 =
+INFO  23:35:14,263 - #47 bodovi
+INFO  23:35:14,263 - #18 +
+INFO  23:35:14,263 - #47 jedan
+INFO  23:35:14,283 - #26 ;
+INFO  23:35:14,283 - #47 bodovi
+INFO  23:35:14,283 - #23 =
+INFO  23:35:14,283 - #47 bodovi
+INFO  23:35:14,283 - #22 *
+INFO  23:35:14,283 - #47 pet
+INFO  23:35:14,305 - #26 ;
+INFO  23:35:14,305 - #47 bodovi
+INFO  23:35:14,305 - #19 -
+INFO  23:35:14,305 - #19 -
+INFO  23:35:14,305 - #26 ;
+INFO  23:35:14,305 - #9 print
+INFO  23:35:14,305 - #29 (
+INFO  23:35:14,305 - #47 bodovi
+INFO  23:35:14,305 - #30 )
+INFO  23:35:14,305 - #26 ;
+INFO  23:35:14,305 - #9 print
+INFO  23:35:14,305 - #29 (
+INFO  23:35:14,305 - #47 eol
+INFO  23:35:14,305 - #30 )
+INFO  23:35:14,306 - #26 ;
+INFO  23:35:14,306 - #47 niz
+INFO  23:35:14,306 - #23 =
+INFO  23:35:14,306 - #8 new
+INFO  23:35:14,306 - #47 int
+INFO  23:35:14,306 - #33 [
+INFO  23:35:14,306 - #44 3
+INFO  23:35:14,306 - #34 ]
+INFO  23:35:14,306 - #26 ;
+INFO  23:35:14,306 - #47 niz
+INFO  23:35:14,306 - #33 [
+INFO  23:35:14,318 - #47 nula
+INFO  23:35:14,318 - #34 ]
+INFO  23:35:14,318 - #23 =
+INFO  23:35:14,319 - #44 2
+INFO  23:35:14,319 - #26 ;
+INFO  23:35:14,319 - #47 niz
+INFO  23:35:14,319 - #33 [
+INFO  23:35:14,319 - #47 jedan
+INFO  23:35:14,319 - #34 ]
+INFO  23:35:14,319 - #23 =
+INFO  23:35:14,319 - #44 3
+INFO  23:35:14,320 - #26 ;
+INFO  23:35:14,320 - #47 niz
+INFO  23:35:14,320 - #33 [
+INFO  23:35:14,320 - #47 niz
+INFO  23:35:14,320 - #33 [
+INFO  23:35:14,320 - #47 nula
+INFO  23:35:14,320 - #34 ]
+INFO  23:35:14,320 - #34 ]
+INFO  23:35:14,321 - #23 =
+INFO  23:35:14,321 - #47 niz
+INFO  23:35:14,321 - #33 [
+INFO  23:35:14,321 - #44 1
+INFO  23:35:14,321 - #34 ]
+INFO  23:35:14,321 - #22 *
+INFO  23:35:14,321 - #44 4
+INFO  23:35:14,321 - #26 ;
+INFO  23:35:14,321 - #47 bodovi
+INFO  23:35:14,321 - #23 =
+INFO  23:35:14,322 - #47 niz
+INFO  23:35:14,322 - #33 [
+INFO  23:35:14,322 - #44 2
+INFO  23:35:14,322 - #34 ]
+INFO  23:35:14,323 - #20 /
+INFO  23:35:14,323 - #47 niz
+INFO  23:35:14,333 - #33 [
+INFO  23:35:14,333 - #44 0
+INFO  23:35:14,333 - #34 ]
+INFO  23:35:14,334 - #26 ;
+INFO  23:35:14,334 - #9 print
+INFO  23:35:14,334 - #29 (
+INFO  23:35:14,334 - #47 bodovi
+INFO  23:35:14,334 - #30 )
+INFO  23:35:14,334 - #26 ;
+INFO  23:35:14,334 - #9 print
+INFO  23:35:14,335 - #29 (
+INFO  23:35:14,335 - #47 eol
+INFO  23:35:14,335 - #30 )
+INFO  23:35:14,335 - #26 ;
+INFO  23:35:14,335 - #9 print
+INFO  23:35:14,335 - #29 (
+INFO  23:35:14,335 - #47 niz
+INFO  23:35:14,335 - #33 [
+INFO  23:35:14,335 - #44 2
+INFO  23:35:14,335 - #34 ]
+INFO  23:35:14,335 - #30 )
+INFO  23:35:14,335 - #26 ;
+INFO  23:35:14,335 - #9 print
+INFO  23:35:14,335 - #29 (
+INFO  23:35:14,335 - #47 eol
+INFO  23:35:14,335 - #30 )
+INFO  23:35:14,335 - #26 ;
+INFO  23:35:14,335 - #47 nizch
+INFO  23:35:14,336 - #23 =
+INFO  23:35:14,336 - #8 new
+INFO  23:35:14,336 - #47 char
+INFO  23:35:14,336 - #33 [
+INFO  23:35:14,336 - #44 3
+INFO  23:35:14,336 - #34 ]
+INFO  23:35:14,336 - #26 ;
+INFO  23:35:14,336 - #47 nizch
+INFO  23:35:14,336 - #33 [
+INFO  23:35:14,336 - #44 0
+INFO  23:35:14,336 - #34 ]
+INFO  23:35:14,336 - #23 =
+INFO  23:35:14,336 - #45 a
+INFO  23:35:14,337 - #26 ;
+INFO  23:35:14,337 - #47 nizch
+INFO  23:35:14,337 - #33 [
+INFO  23:35:14,337 - #47 jedan
+INFO  23:35:14,337 - #34 ]
+INFO  23:35:14,337 - #23 =
+INFO  23:35:14,337 - #45 b
+INFO  23:35:14,337 - #26 ;
+INFO  23:35:14,337 - #47 nizch
+INFO  23:35:14,337 - #33 [
+INFO  23:35:14,337 - #47 pet
+INFO  23:35:14,337 - #19 -
+INFO  23:35:14,337 - #44 3
+INFO  23:35:14,348 - #34 ]
+INFO  23:35:14,348 - #23 =
+INFO  23:35:14,348 - #45 c
+INFO  23:35:14,348 - #26 ;
+INFO  23:35:14,348 - #9 print
+INFO  23:35:14,349 - #29 (
+INFO  23:35:14,349 - #47 nizch
+INFO  23:35:14,349 - #33 [
+INFO  23:35:14,349 - #44 1
+INFO  23:35:14,349 - #34 ]
+INFO  23:35:14,349 - #30 )
+INFO  23:35:14,349 - #26 ;
+INFO  23:35:14,349 - #9 print
+INFO  23:35:14,349 - #29 (
+INFO  23:35:14,349 - #47 eol
+INFO  23:35:14,349 - #30 )
+INFO  23:35:14,349 - #26 ;
+INFO  23:35:14,349 - #9 print
+INFO  23:35:14,349 - #29 (
+INFO  23:35:14,349 - #47 nizch
+INFO  23:35:14,349 - #33 [
+INFO  23:35:14,349 - #47 jedan
+INFO  23:35:14,349 - #22 *
+INFO  23:35:14,349 - #44 2
+INFO  23:35:14,350 - #34 ]
+INFO  23:35:14,350 - #30 )
+INFO  23:35:14,350 - #26 ;
+INFO  23:35:14,350 - #9 print
+INFO  23:35:14,350 - #29 (
+INFO  23:35:14,350 - #47 eol
+INFO  23:35:14,350 - #30 )
+INFO  23:35:14,350 - #26 ;
+INFO  23:35:14,350 - #9 print
+INFO  23:35:14,350 - #29 (
+INFO  23:35:14,350 - #47 ord
+INFO  23:35:14,351 - #29 (
+INFO  23:35:14,351 - #47 nizch
+INFO  23:35:14,351 - #33 [
+INFO  23:35:14,351 - #44 0
+INFO  23:35:14,351 - #34 ]
+INFO  23:35:14,351 - #30 )
+INFO  23:35:14,351 - #30 )
+INFO  23:35:14,352 - #26 ;
+INFO  23:35:14,352 - #47 a
+INFO  23:35:14,352 - #23 =
+INFO  23:35:14,352 - #44 1
+INFO  23:35:14,352 - #26 ;
+INFO  23:35:14,352 - #10 read
+INFO  23:35:14,352 - #29 (
+INFO  23:35:14,352 - #47 bodovi
+INFO  23:35:14,352 - #30 )
+INFO  23:35:14,352 - #26 ;
+INFO  23:35:14,352 - #47 bodovi
+INFO  23:35:14,352 - #23 =
+INFO  23:35:14,352 - #19 -
+INFO  23:35:14,352 - #47 bodovi
+INFO  23:35:14,352 - #18 +
+INFO  23:35:14,352 - #29 (
+INFO  23:35:14,352 - #47 pet
+INFO  23:35:14,352 - #22 *
+INFO  23:35:14,352 - #47 a
+INFO  23:35:14,352 - #20 /
+INFO  23:35:14,353 - #44 2
+INFO  23:35:14,353 - #19 -
+INFO  23:35:14,353 - #47 nula
+INFO  23:35:14,353 - #30 )
+INFO  23:35:14,353 - #22 *
+INFO  23:35:14,353 - #47 bodovi
+INFO  23:35:14,353 - #19 -
+INFO  23:35:14,353 - #29 (
+INFO  23:35:14,354 - #44 3
+INFO  23:35:14,354 - #21 %
+INFO  23:35:14,354 - #44 2
+INFO  23:35:14,363 - #18 +
+INFO  23:35:14,364 - #44 3
+INFO  23:35:14,364 - #22 *
+INFO  23:35:14,364 - #44 2
+INFO  23:35:14,364 - #19 -
+INFO  23:35:14,364 - #44 7
+INFO  23:35:14,364 - #30 )
+INFO  23:35:14,364 - #26 ;
+INFO  23:35:14,364 - #9 print
+INFO  23:35:14,364 - #29 (
+INFO  23:35:14,364 - #47 bodovi
+INFO  23:35:14,364 - #30 )
+INFO  23:35:14,364 - #26 ;
+INFO  23:35:14,364 - #47 niz
+INFO  23:35:14,364 - #33 [
+INFO  23:35:14,364 - #44 0
+INFO  23:35:14,364 - #34 ]
+INFO  23:35:14,364 - #23 =
+INFO  23:35:14,364 - #44 1
+INFO  23:35:14,364 - #26 ;
+INFO  23:35:14,364 - #47 niz
+INFO  23:35:14,365 - #33 [
+INFO  23:35:14,365 - #44 1
+INFO  23:35:14,365 - #34 ]
+INFO  23:35:14,365 - #23 =
+INFO  23:35:14,365 - #44 2
+INFO  23:35:14,365 - #26 ;
+INFO  23:35:14,365 - #47 niz
+INFO  23:35:14,365 - #33 [
+INFO  23:35:14,365 - #44 2
+INFO  23:35:14,365 - #34 ]
+INFO  23:35:14,365 - #23 =
+INFO  23:35:14,365 - #44 3
+INFO  23:35:14,365 - #26 ;
+INFO  23:35:14,365 - #47 s1
+INFO  23:35:14,365 - #23 =
+INFO  23:35:14,365 - #8 new
+INFO  23:35:14,365 - #47 set
+INFO  23:35:14,365 - #33 [
+INFO  23:35:14,365 - #44 5
+INFO  23:35:14,365 - #34 ]
+INFO  23:35:14,365 - #26 ;
+INFO  23:35:14,365 - #47 s2
+INFO  23:35:14,365 - #23 =
+INFO  23:35:14,366 - #8 new
+INFO  23:35:14,366 - #47 set
+INFO  23:35:14,366 - #33 [
+INFO  23:35:14,366 - #44 5
+INFO  23:35:14,366 - #34 ]
+INFO  23:35:14,366 - #26 ;
+INFO  23:35:14,366 - #47 s3
+INFO  23:35:14,366 - #23 =
+INFO  23:35:14,366 - #8 new
+INFO  23:35:14,366 - #47 set
+INFO  23:35:14,366 - #33 [
+INFO  23:35:14,366 - #44 10
+INFO  23:35:14,366 - #34 ]
+INFO  23:35:14,366 - #26 ;
+INFO  23:35:14,366 - #47 s3
+INFO  23:35:14,366 - #23 =
+INFO  23:35:14,366 - #47 s1
+INFO  23:35:14,366 - #24 union
+INFO  23:35:14,366 - #47 s2
+INFO  23:35:14,376 - #26 ;
+INFO  23:35:14,376 - #9 print
+INFO  23:35:14,376 - #29 (
+INFO  23:35:14,376 - #47 s3
+INFO  23:35:14,376 - #30 )
+INFO  23:35:14,376 - #26 ;
+INFO  23:35:14,376 - #9 print
+INFO  23:35:14,376 - #29 (
+INFO  23:35:14,376 - #47 eol
+INFO  23:35:14,377 - #30 )
+INFO  23:35:14,377 - #26 ;
+INFO  23:35:14,377 - #47 niz
+INFO  23:35:14,377 - #33 [
+INFO  23:35:14,377 - #44 0
+INFO  23:35:14,377 - #34 ]
+INFO  23:35:14,377 - #23 =
+INFO  23:35:14,377 - #44 5
+INFO  23:35:14,377 - #26 ;
+INFO  23:35:14,377 - #47 niz
+INFO  23:35:14,377 - #33 [
+INFO  23:35:14,377 - #44 1
+INFO  23:35:14,377 - #34 ]
+INFO  23:35:14,377 - #23 =
+INFO  23:35:14,377 - #44 5
+INFO  23:35:14,377 - #26 ;
+INFO  23:35:14,377 - #47 niz
+INFO  23:35:14,377 - #33 [
+INFO  23:35:14,378 - #44 2
+INFO  23:35:14,378 - #34 ]
+INFO  23:35:14,378 - #23 =
+INFO  23:35:14,378 - #44 10
+INFO  23:35:14,378 - #26 ;
+INFO  23:35:14,378 - #47 s1
+INFO  23:35:14,378 - #23 =
+INFO  23:35:14,378 - #8 new
+INFO  23:35:14,378 - #47 set
+INFO  23:35:14,378 - #33 [
+INFO  23:35:14,378 - #44 5
+INFO  23:35:14,378 - #34 ]
+INFO  23:35:14,378 - #26 ;
+INFO  23:35:14,378 - #47 s2
+INFO  23:35:14,378 - #23 =
+INFO  23:35:14,378 - #8 new
+INFO  23:35:14,378 - #47 set
+INFO  23:35:14,378 - #33 [
+INFO  23:35:14,378 - #44 5
+INFO  23:35:14,378 - #34 ]
+INFO  23:35:14,378 - #26 ;
+INFO  23:35:14,378 - #47 s3
+INFO  23:35:14,378 - #23 =
+INFO  23:35:14,378 - #8 new
+INFO  23:35:14,378 - #47 set
+INFO  23:35:14,378 - #33 [
+INFO  23:35:14,378 - #44 10
+INFO  23:35:14,378 - #34 ]
+INFO  23:35:14,378 - #26 ;
+INFO  23:35:14,378 - #47 s3
+INFO  23:35:14,379 - #23 =
+INFO  23:35:14,379 - #47 s1
+INFO  23:35:14,379 - #24 union
+INFO  23:35:14,379 - #47 s2
+INFO  23:35:14,379 - #26 ;
+INFO  23:35:14,379 - #9 print
+INFO  23:35:14,379 - #29 (
+INFO  23:35:14,379 - #47 s3
+INFO  23:35:14,379 - #30 )
+INFO  23:35:14,379 - #26 ;
+INFO  23:35:14,379 - #32 }
+INFO  23:35:14,379 - #32 }
+INFO  23:35:14,428 - Program(
+  ProgName(
+   test301
+  ) [ProgName]
+  ConstDecLists(
+    ConstDeclList(
+      Type(
+       int
+      ) [Type]
+      ConDecl(
+       nula
+        NumConstant(
+         0
+        ) [NumConstant]
+      ) [ConDecl]
+      NoConstList(
+      ) [NoConstList]
+    ) [ConstDeclList]
+    ConstDecLists(
+      ConstDeclList(
+        Type(
+         int
+        ) [Type]
+        ConDecl(
+         jedan
+          NumConstant(
+           1
+          ) [NumConstant]
+        ) [ConDecl]
+        NoConstList(
+        ) [NoConstList]
+      ) [ConstDeclList]
+      ConstDecLists(
+        ConstDeclList(
+          Type(
+           int
+          ) [Type]
+          ConDecl(
+           pet
+            NumConstant(
+             5
+            ) [NumConstant]
+          ) [ConDecl]
+          NoConstList(
+          ) [NoConstList]
+        ) [ConstDeclList]
+        VarDecLists(
+          VarDecl(
+            Type(
+             int
+            ) [Type]
+            VarDeclarat(
+              VarDeclarationArray(
+               niz
+              ) [VarDeclarationArray]
+            ) [VarDeclarat]
+          ) [VarDecl]
+          VarDecLists(
+            VarDecl(
+              Type(
+               char
+              ) [Type]
+              VarDeclarat(
+                VarDeclarationArray(
+                 nizch
+                ) [VarDeclarationArray]
+              ) [VarDeclarat]
+            ) [VarDecl]
+            VarDecLists(
+              VarDecl(
+                Type(
+                 int
+                ) [Type]
+                VarDeclarat(
+                  VarDeclarationVar(
+                   a
+                  ) [VarDeclarationVar]
+                ) [VarDeclarat]
+              ) [VarDecl]
+              VarDecLists(
+                VarDecl(
+                  Type(
+                   set
+                  ) [Type]
+                  VarDeclaratList(
+                    VarDeclaratList(
+                      VarDeclarat(
+                        VarDeclarationVar(
+                         s1
+                        ) [VarDeclarationVar]
+                      ) [VarDeclarat]
+                      VarDeclarationVar(
+                       s2
+                      ) [VarDeclarationVar]
+                    ) [VarDeclaratList]
+                    VarDeclarationVar(
+                     s3
+                    ) [VarDeclarationVar]
+                  ) [VarDeclaratList]
+                ) [VarDecl]
+                NoDecLists(
+                ) [NoDecLists]
+              ) [VarDecLists]
+            ) [VarDecLists]
+          ) [VarDecLists]
+        ) [VarDecLists]
+      ) [ConstDecLists]
+    ) [ConstDecLists]
+  ) [ConstDecLists]
+  MethodDeclList(
+    MethodDecl(
+      MethodSignature(
+       main
+      ) [MethodSignature]
+      VarDeclarList(
+        VarDeclarList(
+          NoVarDeclarList(
+          ) [NoVarDeclarList]
+          VarDecl(
+            Type(
+             int
+            ) [Type]
+            VarDeclarat(
+              VarDeclarationVar(
+               bodovi
+              ) [VarDeclarationVar]
+            ) [VarDeclarat]
+          ) [VarDecl]
+        ) [VarDeclarList]
+        VarDecl(
+          Type(
+           int
+          ) [Type]
+          VarDeclarat(
+            VarDeclarationVar(
+             temp
+            ) [VarDeclarationVar]
+          ) [VarDeclarat]
+        ) [VarDecl]
+      ) [VarDeclarList]
+      StmtList(
+        StmtList(
+          StmtList(
+            StmtList(
+              StmtList(
+                StmtList(
+                  StmtList(
+                    StmtList(
+                      StmtList(
+                        StmtList(
+                          StmtList(
+                            StmtList(
+                              StmtList(
+                                StmtList(
+                                  StmtList(
+                                    StmtList(
+                                      StmtList(
+                                        StmtList(
+                                          StmtList(
+                                            StmtList(
+                                              StmtList(
+                                                StmtList(
+                                                  StmtList(
+                                                    StmtList(
+                                                      StmtList(
+                                                        StmtList(
+                                                          StmtList(
+                                                            StmtList(
+                                                              StmtList(
+                                                                StmtList(
+                                                                  StmtList(
+                                                                    StmtList(
+                                                                      StmtList(
+                                                                        StmtList(
+                                                                          StmtList(
+                                                                            StmtList(
+                                                                              StmtList(
+                                                                                StmtList(
+                                                                                  StmtList(
+                                                                                    StmtList(
+                                                                                      StmtList(
+                                                                                        StmtList(
+                                                                                          StmtList(
+                                                                                            StmtList(
+                                                                                              StmtList(
+                                                                                                StmtList(
+                                                                                                  NoStmtList(
+                                                                                                  ) [NoStmtList]
+                                                                                                  StatementSingle(
+                                                                                                    DesStmt(
+                                                                                                      DesginatorAssignop(
+                                                                                                        DesignatorVar(
+                                                                                                         bodovi
+                                                                                                        ) [DesignatorVar]
+                                                                                                        Assignop(
+                                                                                                        ) [Assignop]
+                                                                                                        Expr(
+                                                                                                          ExprTerm(
+                                                                                                            Term(
+                                                                                                              TermFactor(
+                                                                                                                UnaryFactor(
+                                                                                                                  FactorNum(
+                                                                                                                   0
+                                                                                                                  ) [FactorNum]
+                                                                                                                ) [UnaryFactor]
+                                                                                                              ) [TermFactor]
+                                                                                                            ) [Term]
+                                                                                                          ) [ExprTerm]
+                                                                                                        ) [Expr]
+                                                                                                      ) [DesginatorAssignop]
+                                                                                                    ) [DesStmt]
+                                                                                                  ) [StatementSingle]
+                                                                                                ) [StmtList]
+                                                                                                StatementSingle(
+                                                                                                  DesStmt(
+                                                                                                    DesignatorInc(
+                                                                                                      DesignatorVar(
+                                                                                                       bodovi
+                                                                                                      ) [DesignatorVar]
+                                                                                                    ) [DesignatorInc]
+                                                                                                  ) [DesStmt]
+                                                                                                ) [StatementSingle]
+                                                                                              ) [StmtList]
+                                                                                              StatementSingle(
+                                                                                                DesStmt(
+                                                                                                  DesginatorAssignop(
+                                                                                                    DesignatorVar(
+                                                                                                     bodovi
+                                                                                                    ) [DesignatorVar]
+                                                                                                    Assignop(
+                                                                                                    ) [Assignop]
+                                                                                                    Expr(
+                                                                                                      ExprAddopList(
+                                                                                                        ExprTerm(
+                                                                                                          Term(
+                                                                                                            TermFactor(
+                                                                                                              UnaryFactor(
+                                                                                                                FactorDes(
+                                                                                                                  DesignatorVar(
+                                                                                                                   bodovi
+                                                                                                                  ) [DesignatorVar]
+                                                                                                                ) [FactorDes]
+                                                                                                              ) [UnaryFactor]
+                                                                                                            ) [TermFactor]
+                                                                                                          ) [Term]
+                                                                                                        ) [ExprTerm]
+                                                                                                        AddopPlus(
+                                                                                                        ) [AddopPlus]
+                                                                                                        Term(
+                                                                                                          TermFactor(
+                                                                                                            UnaryFactor(
+                                                                                                              FactorDes(
+                                                                                                                DesignatorVar(
+                                                                                                                 jedan
+                                                                                                                ) [DesignatorVar]
+                                                                                                              ) [FactorDes]
+                                                                                                            ) [UnaryFactor]
+                                                                                                          ) [TermFactor]
+                                                                                                        ) [Term]
+                                                                                                      ) [ExprAddopList]
+                                                                                                    ) [Expr]
+                                                                                                  ) [DesginatorAssignop]
+                                                                                                ) [DesStmt]
+                                                                                              ) [StatementSingle]
+                                                                                            ) [StmtList]
+                                                                                            StatementSingle(
+                                                                                              DesStmt(
+                                                                                                DesginatorAssignop(
+                                                                                                  DesignatorVar(
+                                                                                                   bodovi
+                                                                                                  ) [DesignatorVar]
+                                                                                                  Assignop(
+                                                                                                  ) [Assignop]
+                                                                                                  Expr(
+                                                                                                    ExprTerm(
+                                                                                                      Term(
+                                                                                                        TermMulopList(
+                                                                                                          TermFactor(
+                                                                                                            UnaryFactor(
+                                                                                                              FactorDes(
+                                                                                                                DesignatorVar(
+                                                                                                                 bodovi
+                                                                                                                ) [DesignatorVar]
+                                                                                                              ) [FactorDes]
+                                                                                                            ) [UnaryFactor]
+                                                                                                          ) [TermFactor]
+                                                                                                          MulopMul(
+                                                                                                          ) [MulopMul]
+                                                                                                          UnaryFactor(
+                                                                                                            FactorDes(
+                                                                                                              DesignatorVar(
+                                                                                                               pet
+                                                                                                              ) [DesignatorVar]
+                                                                                                            ) [FactorDes]
+                                                                                                          ) [UnaryFactor]
+                                                                                                        ) [TermMulopList]
+                                                                                                      ) [Term]
+                                                                                                    ) [ExprTerm]
+                                                                                                  ) [Expr]
+                                                                                                ) [DesginatorAssignop]
+                                                                                              ) [DesStmt]
+                                                                                            ) [StatementSingle]
+                                                                                          ) [StmtList]
+                                                                                          StatementSingle(
+                                                                                            DesStmt(
+                                                                                              DesignatorDec(
+                                                                                                DesignatorVar(
+                                                                                                 bodovi
+                                                                                                ) [DesignatorVar]
+                                                                                              ) [DesignatorDec]
+                                                                                            ) [DesStmt]
+                                                                                          ) [StatementSingle]
+                                                                                        ) [StmtList]
+                                                                                        StatementSingle(
+                                                                                          PrintStmt(
+                                                                                            Expr(
+                                                                                              ExprTerm(
+                                                                                                Term(
+                                                                                                  TermFactor(
+                                                                                                    UnaryFactor(
+                                                                                                      FactorDes(
+                                                                                                        DesignatorVar(
+                                                                                                         bodovi
+                                                                                                        ) [DesignatorVar]
+                                                                                                      ) [FactorDes]
+                                                                                                    ) [UnaryFactor]
+                                                                                                  ) [TermFactor]
+                                                                                                ) [Term]
+                                                                                              ) [ExprTerm]
+                                                                                            ) [Expr]
+                                                                                          ) [PrintStmt]
+                                                                                        ) [StatementSingle]
+                                                                                      ) [StmtList]
+                                                                                      StatementSingle(
+                                                                                        PrintStmt(
+                                                                                          Expr(
+                                                                                            ExprTerm(
+                                                                                              Term(
+                                                                                                TermFactor(
+                                                                                                  UnaryFactor(
+                                                                                                    FactorDes(
+                                                                                                      DesignatorVar(
+                                                                                                       eol
+                                                                                                      ) [DesignatorVar]
+                                                                                                    ) [FactorDes]
+                                                                                                  ) [UnaryFactor]
+                                                                                                ) [TermFactor]
+                                                                                              ) [Term]
+                                                                                            ) [ExprTerm]
+                                                                                          ) [Expr]
+                                                                                        ) [PrintStmt]
+                                                                                      ) [StatementSingle]
+                                                                                    ) [StmtList]
+                                                                                    StatementSingle(
+                                                                                      DesStmt(
+                                                                                        DesginatorAssignop(
+                                                                                          DesignatorVar(
+                                                                                           niz
+                                                                                          ) [DesignatorVar]
+                                                                                          Assignop(
+                                                                                          ) [Assignop]
+                                                                                          Expr(
+                                                                                            ExprTerm(
+                                                                                              Term(
+                                                                                                TermFactor(
+                                                                                                  UnaryFactor(
+                                                                                                    FactorNewExpr(
+                                                                                                      Type(
+                                                                                                       int
+                                                                                                      ) [Type]
+                                                                                                      Expr(
+                                                                                                        ExprTerm(
+                                                                                                          Term(
+                                                                                                            TermFactor(
+                                                                                                              UnaryFactor(
+                                                                                                                FactorNum(
+                                                                                                                 3
+                                                                                                                ) [FactorNum]
+                                                                                                              ) [UnaryFactor]
+                                                                                                            ) [TermFactor]
+                                                                                                          ) [Term]
+                                                                                                        ) [ExprTerm]
+                                                                                                      ) [Expr]
+                                                                                                    ) [FactorNewExpr]
+                                                                                                  ) [UnaryFactor]
+                                                                                                ) [TermFactor]
+                                                                                              ) [Term]
+                                                                                            ) [ExprTerm]
+                                                                                          ) [Expr]
+                                                                                        ) [DesginatorAssignop]
+                                                                                      ) [DesStmt]
+                                                                                    ) [StatementSingle]
+                                                                                  ) [StmtList]
+                                                                                  StatementSingle(
+                                                                                    DesStmt(
+                                                                                      DesginatorAssignop(
+                                                                                        DesignatorArray(
+                                                                                          DesignatorArrayName(
+                                                                                           niz
+                                                                                          ) [DesignatorArrayName]
+                                                                                          Expr(
+                                                                                            ExprTerm(
+                                                                                              Term(
+                                                                                                TermFactor(
+                                                                                                  UnaryFactor(
+                                                                                                    FactorDes(
+                                                                                                      DesignatorVar(
+                                                                                                       nula
+                                                                                                      ) [DesignatorVar]
+                                                                                                    ) [FactorDes]
+                                                                                                  ) [UnaryFactor]
+                                                                                                ) [TermFactor]
+                                                                                              ) [Term]
+                                                                                            ) [ExprTerm]
+                                                                                          ) [Expr]
+                                                                                        ) [DesignatorArray]
+                                                                                        Assignop(
+                                                                                        ) [Assignop]
+                                                                                        Expr(
+                                                                                          ExprTerm(
+                                                                                            Term(
+                                                                                              TermFactor(
+                                                                                                UnaryFactor(
+                                                                                                  FactorNum(
+                                                                                                   2
+                                                                                                  ) [FactorNum]
+                                                                                                ) [UnaryFactor]
+                                                                                              ) [TermFactor]
+                                                                                            ) [Term]
+                                                                                          ) [ExprTerm]
+                                                                                        ) [Expr]
+                                                                                      ) [DesginatorAssignop]
+                                                                                    ) [DesStmt]
+                                                                                  ) [StatementSingle]
+                                                                                ) [StmtList]
+                                                                                StatementSingle(
+                                                                                  DesStmt(
+                                                                                    DesginatorAssignop(
+                                                                                      DesignatorArray(
+                                                                                        DesignatorArrayName(
+                                                                                         niz
+                                                                                        ) [DesignatorArrayName]
+                                                                                        Expr(
+                                                                                          ExprTerm(
+                                                                                            Term(
+                                                                                              TermFactor(
+                                                                                                UnaryFactor(
+                                                                                                  FactorDes(
+                                                                                                    DesignatorVar(
+                                                                                                     jedan
+                                                                                                    ) [DesignatorVar]
+                                                                                                  ) [FactorDes]
+                                                                                                ) [UnaryFactor]
+                                                                                              ) [TermFactor]
+                                                                                            ) [Term]
+                                                                                          ) [ExprTerm]
+                                                                                        ) [Expr]
+                                                                                      ) [DesignatorArray]
+                                                                                      Assignop(
+                                                                                      ) [Assignop]
+                                                                                      Expr(
+                                                                                        ExprTerm(
+                                                                                          Term(
+                                                                                            TermFactor(
+                                                                                              UnaryFactor(
+                                                                                                FactorNum(
+                                                                                                 3
+                                                                                                ) [FactorNum]
+                                                                                              ) [UnaryFactor]
+                                                                                            ) [TermFactor]
+                                                                                          ) [Term]
+                                                                                        ) [ExprTerm]
+                                                                                      ) [Expr]
+                                                                                    ) [DesginatorAssignop]
+                                                                                  ) [DesStmt]
+                                                                                ) [StatementSingle]
+                                                                              ) [StmtList]
+                                                                              StatementSingle(
+                                                                                DesStmt(
+                                                                                  DesginatorAssignop(
+                                                                                    DesignatorArray(
+                                                                                      DesignatorArrayName(
+                                                                                       niz
+                                                                                      ) [DesignatorArrayName]
+                                                                                      Expr(
+                                                                                        ExprTerm(
+                                                                                          Term(
+                                                                                            TermFactor(
+                                                                                              UnaryFactor(
+                                                                                                FactorDes(
+                                                                                                  DesignatorArray(
+                                                                                                    DesignatorArrayName(
+                                                                                                     niz
+                                                                                                    ) [DesignatorArrayName]
+                                                                                                    Expr(
+                                                                                                      ExprTerm(
+                                                                                                        Term(
+                                                                                                          TermFactor(
+                                                                                                            UnaryFactor(
+                                                                                                              FactorDes(
+                                                                                                                DesignatorVar(
+                                                                                                                 nula
+                                                                                                                ) [DesignatorVar]
+                                                                                                              ) [FactorDes]
+                                                                                                            ) [UnaryFactor]
+                                                                                                          ) [TermFactor]
+                                                                                                        ) [Term]
+                                                                                                      ) [ExprTerm]
+                                                                                                    ) [Expr]
+                                                                                                  ) [DesignatorArray]
+                                                                                                ) [FactorDes]
+                                                                                              ) [UnaryFactor]
+                                                                                            ) [TermFactor]
+                                                                                          ) [Term]
+                                                                                        ) [ExprTerm]
+                                                                                      ) [Expr]
+                                                                                    ) [DesignatorArray]
+                                                                                    Assignop(
+                                                                                    ) [Assignop]
+                                                                                    Expr(
+                                                                                      ExprTerm(
+                                                                                        Term(
+                                                                                          TermMulopList(
+                                                                                            TermFactor(
+                                                                                              UnaryFactor(
+                                                                                                FactorDes(
+                                                                                                  DesignatorArray(
+                                                                                                    DesignatorArrayName(
+                                                                                                     niz
+                                                                                                    ) [DesignatorArrayName]
+                                                                                                    Expr(
+                                                                                                      ExprTerm(
+                                                                                                        Term(
+                                                                                                          TermFactor(
+                                                                                                            UnaryFactor(
+                                                                                                              FactorNum(
+                                                                                                               1
+                                                                                                              ) [FactorNum]
+                                                                                                            ) [UnaryFactor]
+                                                                                                          ) [TermFactor]
+                                                                                                        ) [Term]
+                                                                                                      ) [ExprTerm]
+                                                                                                    ) [Expr]
+                                                                                                  ) [DesignatorArray]
+                                                                                                ) [FactorDes]
+                                                                                              ) [UnaryFactor]
+                                                                                            ) [TermFactor]
+                                                                                            MulopMul(
+                                                                                            ) [MulopMul]
+                                                                                            UnaryFactor(
+                                                                                              FactorNum(
+                                                                                               4
+                                                                                              ) [FactorNum]
+                                                                                            ) [UnaryFactor]
+                                                                                          ) [TermMulopList]
+                                                                                        ) [Term]
+                                                                                      ) [ExprTerm]
+                                                                                    ) [Expr]
+                                                                                  ) [DesginatorAssignop]
+                                                                                ) [DesStmt]
+                                                                              ) [StatementSingle]
+                                                                            ) [StmtList]
+                                                                            StatementSingle(
+                                                                              DesStmt(
+                                                                                DesginatorAssignop(
+                                                                                  DesignatorVar(
+                                                                                   bodovi
+                                                                                  ) [DesignatorVar]
+                                                                                  Assignop(
+                                                                                  ) [Assignop]
+                                                                                  Expr(
+                                                                                    ExprTerm(
+                                                                                      Term(
+                                                                                        TermMulopList(
+                                                                                          TermFactor(
+                                                                                            UnaryFactor(
+                                                                                              FactorDes(
+                                                                                                DesignatorArray(
+                                                                                                  DesignatorArrayName(
+                                                                                                   niz
+                                                                                                  ) [DesignatorArrayName]
+                                                                                                  Expr(
+                                                                                                    ExprTerm(
+                                                                                                      Term(
+                                                                                                        TermFactor(
+                                                                                                          UnaryFactor(
+                                                                                                            FactorNum(
+                                                                                                             2
+                                                                                                            ) [FactorNum]
+                                                                                                          ) [UnaryFactor]
+                                                                                                        ) [TermFactor]
+                                                                                                      ) [Term]
+                                                                                                    ) [ExprTerm]
+                                                                                                  ) [Expr]
+                                                                                                ) [DesignatorArray]
+                                                                                              ) [FactorDes]
+                                                                                            ) [UnaryFactor]
+                                                                                          ) [TermFactor]
+                                                                                          MulopDiv(
+                                                                                          ) [MulopDiv]
+                                                                                          UnaryFactor(
+                                                                                            FactorDes(
+                                                                                              DesignatorArray(
+                                                                                                DesignatorArrayName(
+                                                                                                 niz
+                                                                                                ) [DesignatorArrayName]
+                                                                                                Expr(
+                                                                                                  ExprTerm(
+                                                                                                    Term(
+                                                                                                      TermFactor(
+                                                                                                        UnaryFactor(
+                                                                                                          FactorNum(
+                                                                                                           0
+                                                                                                          ) [FactorNum]
+                                                                                                        ) [UnaryFactor]
+                                                                                                      ) [TermFactor]
+                                                                                                    ) [Term]
+                                                                                                  ) [ExprTerm]
+                                                                                                ) [Expr]
+                                                                                              ) [DesignatorArray]
+                                                                                            ) [FactorDes]
+                                                                                          ) [UnaryFactor]
+                                                                                        ) [TermMulopList]
+                                                                                      ) [Term]
+                                                                                    ) [ExprTerm]
+                                                                                  ) [Expr]
+                                                                                ) [DesginatorAssignop]
+                                                                              ) [DesStmt]
+                                                                            ) [StatementSingle]
+                                                                          ) [StmtList]
+                                                                          StatementSingle(
+                                                                            PrintStmt(
+                                                                              Expr(
+                                                                                ExprTerm(
+                                                                                  Term(
+                                                                                    TermFactor(
+                                                                                      UnaryFactor(
+                                                                                        FactorDes(
+                                                                                          DesignatorVar(
+                                                                                           bodovi
+                                                                                          ) [DesignatorVar]
+                                                                                        ) [FactorDes]
+                                                                                      ) [UnaryFactor]
+                                                                                    ) [TermFactor]
+                                                                                  ) [Term]
+                                                                                ) [ExprTerm]
+                                                                              ) [Expr]
+                                                                            ) [PrintStmt]
+                                                                          ) [StatementSingle]
+                                                                        ) [StmtList]
+                                                                        StatementSingle(
+                                                                          PrintStmt(
+                                                                            Expr(
+                                                                              ExprTerm(
+                                                                                Term(
+                                                                                  TermFactor(
+                                                                                    UnaryFactor(
+                                                                                      FactorDes(
+                                                                                        DesignatorVar(
+                                                                                         eol
+                                                                                        ) [DesignatorVar]
+                                                                                      ) [FactorDes]
+                                                                                    ) [UnaryFactor]
+                                                                                  ) [TermFactor]
+                                                                                ) [Term]
+                                                                              ) [ExprTerm]
+                                                                            ) [Expr]
+                                                                          ) [PrintStmt]
+                                                                        ) [StatementSingle]
+                                                                      ) [StmtList]
+                                                                      StatementSingle(
+                                                                        PrintStmt(
+                                                                          Expr(
+                                                                            ExprTerm(
+                                                                              Term(
+                                                                                TermFactor(
+                                                                                  UnaryFactor(
+                                                                                    FactorDes(
+                                                                                      DesignatorArray(
+                                                                                        DesignatorArrayName(
+                                                                                         niz
+                                                                                        ) [DesignatorArrayName]
+                                                                                        Expr(
+                                                                                          ExprTerm(
+                                                                                            Term(
+                                                                                              TermFactor(
+                                                                                                UnaryFactor(
+                                                                                                  FactorNum(
+                                                                                                   2
+                                                                                                  ) [FactorNum]
+                                                                                                ) [UnaryFactor]
+                                                                                              ) [TermFactor]
+                                                                                            ) [Term]
+                                                                                          ) [ExprTerm]
+                                                                                        ) [Expr]
+                                                                                      ) [DesignatorArray]
+                                                                                    ) [FactorDes]
+                                                                                  ) [UnaryFactor]
+                                                                                ) [TermFactor]
+                                                                              ) [Term]
+                                                                            ) [ExprTerm]
+                                                                          ) [Expr]
+                                                                        ) [PrintStmt]
+                                                                      ) [StatementSingle]
+                                                                    ) [StmtList]
+                                                                    StatementSingle(
+                                                                      PrintStmt(
+                                                                        Expr(
+                                                                          ExprTerm(
+                                                                            Term(
+                                                                              TermFactor(
+                                                                                UnaryFactor(
+                                                                                  FactorDes(
+                                                                                    DesignatorVar(
+                                                                                     eol
+                                                                                    ) [DesignatorVar]
+                                                                                  ) [FactorDes]
+                                                                                ) [UnaryFactor]
+                                                                              ) [TermFactor]
+                                                                            ) [Term]
+                                                                          ) [ExprTerm]
+                                                                        ) [Expr]
+                                                                      ) [PrintStmt]
+                                                                    ) [StatementSingle]
+                                                                  ) [StmtList]
+                                                                  StatementSingle(
+                                                                    DesStmt(
+                                                                      DesginatorAssignop(
+                                                                        DesignatorVar(
+                                                                         nizch
+                                                                        ) [DesignatorVar]
+                                                                        Assignop(
+                                                                        ) [Assignop]
+                                                                        Expr(
+                                                                          ExprTerm(
+                                                                            Term(
+                                                                              TermFactor(
+                                                                                UnaryFactor(
+                                                                                  FactorNewExpr(
+                                                                                    Type(
+                                                                                     char
+                                                                                    ) [Type]
+                                                                                    Expr(
+                                                                                      ExprTerm(
+                                                                                        Term(
+                                                                                          TermFactor(
+                                                                                            UnaryFactor(
+                                                                                              FactorNum(
+                                                                                               3
+                                                                                              ) [FactorNum]
+                                                                                            ) [UnaryFactor]
+                                                                                          ) [TermFactor]
+                                                                                        ) [Term]
+                                                                                      ) [ExprTerm]
+                                                                                    ) [Expr]
+                                                                                  ) [FactorNewExpr]
+                                                                                ) [UnaryFactor]
+                                                                              ) [TermFactor]
+                                                                            ) [Term]
+                                                                          ) [ExprTerm]
+                                                                        ) [Expr]
+                                                                      ) [DesginatorAssignop]
+                                                                    ) [DesStmt]
+                                                                  ) [StatementSingle]
+                                                                ) [StmtList]
+                                                                StatementSingle(
+                                                                  DesStmt(
+                                                                    DesginatorAssignop(
+                                                                      DesignatorArray(
+                                                                        DesignatorArrayName(
+                                                                         nizch
+                                                                        ) [DesignatorArrayName]
+                                                                        Expr(
+                                                                          ExprTerm(
+                                                                            Term(
+                                                                              TermFactor(
+                                                                                UnaryFactor(
+                                                                                  FactorNum(
+                                                                                   0
+                                                                                  ) [FactorNum]
+                                                                                ) [UnaryFactor]
+                                                                              ) [TermFactor]
+                                                                            ) [Term]
+                                                                          ) [ExprTerm]
+                                                                        ) [Expr]
+                                                                      ) [DesignatorArray]
+                                                                      Assignop(
+                                                                      ) [Assignop]
+                                                                      Expr(
+                                                                        ExprTerm(
+                                                                          Term(
+                                                                            TermFactor(
+                                                                              UnaryFactor(
+                                                                                FactorChar(
+                                                                                 a
+                                                                                ) [FactorChar]
+                                                                              ) [UnaryFactor]
+                                                                            ) [TermFactor]
+                                                                          ) [Term]
+                                                                        ) [ExprTerm]
+                                                                      ) [Expr]
+                                                                    ) [DesginatorAssignop]
+                                                                  ) [DesStmt]
+                                                                ) [StatementSingle]
+                                                              ) [StmtList]
+                                                              StatementSingle(
+                                                                DesStmt(
+                                                                  DesginatorAssignop(
+                                                                    DesignatorArray(
+                                                                      DesignatorArrayName(
+                                                                       nizch
+                                                                      ) [DesignatorArrayName]
+                                                                      Expr(
+                                                                        ExprTerm(
+                                                                          Term(
+                                                                            TermFactor(
+                                                                              UnaryFactor(
+                                                                                FactorDes(
+                                                                                  DesignatorVar(
+                                                                                   jedan
+                                                                                  ) [DesignatorVar]
+                                                                                ) [FactorDes]
+                                                                              ) [UnaryFactor]
+                                                                            ) [TermFactor]
+                                                                          ) [Term]
+                                                                        ) [ExprTerm]
+                                                                      ) [Expr]
+                                                                    ) [DesignatorArray]
+                                                                    Assignop(
+                                                                    ) [Assignop]
+                                                                    Expr(
+                                                                      ExprTerm(
+                                                                        Term(
+                                                                          TermFactor(
+                                                                            UnaryFactor(
+                                                                              FactorChar(
+                                                                               b
+                                                                              ) [FactorChar]
+                                                                            ) [UnaryFactor]
+                                                                          ) [TermFactor]
+                                                                        ) [Term]
+                                                                      ) [ExprTerm]
+                                                                    ) [Expr]
+                                                                  ) [DesginatorAssignop]
+                                                                ) [DesStmt]
+                                                              ) [StatementSingle]
+                                                            ) [StmtList]
+                                                            StatementSingle(
+                                                              DesStmt(
+                                                                DesginatorAssignop(
+                                                                  DesignatorArray(
+                                                                    DesignatorArrayName(
+                                                                     nizch
+                                                                    ) [DesignatorArrayName]
+                                                                    Expr(
+                                                                      ExprAddopList(
+                                                                        ExprTerm(
+                                                                          Term(
+                                                                            TermFactor(
+                                                                              UnaryFactor(
+                                                                                FactorDes(
+                                                                                  DesignatorVar(
+                                                                                   pet
+                                                                                  ) [DesignatorVar]
+                                                                                ) [FactorDes]
+                                                                              ) [UnaryFactor]
+                                                                            ) [TermFactor]
+                                                                          ) [Term]
+                                                                        ) [ExprTerm]
+                                                                        AddopMinus(
+                                                                        ) [AddopMinus]
+                                                                        Term(
+                                                                          TermFactor(
+                                                                            UnaryFactor(
+                                                                              FactorNum(
+                                                                               3
+                                                                              ) [FactorNum]
+                                                                            ) [UnaryFactor]
+                                                                          ) [TermFactor]
+                                                                        ) [Term]
+                                                                      ) [ExprAddopList]
+                                                                    ) [Expr]
+                                                                  ) [DesignatorArray]
+                                                                  Assignop(
+                                                                  ) [Assignop]
+                                                                  Expr(
+                                                                    ExprTerm(
+                                                                      Term(
+                                                                        TermFactor(
+                                                                          UnaryFactor(
+                                                                            FactorChar(
+                                                                             c
+                                                                            ) [FactorChar]
+                                                                          ) [UnaryFactor]
+                                                                        ) [TermFactor]
+                                                                      ) [Term]
+                                                                    ) [ExprTerm]
+                                                                  ) [Expr]
+                                                                ) [DesginatorAssignop]
+                                                              ) [DesStmt]
+                                                            ) [StatementSingle]
+                                                          ) [StmtList]
+                                                          StatementSingle(
+                                                            PrintStmt(
+                                                              Expr(
+                                                                ExprTerm(
+                                                                  Term(
+                                                                    TermFactor(
+                                                                      UnaryFactor(
+                                                                        FactorDes(
+                                                                          DesignatorArray(
+                                                                            DesignatorArrayName(
+                                                                             nizch
+                                                                            ) [DesignatorArrayName]
+                                                                            Expr(
+                                                                              ExprTerm(
+                                                                                Term(
+                                                                                  TermFactor(
+                                                                                    UnaryFactor(
+                                                                                      FactorNum(
+                                                                                       1
+                                                                                      ) [FactorNum]
+                                                                                    ) [UnaryFactor]
+                                                                                  ) [TermFactor]
+                                                                                ) [Term]
+                                                                              ) [ExprTerm]
+                                                                            ) [Expr]
+                                                                          ) [DesignatorArray]
+                                                                        ) [FactorDes]
+                                                                      ) [UnaryFactor]
+                                                                    ) [TermFactor]
+                                                                  ) [Term]
+                                                                ) [ExprTerm]
+                                                              ) [Expr]
+                                                            ) [PrintStmt]
+                                                          ) [StatementSingle]
+                                                        ) [StmtList]
+                                                        StatementSingle(
+                                                          PrintStmt(
+                                                            Expr(
+                                                              ExprTerm(
+                                                                Term(
+                                                                  TermFactor(
+                                                                    UnaryFactor(
+                                                                      FactorDes(
+                                                                        DesignatorVar(
+                                                                         eol
+                                                                        ) [DesignatorVar]
+                                                                      ) [FactorDes]
+                                                                    ) [UnaryFactor]
+                                                                  ) [TermFactor]
+                                                                ) [Term]
+                                                              ) [ExprTerm]
+                                                            ) [Expr]
+                                                          ) [PrintStmt]
+                                                        ) [StatementSingle]
+                                                      ) [StmtList]
+                                                      StatementSingle(
+                                                        PrintStmt(
+                                                          Expr(
+                                                            ExprTerm(
+                                                              Term(
+                                                                TermFactor(
+                                                                  UnaryFactor(
+                                                                    FactorDes(
+                                                                      DesignatorArray(
+                                                                        DesignatorArrayName(
+                                                                         nizch
+                                                                        ) [DesignatorArrayName]
+                                                                        Expr(
+                                                                          ExprTerm(
+                                                                            Term(
+                                                                              TermMulopList(
+                                                                                TermFactor(
+                                                                                  UnaryFactor(
+                                                                                    FactorDes(
+                                                                                      DesignatorVar(
+                                                                                       jedan
+                                                                                      ) [DesignatorVar]
+                                                                                    ) [FactorDes]
+                                                                                  ) [UnaryFactor]
+                                                                                ) [TermFactor]
+                                                                                MulopMul(
+                                                                                ) [MulopMul]
+                                                                                UnaryFactor(
+                                                                                  FactorNum(
+                                                                                   2
+                                                                                  ) [FactorNum]
+                                                                                ) [UnaryFactor]
+                                                                              ) [TermMulopList]
+                                                                            ) [Term]
+                                                                          ) [ExprTerm]
+                                                                        ) [Expr]
+                                                                      ) [DesignatorArray]
+                                                                    ) [FactorDes]
+                                                                  ) [UnaryFactor]
+                                                                ) [TermFactor]
+                                                              ) [Term]
+                                                            ) [ExprTerm]
+                                                          ) [Expr]
+                                                        ) [PrintStmt]
+                                                      ) [StatementSingle]
+                                                    ) [StmtList]
+                                                    StatementSingle(
+                                                      PrintStmt(
+                                                        Expr(
+                                                          ExprTerm(
+                                                            Term(
+                                                              TermFactor(
+                                                                UnaryFactor(
+                                                                  FactorDes(
+                                                                    DesignatorVar(
+                                                                     eol
+                                                                    ) [DesignatorVar]
+                                                                  ) [FactorDes]
+                                                                ) [UnaryFactor]
+                                                              ) [TermFactor]
+                                                            ) [Term]
+                                                          ) [ExprTerm]
+                                                        ) [Expr]
+                                                      ) [PrintStmt]
+                                                    ) [StatementSingle]
+                                                  ) [StmtList]
+                                                  StatementSingle(
+                                                    PrintStmt(
+                                                      Expr(
+                                                        ExprTerm(
+                                                          Term(
+                                                            TermFactor(
+                                                              UnaryFactor(
+                                                                FactorMeth(
+                                                                  DesignatorVar(
+                                                                   ord
+                                                                  ) [DesignatorVar]
+                                                                  ActParams(
+                                                                    ActParamsExpr(
+                                                                      Expr(
+                                                                        ExprTerm(
+                                                                          Term(
+                                                                            TermFactor(
+                                                                              UnaryFactor(
+                                                                                FactorDes(
+                                                                                  DesignatorArray(
+                                                                                    DesignatorArrayName(
+                                                                                     nizch
+                                                                                    ) [DesignatorArrayName]
+                                                                                    Expr(
+                                                                                      ExprTerm(
+                                                                                        Term(
+                                                                                          TermFactor(
+                                                                                            UnaryFactor(
+                                                                                              FactorNum(
+                                                                                               0
+                                                                                              ) [FactorNum]
+                                                                                            ) [UnaryFactor]
+                                                                                          ) [TermFactor]
+                                                                                        ) [Term]
+                                                                                      ) [ExprTerm]
+                                                                                    ) [Expr]
+                                                                                  ) [DesignatorArray]
+                                                                                ) [FactorDes]
+                                                                              ) [UnaryFactor]
+                                                                            ) [TermFactor]
+                                                                          ) [Term]
+                                                                        ) [ExprTerm]
+                                                                      ) [Expr]
+                                                                    ) [ActParamsExpr]
+                                                                  ) [ActParams]
+                                                                ) [FactorMeth]
+                                                              ) [UnaryFactor]
+                                                            ) [TermFactor]
+                                                          ) [Term]
+                                                        ) [ExprTerm]
+                                                      ) [Expr]
+                                                    ) [PrintStmt]
+                                                  ) [StatementSingle]
+                                                ) [StmtList]
+                                                StatementSingle(
+                                                  DesStmt(
+                                                    DesginatorAssignop(
+                                                      DesignatorVar(
+                                                       a
+                                                      ) [DesignatorVar]
+                                                      Assignop(
+                                                      ) [Assignop]
+                                                      Expr(
+                                                        ExprTerm(
+                                                          Term(
+                                                            TermFactor(
+                                                              UnaryFactor(
+                                                                FactorNum(
+                                                                 1
+                                                                ) [FactorNum]
+                                                              ) [UnaryFactor]
+                                                            ) [TermFactor]
+                                                          ) [Term]
+                                                        ) [ExprTerm]
+                                                      ) [Expr]
+                                                    ) [DesginatorAssignop]
+                                                  ) [DesStmt]
+                                                ) [StatementSingle]
+                                              ) [StmtList]
+                                              StatementSingle(
+                                                ReadStmt(
+                                                  DesignatorVar(
+                                                   bodovi
+                                                  ) [DesignatorVar]
+                                                ) [ReadStmt]
+                                              ) [StatementSingle]
+                                            ) [StmtList]
+                                            StatementSingle(
+                                              DesStmt(
+                                                DesginatorAssignop(
+                                                  DesignatorVar(
+                                                   bodovi
+                                                  ) [DesignatorVar]
+                                                  Assignop(
+                                                  ) [Assignop]
+                                                  Expr(
+                                                    ExprAddopList(
+                                                      ExprAddopList(
+                                                        ExprTerm(
+                                                          Term(
+                                                            TermFactor(
+                                                              UnaryMinusFactor(
+                                                                FactorDes(
+                                                                  DesignatorVar(
+                                                                   bodovi
+                                                                  ) [DesignatorVar]
+                                                                ) [FactorDes]
+                                                              ) [UnaryMinusFactor]
+                                                            ) [TermFactor]
+                                                          ) [Term]
+                                                        ) [ExprTerm]
+                                                        AddopPlus(
+                                                        ) [AddopPlus]
+                                                        Term(
+                                                          TermMulopList(
+                                                            TermFactor(
+                                                              UnaryFactor(
+                                                                FactorExpr(
+                                                                  Expr(
+                                                                    ExprAddopList(
+                                                                      ExprTerm(
+                                                                        Term(
+                                                                          TermMulopList(
+                                                                            TermMulopList(
+                                                                              TermFactor(
+                                                                                UnaryFactor(
+                                                                                  FactorDes(
+                                                                                    DesignatorVar(
+                                                                                     pet
+                                                                                    ) [DesignatorVar]
+                                                                                  ) [FactorDes]
+                                                                                ) [UnaryFactor]
+                                                                              ) [TermFactor]
+                                                                              MulopMul(
+                                                                              ) [MulopMul]
+                                                                              UnaryFactor(
+                                                                                FactorDes(
+                                                                                  DesignatorVar(
+                                                                                   a
+                                                                                  ) [DesignatorVar]
+                                                                                ) [FactorDes]
+                                                                              ) [UnaryFactor]
+                                                                            ) [TermMulopList]
+                                                                            MulopDiv(
+                                                                            ) [MulopDiv]
+                                                                            UnaryFactor(
+                                                                              FactorNum(
+                                                                               2
+                                                                              ) [FactorNum]
+                                                                            ) [UnaryFactor]
+                                                                          ) [TermMulopList]
+                                                                        ) [Term]
+                                                                      ) [ExprTerm]
+                                                                      AddopMinus(
+                                                                      ) [AddopMinus]
+                                                                      Term(
+                                                                        TermFactor(
+                                                                          UnaryFactor(
+                                                                            FactorDes(
+                                                                              DesignatorVar(
+                                                                               nula
+                                                                              ) [DesignatorVar]
+                                                                            ) [FactorDes]
+                                                                          ) [UnaryFactor]
+                                                                        ) [TermFactor]
+                                                                      ) [Term]
+                                                                    ) [ExprAddopList]
+                                                                  ) [Expr]
+                                                                ) [FactorExpr]
+                                                              ) [UnaryFactor]
+                                                            ) [TermFactor]
+                                                            MulopMul(
+                                                            ) [MulopMul]
+                                                            UnaryFactor(
+                                                              FactorDes(
+                                                                DesignatorVar(
+                                                                 bodovi
+                                                                ) [DesignatorVar]
+                                                              ) [FactorDes]
+                                                            ) [UnaryFactor]
+                                                          ) [TermMulopList]
+                                                        ) [Term]
+                                                      ) [ExprAddopList]
+                                                      AddopMinus(
+                                                      ) [AddopMinus]
+                                                      Term(
+                                                        TermFactor(
+                                                          UnaryFactor(
+                                                            FactorExpr(
+                                                              Expr(
+                                                                ExprAddopList(
+                                                                  ExprAddopList(
+                                                                    ExprTerm(
+                                                                      Term(
+                                                                        TermMulopList(
+                                                                          TermFactor(
+                                                                            UnaryFactor(
+                                                                              FactorNum(
+                                                                               3
+                                                                              ) [FactorNum]
+                                                                            ) [UnaryFactor]
+                                                                          ) [TermFactor]
+                                                                          MulopMod(
+                                                                          ) [MulopMod]
+                                                                          UnaryFactor(
+                                                                            FactorNum(
+                                                                             2
+                                                                            ) [FactorNum]
+                                                                          ) [UnaryFactor]
+                                                                        ) [TermMulopList]
+                                                                      ) [Term]
+                                                                    ) [ExprTerm]
+                                                                    AddopPlus(
+                                                                    ) [AddopPlus]
+                                                                    Term(
+                                                                      TermMulopList(
+                                                                        TermFactor(
+                                                                          UnaryFactor(
+                                                                            FactorNum(
+                                                                             3
+                                                                            ) [FactorNum]
+                                                                          ) [UnaryFactor]
+                                                                        ) [TermFactor]
+                                                                        MulopMul(
+                                                                        ) [MulopMul]
+                                                                        UnaryFactor(
+                                                                          FactorNum(
+                                                                           2
+                                                                          ) [FactorNum]
+                                                                        ) [UnaryFactor]
+                                                                      ) [TermMulopList]
+                                                                    ) [Term]
+                                                                  ) [ExprAddopList]
+                                                                  AddopMinus(
+                                                                  ) [AddopMinus]
+                                                                  Term(
+                                                                    TermFactor(
+                                                                      UnaryFactor(
+                                                                        FactorNum(
+                                                                         7
+                                                                        ) [FactorNum]
+                                                                      ) [UnaryFactor]
+                                                                    ) [TermFactor]
+                                                                  ) [Term]
+                                                                ) [ExprAddopList]
+                                                              ) [Expr]
+                                                            ) [FactorExpr]
+                                                          ) [UnaryFactor]
+                                                        ) [TermFactor]
+                                                      ) [Term]
+                                                    ) [ExprAddopList]
+                                                  ) [Expr]
+                                                ) [DesginatorAssignop]
+                                              ) [DesStmt]
+                                            ) [StatementSingle]
+                                          ) [StmtList]
+                                          StatementSingle(
+                                            PrintStmt(
+                                              Expr(
+                                                ExprTerm(
+                                                  Term(
+                                                    TermFactor(
+                                                      UnaryFactor(
+                                                        FactorDes(
+                                                          DesignatorVar(
+                                                           bodovi
+                                                          ) [DesignatorVar]
+                                                        ) [FactorDes]
+                                                      ) [UnaryFactor]
+                                                    ) [TermFactor]
+                                                  ) [Term]
+                                                ) [ExprTerm]
+                                              ) [Expr]
+                                            ) [PrintStmt]
+                                          ) [StatementSingle]
+                                        ) [StmtList]
+                                        StatementSingle(
+                                          DesStmt(
+                                            DesginatorAssignop(
+                                              DesignatorArray(
+                                                DesignatorArrayName(
+                                                 niz
+                                                ) [DesignatorArrayName]
+                                                Expr(
+                                                  ExprTerm(
+                                                    Term(
+                                                      TermFactor(
+                                                        UnaryFactor(
+                                                          FactorNum(
+                                                           0
+                                                          ) [FactorNum]
+                                                        ) [UnaryFactor]
+                                                      ) [TermFactor]
+                                                    ) [Term]
+                                                  ) [ExprTerm]
+                                                ) [Expr]
+                                              ) [DesignatorArray]
+                                              Assignop(
+                                              ) [Assignop]
+                                              Expr(
+                                                ExprTerm(
+                                                  Term(
+                                                    TermFactor(
+                                                      UnaryFactor(
+                                                        FactorNum(
+                                                         1
+                                                        ) [FactorNum]
+                                                      ) [UnaryFactor]
+                                                    ) [TermFactor]
+                                                  ) [Term]
+                                                ) [ExprTerm]
+                                              ) [Expr]
+                                            ) [DesginatorAssignop]
+                                          ) [DesStmt]
+                                        ) [StatementSingle]
+                                      ) [StmtList]
+                                      StatementSingle(
+                                        DesStmt(
+                                          DesginatorAssignop(
+                                            DesignatorArray(
+                                              DesignatorArrayName(
+                                               niz
+                                              ) [DesignatorArrayName]
+                                              Expr(
+                                                ExprTerm(
+                                                  Term(
+                                                    TermFactor(
+                                                      UnaryFactor(
+                                                        FactorNum(
+                                                         1
+                                                        ) [FactorNum]
+                                                      ) [UnaryFactor]
+                                                    ) [TermFactor]
+                                                  ) [Term]
+                                                ) [ExprTerm]
+                                              ) [Expr]
+                                            ) [DesignatorArray]
+                                            Assignop(
+                                            ) [Assignop]
+                                            Expr(
+                                              ExprTerm(
+                                                Term(
+                                                  TermFactor(
+                                                    UnaryFactor(
+                                                      FactorNum(
+                                                       2
+                                                      ) [FactorNum]
+                                                    ) [UnaryFactor]
+                                                  ) [TermFactor]
+                                                ) [Term]
+                                              ) [ExprTerm]
+                                            ) [Expr]
+                                          ) [DesginatorAssignop]
+                                        ) [DesStmt]
+                                      ) [StatementSingle]
+                                    ) [StmtList]
+                                    StatementSingle(
+                                      DesStmt(
+                                        DesginatorAssignop(
+                                          DesignatorArray(
+                                            DesignatorArrayName(
+                                             niz
+                                            ) [DesignatorArrayName]
+                                            Expr(
+                                              ExprTerm(
+                                                Term(
+                                                  TermFactor(
+                                                    UnaryFactor(
+                                                      FactorNum(
+                                                       2
+                                                      ) [FactorNum]
+                                                    ) [UnaryFactor]
+                                                  ) [TermFactor]
+                                                ) [Term]
+                                              ) [ExprTerm]
+                                            ) [Expr]
+                                          ) [DesignatorArray]
+                                          Assignop(
+                                          ) [Assignop]
+                                          Expr(
+                                            ExprTerm(
+                                              Term(
+                                                TermFactor(
+                                                  UnaryFactor(
+                                                    FactorNum(
+                                                     3
+                                                    ) [FactorNum]
+                                                  ) [UnaryFactor]
+                                                ) [TermFactor]
+                                              ) [Term]
+                                            ) [ExprTerm]
+                                          ) [Expr]
+                                        ) [DesginatorAssignop]
+                                      ) [DesStmt]
+                                    ) [StatementSingle]
+                                  ) [StmtList]
+                                  StatementSingle(
+                                    DesStmt(
+                                      DesginatorAssignop(
+                                        DesignatorVar(
+                                         s1
+                                        ) [DesignatorVar]
+                                        Assignop(
+                                        ) [Assignop]
+                                        Expr(
+                                          ExprTerm(
+                                            Term(
+                                              TermFactor(
+                                                UnaryFactor(
+                                                  FactorNewExpr(
+                                                    Type(
+                                                     set
+                                                    ) [Type]
+                                                    Expr(
+                                                      ExprTerm(
+                                                        Term(
+                                                          TermFactor(
+                                                            UnaryFactor(
+                                                              FactorNum(
+                                                               5
+                                                              ) [FactorNum]
+                                                            ) [UnaryFactor]
+                                                          ) [TermFactor]
+                                                        ) [Term]
+                                                      ) [ExprTerm]
+                                                    ) [Expr]
+                                                  ) [FactorNewExpr]
+                                                ) [UnaryFactor]
+                                              ) [TermFactor]
+                                            ) [Term]
+                                          ) [ExprTerm]
+                                        ) [Expr]
+                                      ) [DesginatorAssignop]
+                                    ) [DesStmt]
+                                  ) [StatementSingle]
+                                ) [StmtList]
+                                StatementSingle(
+                                  DesStmt(
+                                    DesginatorAssignop(
+                                      DesignatorVar(
+                                       s2
+                                      ) [DesignatorVar]
+                                      Assignop(
+                                      ) [Assignop]
+                                      Expr(
+                                        ExprTerm(
+                                          Term(
+                                            TermFactor(
+                                              UnaryFactor(
+                                                FactorNewExpr(
+                                                  Type(
+                                                   set
+                                                  ) [Type]
+                                                  Expr(
+                                                    ExprTerm(
+                                                      Term(
+                                                        TermFactor(
+                                                          UnaryFactor(
+                                                            FactorNum(
+                                                             5
+                                                            ) [FactorNum]
+                                                          ) [UnaryFactor]
+                                                        ) [TermFactor]
+                                                      ) [Term]
+                                                    ) [ExprTerm]
+                                                  ) [Expr]
+                                                ) [FactorNewExpr]
+                                              ) [UnaryFactor]
+                                            ) [TermFactor]
+                                          ) [Term]
+                                        ) [ExprTerm]
+                                      ) [Expr]
+                                    ) [DesginatorAssignop]
+                                  ) [DesStmt]
+                                ) [StatementSingle]
+                              ) [StmtList]
+                              StatementSingle(
+                                DesStmt(
+                                  DesginatorAssignop(
+                                    DesignatorVar(
+                                     s3
+                                    ) [DesignatorVar]
+                                    Assignop(
+                                    ) [Assignop]
+                                    Expr(
+                                      ExprTerm(
+                                        Term(
+                                          TermFactor(
+                                            UnaryFactor(
+                                              FactorNewExpr(
+                                                Type(
+                                                 set
+                                                ) [Type]
+                                                Expr(
+                                                  ExprTerm(
+                                                    Term(
+                                                      TermFactor(
+                                                        UnaryFactor(
+                                                          FactorNum(
+                                                           10
+                                                          ) [FactorNum]
+                                                        ) [UnaryFactor]
+                                                      ) [TermFactor]
+                                                    ) [Term]
+                                                  ) [ExprTerm]
+                                                ) [Expr]
+                                              ) [FactorNewExpr]
+                                            ) [UnaryFactor]
+                                          ) [TermFactor]
+                                        ) [Term]
+                                      ) [ExprTerm]
+                                    ) [Expr]
+                                  ) [DesginatorAssignop]
+                                ) [DesStmt]
+                              ) [StatementSingle]
+                            ) [StmtList]
+                            StatementSingle(
+                              DesStmt(
+                                DesignatorSetop(
+                                  DesignatorVar(
+                                   s3
+                                  ) [DesignatorVar]
+                                  Assignop(
+                                  ) [Assignop]
+                                  DesignatorVar(
+                                   s1
+                                  ) [DesignatorVar]
+                                  Setop(
+                                  ) [Setop]
+                                  DesignatorVar(
+                                   s2
+                                  ) [DesignatorVar]
+                                ) [DesignatorSetop]
+                              ) [DesStmt]
+                            ) [StatementSingle]
+                          ) [StmtList]
+                          StatementSingle(
+                            PrintStmt(
+                              Expr(
+                                ExprTerm(
+                                  Term(
+                                    TermFactor(
+                                      UnaryFactor(
+                                        FactorDes(
+                                          DesignatorVar(
+                                           s3
+                                          ) [DesignatorVar]
+                                        ) [FactorDes]
+                                      ) [UnaryFactor]
+                                    ) [TermFactor]
+                                  ) [Term]
+                                ) [ExprTerm]
+                              ) [Expr]
+                            ) [PrintStmt]
+                          ) [StatementSingle]
+                        ) [StmtList]
+                        StatementSingle(
+                          PrintStmt(
+                            Expr(
+                              ExprTerm(
+                                Term(
+                                  TermFactor(
+                                    UnaryFactor(
+                                      FactorDes(
+                                        DesignatorVar(
+                                         eol
+                                        ) [DesignatorVar]
+                                      ) [FactorDes]
+                                    ) [UnaryFactor]
+                                  ) [TermFactor]
+                                ) [Term]
+                              ) [ExprTerm]
+                            ) [Expr]
+                          ) [PrintStmt]
+                        ) [StatementSingle]
+                      ) [StmtList]
+                      StatementSingle(
+                        DesStmt(
+                          DesginatorAssignop(
+                            DesignatorArray(
+                              DesignatorArrayName(
+                               niz
+                              ) [DesignatorArrayName]
+                              Expr(
+                                ExprTerm(
+                                  Term(
+                                    TermFactor(
+                                      UnaryFactor(
+                                        FactorNum(
+                                         0
+                                        ) [FactorNum]
+                                      ) [UnaryFactor]
+                                    ) [TermFactor]
+                                  ) [Term]
+                                ) [ExprTerm]
+                              ) [Expr]
+                            ) [DesignatorArray]
+                            Assignop(
+                            ) [Assignop]
+                            Expr(
+                              ExprTerm(
+                                Term(
+                                  TermFactor(
+                                    UnaryFactor(
+                                      FactorNum(
+                                       5
+                                      ) [FactorNum]
+                                    ) [UnaryFactor]
+                                  ) [TermFactor]
+                                ) [Term]
+                              ) [ExprTerm]
+                            ) [Expr]
+                          ) [DesginatorAssignop]
+                        ) [DesStmt]
+                      ) [StatementSingle]
+                    ) [StmtList]
+                    StatementSingle(
+                      DesStmt(
+                        DesginatorAssignop(
+                          DesignatorArray(
+                            DesignatorArrayName(
+                             niz
+                            ) [DesignatorArrayName]
+                            Expr(
+                              ExprTerm(
+                                Term(
+                                  TermFactor(
+                                    UnaryFactor(
+                                      FactorNum(
+                                       1
+                                      ) [FactorNum]
+                                    ) [UnaryFactor]
+                                  ) [TermFactor]
+                                ) [Term]
+                              ) [ExprTerm]
+                            ) [Expr]
+                          ) [DesignatorArray]
+                          Assignop(
+                          ) [Assignop]
+                          Expr(
+                            ExprTerm(
+                              Term(
+                                TermFactor(
+                                  UnaryFactor(
+                                    FactorNum(
+                                     5
+                                    ) [FactorNum]
+                                  ) [UnaryFactor]
+                                ) [TermFactor]
+                              ) [Term]
+                            ) [ExprTerm]
+                          ) [Expr]
+                        ) [DesginatorAssignop]
+                      ) [DesStmt]
+                    ) [StatementSingle]
+                  ) [StmtList]
+                  StatementSingle(
+                    DesStmt(
+                      DesginatorAssignop(
+                        DesignatorArray(
+                          DesignatorArrayName(
+                           niz
+                          ) [DesignatorArrayName]
+                          Expr(
+                            ExprTerm(
+                              Term(
+                                TermFactor(
+                                  UnaryFactor(
+                                    FactorNum(
+                                     2
+                                    ) [FactorNum]
+                                  ) [UnaryFactor]
+                                ) [TermFactor]
+                              ) [Term]
+                            ) [ExprTerm]
+                          ) [Expr]
+                        ) [DesignatorArray]
+                        Assignop(
+                        ) [Assignop]
+                        Expr(
+                          ExprTerm(
+                            Term(
+                              TermFactor(
+                                UnaryFactor(
+                                  FactorNum(
+                                   10
+                                  ) [FactorNum]
+                                ) [UnaryFactor]
+                              ) [TermFactor]
+                            ) [Term]
+                          ) [ExprTerm]
+                        ) [Expr]
+                      ) [DesginatorAssignop]
+                    ) [DesStmt]
+                  ) [StatementSingle]
+                ) [StmtList]
+                StatementSingle(
+                  DesStmt(
+                    DesginatorAssignop(
+                      DesignatorVar(
+                       s1
+                      ) [DesignatorVar]
+                      Assignop(
+                      ) [Assignop]
+                      Expr(
+                        ExprTerm(
+                          Term(
+                            TermFactor(
+                              UnaryFactor(
+                                FactorNewExpr(
+                                  Type(
+                                   set
+                                  ) [Type]
+                                  Expr(
+                                    ExprTerm(
+                                      Term(
+                                        TermFactor(
+                                          UnaryFactor(
+                                            FactorNum(
+                                             5
+                                            ) [FactorNum]
+                                          ) [UnaryFactor]
+                                        ) [TermFactor]
+                                      ) [Term]
+                                    ) [ExprTerm]
+                                  ) [Expr]
+                                ) [FactorNewExpr]
+                              ) [UnaryFactor]
+                            ) [TermFactor]
+                          ) [Term]
+                        ) [ExprTerm]
+                      ) [Expr]
+                    ) [DesginatorAssignop]
+                  ) [DesStmt]
+                ) [StatementSingle]
+              ) [StmtList]
+              StatementSingle(
+                DesStmt(
+                  DesginatorAssignop(
+                    DesignatorVar(
+                     s2
+                    ) [DesignatorVar]
+                    Assignop(
+                    ) [Assignop]
+                    Expr(
+                      ExprTerm(
+                        Term(
+                          TermFactor(
+                            UnaryFactor(
+                              FactorNewExpr(
+                                Type(
+                                 set
+                                ) [Type]
+                                Expr(
+                                  ExprTerm(
+                                    Term(
+                                      TermFactor(
+                                        UnaryFactor(
+                                          FactorNum(
+                                           5
+                                          ) [FactorNum]
+                                        ) [UnaryFactor]
+                                      ) [TermFactor]
+                                    ) [Term]
+                                  ) [ExprTerm]
+                                ) [Expr]
+                              ) [FactorNewExpr]
+                            ) [UnaryFactor]
+                          ) [TermFactor]
+                        ) [Term]
+                      ) [ExprTerm]
+                    ) [Expr]
+                  ) [DesginatorAssignop]
+                ) [DesStmt]
+              ) [StatementSingle]
+            ) [StmtList]
+            StatementSingle(
+              DesStmt(
+                DesginatorAssignop(
+                  DesignatorVar(
+                   s3
+                  ) [DesignatorVar]
+                  Assignop(
+                  ) [Assignop]
+                  Expr(
+                    ExprTerm(
+                      Term(
+                        TermFactor(
+                          UnaryFactor(
+                            FactorNewExpr(
+                              Type(
+                               set
+                              ) [Type]
+                              Expr(
+                                ExprTerm(
+                                  Term(
+                                    TermFactor(
+                                      UnaryFactor(
+                                        FactorNum(
+                                         10
+                                        ) [FactorNum]
+                                      ) [UnaryFactor]
+                                    ) [TermFactor]
+                                  ) [Term]
+                                ) [ExprTerm]
+                              ) [Expr]
+                            ) [FactorNewExpr]
+                          ) [UnaryFactor]
+                        ) [TermFactor]
+                      ) [Term]
+                    ) [ExprTerm]
+                  ) [Expr]
+                ) [DesginatorAssignop]
+              ) [DesStmt]
+            ) [StatementSingle]
+          ) [StmtList]
+          StatementSingle(
+            DesStmt(
+              DesignatorSetop(
+                DesignatorVar(
+                 s3
+                ) [DesignatorVar]
+                Assignop(
+                ) [Assignop]
+                DesignatorVar(
+                 s1
+                ) [DesignatorVar]
+                Setop(
+                ) [Setop]
+                DesignatorVar(
+                 s2
+                ) [DesignatorVar]
+              ) [DesignatorSetop]
+            ) [DesStmt]
+          ) [StatementSingle]
+        ) [StmtList]
+        StatementSingle(
+          PrintStmt(
+            Expr(
+              ExprTerm(
+                Term(
+                  TermFactor(
+                    UnaryFactor(
+                      FactorDes(
+                        DesignatorVar(
+                         s3
+                        ) [DesignatorVar]
+                      ) [FactorDes]
+                    ) [UnaryFactor]
+                  ) [TermFactor]
+                ) [Term]
+              ) [ExprTerm]
+            ) [Expr]
+          ) [PrintStmt]
+        ) [StatementSingle]
+      ) [StmtList]
+    ) [MethodDecl]
+  ) [MethodDeclList]
+) [Program]
+INFO  23:35:14,431 - =====================================================================
+INFO  23:35:14,459 - =====================================================================
+INFO  23:35:14,459 - Parsiranje uspesno zavrseno!

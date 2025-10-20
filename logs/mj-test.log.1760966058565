@@ -1,0 +1,265 @@
+INFO  15:13:26,296 - Compiling source file: C:\Users\Lenovo\Desktop\MJCompilerGithub\test\program.mj
+INFO  15:13:26,330 - #2 program
+INFO  15:13:26,331 - #47 Testiranje
+INFO  15:13:26,331 - #6 const
+INFO  15:13:26,331 - #47 int
+INFO  15:13:26,331 - #47 x
+INFO  15:13:26,332 - #23 =
+INFO  15:13:26,332 - #44 2
+INFO  15:13:26,332 - #26 ;
+INFO  15:13:26,332 - #47 int
+INFO  15:13:26,333 - #47 p
+INFO  15:13:26,333 - #27 ,
+INFO  15:13:26,333 - #47 y
+INFO  15:13:26,334 - #33 [
+INFO  15:13:26,334 - #34 ]
+INFO  15:13:26,334 - #26 ;
+INFO  15:13:26,334 - #31 {
+INFO  15:13:26,335 - #12 void
+INFO  15:13:26,335 - #47 main
+INFO  15:13:26,335 - #29 (
+INFO  15:13:26,335 - #30 )
+INFO  15:13:26,335 - #47 char
+INFO  15:13:26,335 - #47 y
+INFO  15:13:26,336 - #33 [
+INFO  15:13:26,336 - #34 ]
+INFO  15:13:26,336 - #26 ;
+INFO  15:13:26,336 - #47 char
+INFO  15:13:26,336 - #47 a
+INFO  15:13:26,336 - #26 ;
+INFO  15:13:26,336 - #47 int
+INFO  15:13:26,336 - #47 k
+INFO  15:13:26,336 - #26 ;
+INFO  15:13:26,336 - #31 {
+INFO  15:13:26,337 - #47 k
+INFO  15:13:26,337 - #23 =
+INFO  15:13:26,337 - #44 2
+INFO  15:13:26,338 - #26 ;
+INFO  15:13:26,339 - #47 k
+INFO  15:13:26,339 - #23 =
+INFO  15:13:26,339 - #19 -
+INFO  15:13:26,339 - #47 k
+INFO  15:13:26,339 - #26 ;
+INFO  15:13:26,340 - #9 print
+INFO  15:13:26,340 - #29 (
+INFO  15:13:26,340 - #19 -
+INFO  15:13:26,340 - #47 k
+INFO  15:13:26,340 - #22 *
+INFO  15:13:26,340 - #44 2
+INFO  15:13:26,341 - #22 *
+INFO  15:13:26,341 - #19 -
+INFO  15:13:26,341 - #44 2
+INFO  15:13:26,341 - #18 +
+INFO  15:13:26,341 - #44 2
+INFO  15:13:26,352 - #22 *
+INFO  15:13:26,352 - #19 -
+INFO  15:13:26,353 - #44 1
+INFO  15:13:26,353 - #30 )
+INFO  15:13:26,353 - #26 ;
+INFO  15:13:26,353 - #32 }
+INFO  15:13:26,353 - #32 }
+INFO  15:13:26,359 - Program(
+  ProgName(
+   Testiranje
+  ) [ProgName]
+  ConstDecLists(
+    ConstDeclList(
+      Type(
+       int
+      ) [Type]
+      ConDecl(
+       x
+        NumConstant(
+         2
+        ) [NumConstant]
+      ) [ConDecl]
+      NoConstList(
+      ) [NoConstList]
+    ) [ConstDeclList]
+    VarDecLists(
+      VarDecl(
+        Type(
+         int
+        ) [Type]
+        VarDeclaratList(
+          VarDeclarat(
+            VarDeclarationVar(
+             p
+            ) [VarDeclarationVar]
+          ) [VarDeclarat]
+          VarDeclarationArray(
+           y
+          ) [VarDeclarationArray]
+        ) [VarDeclaratList]
+      ) [VarDecl]
+      NoDecLists(
+      ) [NoDecLists]
+    ) [VarDecLists]
+  ) [ConstDecLists]
+  MethodDeclList(
+    MethodDecl(
+      MethodSignature(
+       main
+      ) [MethodSignature]
+      VarDeclarList(
+        VarDeclarList(
+          VarDeclarList(
+            NoVarDeclarList(
+            ) [NoVarDeclarList]
+            VarDecl(
+              Type(
+               char
+              ) [Type]
+              VarDeclarat(
+                VarDeclarationArray(
+                 y
+                ) [VarDeclarationArray]
+              ) [VarDeclarat]
+            ) [VarDecl]
+          ) [VarDeclarList]
+          VarDecl(
+            Type(
+             char
+            ) [Type]
+            VarDeclarat(
+              VarDeclarationVar(
+               a
+              ) [VarDeclarationVar]
+            ) [VarDeclarat]
+          ) [VarDecl]
+        ) [VarDeclarList]
+        VarDecl(
+          Type(
+           int
+          ) [Type]
+          VarDeclarat(
+            VarDeclarationVar(
+             k
+            ) [VarDeclarationVar]
+          ) [VarDeclarat]
+        ) [VarDecl]
+      ) [VarDeclarList]
+      StmtList(
+        StmtList(
+          StmtList(
+            NoStmtList(
+            ) [NoStmtList]
+            StatementSingle(
+              DesStmt(
+                DesignatorAssignop(
+                  DesignatorVar(
+                   k
+                  ) [DesignatorVar]
+                  Assignop(
+                  ) [Assignop]
+                  Expr(
+                    ExprTerm(
+                      Term(
+                        TermFactor(
+                          UnaryFactor(
+                            FactorNum(
+                             2
+                            ) [FactorNum]
+                          ) [UnaryFactor]
+                        ) [TermFactor]
+                      ) [Term]
+                    ) [ExprTerm]
+                  ) [Expr]
+                ) [DesignatorAssignop]
+              ) [DesStmt]
+            ) [StatementSingle]
+          ) [StmtList]
+          StatementSingle(
+            DesStmt(
+              DesignatorAssignop(
+                DesignatorVar(
+                 k
+                ) [DesignatorVar]
+                Assignop(
+                ) [Assignop]
+                Expr(
+                  ExprTerm(
+                    Term(
+                      TermFactor(
+                        UnaryMinusFactor(
+                          FactorDes(
+                            DesignatorVar(
+                             k
+                            ) [DesignatorVar]
+                          ) [FactorDes]
+                        ) [UnaryMinusFactor]
+                      ) [TermFactor]
+                    ) [Term]
+                  ) [ExprTerm]
+                ) [Expr]
+              ) [DesignatorAssignop]
+            ) [DesStmt]
+          ) [StatementSingle]
+        ) [StmtList]
+        StatementSingle(
+          PrintStmt(
+            Expr(
+              ExprAddopList(
+                ExprTerm(
+                  Term(
+                    TermMulopList(
+                      TermMulopList(
+                        TermFactor(
+                          UnaryMinusFactor(
+                            FactorDes(
+                              DesignatorVar(
+                               k
+                              ) [DesignatorVar]
+                            ) [FactorDes]
+                          ) [UnaryMinusFactor]
+                        ) [TermFactor]
+                        MulopMul(
+                        ) [MulopMul]
+                        UnaryFactor(
+                          FactorNum(
+                           2
+                          ) [FactorNum]
+                        ) [UnaryFactor]
+                      ) [TermMulopList]
+                      MulopMul(
+                      ) [MulopMul]
+                      UnaryMinusFactor(
+                        FactorNum(
+                         2
+                        ) [FactorNum]
+                      ) [UnaryMinusFactor]
+                    ) [TermMulopList]
+                  ) [Term]
+                ) [ExprTerm]
+                AddopPlus(
+                ) [AddopPlus]
+                Term(
+                  TermMulopList(
+                    TermFactor(
+                      UnaryFactor(
+                        FactorNum(
+                         2
+                        ) [FactorNum]
+                      ) [UnaryFactor]
+                    ) [TermFactor]
+                    MulopMul(
+                    ) [MulopMul]
+                    UnaryMinusFactor(
+                      FactorNum(
+                       1
+                      ) [FactorNum]
+                    ) [UnaryMinusFactor]
+                  ) [TermMulopList]
+                ) [Term]
+              ) [ExprAddopList]
+            ) [Expr]
+          ) [PrintStmt]
+        ) [StatementSingle]
+      ) [StmtList]
+    ) [MethodDecl]
+  ) [MethodDeclList]
+) [Program]
+INFO  15:13:26,359 - =====================================================================
+INFO  15:13:26,365 - =====================================================================
+INFO  15:13:26,366 - Parsiranje uspesno zavrseno!
+INFO  15:13:26,370 - Generisanje koda uspesno zavrseno!

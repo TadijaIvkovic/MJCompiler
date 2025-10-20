@@ -1,0 +1,102 @@
+INFO  11:54:34,907 - Compiling source file: C:\Users\Lenovo\Desktop\MJCompilerGithub\test\program.mj
+INFO  11:54:34,936 - #2 program
+INFO  11:54:34,936 - #47 Testiranje
+INFO  11:54:34,938 - #6 const
+INFO  11:54:34,938 - #47 int
+INFO  11:54:34,938 - #47 x
+INFO  11:54:34,939 - #23 =
+INFO  11:54:34,939 - #44 2
+INFO  11:54:34,939 - #26 ;
+INFO  11:54:34,940 - #47 int
+INFO  11:54:34,940 - #47 p
+INFO  11:54:34,941 - #27 ,
+INFO  11:54:34,941 - #47 y
+INFO  11:54:34,942 - #33 [
+INFO  11:54:34,942 - #34 ]
+INFO  11:54:34,942 - #26 ;
+INFO  11:54:34,942 - #31 {
+INFO  11:54:34,944 - #12 void
+INFO  11:54:34,944 - #47 main
+INFO  11:54:34,944 - #29 (
+INFO  11:54:34,944 - #30 )
+INFO  11:54:34,944 - #31 {
+INFO  11:54:34,944 - #9 print
+INFO  11:54:34,945 - #29 (
+INFO  11:54:34,945 - #44 1
+INFO  11:54:34,945 - #30 )
+INFO  11:54:34,947 - #26 ;
+INFO  11:54:34,948 - #32 }
+INFO  11:54:34,948 - #32 }
+INFO  11:54:34,951 - Program(
+  ProgName(
+   Testiranje
+  ) [ProgName]
+  ConstDecLists(
+    ConstDeclList(
+      Type(
+       int
+      ) [Type]
+      ConDecl(
+       x
+        NumConstant(
+         2
+        ) [NumConstant]
+      ) [ConDecl]
+      NoConstList(
+      ) [NoConstList]
+    ) [ConstDeclList]
+    VarDecLists(
+      VarDecl(
+        Type(
+         int
+        ) [Type]
+        VarDeclaratList(
+          VarDeclarat(
+            VarDeclarationVar(
+             p
+            ) [VarDeclarationVar]
+          ) [VarDeclarat]
+          VarDeclarationArray(
+           y
+          ) [VarDeclarationArray]
+        ) [VarDeclaratList]
+      ) [VarDecl]
+      NoDecLists(
+      ) [NoDecLists]
+    ) [VarDecLists]
+  ) [ConstDecLists]
+  MethodDeclList(
+    MethodDecl(
+      MethodSignature(
+       main
+      ) [MethodSignature]
+      NoVarDeclarList(
+      ) [NoVarDeclarList]
+      StmtList(
+        NoStmtList(
+        ) [NoStmtList]
+        StatementSingle(
+          PrintStmt(
+            Expr(
+              ExprTerm(
+                Term(
+                  TermFactor(
+                    UnaryFactor(
+                      FactorNum(
+                       1
+                      ) [FactorNum]
+                    ) [UnaryFactor]
+                  ) [TermFactor]
+                ) [Term]
+              ) [ExprTerm]
+            ) [Expr]
+          ) [PrintStmt]
+        ) [StatementSingle]
+      ) [StmtList]
+    ) [MethodDecl]
+  ) [MethodDeclList]
+) [Program]
+INFO  11:54:34,952 - =====================================================================
+INFO  11:54:34,956 - =====================================================================
+INFO  11:54:34,957 - Parsiranje uspesno zavrseno!
+INFO  11:54:34,970 - Generisanje koda uspesno zavrseno!
