@@ -88,13 +88,13 @@ nonterminal Mulop Mulop;
 nonterminal Setop Setop;
 nonterminal SingleStatement SingleStatement;
 nonterminal Statements Statements;
-/* nonterminal Condition, CondTerm, CondFact, Matched, Unmatched, Statements, WhileStart, DoWhileEnd, DoWhileStart, ConditionWithStatement; */
 nonterminal ConDecl ConDecl;
 
 
 nonterminal rs.etf.pp1.symboltable.concepts.Obj ProgName, Program, Designator, DesignatorArrayName, MethodSignature;
 
 nonterminal rs.etf.pp1.symboltable.concepts.Struct Unary, Factor, Term, TermList, Expr, ExprList, Type;
+nonterminal rs.etf.pp1.symboltable.concepts.Struct ActPar;
 
 Program ::= (Program) PROG ProgName:p DeclarationList:D1 LBRACE MethodDeclList:M2 RBRACE {: RESULT=new Program(p, D1, M2); RESULT.setLine(pleft); :} ;
 
@@ -189,15 +189,17 @@ DesignatorStatement ::= (DesignatorAssignop) Designator:D1 Assignop:A2 Expr:E3 {
 						(DesignatorActPars) Designator:D1 LPAREN ActPars:A2 RPAREN {: RESULT=new DesignatorActPars(D1, A2); RESULT.setLine(D1left); :}
 						;
 
-ActPars ::=  (ActParams) ActParamList:A1 {: RESULT=new ActParams(A1); RESULT.setLine(A1left); :} 
+ActPars ::=  (ActParams) ActPar:A1 ActParamList:A2 {: RESULT=new ActParams(A1, A2); RESULT.setLine(A1left); :} 
 			 | 
 		     (NoActParams) {: RESULT=new NoActParams(); :} /* epsilon */ 
 		     ;
 			   
-ActParamList ::= (ActParamsList) ActParamList:A1 COMMA Expr:E2 {: RESULT=new ActParamsList(A1, E2); RESULT.setLine(A1left); :}
+ActParamList ::= (ActParamsList) COMMA ActPar:A1 ActParamList:A2 {: RESULT=new ActParamsList(A1, A2); RESULT.setLine(A1left); :}
 				 |
-				 (ActParamsExpr) Expr:E1 {: RESULT=new ActParamsExpr(E1); RESULT.setLine(E1left); :}
+				 (ActParamsExpr) {: RESULT=new ActParamsExpr(); :} /* epsilon */
 				 ;
+				 
+ActPar ::= (ActPar) Expr:E1 {: RESULT=new ActPar(E1); RESULT.setLine(E1left); :};				 
 	
 Expr ::= (Expr) ExprList:E1 {: RESULT=new Expr(E1); RESULT.setLine(E1left); :};	
 	

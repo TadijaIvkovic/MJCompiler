@@ -1,31 +1,31 @@
 // generated with ast extension for cup
 // version 0.8
-// 20/9/2025 17:57:57
+// 22/9/2025 11:53:53
 
 
 package rs.ac.bg.etf.pp1.ast;
 
 public abstract class VisitorAdaptor implements Visitor { 
 
-    public void visit(Designator Designator) { }
-    public void visit(Factor Factor) { }
+    public void visit(DeclarationList DeclarationList) { }
     public void visit(Mulop Mulop) { }
+    public void visit(VarDeclaration VarDeclaration) { }
     public void visit(ConstantList ConstantList) { }
+    public void visit(TermList TermList) { }
     public void visit(Constants Constants) { }
-    public void visit(DesignatorStatement DesignatorStatement) { }
+    public void visit(Unary Unary) { }
+    public void visit(StatementList StatementList) { }
+    public void visit(Addop Addop) { }
+    public void visit(Factor Factor) { }
+    public void visit(Designator Designator) { }
     public void visit(ExprList ExprList) { }
     public void visit(VarDeclList VarDeclList) { }
-    public void visit(DeclarationList DeclarationList) { }
-    public void visit(SingleStatement SingleStatement) { }
-    public void visit(VarDeclaration VarDeclaration) { }
-    public void visit(ActParamList ActParamList) { }
-    public void visit(Unary Unary) { }
-    public void visit(Addop Addop) { }
     public void visit(VarDeclarationList VarDeclarationList) { }
-    public void visit(TermList TermList) { }
-    public void visit(Statement Statement) { }
     public void visit(ActPars ActPars) { }
-    public void visit(StatementList StatementList) { }
+    public void visit(DesignatorStatement DesignatorStatement) { }
+    public void visit(Statement Statement) { }
+    public void visit(ActParamList ActParamList) { }
+    public void visit(SingleStatement SingleStatement) { }
     public void visit(Setop Setop) { visit(); }
     public void visit(MulopMod MulopMod) { visit(); }
     public void visit(MulopDiv MulopDiv) { visit(); }
@@ -51,6 +51,7 @@ public abstract class VisitorAdaptor implements Visitor {
     public void visit(ExprTerm ExprTerm) { visit(); }
     public void visit(ExprAddopList ExprAddopList) { visit(); }
     public void visit(Expr Expr) { visit(); }
+    public void visit(ActPar ActPar) { visit(); }
     public void visit(ActParamsExpr ActParamsExpr) { visit(); }
     public void visit(ActParamsList ActParamsList) { visit(); }
     public void visit(NoActParams NoActParams) { visit(); }

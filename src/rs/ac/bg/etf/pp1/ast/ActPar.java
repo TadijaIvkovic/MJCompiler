@@ -5,11 +5,15 @@
 
 package rs.ac.bg.etf.pp1.ast;
 
-public class PrintStmt extends SingleStatement {
+public class ActPar implements SyntaxNode {
+
+    private SyntaxNode parent;
+    private int line;
+    public rs.etf.pp1.symboltable.concepts.Struct struct = null;
 
     private Expr Expr;
 
-    public PrintStmt (Expr Expr) {
+    public ActPar (Expr Expr) {
         this.Expr=Expr;
         if(Expr!=null) Expr.setParent(this);
     }
@@ -20,6 +24,22 @@ public class PrintStmt extends SingleStatement {
 
     public void setExpr(Expr Expr) {
         this.Expr=Expr;
+    }
+
+    public SyntaxNode getParent() {
+        return parent;
+    }
+
+    public void setParent(SyntaxNode parent) {
+        this.parent=parent;
+    }
+
+    public int getLine() {
+        return line;
+    }
+
+    public void setLine(int line) {
+        this.line=line;
     }
 
     public void accept(Visitor visitor) {
@@ -43,7 +63,7 @@ public class PrintStmt extends SingleStatement {
     public String toString(String tab) {
         StringBuffer buffer=new StringBuffer();
         buffer.append(tab);
-        buffer.append("PrintStmt(\n");
+        buffer.append("ActPar(\n");
 
         if(Expr!=null)
             buffer.append(Expr.toString("  "+tab));
@@ -52,7 +72,7 @@ public class PrintStmt extends SingleStatement {
         buffer.append("\n");
 
         buffer.append(tab);
-        buffer.append(") [PrintStmt]");
+        buffer.append(") [ActPar]");
         return buffer.toString();
     }
 }

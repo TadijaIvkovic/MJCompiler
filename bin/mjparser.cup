@@ -72,13 +72,13 @@ nonterminal VarDeclList, VarDecl, VarDeclarationList, VarDeclaration, MethodDecl
 nonterminal  StatementList, Statement;
 nonterminal DesignatorStatement, ActPars, ActParamList, Assignop, Addop, Mulop, Setop;
 nonterminal SingleStatement, Statements;
-/* nonterminal Condition, CondTerm, CondFact, Matched, Unmatched, Statements, WhileStart, DoWhileEnd, DoWhileStart, ConditionWithStatement; */
 nonterminal ConDecl;
 
 
 nonterminal rs.etf.pp1.symboltable.concepts.Obj ProgName, Program, Designator, DesignatorArrayName, MethodSignature;
 
 nonterminal rs.etf.pp1.symboltable.concepts.Struct Unary, Factor, Term, TermList, Expr, ExprList, Type;
+nonterminal rs.etf.pp1.symboltable.concepts.Struct ActPar;
 
 Program ::= (Program) PROG ProgName:p DeclarationList LBRACE MethodDeclList RBRACE ;
 
@@ -173,15 +173,17 @@ DesignatorStatement ::= (DesignatorAssignop) Designator Assignop Expr
 						(DesignatorActPars) Designator LPAREN ActPars RPAREN
 						;
 
-ActPars ::=  (ActParams) ActParamList 
+ActPars ::=  (ActParams) ActPar ActParamList 
 			 | 
 		     (NoActParams) /* epsilon */ 
 		     ;
 			   
-ActParamList ::= (ActParamsList) ActParamList COMMA Expr
+ActParamList ::= (ActParamsList) COMMA ActPar ActParamList
 				 |
-				 (ActParamsExpr) Expr
+				 (ActParamsExpr) /* epsilon */
 				 ;
+				 
+ActPar ::= (ActPar) Expr;				 
 	
 Expr ::= (Expr) ExprList;	
 	

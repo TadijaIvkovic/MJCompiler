@@ -1,0 +1,44 @@
+program Testiranje
+
+set s1;
+int niz[];
+
+{
+
+	void main() 
+	int x,y[];
+	char c,niz[];
+	{
+	
+		x=111;
+		y=new int[10];
+	
+		addAll(s1,y);
+		//print(addAll(s1,niz));
+		//addAll(s1,x);
+		//addAll(s1,y[5]);
+		//addAll(s1,3);
+		
+	
+		//y= new int[20];
+
+		
+		
+		
+		//len(1); //error
+		//print(len(y)); //ok
+		print(len(y)); //ok
+		//len(c); //error
+		//len('p');//error
+	
+		//chr(1); //ok
+		//chr('c'); //error
+		//chr(1,2); // error
+		
+		//ord(1); //error
+		//ord('c'); //ok
+		//ord('c', 'c'); // error
+
+	
+	}
+}

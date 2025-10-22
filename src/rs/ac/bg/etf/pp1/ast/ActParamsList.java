@@ -1,20 +1,28 @@
 // generated with ast extension for cup
 // version 0.8
-// 20/9/2025 17:57:57
+// 22/9/2025 11:53:53
 
 
 package rs.ac.bg.etf.pp1.ast;
 
 public class ActParamsList extends ActParamList {
 
+    private ActPar ActPar;
     private ActParamList ActParamList;
-    private Expr Expr;
 
-    public ActParamsList (ActParamList ActParamList, Expr Expr) {
+    public ActParamsList (ActPar ActPar, ActParamList ActParamList) {
+        this.ActPar=ActPar;
+        if(ActPar!=null) ActPar.setParent(this);
         this.ActParamList=ActParamList;
         if(ActParamList!=null) ActParamList.setParent(this);
-        this.Expr=Expr;
-        if(Expr!=null) Expr.setParent(this);
+    }
+
+    public ActPar getActPar() {
+        return ActPar;
+    }
+
+    public void setActPar(ActPar ActPar) {
+        this.ActPar=ActPar;
     }
 
     public ActParamList getActParamList() {
@@ -25,32 +33,24 @@ public class ActParamsList extends ActParamList {
         this.ActParamList=ActParamList;
     }
 
-    public Expr getExpr() {
-        return Expr;
-    }
-
-    public void setExpr(Expr Expr) {
-        this.Expr=Expr;
-    }
-
     public void accept(Visitor visitor) {
         visitor.visit(this);
     }
 
     public void childrenAccept(Visitor visitor) {
+        if(ActPar!=null) ActPar.accept(visitor);
         if(ActParamList!=null) ActParamList.accept(visitor);
-        if(Expr!=null) Expr.accept(visitor);
     }
 
     public void traverseTopDown(Visitor visitor) {
         accept(visitor);
+        if(ActPar!=null) ActPar.traverseTopDown(visitor);
         if(ActParamList!=null) ActParamList.traverseTopDown(visitor);
-        if(Expr!=null) Expr.traverseTopDown(visitor);
     }
 
     public void traverseBottomUp(Visitor visitor) {
+        if(ActPar!=null) ActPar.traverseBottomUp(visitor);
         if(ActParamList!=null) ActParamList.traverseBottomUp(visitor);
-        if(Expr!=null) Expr.traverseBottomUp(visitor);
         accept(visitor);
     }
 
@@ -59,14 +59,14 @@ public class ActParamsList extends ActParamList {
         buffer.append(tab);
         buffer.append("ActParamsList(\n");
 
-        if(ActParamList!=null)
-            buffer.append(ActParamList.toString("  "+tab));
+        if(ActPar!=null)
+            buffer.append(ActPar.toString("  "+tab));
         else
             buffer.append(tab+"  null");
         buffer.append("\n");
 
-        if(Expr!=null)
-            buffer.append(Expr.toString("  "+tab));
+        if(ActParamList!=null)
+            buffer.append(ActParamList.toString("  "+tab));
         else
             buffer.append(tab+"  null");
         buffer.append("\n");

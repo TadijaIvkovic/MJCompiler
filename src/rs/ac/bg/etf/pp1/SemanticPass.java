@@ -1,5 +1,7 @@
 package rs.ac.bg.etf.pp1;
 
+import java.util.List;
+
 import org.apache.log4j.Logger;
 
 import rs.ac.bg.etf.pp1.ast.*;
@@ -60,7 +62,6 @@ public class SemanticPass extends VisitorAdaptor {
 		Tab.closeScope();
 		currentProgram=null;
 		
-//		if(!mainMethodExists || mainMethod.getLevel()>0)
 		if(!mainMethodExists)
 			report_error("Nema adekvatne main metode", program);
 	}
@@ -324,8 +325,80 @@ public class SemanticPass extends VisitorAdaptor {
     @Override
     public void visit(FactorMeth factorMeth) {
     	
-    	factorMeth.struct=factorMeth.getDesignator().obj.getType();
-//    	report_info(""+factorMeth.struct.getKind(), factorMeth);
+    	if(factorMeth.getDesignator().obj.getKind()!= Obj.Meth) {
+    		report_error("Poziv metode koja nije adekvatna: "+ factorMeth.getDesignator().obj.getName(), factorMeth);
+    		factorMeth.struct=Tab.noType;
+    	}
+    	else {
+    		Obj function = factorMeth.getDesignator().obj;
+    		ActParsPass actParsPass=new ActParsPass();
+    		factorMeth.getActPars().traverseBottomUp(actParsPass);
+    		
+    		List<Struct> actPars= actParsPass.actPars;
+			//report_info("Provera" + function.getName() + " , broj actPars: " + actPars.size(), designatorActPars);
+
+    		if(function.getName().equals("chr")) {
+    			//report_info("Provera" + function.getName() + " , broj actPars: " + actPars.size(), designatorActPars);
+    			if(actPars.size()!=1) {
+    				report_error("Pogresan broj parametara u metodi "+ function.getName(), factorMeth);
+
+    			}
+    			else if(actPars.get(0).getKind()!=Struct.Int) {
+    				report_error("Pogresan parametar metode "+ function.getName(), factorMeth);
+    			}
+    		}
+    		else if(function.getName().equals("ord")) {
+    			if(actPars.size()!=1) {
+    				report_error("Pogresan broj parametara u metodi "+ function.getName(), factorMeth);
+
+    			}
+    			else if(actPars.get(0).getKind()!=Struct.Char) {
+    				report_error("Pogresan parametar metode "+ function.getName(), factorMeth);
+    			}
+    		}
+    		else if(function.getName().equals("len")) {
+    			if(actPars.size()!=1) {
+    				report_error("Pogresan broj parametara u metodi "+ function.getName(), factorMeth);
+
+    			}
+    			else if(actPars.get(0).getKind()!=Struct.Array) {
+    				report_error("Pogresan parametar metode "+ function.getName(), factorMeth);
+    			}
+    			
+    		}
+    		else if(function.getName().equals("add")) {
+    			if(actPars.size()!=2) {
+    				report_error("Pogresan broj parametara u metodi "+ function.getName(), factorMeth);
+
+    			}
+    			else if(actPars.get(0).getKind()!=Struct.Interface) {
+    				report_error("Pogresan parametar metode "+ function.getName(), factorMeth);
+    			}
+    			else if(actPars.get(1).getKind()!=Struct.Int) {
+    				report_error("Pogresan parametar metode "+ function.getName(), factorMeth);
+    			}
+    			
+    		}
+    		else if(function.getName().equals("addAll")) {
+    			if(actPars.size()!=2) {
+    				report_error("Pogresan broj parametara u metodi "+ function.getName(), factorMeth);
+
+    			}
+    			else if(actPars.get(0).getKind()!=Struct.Interface) {
+    				report_error("Pogresan parametar metode "+ function.getName(), factorMeth);
+    			}
+    			else if(actPars.get(1).getKind()!=Struct.Array && actPars.get(1).getElemType().getKind()!=Struct.Int) {
+    				report_error("Pogresan parametar metode "+ function.getName(), factorMeth);
+    			}
+
+    		}
+    		else {
+    			report_error("Poziv metode koja nije implementirana", factorMeth);
+    		}
+        	factorMeth.struct=factorMeth.getDesignator().obj.getType();
+
+    		
+    	}
     	
     }
 
@@ -469,8 +542,81 @@ public class SemanticPass extends VisitorAdaptor {
     
     @Override
     public void visit(DesignatorActPars designatorActPars) {
-    	//TODO
-    	report_error("TODO", designatorActPars);
+    	
+    	if(designatorActPars.getDesignator().obj.getKind()!= Obj.Meth) {
+    		report_error("Poziv metode koja nije adekvatna: "+ designatorActPars.getDesignator().obj.getName(), designatorActPars);
+    	}
+    	else {
+    		Obj function = designatorActPars.getDesignator().obj;
+    		ActParsPass actParsPass=new ActParsPass();
+    		designatorActPars.getActPars().traverseBottomUp(actParsPass);
+    		
+    		List<Struct> actPars= actParsPass.actPars;
+			//report_info("Provera" + function.getName() + " , broj actPars: " + actPars.size(), designatorActPars);
+
+    		if(function.getName().equals("chr")) {
+    			//report_info("Provera" + function.getName() + " , broj actPars: " + actPars.size(), designatorActPars);
+    			if(actPars.size()!=1) {
+    				report_error("Pogresan broj parametara u metodi "+ function.getName(), designatorActPars);
+
+    			}
+    			else if(actPars.get(0).getKind()!=Struct.Int) {
+    				report_error("Pogresan parametar metode "+ function.getName(), designatorActPars);
+    			}
+    		}
+    		else if(function.getName().equals("ord")) {
+    			if(actPars.size()!=1) {
+    				report_error("Pogresan broj parametara u metodi "+ function.getName(), designatorActPars);
+
+    			}
+    			else if(actPars.get(0).getKind()!=Struct.Char) {
+    				report_error("Pogresan parametar metode "+ function.getName(), designatorActPars);
+    			}
+    		}
+    		else if(function.getName().equals("len")) {
+    			if(actPars.size()!=1) {
+    				report_error("Pogresan broj parametara u metodi "+ function.getName(), designatorActPars);
+
+    			}
+    			else if(actPars.get(0).getKind()!=Struct.Array) {
+    				report_error("Pogresan parametar metode "+ function.getName(), designatorActPars);
+    			}
+    			
+    		}
+    		else if(function.getName().equals("add")) {
+    			if(actPars.size()!=2) {
+    				report_error("Pogresan broj parametara u metodi "+ function.getName(), designatorActPars);
+
+    			}
+    			else if(actPars.get(0).getKind()!=Struct.Interface) {
+    				report_error("Pogresan parametar metode "+ function.getName(), designatorActPars);
+    			}
+    			else if(actPars.get(1).getKind()!=Struct.Int) {
+    				report_error("Pogresan parametar metode "+ function.getName(), designatorActPars);
+    			}
+    			
+    		}
+    		else if(function.getName().equals("addAll")) {
+    			//report_info(" "+actPars.get(0).getKind(),designatorActPars);
+    			//report_info(" "+actPars.get(1).getKind(),designatorActPars);
+    			//report_info(" "+actPars.get(1).getElemType().getKind(),designatorActPars);
+    			if(actPars.size()!=2) {
+    				report_error("Pogresan broj parametara u metodi "+ function.getName(), designatorActPars);
+
+    			}
+    			else if(actPars.get(0).getKind()!=Struct.Interface|| actPars.get(1).getElemType()!=Tab.intType) {
+    				report_error("Pogresan parametar metode "+ function.getName(), designatorActPars);
+    			}
+    			else if(actPars.get(1).getKind()!=Struct.Array || actPars.get(1).getElemType()!=Tab.intType) {
+    				report_error("Pogresan parametar metode "+ function.getName(), designatorActPars);
+    			}
+
+    		}
+    		else {
+    			report_error("Poziv metode koja nije implementirana", designatorActPars);
+    		}
+    		
+    	}
     }
     
     //Single Statements

@@ -10,6 +10,7 @@
 				<exclude name="SemanticPass.java"/>
 				<exclude name="SemanticPass1.java"/>
 				<exclude name="SymTab.java"/>
+				<exclude name="ActParsPass.java"/>
 				<exclude name="CodeGenerator.java"/>
 			</fileset>
 		</delete>

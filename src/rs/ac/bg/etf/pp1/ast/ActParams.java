@@ -1,17 +1,28 @@
 // generated with ast extension for cup
 // version 0.8
-// 20/9/2025 17:57:57
+// 22/9/2025 11:53:53
 
 
 package rs.ac.bg.etf.pp1.ast;
 
 public class ActParams extends ActPars {
 
+    private ActPar ActPar;
     private ActParamList ActParamList;
 
-    public ActParams (ActParamList ActParamList) {
+    public ActParams (ActPar ActPar, ActParamList ActParamList) {
+        this.ActPar=ActPar;
+        if(ActPar!=null) ActPar.setParent(this);
         this.ActParamList=ActParamList;
         if(ActParamList!=null) ActParamList.setParent(this);
+    }
+
+    public ActPar getActPar() {
+        return ActPar;
+    }
+
+    public void setActPar(ActPar ActPar) {
+        this.ActPar=ActPar;
     }
 
     public ActParamList getActParamList() {
@@ -27,15 +38,18 @@ public class ActParams extends ActPars {
     }
 
     public void childrenAccept(Visitor visitor) {
+        if(ActPar!=null) ActPar.accept(visitor);
         if(ActParamList!=null) ActParamList.accept(visitor);
     }
 
     public void traverseTopDown(Visitor visitor) {
         accept(visitor);
+        if(ActPar!=null) ActPar.traverseTopDown(visitor);
         if(ActParamList!=null) ActParamList.traverseTopDown(visitor);
     }
 
     public void traverseBottomUp(Visitor visitor) {
+        if(ActPar!=null) ActPar.traverseBottomUp(visitor);
         if(ActParamList!=null) ActParamList.traverseBottomUp(visitor);
         accept(visitor);
     }
@@ -44,6 +58,12 @@ public class ActParams extends ActPars {
         StringBuffer buffer=new StringBuffer();
         buffer.append(tab);
         buffer.append("ActParams(\n");
+
+        if(ActPar!=null)
+            buffer.append(ActPar.toString("  "+tab));
+        else
+            buffer.append(tab+"  null");
+        buffer.append("\n");
 
         if(ActParamList!=null)
             buffer.append(ActParamList.toString("  "+tab));

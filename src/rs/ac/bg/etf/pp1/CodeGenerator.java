@@ -52,6 +52,8 @@ public class CodeGenerator extends VisitorAdaptor {
 		else {
 			Code.put(Code.print);
 		}
+		//TODO treba implementirati print za set
+		//loop koji bi u svakoj instanci povecavao vrednost indeksa i tako ispisivao sve dok ne zavrsi
 	}
 	
 	@Override
@@ -64,6 +66,8 @@ public class CodeGenerator extends VisitorAdaptor {
 		else {
 			Code.put(Code.print);
 		}
+		//TODO treba implementirati print za set
+		//loop koji bi u svakoj instanci povecavao vrednost indeksa i tako ispisivao sve dok ne zavrsi
 		
 	}
 	
@@ -92,6 +96,7 @@ public class CodeGenerator extends VisitorAdaptor {
     @Override
 	public void visit(DesignatorAssignop desginatorAssignop) {
     	
+    	//Dovoljno i za array i za var objekte
     	Code.store(desginatorAssignop.getDesignator().obj);
     	
     }
@@ -100,7 +105,7 @@ public class CodeGenerator extends VisitorAdaptor {
 	public void visit(DesignatorInc designatorInc) {
     	
     	//Za nizove, jer bi aload pokupio adresu i ne bi se store izvrsio lepo
-    	if(designatorInc.getDesignator().obj.getKind() == Obj.Elem) {
+    	if(designatorInc.getDesignator().obj.getKind() == Obj.Elem|| designatorInc.getDesignator().obj.getType().getKind()==Struct.Interface) {
     		Code.put(Code.dup2);
     	}
     	
@@ -115,7 +120,7 @@ public class CodeGenerator extends VisitorAdaptor {
 	public void visit(DesignatorDec designatorDec) {
     	
     	//Za nizove, jer bi aload pokupio adresu i ne bi se store izvrsio lepo
-    	if(designatorDec.getDesignator().obj.getKind() == Obj.Elem) {
+    	if(designatorDec.getDesignator().obj.getKind() == Obj.Elem || designatorDec.getDesignator().obj.getType().getKind()==Struct.Interface) {
     		Code.put(Code.dup2);
     	}
     	
@@ -140,7 +145,8 @@ public class CodeGenerator extends VisitorAdaptor {
     @Override
 	public void visit(DesignatorArrayName designatorArrayName) {
     	
-    	Code.load(designatorArrayName.obj);
+    	Code.load(designatorArrayName.obj); // Moguce da ovde Stack izgleda ovako: ..index, adr 
+    	// A da pravilno treba da bude ...adr, index
     	
     }
 	
@@ -201,14 +207,31 @@ public class CodeGenerator extends VisitorAdaptor {
     @Override
 	public void visit(FactorNewExpr factorNewExpr) {
     	
-    	Code.put(Code.newarray);
+    	
     	if(factorNewExpr.getType().struct==Tab.intType) {
+    		Code.put(Code.newarray);
     		Code.put(1);
     	}
     	else if(factorNewExpr.getType().struct.getKind()==Struct.Interface) {
-    		Code.put(1);
+    		
+    		//Uvelicavamo niz za jedan, da bi prvi element bio count za set tip
+    		Code.loadConst(1);
+    		Code.put(Code.add);
+    		
+    		//Za samu array fju
+    		Code.put(Code.newarray);
+    		Code.put(1); 
+    		
+    		//Inicijalizacija countera na nultom indeksu (set[0]=0)
+    		Code.put(Code.dup); // Trenutno stack : addr, addr
+    		Code.loadConst(0);
+    		Code.loadConst(0);
+    		Code.put(Code.astore); // Potrebni adr, index, val za upisivanje u prvi element niza
+    		
     	}
     	else {
+    		//Za char nizove
+    		Code.put(Code.newarray);
     		Code.put(0);
     	}
     	
@@ -221,4 +244,8 @@ public class CodeGenerator extends VisitorAdaptor {
     	Code.load(FactorDes.getDesignator().obj);
     	
     }
+    
+    
+    
+    
 }
