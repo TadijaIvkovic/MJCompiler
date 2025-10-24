@@ -10,6 +10,7 @@ import rs.etf.pp1.symboltable.concepts.Struct;
 public class CodeGenerator extends VisitorAdaptor {
 
 	private int mainPC;
+	private int addMethodAddr, unionMethodAddr;
 	
 	public int getMainPc() {
 		return this.mainPC;
@@ -57,7 +58,7 @@ public class CodeGenerator extends VisitorAdaptor {
 		// add, TODO mozda treba malo dorada
 
 		obj = Tab.find("add");
-		obj.setAdr(Code.pc);
+		obj.setAdr(addMethodAddr=Code.pc);
 		Code.put(Code.enter);
 //		Code.put(obj.getLevel()); // Broj formalnih parametara b1 (u level polju kod metoda)
 //		Code.put(obj.getLocalSymbols().size()); //Broj lokalnih i formalnih parametara, tj. ceo locals, b2
@@ -66,6 +67,31 @@ public class CodeGenerator extends VisitorAdaptor {
 		add();
 		Code.put(Code.exit);
 		Code.put(Code.return_);
+		
+		
+		obj = Tab.find("addAll");
+		obj.setAdr(Code.pc);
+		Code.put(Code.enter);
+//		Code.put(obj.getLevel()); // Broj formalnih parametara b1 (u level polju kod metoda)
+//		Code.put(obj.getLocalSymbols().size()); //Broj lokalnih i formalnih parametara, tj. ceo locals, b2
+		Code.put(2);
+		Code.put(5); 
+		addAll();
+		Code.put(Code.exit);
+		Code.put(Code.return_);
+		
+		
+		obj = Tab.find("unionMeth");
+		obj.setAdr(unionMethodAddr=Code.pc);
+		Code.put(Code.enter);
+//		Code.put(obj.getLevel()); // Broj formalnih parametara b1 (u level polju kod metoda)
+//		Code.put(obj.getLocalSymbols().size()); //Broj lokalnih i formalnih parametara, tj. ceo locals, b2
+		Code.put(3);
+		Code.put(5); //TODO treba proveriti ovaj broj ovde
+		unionMeth();
+		Code.put(Code.exit);
+		Code.put(Code.return_);
+		
 	}
 	
 	// Code generation
@@ -191,10 +217,96 @@ public class CodeGenerator extends VisitorAdaptor {
 	}
 	
 	public void addAll() {
+		// 0 -> set
+		// 1 -> niz
+		// 2 -> count(n) // od niza
+		// 3 -> counter(i) // od niza
 		
+//		i=0;
+//		n=niz.arraylength;
+//		while(i<n)
+//			add(set, niz[i])
+//			i++;
+		
+		//Inicijalizacija i,n
+		Code.put(Code.load_1);
+		Code.put(Code.arraylength);
+		Code.put(Code.store_2); // n -> LOKALNA PROMENLJIVA 2
+		Code.loadConst(0);
+		Code.put(Code.store_3); // i -> LOKALNA PROMENLJIVA 3
+		
+		//While start
+		int whileStart=Code.pc;
+		
+		Code.put(Code.load_3); // stack: i
+		Code.put(Code.load_2); // stack: i, n
+
+		
+		Code.putFalseJump(Code.lt, 0); // Ako je i >= n izlazimo iz while petlje da ubacimo element
+		int patchAddrWhileEnd=Code.pc-2;
+		
+		// While petlja
+		
+		//Parametre metode add stavljamo na stack( set i niz[i]) 
+		Code.put(Code.load_n);
+		Code.put(Code.load_1);
+		Code.put(Code.load_3); // stack: set, niz, i
+		Code.put(Code.aload); // stack: set, niz[i]
+		
+		//Poziv add metode, standardno kao i svaka druga metoda do sad
+		int adr = addMethodAddr - Code.pc;
+		Code.put(Code.call);
+		Code.put2(adr);
+		
+		//Inkrementiranje brojaca
+		Code.put(Code.load_3);
+		Code.loadConst(1);
+		Code.put(Code.add);
+		Code.put(Code.store_3);
+		
+		//Kraj while petlje
+		Code.putJump(whileStart);
+		
+		//Skace se kad dodjemo do kraja while petlje
+		Code.fixup(patchAddrWhileEnd);
 	}
 	
-	public void unionMethod() {
+	public void unionMeth() {
+		// 0 -> set0
+		// 1 -> set1
+		// 2 -> set2
+		
+//		int i = 1;
+//		int n=set2[0];
+//		while(i<=n)
+//			add(set1,set2[i]);
+//			i++;
+//		set0=set1;
+		
+		// Ovde mi je set0 sustinski nebitan, ali moramo da zapamtimo adresu da bi tu upisali set1 adresu nakon uniona
+		// 0 -> i (counter)
+		// 1 -> set1
+		// 2 -> set2
+		// 3 -> n ( count)
+		// 4 -> set0
+		//Code.loadConst(69);
+		
+		//Premestanje set0 u load 4 jer mi je zgodnije da kucam ovako
+		
+		//TREBA PRVO DA SE PRELANCA CEO SET1 U SET0 I ONDA RADI SVE STO SAM PLANIRAO TJ. JEDAN PO JEDAN EL IZ set2 u set0
+		
+		Code.put(Code.load_n);
+		Code.put(Code.store);
+		Code.loadConst(4); // LOKALNA PROMENLJIVA 4 -> set0 adr NE SVIDJA MI SE OVO
+		
+		Code.put(Code.load_2);
+		Code.loadConst(0);
+		Code.put(Code.aload); //stack: set2[0] tj count n
+		Code.put(Code.store_3);
+		Code.loadConst(1);
+		Code.put(Code.store_n); 
+		
+		
 		
 	}
 	
@@ -241,8 +353,6 @@ public class CodeGenerator extends VisitorAdaptor {
 			
 			// Inicijalizacija pocetnih promenljivih
 			Code.put(Code.store_n);
-//			Code.loadConst(0);
-//			Code.put(Code.store_1);
 			
 			Code.put(Code.load_n);
 			Code.loadConst(0);
@@ -354,11 +464,7 @@ public class CodeGenerator extends VisitorAdaptor {
 			
 			
 			Code.fixup(patchAddrWhileEnd);
-			
-
 		}
-
-		
 	}
 	
 	@Override
@@ -381,7 +487,7 @@ public class CodeGenerator extends VisitorAdaptor {
 		
 	}
 	
-	// Designator assignop, inc, dec, TODO Setop, ActPars
+	// Designator assignop, inc, dec, setop, actPars
 	
     @Override
 	public void visit(DesignatorAssignop desginatorAssignop) {
@@ -424,7 +530,15 @@ public class CodeGenerator extends VisitorAdaptor {
     
     @Override
 	public void visit(DesignatorSetop designatorSetop) {
-    	//TODO
+
+    	Code.load(designatorSetop.getDesignator().obj);
+    	Code.load(designatorSetop.getDesignator1().obj);
+    	Code.load(designatorSetop.getDesignator2().obj);
+    	
+    	
+		int adr = unionMethodAddr - Code.pc;
+		Code.put(Code.call);
+		Code.put2(adr);
     }
     
     @Override
@@ -433,7 +547,6 @@ public class CodeGenerator extends VisitorAdaptor {
 		int adr = designatorActPars.getDesignator().obj.getAdr() - Code.pc;
 		Code.put(Code.call);
 		Code.put2(adr);
-    	
     }
 	
 	// Ucitavanje za nizove
@@ -441,9 +554,7 @@ public class CodeGenerator extends VisitorAdaptor {
     @Override
 	public void visit(DesignatorArrayName designatorArrayName) {
     	
-    	Code.load(designatorArrayName.obj); // Moguce da ovde Stack izgleda ovako: ..index, adr 
-    	// A da pravilno treba da bude ...adr, index
-    	
+    	Code.load(designatorArrayName.obj);
     }
 	
 	//Mulop i Addop operacije
@@ -522,7 +633,7 @@ public class CodeGenerator extends VisitorAdaptor {
     		//Inicijalizacija countera na nultom indeksu (set[0]=0)
     		Code.put(Code.dup); // Trenutno stack : addr, addr
     		Code.loadConst(0);
-    		Code.loadConst(0);
+    		Code.loadConst(0); // stack: addr, addr, 0, 0
     		Code.put(Code.astore); // Potrebni adr, index, val za upisivanje u prvi element niza
     		
     	}

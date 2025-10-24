@@ -4,30 +4,24 @@ program testMethods
 
 {
 
-	void main() int  x1,x2,x3; set g,s,a;
+	void main() set a,b,c;
 	{
-		x1=11;
-		x2=22;
-		x3=33;
-		g=new set[3];
-		a=new set[6];
-		add(a,20);
-		add(a,19);
-		add(a,19);
-		add(a,15);
-		add(a,16);
-		add(a,1);
-		add(a,16);
-		add(a,2);
-		add(a,3);
-		print(3);
-		print(x1);
-		print(x1,10);
-		print(a,10);
-		print(a);
 		
+		b=new set[5];
+		c = new set[5];
+		add(b,3);
+		add(b,6);
+		//add(b,9);
+		add(c,5);
+		add(c,9);
+		//add(c,10);
+		//add(c,12);
+		a = b union c;
+		print(c);
+		
+
 
 	}
 }
 
-//TODO addAll, union
+//TODO union

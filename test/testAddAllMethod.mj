@@ -1,0 +1,39 @@
+// TestAddAllMethod
+
+program testAddAllMethod
+
+{
+
+	void main() set a,b; int niz[];
+	{
+
+		niz = new int[5];
+		a=new set[6];
+		niz[0]=11;
+		niz[1]=22;
+		niz[2]=33;
+		addAll(a,niz);
+		print(eol);
+		print(a);
+		print(eol);
+		add(a,11);
+		add(a,22);
+		add(a,33);
+		print(niz[0]); print(eol);
+		print(niz[1]); print(eol);
+		print(niz[2]); print(eol);
+		print(niz[3]); print(eol);
+		print(niz[4]); print(eol);
+		addAll(a,niz);
+		//add(a,44);
+		//add(a,55);
+		//add(a,'c'); //error
+		//addAll(a,55); //error
+		//addAll(a,b); // error
+		print(a);
+		print(eol);
+
+	}
+}
+
+//TODO union
