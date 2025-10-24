@@ -1,0 +1,35 @@
+
+
+program testPrintMethod
+
+{
+
+	void main() int  x1,x2,x3; set g,s,a;
+	{
+		x1=11;
+		x2=22;
+		x3=33;
+		g=new set[3];
+		a=new set[6];
+		add(a,20);
+		add(a,19);
+		add(a,19);
+		add(a,15);
+		add(a,16);
+		add(a,1);
+		add(a,16);
+		add(a,2);
+		add(a,3);
+		print(3);
+		print(x1);
+		print(x1,10);
+		print(eol);
+		print(a,10);
+		print(eol);
+		print(a);
+		
+
+	}
+}
+
+//TODO addAll, union

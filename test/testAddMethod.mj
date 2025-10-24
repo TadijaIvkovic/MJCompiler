@@ -1,0 +1,21 @@
+
+
+program testMethods
+
+{
+
+	void main() set a;
+	{
+		a=new set[5];
+		add(a,20);
+		add(a,19);
+		add(a,18);
+		add(a,18);
+		//add(a,'c');
+		add(a,17);
+		add(a,16);
+		add(a,15);
+	}
+}
+
+//TODO print, add, addAll, union

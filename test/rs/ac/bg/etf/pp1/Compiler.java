@@ -38,7 +38,6 @@ public class Compiler {
 			// testMethodsActPars
 			
 			String fileName = "test/testMethods.mj";
-			//String outputFileName="test/testMethodsActPars.obj";
 
 			File sourceCode = new File(fileName);
 
@@ -106,7 +105,7 @@ public class Compiler {
 	        Tab.currentScope.addToLocals(newMethod);
 	        {
 			Tab.openScope();
-			Tab.currentScope.addToLocals(new Obj(Obj.Var, "set", new Struct(Struct.Interface, Tab.intType), 0, 1));
+			Tab.currentScope.addToLocals(new Obj(Obj.Var, "set0", new Struct(Struct.Interface, Tab.intType), 0, 1));
 			Tab.currentScope.addToLocals(new Obj(Obj.Var, "i", Tab.intType, 0, 1));
 			newMethod.setLocals(Tab.currentScope.getLocals());
 			Tab.closeScope();
@@ -122,7 +121,7 @@ public class Compiler {
 			Tab.currentScope.addToLocals(newMethod);
 			{
 			Tab.openScope();
-			Tab.currentScope.addToLocals(new Obj(Obj.Var, "set", new Struct(Struct.Interface, Tab.intType), 0, 1));
+			Tab.currentScope.addToLocals(new Obj(Obj.Var, "set0", new Struct(Struct.Interface, Tab.intType), 0, 1));
 			Tab.currentScope.addToLocals(new Obj(Obj.Var, "arr", new Struct(Struct.Array, Tab.intType), 0, 1));
 			newMethod.setLocals(Tab.currentScope.getLocals());
 			Tab.closeScope();

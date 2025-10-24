@@ -380,7 +380,7 @@ public class SemanticAnalyzer extends VisitorAdaptor {
     			if(actPars.size()!=1) {
     				report_error("Pogresan broj parametara u metodi "+ function.getName(), factorMeth);
     			}
-    			else if(actPars.get(0).getKind()!=Struct.Array) {
+    			else if(actPars.get(0).getKind()!=Struct.Array && actPars.get(0).getKind()!=Struct.Interface) {
     				report_error("Pogresan parametar metode "+ function.getName(), factorMeth);
     			}
     			
@@ -608,7 +608,7 @@ public class SemanticAnalyzer extends VisitorAdaptor {
     				report_error("Pogresan broj parametara u metodi "+ function.getName(), designatorActPars);
 
     			}
-    			else if(actPars.get(0).getKind()!=Struct.Array) {
+    			else if(actPars.get(0).getKind()!=Struct.Array && actPars.get(0).getKind()!=Struct.Interface) {
     				report_error("Pogresan parametar metode "+ function.getName(), designatorActPars);
     			}
     			
