@@ -15,9 +15,52 @@ public class CodeGenerator extends VisitorAdaptor {
 		return this.mainPC;
 	}
 	
-	// Code generation
+	public CodeGenerator() {
+		predeclaredMethodInit();
+	}
 	
+	private void predeclaredMethodInit() {
+        //len
+        
+		Obj obj = Tab.find("len");
+		obj.setAdr(Code.pc);
+		Code.put(Code.enter);
+		Code.put(obj.getLevel()); //
+		Code.put(obj.getLocalSymbols().size()); //1 
+//        Code.put(1);
+//        Code.put(1);
+		Code.put(Code.load_n);
+		Code.put(Code.arraylength);
+		Code.put(Code.exit);
+		Code.put(Code.return_);
+
+		// chr
+
+		obj = Tab.find("chr");
+		obj.setAdr(Code.pc);
+		Code.put(Code.enter);
+		Code.put(obj.getLevel()); //1
+		Code.put(obj.getLocalSymbols().size()); //1
+		Code.put(Code.load_n);
+		Code.put(Code.exit);
+		Code.put(Code.return_);
+
+		// ord
+
+		obj = Tab.find("ord");
+		obj.setAdr(Code.pc);
+		Code.put(Code.enter);
+		Code.put(obj.getLevel()); //1
+		Code.put(obj.getLocalSymbols().size()); //1
+		Code.put(Code.load_n);
+		Code.put(Code.exit);
+		Code.put(Code.return_);
+	}
+	
+	// Code generation
 	//Bitne napomene: Posle svake instrukcije, ExpressionStack mora da bude prazan, jer ce u suprotnom neko djubre biti ostavljano na stacku
+	
+	
 	
 	@Override
 	public void visit(MethodSignature methodSignature) {
@@ -109,6 +152,7 @@ public class CodeGenerator extends VisitorAdaptor {
     		Code.put(Code.dup2);
     	}
     	
+    	// Stavlja designator na stack zajedno sa jedinicom, sabira ih i store-uje nazad podatak
     	Code.load(designatorInc.getDesignator().obj);
     	Code.loadConst(1);
     	Code.put(Code.add);
@@ -124,6 +168,7 @@ public class CodeGenerator extends VisitorAdaptor {
     		Code.put(Code.dup2);
     	}
     	
+    	// Stavlja designator na stack zajedno sa jedinicom, oduzima ih i store-uje nazad podatak
     	Code.load(designatorDec.getDesignator().obj);
     	Code.loadConst(1);
     	Code.put(Code.sub);
@@ -137,7 +182,11 @@ public class CodeGenerator extends VisitorAdaptor {
     
     @Override
 	public void visit(DesignatorActPars designatorActPars) {
-    	//TODO
+
+		int adr = designatorActPars.getDesignator().obj.getAdr() - Code.pc;
+		Code.put(Code.call);
+		Code.put2(adr);
+    	
     }
 	
 	// Ucitavanje za nizove
@@ -209,6 +258,7 @@ public class CodeGenerator extends VisitorAdaptor {
     	
     	
     	if(factorNewExpr.getType().struct==Tab.intType) {
+    		//Za int nizove
     		Code.put(Code.newarray);
     		Code.put(1);
     	}
@@ -239,9 +289,18 @@ public class CodeGenerator extends VisitorAdaptor {
     }
     
     @Override
-	public void visit(FactorDes FactorDes) {
+	public void visit(FactorDes factorDes) {
 
-    	Code.load(FactorDes.getDesignator().obj);
+    	Code.load(factorDes.getDesignator().obj);
+    }
+    
+    
+    @Override
+    public void visit(FactorMeth factorMeth) {
+
+		int adr = factorMeth.getDesignator().obj.getAdr() - Code.pc;
+		Code.put(Code.call);
+		Code.put2(adr);
     	
     }
     

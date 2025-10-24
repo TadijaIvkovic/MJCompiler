@@ -9,7 +9,7 @@ import rs.etf.pp1.symboltable.Tab;
 import rs.etf.pp1.symboltable.concepts.Obj;
 import rs.etf.pp1.symboltable.concepts.Struct;
 
-public class SemanticPass extends VisitorAdaptor {
+public class SemanticAnalyzer extends VisitorAdaptor {
 
 	private boolean errorDetected = false;
 	Logger log=Logger.getLogger(getClass());
@@ -33,6 +33,7 @@ public class SemanticPass extends VisitorAdaptor {
 		log.error(msg.toString());
 	}
 
+	
 	public void report_info(String message, SyntaxNode info) {
 		StringBuilder msg = new StringBuilder(message); 
 		int line = (info == null) ? 0: info.getLine();
@@ -45,7 +46,9 @@ public class SemanticPass extends VisitorAdaptor {
 		return !errorDetected;
 	}
 	
+	
 	//Semantic pass code
+	
 	
 	@Override
 	public void visit(ProgName programName) {
@@ -66,7 +69,9 @@ public class SemanticPass extends VisitorAdaptor {
 			report_error("Nema adekvatne main metode", program);
 	}
 	
+	
 	//Const declarations
+	
 	
 	@Override
 	public void visit(ConDecl conDecl) {
@@ -83,28 +88,33 @@ public class SemanticPass extends VisitorAdaptor {
 				constObj = Tab.insert(Obj.Con, conDecl.getConstDecl(), currentType);
 				constObj.setAdr(constant);
 			}
-
 		}
-
 	}
+	
 	
 	@Override
 	public void visit(NumConstant constantNum) {
 		constant=constantNum.getN1();
 		constantType=Tab.intType;
 	}
+	
+	
 	@Override
 	public void visit(CharConstant constantChr) {
 		constant=constantChr.getC1();
 		constantType=Tab.charType;
 	}
+	
+	
 	@Override
 	public void visit(BoolConstant constantBool) {
 		constant=constantBool.getB1();
 		constantType=boolType;
 	}
 	
+	
 	//Variable declarations
+	
 	
 	@Override
 	public void visit(VarDeclarationVar varDeclarationVar) {
@@ -137,7 +147,6 @@ public class SemanticPass extends VisitorAdaptor {
 		}
 		
 		
-		
 		if(varObj == null || varObj == Tab.noObj) {
 			varObj = Tab.insert(Obj.Var, varDeclArray.getVarDeclarationA(), new Struct(Struct.Array, currentType));
 		}
@@ -150,17 +159,18 @@ public class SemanticPass extends VisitorAdaptor {
 	
 	//Method declarations
 	
+	
 	@Override
 	public void visit(MethodSignature methodSignature) {
 		
     	if(methodSignature.getMethName().equalsIgnoreCase("main")) {
-		mainMethodExists =true;
-		//mainMethod=currentMethod;
-	}
+    		mainMethodExists =true;
+    		//mainMethod=currentMethod;
+    		}
 		methodSignature.obj = currentMethod = Tab.insert(Obj.Meth, methodSignature.getMethName(), Tab.noType);
 		Tab.openScope();
-		
 	}
+	
 	
 	@Override
 	public void visit(MethodDecl methodDecl) {
@@ -186,9 +196,7 @@ public class SemanticPass extends VisitorAdaptor {
 			type.struct=currentType =Tab.noType;
 		}
 		else {
-			
 			type.struct= currentType=typeObj.getType();
-			
 //			report_info("" + currentType.getKind() + " u type klasi", type);
 		}
 	}
@@ -196,6 +204,7 @@ public class SemanticPass extends VisitorAdaptor {
 	
 	//Designator
     
+	
     @Override
     public void visit(DesignatorArray designatorArray) {
     	
@@ -210,9 +219,8 @@ public class SemanticPass extends VisitorAdaptor {
     	else {
     		designatorArray.obj=new Obj(Obj.Elem, arrObj.getName()+"[#]",arrObj.getType().getElemType());
     	}
-    	
-    	
     }
+    
     
     @Override
 	public void visit(DesignatorVar designatorVar) {
@@ -255,6 +263,7 @@ public class SemanticPass extends VisitorAdaptor {
     	}
     }
 	
+    
 	//Factor
 	
 	@Override
@@ -269,17 +278,20 @@ public class SemanticPass extends VisitorAdaptor {
 		}
 	}
 	
+	
     @Override
 	public void visit(UnaryFactor unaryFactor) {
 
     	unaryFactor.struct=unaryFactor.getFactor().struct;
     }
     
+    
     @Override
 	public void visit(FactorNum factorNum) {
 
     	factorNum.struct=Tab.intType;
     }
+    
     
     @Override
 	public void visit(FactorChar factorChar) {
@@ -293,6 +305,7 @@ public class SemanticPass extends VisitorAdaptor {
 
     	factorBool.struct=boolType;
     }
+    
     
     @Override
 	public void visit(FactorNewExpr factorNewExpr) {
@@ -309,15 +322,15 @@ public class SemanticPass extends VisitorAdaptor {
     	}
     }
     
+    
     @Override
     public void visit(FactorExpr factorExpr) {
     	factorExpr.struct=factorExpr.getExpr().struct;
-    	
     }
+    
     
     @Override
 	public void visit(FactorDes factorDes) {
-
     	factorDes.struct=factorDes.getDesignator().obj.getType();
     }
     
@@ -331,35 +344,41 @@ public class SemanticPass extends VisitorAdaptor {
     	}
     	else {
     		Obj function = factorMeth.getDesignator().obj;
+    		
+    		// Nova klasa ciji je posao samo da obidje ActPars i da sacuva sve parametre u List<Struct>
+    		// koje cemo kasnije obici
     		ActParsPass actParsPass=new ActParsPass();
     		factorMeth.getActPars().traverseBottomUp(actParsPass);
     		
+    		
+    		// ActPars ove metode, za svaku pojedinacnu metodu(ord,chr,len,add,addAll) poseban if uslov koji proverava da li parametri odgovaraju
+    		// pravim parametrima te metode
     		List<Struct> actPars= actParsPass.actPars;
 			//report_info("Provera" + function.getName() + " , broj actPars: " + actPars.size(), designatorActPars);
 
     		if(function.getName().equals("chr")) {
+    			
     			//report_info("Provera" + function.getName() + " , broj actPars: " + actPars.size(), designatorActPars);
     			if(actPars.size()!=1) {
     				report_error("Pogresan broj parametara u metodi "+ function.getName(), factorMeth);
-
     			}
     			else if(actPars.get(0).getKind()!=Struct.Int) {
     				report_error("Pogresan parametar metode "+ function.getName(), factorMeth);
     			}
     		}
     		else if(function.getName().equals("ord")) {
+    			
     			if(actPars.size()!=1) {
     				report_error("Pogresan broj parametara u metodi "+ function.getName(), factorMeth);
-
     			}
     			else if(actPars.get(0).getKind()!=Struct.Char) {
     				report_error("Pogresan parametar metode "+ function.getName(), factorMeth);
     			}
     		}
     		else if(function.getName().equals("len")) {
+    			
     			if(actPars.size()!=1) {
     				report_error("Pogresan broj parametara u metodi "+ function.getName(), factorMeth);
-
     			}
     			else if(actPars.get(0).getKind()!=Struct.Array) {
     				report_error("Pogresan parametar metode "+ function.getName(), factorMeth);
@@ -367,9 +386,9 @@ public class SemanticPass extends VisitorAdaptor {
     			
     		}
     		else if(function.getName().equals("add")) {
+    			
     			if(actPars.size()!=2) {
     				report_error("Pogresan broj parametara u metodi "+ function.getName(), factorMeth);
-
     			}
     			else if(actPars.get(0).getKind()!=Struct.Interface) {
     				report_error("Pogresan parametar metode "+ function.getName(), factorMeth);
@@ -380,9 +399,9 @@ public class SemanticPass extends VisitorAdaptor {
     			
     		}
     		else if(function.getName().equals("addAll")) {
+    			
     			if(actPars.size()!=2) {
     				report_error("Pogresan broj parametara u metodi "+ function.getName(), factorMeth);
-
     			}
     			else if(actPars.get(0).getKind()!=Struct.Interface) {
     				report_error("Pogresan parametar metode "+ function.getName(), factorMeth);
@@ -402,6 +421,7 @@ public class SemanticPass extends VisitorAdaptor {
     	
     }
 
+    
     //Expr, identicna situacija kao kod Term, bukvalno prepisan kod
     
     
@@ -410,6 +430,7 @@ public class SemanticPass extends VisitorAdaptor {
     	//Prosledjivanje Expr struct tipa ka gore
     	expr.struct=expr.getExprList().struct;
     }
+    
     
     @Override
     public void visit(ExprAddopList exprAddopList) {
@@ -428,6 +449,7 @@ public class SemanticPass extends VisitorAdaptor {
     	}
     }
     
+    
     @Override
     public void visit(ExprTerm exprTerm) {
     	//Proveravanje tipa podataka najlevljeg sina i prosledjivanje njegovog struct tipa ka gore
@@ -435,7 +457,9 @@ public class SemanticPass extends VisitorAdaptor {
     	
     }
     
+    
     //Term
+    
     
     @Override
     public void visit(Term term) {
@@ -444,6 +468,7 @@ public class SemanticPass extends VisitorAdaptor {
     	term.struct=term.getTermList().struct;
     	
     }
+    
     
     @Override
     public void visit(TermMulopList termMulopList) {
@@ -463,6 +488,7 @@ public class SemanticPass extends VisitorAdaptor {
     	
     }
     
+    
     @Override
     public void visit(TermFactor termFactor) {
     	
@@ -473,6 +499,7 @@ public class SemanticPass extends VisitorAdaptor {
     
     
     //Designator statements
+    
     
     @Override
     public void visit(DesignatorAssignop designatorAssignop) {
@@ -493,6 +520,7 @@ public class SemanticPass extends VisitorAdaptor {
     	}
     	
     }
+    
     
     @Override
     public void visit(DesignatorInc designatorInc) {
@@ -526,6 +554,7 @@ public class SemanticPass extends VisitorAdaptor {
     	}
     }
     
+    
     @Override
     public void visit(DesignatorSetop designatorSetop) {
     	
@@ -539,6 +568,7 @@ public class SemanticPass extends VisitorAdaptor {
     	}
     	
     }
+    
     
     @Override
     public void visit(DesignatorActPars designatorActPars) {
@@ -619,8 +649,10 @@ public class SemanticPass extends VisitorAdaptor {
     	}
     }
     
+    
     //Single Statements
 	
+    
     @Override
     public void visit(ReadStmt readStmt) {
     	
@@ -639,6 +671,7 @@ public class SemanticPass extends VisitorAdaptor {
     	
     }
     
+    
     @Override
     public void visit(PrintStmt printStmt) {
     	Struct type = printStmt.getExpr().struct;
@@ -647,6 +680,7 @@ public class SemanticPass extends VisitorAdaptor {
     		report_error("Print operacija nad tipom koji nije int, char ili bool ", printStmt);
     	}
     }
+    
     
     @Override
     public void visit(PrintStmtTwo printStmt) {

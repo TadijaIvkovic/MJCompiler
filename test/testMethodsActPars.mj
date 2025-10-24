@@ -9,25 +9,33 @@ int niz[];
 	int x,y[];
 	char c,niz[];
 	{
+		//chr(1); //ok
+		//x=111;
+		y=new int[100];
+		y[0]=22;
+		y[1]=22;
+		y[2]=22;
+		y[3]=22;
+		y[4]=22;
+		y[5]=22;
 	
-		x=111;
-		y=new int[10];
+		print(len(y));
 	
-		addAll(s1,y);
+		//addAll(s1,y);
 		//print(addAll(s1,niz));
 		//addAll(s1,x);
 		//addAll(s1,y[5]);
 		//addAll(s1,3);
 		
 	
-		//y= new int[20];
+		//niz= new char[20];
 
 		
 		
 		
 		//len(1); //error
 		//print(len(y)); //ok
-		print(len(y)); //ok
+		//print(len(niz)); //ok
 		//len(c); //error
 		//len('p');//error
 	

@@ -1,0 +1,14 @@
+program testMethods
+
+{
+
+	void main() int a[];
+	{
+		a=new int[11];
+		//print(len(a));
+		//print(len(a));	
+
+		//print(chr(61));
+		print(ord('a'));
+	}
+}

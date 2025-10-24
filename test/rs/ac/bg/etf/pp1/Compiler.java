@@ -32,9 +32,13 @@ public class Compiler {
 		
 		Reader br = null;
 		try {
+			
 			//Ovde treba promeniti oba naredna imena fajla koji se testira ukoliko se test menja
-			String fileName = "test/test301.mj";
-			String outputFileName="test/test301.obj";
+			
+			// testMethodsActPars
+			
+			String fileName = "test/testMethods.mj";
+			//String outputFileName="test/testMethodsActPars.obj";
 
 			File sourceCode = new File(fileName);
 
@@ -151,28 +155,28 @@ public class Compiler {
 			
 			
 			// Semanticka analiza 
-			SemanticPass sp = new SemanticPass();
-			prog.traverseBottomUp(sp);
+			SemanticAnalyzer sa = new SemanticAnalyzer();
+			prog.traverseBottomUp(sa);
 			
 			// Ispis tabele simbola 
 			log.info("=====================================================================");
 			Tab.dump();
 			
-			if(!p.errorDetected && sp.passed()){
+			if(!p.errorDetected && sa.passed()){
 //			if(!p.errorDetected){
 				log.info("Parsiranje uspesno zavrseno!");
 				
 				// Generisanje koda
 				
-//				File objFile = new File("test/program.obj");
-				File objFile = new File(outputFileName);
+				File objFile = new File("test/program.obj");
+//				File objFile = new File(outputFileName);
 				if(objFile.exists()) objFile.delete();
 				
 				CodeGenerator codeGenerator= new CodeGenerator();
 				prog.traverseBottomUp(codeGenerator);
-				Code.dataSize=sp.nVars;
-//				Code.mainPc=codeGenerator.getMainPc();
-				Code.mainPc=0;
+				Code.dataSize=sa.nVars;
+				Code.mainPc=codeGenerator.getMainPc();
+//				Code.mainPc=0;
 				Code.write(new FileOutputStream(objFile));
 				
 				log.info("Generisanje koda uspesno zavrseno!");

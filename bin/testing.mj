@@ -1,5 +1,3 @@
-
-
 program Test
 
 const int pi=3,g=11;

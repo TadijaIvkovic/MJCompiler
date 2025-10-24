@@ -1,36 +1,36 @@
-INFO  08:58:24,508 - Compiling source file: C:\Users\Lenovo\Desktop\MJCompilerGithub\test\testMethods.mj
-INFO  08:58:24,541 - #2 program
-INFO  08:58:24,541 - #47 testMethods
-INFO  08:58:24,541 - #31 {
-INFO  08:58:24,542 - #12 void
-INFO  08:58:24,542 - #47 main
-INFO  08:58:24,542 - #29 (
-INFO  08:58:24,543 - #30 )
-INFO  08:58:24,544 - #47 int
-INFO  08:58:24,544 - #47 a
-INFO  08:58:24,545 - #33 [
-INFO  08:58:24,545 - #34 ]
-INFO  08:58:24,545 - #26 ;
-INFO  08:58:24,545 - #31 {
-INFO  08:58:24,546 - #47 a
-INFO  08:58:24,546 - #23 =
-INFO  08:58:24,546 - #8 new
-INFO  08:58:24,547 - #47 int
-INFO  08:58:24,547 - #33 [
-INFO  08:58:24,547 - #44 11
-INFO  08:58:24,547 - #34 ]
-INFO  08:58:24,549 - #26 ;
-INFO  08:58:24,549 - #9 print
-INFO  08:58:24,559 - #29 (
-INFO  08:58:24,559 - #47 ord
-INFO  08:58:24,559 - #29 (
-INFO  08:58:24,559 - #45 a
-INFO  08:58:24,559 - #30 )
-INFO  08:58:24,560 - #30 )
-INFO  08:58:24,561 - #26 ;
-INFO  08:58:24,561 - #32 }
-INFO  08:58:24,561 - #32 }
-INFO  08:58:24,565 - Program(
+INFO  08:55:31,195 - Compiling source file: C:\Users\Lenovo\Desktop\MJCompilerGithub\test\testMethods.mj
+INFO  08:55:31,238 - #2 program
+INFO  08:55:31,238 - #47 testMethods
+INFO  08:55:31,238 - #31 {
+INFO  08:55:31,239 - #12 void
+INFO  08:55:31,239 - #47 main
+INFO  08:55:31,239 - #29 (
+INFO  08:55:31,240 - #30 )
+INFO  08:55:31,240 - #47 int
+INFO  08:55:31,240 - #47 a
+INFO  08:55:31,241 - #33 [
+INFO  08:55:31,241 - #34 ]
+INFO  08:55:31,241 - #26 ;
+INFO  08:55:31,241 - #31 {
+INFO  08:55:31,242 - #47 a
+INFO  08:55:31,243 - #23 =
+INFO  08:55:31,243 - #8 new
+INFO  08:55:31,243 - #47 int
+INFO  08:55:31,243 - #33 [
+INFO  08:55:31,243 - #44 11
+INFO  08:55:31,243 - #34 ]
+INFO  08:55:31,245 - #26 ;
+INFO  08:55:31,246 - #9 print
+INFO  08:55:31,247 - #29 (
+INFO  08:55:31,247 - #47 len
+INFO  08:55:31,247 - #29 (
+INFO  08:55:31,247 - #47 a
+INFO  08:55:31,247 - #30 )
+INFO  08:55:31,249 - #30 )
+INFO  08:55:31,249 - #26 ;
+INFO  08:55:31,249 - #32 }
+INFO  08:55:31,249 - #32 }
+INFO  08:55:31,253 - Program(
   ProgName(
    testMethods
   ) [ProgName]
@@ -108,7 +108,7 @@ INFO  08:58:24,565 - Program(
                     UnaryFactor(
                       FactorMeth(
                         DesignatorVar(
-                         ord
+                         len
                         ) [DesignatorVar]
                         ActParams(
                           ActPar(
@@ -117,9 +117,11 @@ INFO  08:58:24,565 - Program(
                                 Term(
                                   TermFactor(
                                     UnaryFactor(
-                                      FactorChar(
-                                       a
-                                      ) [FactorChar]
+                                      FactorDes(
+                                        DesignatorVar(
+                                         a
+                                        ) [DesignatorVar]
+                                      ) [FactorDes]
                                     ) [UnaryFactor]
                                   ) [TermFactor]
                                 ) [Term]
@@ -141,7 +143,7 @@ INFO  08:58:24,565 - Program(
     ) [MethodDecl]
   ) [MethodDeclList]
 ) [Program]
-INFO  08:58:24,566 - =====================================================================
-INFO  08:58:24,570 - =====================================================================
-INFO  08:58:24,572 - Parsiranje uspesno zavrseno!
-INFO  08:58:24,575 - Generisanje koda uspesno zavrseno!
+INFO  08:55:31,254 - =====================================================================
+INFO  08:55:31,259 - =====================================================================
+INFO  08:55:31,259 - Parsiranje uspesno zavrseno!
+INFO  08:55:31,262 - Generisanje koda uspesno zavrseno!
