@@ -1,0 +1,15 @@
+INFO  13:10:20,128 - Compiling source file: C:\Users\tadij\Desktop\MJCompiler\MJCompiler\test\testAddMethod.mj
+INFO  13:10:20,146 - #2 program
+INFO  13:10:20,146 - #47 testAddMethod
+INFO  13:10:20,146 - #31 {
+INFO  13:10:20,146 - #12 void
+INFO  13:10:20,147 - #47 main
+INFO  13:10:20,147 - #29 (
+INFO  13:10:20,147 - #30 )
+INFO  13:10:20,147 - #47 set
+INFO  13:10:20,147 - #47 a
+INFO  13:10:20,148 - #27 ,
+INFO  13:10:20,148 - #26 ;
+ERROR 13:10:20,148 - 
+Sintaksna greska na liniji 7
+ERROR 13:10:20,148 - Fatalna greska, parsiranje se ne moze nastaviti na liniji 7

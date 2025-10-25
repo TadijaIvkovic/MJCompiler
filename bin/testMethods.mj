@@ -6,18 +6,16 @@ program testMethods
 
 	void main() set a,b,c;
 	{
-		
+		a=new set[10];
 		b=new set[5];
 		c = new set[5];
 		add(b,3);
 		add(b,6);
-		//add(b,9);
 		add(c,5);
+		add(c,6);
 		add(c,9);
-		//add(c,10);
-		//add(c,12);
 		a = b union c;
-		print(c);
+		print(a);
 		
 
 

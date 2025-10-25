@@ -1,20 +1,41 @@
+// testAddMethod
 
-
-program testMethods
+program testAddMethod
 
 {
 
-	void main() set a;
+	void main() set a,b; int niz[], niz2[];
 	{
-		a=new set[5];
-		add(a,20);
-		add(a,19);
-		add(a,18);
-		add(a,18);
-		//add(a,'c');
-		add(a,17);
-		add(a,16);
-		add(a,15);
+	
+
+	
+		
+		b=new set[13];
+		niz = new int[3];
+		a=new set[6];
+		niz[0]=11;
+		niz[1]=22;
+		niz[2]=33;
+		//addAll(a,niz);
+		add(a,11);
+		add(a,22);
+		add(a,33);
+		
+
+		print(niz[0]);
+		
+		
+		print(a); 
+		
+		
+		print(69);
+		print(niz[0]);
+		print(niz[1]);
+		print(niz[2]);
+
+
+
+
 	}
 }
 

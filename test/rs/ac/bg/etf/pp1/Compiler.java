@@ -37,7 +37,7 @@ public class Compiler {
 			
 			// testMethodsActPars
 			
-			String fileName = "test/testMethods.mj";
+			String fileName = "test/testAddMethod.mj";
 
 			File sourceCode = new File(fileName);
 

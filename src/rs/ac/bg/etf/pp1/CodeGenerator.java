@@ -81,16 +81,16 @@ public class CodeGenerator extends VisitorAdaptor {
 		Code.put(Code.return_);
 		
 		
-		obj = Tab.find("unionMeth");
-		obj.setAdr(unionMethodAddr=Code.pc);
-		Code.put(Code.enter);
-//		Code.put(obj.getLevel()); // Broj formalnih parametara b1 (u level polju kod metoda)
-//		Code.put(obj.getLocalSymbols().size()); //Broj lokalnih i formalnih parametara, tj. ceo locals, b2
-		Code.put(3);
-		Code.put(5); //TODO treba proveriti ovaj broj ovde
-		unionMeth();
-		Code.put(Code.exit);
-		Code.put(Code.return_);
+//		obj = Tab.find("unionMeth");
+//		obj.setAdr(unionMethodAddr=Code.pc);
+//		Code.put(Code.enter);
+////		Code.put(obj.getLevel()); // Broj formalnih parametara b1 (u level polju kod metoda)
+////		Code.put(obj.getLocalSymbols().size()); //Broj lokalnih i formalnih parametara, tj. ceo locals, b2
+//		Code.put(3);
+//		Code.put(5); //TODO treba proveriti ovaj broj ovde
+//		unionMeth();
+//		Code.put(Code.exit);
+//		Code.put(Code.return_);
 		
 	}
 	
@@ -271,6 +271,10 @@ public class CodeGenerator extends VisitorAdaptor {
 		Code.fixup(patchAddrWhileEnd);
 	}
 	
+	public void printSet() {
+		
+	}
+	
 	public void unionMeth() {
 		// 0 -> set0
 		// 1 -> set1
@@ -284,11 +288,11 @@ public class CodeGenerator extends VisitorAdaptor {
 //		set0=set1;
 		
 		// Ovde mi je set0 sustinski nebitan, ali moramo da zapamtimo adresu da bi tu upisali set1 adresu nakon uniona
-		// 0 -> i (counter)
+		// 0 -> set0
 		// 1 -> set1
 		// 2 -> set2
 		// 3 -> n ( count)
-		// 4 -> set0
+		// 4 -> i
 		//Code.loadConst(69);
 		
 		//Premestanje set0 u load 4 jer mi je zgodnije da kucam ovako
@@ -303,8 +307,10 @@ public class CodeGenerator extends VisitorAdaptor {
 		Code.loadConst(0);
 		Code.put(Code.aload); //stack: set2[0] tj count n
 		Code.put(Code.store_3);
+		
 		Code.loadConst(1);
-		Code.put(Code.store_n); 
+		Code.put(Code.store); //ove dve instrukcije idu zajedno
+		Code.loadConst(4);
 		
 		
 		
@@ -348,15 +354,16 @@ public class CodeGenerator extends VisitorAdaptor {
 		else {
 			// 0 -> set
 			// 1 -> width print fje, u ovom slucaju 0
-			// 2 -> count
+			// 2 -> n(count)
 			// 3 -> i(counter)
 			
 			// Inicijalizacija pocetnih promenljivih
-			Code.put(Code.store_n);
+			Code.put(Code.store_n); // Cuvanje set adr
+			//Code.put(Code.store_1);
 			
-			Code.put(Code.load_n);
+			Code.put(Code.load_n); 
 			Code.loadConst(0);
-			Code.put(Code.aload);
+			Code.put(Code.aload); 
 			Code.put(Code.store_2);
 			
 			Code.loadConst(1);
@@ -414,14 +421,21 @@ public class CodeGenerator extends VisitorAdaptor {
 		}
 		else {
 			// 0 -> set
-			// 1 -> width print fje.
+			// 1 -> width print fje. OVO IZBACENO
 			// 2 -> count
 			// 3 -> i(counter)
+			// 5 ->width fje.
 			
 			// Inicijalizacija pocetnih promenljivih
+			
+			//Za debagovanje, BITNO UMESTO STORE_1 STAVLJAM STORE_5
+			Code.loadConst(777);
+			Code.put(Code.pop);
+			
+			
 			Code.put(Code.store_n);
 			Code.loadConst(printStmt.getN2());
-			Code.put(Code.store_1);
+			Code.put(Code.store); Code.loadConst(5);
 			
 			Code.put(Code.load_n);
 			Code.loadConst(0);
@@ -446,11 +460,11 @@ public class CodeGenerator extends VisitorAdaptor {
 			Code.put(Code.load_n);
 			Code.put(Code.load_3);
 			Code.put(Code.aload);
-			Code.put(Code.load_1); // stack: set[i], width
+			Code.put(Code.load); Code.loadConst(5); // stack: set[i], width
 			Code.put(Code.print);
 			
 			Code.loadConst(' ');
-			Code.put(Code.load_1);
+			Code.put(Code.load); Code.loadConst(5);
 			Code.put(Code.bprint);
 			
 			// Inkrementiranje brojaca

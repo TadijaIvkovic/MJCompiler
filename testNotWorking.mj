@@ -1,0 +1,90 @@
+// testAddMethod
+
+program testAddMethod
+
+{
+
+	void main() set a,b; int niz[], niz2[];
+	{
+	
+
+	
+		
+		b=new set[13];
+		niz = new int[3];
+		a=new set[20];
+		niz[0]=11;
+		niz[1]=22;
+		niz[2]=33;
+		addAll(a,niz);
+
+		addAll(a,niz);
+
+		print(len(a)); print(eol);
+		
+		print(niz[0]); print(' ');
+		print(niz[1]); print(' ');
+		print(niz[2]); print(' ');
+		//print(niz[3]); print(' ');
+		//print(niz[4]); print(eol);
+		print(eol);
+		addAll(a,niz);
+		
+		print(a); print(eol); 
+		
+		print(niz[0]); print(' ');
+		print(niz[1]); print(' ');
+		print(niz[2]); print(' ');
+		//print(niz[3]); print(' ');
+		//print(niz[4]); print(eol);
+		
+		print(eol);
+		addAll(a,niz);
+		
+		print(a); print(eol); 
+		
+		print(niz[0]); print(' ');
+		print(niz[1]); print(' ');
+		print(niz[2]); print(' ');
+		
+		
+		print(eol);
+		addAll(a,niz);
+		
+		print(a); print(eol); 
+		
+		print(niz[0]); print(' ');
+		print(niz[1]); print(' ');
+		print(niz[2]); print(' ');
+
+		//add(a,'c');
+		add(a,17);
+		add(a,16);
+		add(a,15);
+		print(a); print(eol);
+		print(len(niz)); print(eol);
+		addAll(a,niz);
+		addAll(a,niz);
+		addAll(a,niz);
+		addAll(a,niz);
+		print(a); print(eol);
+		print(a); print(eol);
+		print(niz[0]); print(' ');
+		print(niz[1]); print(' ');
+		print(niz[2]); print(eol); 
+		print(len(niz)); print(eol);
+		// Do ovde radi normalno
+		addAll(a,niz);
+		addAll(a,niz);
+		addAll(a,niz);
+		addAll(a,niz);
+		print(len(niz)); print(eol);
+		print(a); print(eol);
+		print(niz[0]); print(' ');
+		print(niz[1]); print(' ');
+		print(niz[2]); print(' ');
+		print(len(niz)); print(eol);
+	}
+}
+
+//TODO print, add, addAll, union
