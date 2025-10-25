@@ -23,20 +23,21 @@ program testAddMethod
 		
 
 		print(niz[0]);
+		print(eol);
 		
 		
+		print(a,9); 
+		print(eol);
 		print(a); 
+		print(eol);
 		
-		
-		print(69);
-		print(niz[0]);
-		print(niz[1]);
-		print(niz[2]);
+		print(55); print(eol);
+		print(niz[0]); print(' ');
+		print(niz[1]); print(' ');
+		print(niz[2]); print(' ');
 
 
 
 
 	}
 }
-
-//TODO print, add, addAll, union

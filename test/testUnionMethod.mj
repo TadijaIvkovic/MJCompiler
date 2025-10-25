@@ -1,0 +1,32 @@
+// TestUnionMethod
+
+program testUnionMethod
+
+{
+
+	void main() set a,b,c; int niz[];
+	{
+		b=new set[5];
+		
+		niz = new int[3];
+		a=new set[10];
+		niz[0]=11;
+		niz[1]=22;
+		niz[2]=33;
+		addAll(b,niz);
+		c= new set[10];
+		add(c,22);
+		add(c,33);
+		add(c,44);
+		add(c,55);
+		add(c,66);
+
+		a= b union c;
+		niz[0]=77;
+		niz[1]=88;
+		niz[2]=11;
+		addAll(a,niz);
+		print(a);
+		
+	}
+}

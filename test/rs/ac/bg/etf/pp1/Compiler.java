@@ -37,7 +37,7 @@ public class Compiler {
 			
 			// testMethodsActPars
 			
-			String fileName = "test/testAddMethod.mj";
+			String fileName = "test/test301.mj";
 
 			File sourceCode = new File(fileName);
 
@@ -130,6 +130,21 @@ public class Compiler {
 				fp.setFpPos(1);
 			}
 			
+			// Dodavanje print metode u tabelu simbola
+			// Metoda printMeth sadrzi dva formalna parametra: set i width printa
+			newMethod=new Obj(Obj.Meth, "printMeth",Tab.noType,0,2);
+			Tab.currentScope.addToLocals(newMethod);
+			{
+			Tab.openScope();
+			Tab.currentScope.addToLocals(new Obj(Obj.Var, "set0", new Struct(Struct.Interface, Tab.intType), 0, 1));
+			Tab.currentScope.addToLocals(new Obj(Obj.Var, "i", Tab.intType, 0, 1));			
+			newMethod.setLocals(Tab.currentScope.getLocals());
+			Tab.closeScope();
+			}
+			for(Obj fp: Tab.find("printMeth").getLocalSymbols()) {
+				fp.setFpPos(1);
+			}
+			
 			// Dodavanje union metode u tabelu simbola
 			// Metoda union sadrzi tri parametra tipa set
 			newMethod=new Obj(Obj.Meth, "unionMeth",Tab.noType,0,2);
@@ -163,7 +178,6 @@ public class Compiler {
 			
 			if(!p.errorDetected && sa.passed()){
 //			if(!p.errorDetected){
-				log.info("Parsiranje uspesno zavrseno!");
 				
 				// Generisanje koda
 				

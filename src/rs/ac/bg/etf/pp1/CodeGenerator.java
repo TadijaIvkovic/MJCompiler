@@ -10,7 +10,7 @@ import rs.etf.pp1.symboltable.concepts.Struct;
 public class CodeGenerator extends VisitorAdaptor {
 
 	private int mainPC;
-	private int addMethodAddr, unionMethodAddr;
+	private int addMethodAddr, unionMethodAddr, printMethodAddr;
 	
 	public int getMainPc() {
 		return this.mainPC;
@@ -55,7 +55,6 @@ public class CodeGenerator extends VisitorAdaptor {
 		Code.put(Code.exit);
 		Code.put(Code.return_);
 		
-		// add, TODO mozda treba malo dorada
 
 		obj = Tab.find("add");
 		obj.setAdr(addMethodAddr=Code.pc);
@@ -72,8 +71,6 @@ public class CodeGenerator extends VisitorAdaptor {
 		obj = Tab.find("addAll");
 		obj.setAdr(Code.pc);
 		Code.put(Code.enter);
-//		Code.put(obj.getLevel()); // Broj formalnih parametara b1 (u level polju kod metoda)
-//		Code.put(obj.getLocalSymbols().size()); //Broj lokalnih i formalnih parametara, tj. ceo locals, b2
 		Code.put(2);
 		Code.put(5); 
 		addAll();
@@ -81,21 +78,29 @@ public class CodeGenerator extends VisitorAdaptor {
 		Code.put(Code.return_);
 		
 		
-//		obj = Tab.find("unionMeth");
-//		obj.setAdr(unionMethodAddr=Code.pc);
-//		Code.put(Code.enter);
-////		Code.put(obj.getLevel()); // Broj formalnih parametara b1 (u level polju kod metoda)
-////		Code.put(obj.getLocalSymbols().size()); //Broj lokalnih i formalnih parametara, tj. ceo locals, b2
-//		Code.put(3);
-//		Code.put(5); //TODO treba proveriti ovaj broj ovde
-//		unionMeth();
-//		Code.put(Code.exit);
-//		Code.put(Code.return_);
+		obj = Tab.find("printMeth");
+		obj.setAdr(printMethodAddr=Code.pc);
+		Code.put(Code.enter);
+		Code.put(2); 
+		Code.put(5); 
+		printSetMethod();
+		Code.put(Code.exit);
+		Code.put(Code.return_);
+		
+		
+		obj = Tab.find("unionMeth");
+		obj.setAdr(unionMethodAddr=Code.pc);
+		Code.put(Code.enter);
+		Code.put(3);
+		Code.put(5); 
+		unionMeth();
+		Code.put(Code.exit);
+		Code.put(Code.return_);
 		
 	}
 	
 	// Code generation
-	//Bitne napomene: Posle svake instrukcije, ExpressionStack mora da bude prazan, jer ce u suprotnom neko djubre biti ostavljano na stacku
+	// Napomena: Posle svake instrukcije, ExpressionStack mora da bude prazan, jer ce u suprotnom neko djubre biti ostavljano na stacku
 	
 	
 	// Predeclared methods
@@ -271,23 +276,63 @@ public class CodeGenerator extends VisitorAdaptor {
 		Code.fixup(patchAddrWhileEnd);
 	}
 	
-	public void printSet() {
+	public void printSetMethod() {
+		// 0 -> set
+		// 1 -> width print fje, u ovom slucaju 0
+		// 2 -> n(count)
+		// 3 -> i(counter)
+		  
+		// U pocetku su mi na 0 -> set, 1 -> width
 		
+		// Inicijalizacija pocetnih promenljivih
+		
+		Code.put(Code.load_n);
+		Code.loadConst(0);
+		Code.put(Code.aload); 
+		Code.put(Code.store_2); // LOKALNA PROMENLJIVA 2 -> count(n)
+		
+		Code.loadConst(1);
+		Code.put(Code.store_3); // LOKALNA PROMENLJIVA 3 -> counter(i)
+		
+		
+		// While petlja pocetak
+		int whileStart=Code.pc;
+		
+		Code.put(Code.load_3); // stack: i
+		Code.put(Code.load_2); // stack: i, n
+
+		
+		Code.putFalseJump(Code.le, 0); // Ako je i > n izlazimo iz while petlje da ubacimo element
+		int patchAddrWhileEnd=Code.pc-2;
+		
+		//Printanje set[i]
+		Code.put(Code.load_n);
+		Code.put(Code.load_3);
+		Code.put(Code.aload); // stack: set[i]
+		Code.put(Code.load_1); // stack: set[i], width
+		Code.put(Code.print);
+		
+		Code.loadConst(' ');
+		Code.loadConst(0);
+		Code.put(Code.bprint);
+		
+		// Inkrementiranje brojaca
+		Code.put(Code.load_3);
+		Code.loadConst(1);
+		Code.put(Code.add);
+		Code.put(Code.store_3);
+		
+		Code.putJump(whileStart);
+		
+		
+		
+		Code.fixup(patchAddrWhileEnd);
+		
+
 	}
 	
 	public void unionMeth() {
-		// 0 -> set0
-		// 1 -> set1
-		// 2 -> set2
-		
-//		int i = 1;
-//		int n=set2[0];
-//		while(i<=n)
-//			add(set1,set2[i]);
-//			i++;
-//		set0=set1;
-		
-		// Ovde mi je set0 sustinski nebitan, ali moramo da zapamtimo adresu da bi tu upisali set1 adresu nakon uniona
+
 		// 0 -> set0
 		// 1 -> set1
 		// 2 -> set2
@@ -297,23 +342,105 @@ public class CodeGenerator extends VisitorAdaptor {
 		
 		//Premestanje set0 u load 4 jer mi je zgodnije da kucam ovako
 		
-		//TREBA PRVO DA SE PRELANCA CEO SET1 U SET0 I ONDA RADI SVE STO SAM PLANIRAO TJ. JEDAN PO JEDAN EL IZ set2 u set0
+		//Prvo add za sve elemente iz set1, pa add za sve elemente iz set2
+		
+//		Code.put(Code.load_n);
+//		Code.put(Code.store);
+//		Code.loadConst(4); // LOKALNA PROMENLJIVA 4 -> set0 adr NE SVIDJA MI SE OVO
 		
 		Code.put(Code.load_n);
-		Code.put(Code.store);
-		Code.loadConst(4); // LOKALNA PROMENLJIVA 4 -> set0 adr NE SVIDJA MI SE OVO
+		Code.loadConst(0);
+		Code.loadConst(0);
+		Code.put(Code.astore);// Count od set0 inicijalizovan na 0 jer se taj set svakako brise
+
+		
+		//PRVI DEO METODE, UBACIVANJE SVIH ELEMENATA SET1 REDOM U SET0
+		
+		Code.put(Code.load_1);
+		Code.loadConst(0);
+		Code.put(Code.aload); //stack: set1[0] tj count n
+		Code.put(Code.store_3);
+		
+		Code.loadConst(1);
+		Code.put(Code.store); Code.loadConst(4);
+		
+		int whileStart1=Code.pc;
+		
+		Code.put(Code.load); Code.loadConst(4);
+		Code.put(Code.load_3); // stack : i,n
+		
+		Code.putFalseJump(Code.le, whileStart1);
+		int patchAddrWhileEnd1=Code.pc-2;
+		
+		Code.put(Code.load_n);
+		Code.put(Code.load); Code.loadConst(4); // stack: set0, i
+		Code.put(Code.load_1);
+		Code.put(Code.load); Code.loadConst(4); // stack: set0, i, set1, i
+		Code.put(Code.aload);// stack: set0, i, set1[i]
+		Code.put(Code.astore); // set0[i]=set1[i]
+		
+		//Inkrementiranje set0[0]
+		Code.put(Code.load_n);
+		Code.loadConst(0);
+		Code.put(Code.dup2);// set0, 0, set0, 0
+		Code.put(Code.aload);
+		Code.loadConst(1); 
+		Code.put(Code.add);// set0, 0, set0[0]+1
+		Code.put(Code.astore); // Inkrementiran je count od set0
+		
+		// Inkrementiranje brojaca i
+		Code.put(Code.load); Code.loadConst(4);
+		Code.loadConst(1);
+		Code.put(Code.add);
+		Code.put(Code.store); Code.loadConst(4);// Inkrementiran je brojac, vracamo se na pocetak while
+		
+		Code.putJump(whileStart1);
+		
+		//Kraj prve while petlje
+		Code.fixup(patchAddrWhileEnd1);
+		
+		
+		
+		//Priprema za drugu while petlju, ona ce dodavati jedan po jedan element iz set2 u set0 pomocu add metode
 		
 		Code.put(Code.load_2);
 		Code.loadConst(0);
 		Code.put(Code.aload); //stack: set2[0] tj count n
-		Code.put(Code.store_3);
+		Code.put(Code.store_3); // LOKALNA PROMENLJIVA 3 -> n (count)
 		
 		Code.loadConst(1);
-		Code.put(Code.store); //ove dve instrukcije idu zajedno
-		Code.loadConst(4);
+		Code.put(Code.store); Code.loadConst(4); // LOKALNA PROMENLJIVA 4 -> i (counter)
 		
+		int whileStart2=Code.pc;
 		
+		Code.put(Code.load); Code.loadConst(4);
+		Code.put(Code.load_3); // stack : i,n
 		
+		Code.putFalseJump(Code.le, whileStart1);
+		int patchAddrWhileEnd2=Code.pc-2;
+		
+		//Priprema parametara za poziv metode add
+		Code.put(Code.load_n); // stack: set0
+		Code.put(Code.load_2); // stack: set0, set2
+		Code.put(Code.load); Code.loadConst(4); // stack: set0, set2, i
+		Code.put(Code.aload); // stack: set0, set2[i]
+		
+		//Poziv add metode, standardno kao i svaka druga metoda do sad
+		int adr = addMethodAddr - Code.pc;
+		Code.put(Code.call);
+		Code.put2(adr);
+		
+		// Inkrementiranje brojaca i
+		Code.put(Code.load); Code.loadConst(4);
+		Code.loadConst(1);
+		Code.put(Code.add);
+		Code.put(Code.store); Code.loadConst(4);// Inkrementiran je brojac, vracamo se na pocetak while
+		
+		//Kraj while petlje
+		Code.putJump(whileStart2);
+		
+		//Skace se kad dodjemo do kraja while petlje
+		Code.fixup(patchAddrWhileEnd2);
 	}
 	
 	
@@ -352,58 +479,11 @@ public class CodeGenerator extends VisitorAdaptor {
 			}
 		}
 		else {
-			// 0 -> set
-			// 1 -> width print fje, u ovom slucaju 0
-			// 2 -> n(count)
-			// 3 -> i(counter)
-			
-			// Inicijalizacija pocetnih promenljivih
-			Code.put(Code.store_n); // Cuvanje set adr
-			//Code.put(Code.store_1);
-			
-			Code.put(Code.load_n); 
 			Code.loadConst(0);
-			Code.put(Code.aload); 
-			Code.put(Code.store_2);
+			int adr = printMethodAddr - Code.pc;
+			Code.put(Code.call);
+			Code.put2(adr);
 			
-			Code.loadConst(1);
-			Code.put(Code.store_3);
-			
-			
-			// While petlja pocetak
-			int whileStart=Code.pc;
-			
-			Code.put(Code.load_3); // stack: i
-			Code.put(Code.load_2); // stack: i, n
-
-			
-			Code.putFalseJump(Code.le, 0); // Ako je i > n izlazimo iz while petlje da ubacimo element
-			int patchAddrWhileEnd=Code.pc-2;
-			
-			//Printanje set[i]
-			Code.put(Code.load_n);
-			Code.put(Code.load_3);
-			Code.put(Code.aload);
-			Code.loadConst(0); // stack: set[i], width
-			Code.put(Code.print);
-			
-			Code.loadConst(' ');
-			Code.loadConst(0);
-			Code.put(Code.bprint);
-			
-			// Inkrementiranje brojaca
-			Code.put(Code.load_3);
-			Code.loadConst(1);
-			Code.put(Code.add);
-			Code.put(Code.store_3);
-			
-			Code.putJump(whileStart);
-			
-			
-			
-			Code.fixup(patchAddrWhileEnd);
-			
-
 		}
 	}
 	
@@ -420,64 +500,11 @@ public class CodeGenerator extends VisitorAdaptor {
 			}
 		}
 		else {
-			// 0 -> set
-			// 1 -> width print fje. OVO IZBACENO
-			// 2 -> count
-			// 3 -> i(counter)
-			// 5 ->width fje.
 			
-			// Inicijalizacija pocetnih promenljivih
-			
-			//Za debagovanje, BITNO UMESTO STORE_1 STAVLJAM STORE_5
-			Code.loadConst(777);
-			Code.put(Code.pop);
-			
-			
-			Code.put(Code.store_n);
 			Code.loadConst(printStmt.getN2());
-			Code.put(Code.store); Code.loadConst(5);
-			
-			Code.put(Code.load_n);
-			Code.loadConst(0);
-			Code.put(Code.aload);
-			Code.put(Code.store_2);
-			
-			Code.loadConst(1);
-			Code.put(Code.store_3);
-			
-			
-			// While petlja pocetak
-			int whileStart=Code.pc;
-			
-			Code.put(Code.load_3); // stack: i
-			Code.put(Code.load_2); // stack: i, n
-
-			
-			Code.putFalseJump(Code.le, 0); // Ako je i > n izlazimo iz while petlje da ubacimo element
-			int patchAddrWhileEnd=Code.pc-2;
-			
-			//Printanje set[i]
-			Code.put(Code.load_n);
-			Code.put(Code.load_3);
-			Code.put(Code.aload);
-			Code.put(Code.load); Code.loadConst(5); // stack: set[i], width
-			Code.put(Code.print);
-			
-			Code.loadConst(' ');
-			Code.put(Code.load); Code.loadConst(5);
-			Code.put(Code.bprint);
-			
-			// Inkrementiranje brojaca
-			Code.put(Code.load_3);
-			Code.loadConst(1);
-			Code.put(Code.add);
-			Code.put(Code.store_3);
-			
-			Code.putJump(whileStart);
-			
-			
-			
-			Code.fixup(patchAddrWhileEnd);
+			int adr = printMethodAddr - Code.pc;
+			Code.put(Code.call);
+			Code.put2(adr);
 		}
 	}
 	
@@ -500,6 +527,7 @@ public class CodeGenerator extends VisitorAdaptor {
 		Code.put(Code.return_);
 		
 	}
+	
 	
 	// Designator assignop, inc, dec, setop, actPars
 	
@@ -545,6 +573,7 @@ public class CodeGenerator extends VisitorAdaptor {
     @Override
 	public void visit(DesignatorSetop designatorSetop) {
 
+    	//Pripremanje formalnih parametara: set0, set1, set2
     	Code.load(designatorSetop.getDesignator().obj);
     	Code.load(designatorSetop.getDesignator1().obj);
     	Code.load(designatorSetop.getDesignator2().obj);
@@ -656,8 +685,6 @@ public class CodeGenerator extends VisitorAdaptor {
     		Code.put(Code.newarray);
     		Code.put(0);
     	}
-    	
-    	
     }
     
     @Override
@@ -673,10 +700,6 @@ public class CodeGenerator extends VisitorAdaptor {
 		int adr = factorMeth.getDesignator().obj.getAdr() - Code.pc;
 		Code.put(Code.call);
 		Code.put2(adr);
-    	
     }
-    
-    
-    
     
 }

@@ -1,6 +1,6 @@
-// testAddMethod
+// testAddAll2
 
-program testAddMethod
+program testAddAll2
 
 {
 
@@ -82,9 +82,7 @@ program testAddMethod
 		print(a); print(eol);
 		print(niz[0]); print(' ');
 		print(niz[1]); print(' ');
-		print(niz[2]); print(' ');
+		print(niz[2]); print(eol);
 		print(len(niz)); print(eol);
 	}
 }
-
-//TODO print, add, addAll, union
